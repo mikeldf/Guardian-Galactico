@@ -52,6 +52,32 @@
 #ggExactUI .gg-title-note{position:absolute;top:128px;left:630px;color:#fff;background:#031324e9;border:1px solid #358bd1;border-radius:6px;padding:7px 10px;font-size:16px;z-index:5}
 #ggExactUI .gg-logo-note{position:absolute;left:24px;bottom:15px;font-size:12px;z-index:4;color:#a7c2d8;background:#061222cc;border-radius:4px;padding:5px 8px}
 
+/* Perfil y acceso rápido del menú principal: viven fuera del escenario escalado para seguir legibles en móvil. */
+#ggExactUI .gg-home-profile{position:absolute;z-index:8;right:clamp(12px,2vw,34px);top:clamp(12px,2vh,24px);width:min(390px,38vw);box-sizing:border-box;padding:12px 14px;border:1px solid #4ebdf0a8;border-radius:12px;background:linear-gradient(145deg,#03172beF,#041124f5);box-shadow:0 12px 35px #0009,inset 0 0 20px #1169a333;backdrop-filter:blur(12px);font-family:Bahnschrift,'Segoe UI',sans-serif;color:#eafaff}
+#ggExactUI .gg-home-profile-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px 14px}
+#ggExactUI .gg-home-profile-grid>div{display:flex;min-width:0;flex-direction:column;gap:2px}
+#ggExactUI .gg-home-profile-grid small{color:#74bdd9;font-size:10px;letter-spacing:.12em;font-weight:800}
+#ggExactUI .gg-home-profile-grid strong{overflow:hidden;color:#fff;font-size:16px;line-height:1.2;text-overflow:ellipsis;white-space:nowrap}
+#ggExactUI .gg-home-ranking-button{display:flex;width:100%;min-height:39px;justify-content:space-between;align-items:center;margin-top:10px;padding:7px 12px;border:1px solid #58d9ff;border-radius:7px;background:linear-gradient(100deg,#095081,#0a3560);color:#e9fbff;font:900 12px Bahnschrift,'Segoe UI',sans-serif;letter-spacing:.08em;cursor:pointer;box-shadow:inset 0 0 14px #39b7ff24}
+#ggExactUI .gg-home-ranking-button:hover,#ggExactUI .gg-home-ranking-button:focus-visible{outline:2px solid #a4f2ff;outline-offset:2px;background:linear-gradient(100deg,#0b6ba4,#12548a)}
+#pauseModal.gg-pilot-dialog .panel{width:min(490px,94vw)!important;max-width:490px!important;padding:clamp(18px,4vw,30px)!important}
+#pauseModal.gg-home-rank-dialog .panel{width:min(820px,96vw)!important;max-width:820px!important;padding:clamp(16px,3vw,28px)!important}
+.gg-pilot-name-label{display:flex;flex-direction:column;gap:9px;text-align:left;color:#bdeeff;font-size:12px;font-weight:900;letter-spacing:.09em}
+#ggPilotNameInput{width:100%;box-sizing:border-box;padding:13px 14px;border:1px solid #42b3e9;border-radius:7px;background:#04172a;color:#f6fdff;font:700 17px Bahnschrift,'Segoe UI',sans-serif;outline:none}
+#ggPilotNameInput:focus{border-color:#a1edff;box-shadow:0 0 0 3px #51c7ff33}
+.gg-pilot-note{margin:10px 0 0;color:#9bc7dc;font-size:12px}
+#ggPilotNameError:not(:empty){color:#ffcf9b}
+.gg-rank-summary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:4px 0 18px}
+.gg-rank-summary>div{display:flex;min-width:0;flex-direction:column;gap:4px;padding:9px;border:1px solid #2875a2;border-radius:7px;background:#041a2d}
+.gg-rank-summary small{color:#7abdd7;font-size:9px;font-weight:900;letter-spacing:.08em}
+.gg-rank-summary b{overflow:hidden;color:#f2fbff;font-size:15px;text-overflow:ellipsis;white-space:nowrap}
+.gg-rank-heading{margin:0 0 9px;color:#91eaff;font-size:13px;letter-spacing:.11em}
+.gg-rank-list{display:flex;max-height:min(45vh,360px);flex-direction:column;gap:5px;overflow-y:auto;padding-right:3px}
+.gg-rank-row{display:grid;grid-template-columns:32px minmax(80px,1fr) 112px 125px;align-items:center;gap:8px;padding:8px 10px;border:1px solid #16466a;border-radius:6px;background:linear-gradient(90deg,#061c31,#041326);text-align:left}
+.gg-rank-row>b{color:#70dfff;font-size:15px}.gg-rank-row>span{overflow:hidden;color:#fff;font-weight:850;text-overflow:ellipsis;white-space:nowrap}.gg-rank-row>strong{text-align:right;color:#ffe59b;font-variant-numeric:tabular-nums}.gg-rank-row>small{text-align:right;color:#87b6ca;font-size:9px;font-weight:850;letter-spacing:.05em}
+.gg-rank-empty{padding:18px;border:1px dashed #2c7596;border-radius:8px;color:#bed7e6;font-size:14px}
+@media(max-width:700px){#ggExactUI .gg-home-profile{top:max(8px,env(safe-area-inset-top));left:50%;right:auto;width:min(94vw,430px);transform:translateX(-50%);padding:9px 11px}#ggExactUI .gg-home-profile-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}#ggExactUI .gg-home-profile-grid small{font-size:8px}#ggExactUI .gg-home-profile-grid strong{font-size:12px}#ggExactUI .gg-home-ranking-button{min-height:34px;margin-top:7px;font-size:11px}.gg-rank-summary{grid-template-columns:1fr 1fr}.gg-rank-row{grid-template-columns:25px minmax(70px,1fr) 85px}.gg-rank-row>small{grid-column:2/4;text-align:left}}
+
 #ggExactUI .gg-map-label{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;text-align:center;background:linear-gradient(90deg,#041127,#071932);border:1px solid #418eda;border-radius:6px;box-shadow:0 8px 16px #0008;pointer-events:none;color:#d2ebff}
 #ggExactUI .gg-map-label b{font-size:19px;font-weight:900;color:#f7fbff;text-shadow:0 0 6px #3c8dff}
 #ggExactUI .gg-map-label small{font-size:14px;color:#65c8f4}
@@ -189,3 +215,4 @@
 #ggExactUI .gg-ship-large.locked img{filter:grayscale(.64) brightness(.62)!important}
 #ggExactUI .gg-large-lock{position:absolute;z-index:6;left:50%;top:50%;transform:translate(-50%,-50%);font-size:92px;filter:drop-shadow(0 6px 12px #000);pointer-events:none}
 #ggExactUI .gg-ship-info .desc{overflow-wrap:anywhere;line-height:1.3;font-size:13px}
+
