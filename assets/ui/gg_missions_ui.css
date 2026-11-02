@@ -1,6 +1,6 @@
 #ggMissions{position:fixed;inset:0;z-index:1300;display:none;overflow:hidden;color:#eff9ff;font-family:var(--gg-font-ui,'Exo 2','Segoe UI',sans-serif)}
 #ggMissions.active{display:block}
-#ggMissions .ggm-stage{position:absolute;left:50%;top:50%;width:1672px;height:941px;transform-origin:center center;background:url('refs/misiones-galacticas.png?v=20261102-missions3') center/100% 100% no-repeat;overflow:hidden}
+#ggMissions .ggm-stage{position:absolute;left:50%;top:50%;width:1672px;height:941px;transform-origin:center center;background:url('refs/misiones-galacticas-futurista.png?v=20261102-missions8') center/100% 100% no-repeat;overflow:hidden}
 #ggMissions button{font:inherit;color:inherit}
 #ggMissions .ggm-coins{position:absolute;left:1334px;top:174px;width:205px;text-align:center;font:800 24px/1 'Exo 2',sans-serif;text-shadow:0 0 8px #3fbaff}
 #ggMissions .ggm-tabs{position:absolute;left:52px;top:306px;width:302px;display:grid;gap:16px}
@@ -27,7 +27,7 @@
 #ggMissions .ggm-play:disabled{opacity:.5;cursor:not-allowed;filter:grayscale(.7)}
 #ggMissions .ggm-return{position:absolute;left:27px;top:842px;width:235px;height:72px;border:2px solid transparent;border-radius:16px;background:transparent;cursor:pointer;font:900 21px/1 'Rajdhani',sans-serif;letter-spacing:.04em;text-shadow:0 1px 4px #001}
 #ggMissions .ggm-return:hover,#ggMissions .ggm-return:focus-visible{outline:none;background:#19a9ff16;border-color:#5bdcff85}
-#ggMissions .ggm-return{display:flex;align-items:center;justify-content:center;text-align:center;width:286px;padding:0;line-height:1}
+#ggMissions .ggm-return{left:80px;display:flex;align-items:center;justify-content:center;text-align:center;width:235px;padding:0;line-height:1}
 #ggMissions .ggm-empty{padding:45px 22px;text-align:center;color:#c9eaff;font:700 18px/1.4 'Exo 2',sans-serif}
 #ggMissions .ggm-summary{position:absolute;left:397px;top:300px;width:880px;height:513px;overflow:auto;display:flex;flex-direction:column;align-content:start;gap:7px;padding:0;box-sizing:border-box}
 #ggMissions .ggm-summary-row{flex:none;height:116px;box-sizing:border-box;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:13px 34px;gap:24px}
