@@ -23,11 +23,11 @@
   const {save}=snap();
   const background=add('gg58-map-art',0,0,1680,944);background.style.backgroundImage=`url("${mapArt}")`;background.setAttribute('aria-hidden','true');
   const title=add('gg58-map-title',570,115,540,34);title.textContent='MAPA ESTELAR';
-  const coins=add('gg58-map-coins',1325,24,220,50);coins.textContent=Number(save.coins||0).toLocaleString('es-ES');coins.setAttribute('aria-label','Piezas disponibles: '+Number(save.coins||0));
+  const coins=add('gg58-map-coins',1360,24,250,50);coins.textContent=Number(save.coins||0).toLocaleString('es-ES');coins.setAttribute('aria-label','Piezas disponibles: '+Number(save.coins||0));
   const activeWorld=Math.max(0,Math.min(9,snap().currentWorld||0));
   const activeDone=Math.max(0,Math.min(20,save.lastUnlocked-activeWorld*20-1));
   const worldInfo=add('gg58-map-current',570,150,540,27);
-  worldInfo.textContent=`${names[activeWorld]} · ${activeDone}/20 SUPERADOS · ${save.lastUnlocked>activeWorld*20?'DISPONIBLE':'BLOQUEADO'}`;
+  worldInfo.textContent=`${names[activeWorld]} · ${activeDone}/20 SUPERADOS`;
   const back=button('gg58-map-back','Volver al menú',22,839,258,80,()=>bridge.screen('home'));back.textContent='VOLVER';
   const planets=[
    {x:472,y:260,lx:463,ly:358},{x:729,y:258,lx:726,ly:359},{x:990,y:257,lx:990,ly:358},{x:1260,y:260,lx:1260,ly:359},
@@ -64,7 +64,7 @@
   for(let i=1;i<=20;i++){
    const global=start+i,cleared=global<save.lastUnlocked,open=global===save.lastUnlocked, boss=i===10||i===20;
    const b=document.createElement('button');b.type='button';b.className='gg50-level-card'+(cleared?' cleared':!open?' locked':'')+(boss?' boss':'')+(selectedLevel===global?' selected':'');
-   const num=document.createElement('span');num.textContent=String(i);b.append(num);
+   const num=document.createElement('span');num.textContent=String(i);b.append(num);\n   const stars=document.createElement('span');stars.className='gg50-level-stars';stars.textContent='★★★';stars.setAttribute('aria-hidden','true');b.append(stars);
    if(cleared||!open){const stateIcon=document.createElement('img');stateIcon.className='gg50-level-state';stateIcon.src=cleared?'assets/ui/refs/level-check-badge.png?v=20261102-icons2':'assets/ui/refs/level-lock-badge.png?v=20261102-icons2';stateIcon.alt='';stateIcon.setAttribute('aria-hidden','true');b.append(stateIcon)}
    const status=cleared?'Superado':open?'Disponible':'Bloqueado';
    b.title=`Nivel ${i} · ${status}${boss?(i===20?' · Jefe final':' · Subjefe'):''}`;b.setAttribute('aria-label',b.title);b.setAttribute('aria-pressed',String(selectedLevel===global));
