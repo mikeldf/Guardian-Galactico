@@ -3,8 +3,8 @@
   if(window.GG39_MUSIC)return;
   const titles=['Arrecife estelar','Forja solar','Cristales del vacío','Roca orbital','Nebulosa viva','Laboratorio tóxico','Máquinas del cosmos','Sombras del abismo','Horizonte cuántico','El núcleo final'];
   const newTracks=['nueva_07_nebula_dorada','nueva_08_motor_orbital','nueva_09_lluvia_ionica','nueva_10_enjambre_metalico','nueva_11_corazon_del_cosmos'];
-  const tracks={menu:['menu_principal','nueva_01_ruta_nebular',newTracks[0]],hangar:['hangar_estelar','nueva_02_horizonte_azul',newTracks[1]],boss:['jefe_1','jefe_2','jefe_3','jefe_4','nueva_05_alerta_estelar','nueva_06_nucleo_final',newTracks[3],newTracks[4]]};
-  for(let w=1;w<=10;w++)tracks['mundo'+w]=['mundo_'+String(w).padStart(2,'0')+'_a','mundo_'+String(w).padStart(2,'0')+'_b', ['nueva_01_ruta_nebular','nueva_02_horizonte_azul','nueva_03_tormenta_ionica','nueva_04_pulso_cosmico','nueva_05_alerta_estelar','nueva_06_nucleo_final'][(w-1)%6],newTracks[(w-1)%5]];
+  const tracks={menu:['menu_principal',newTracks[0],'nueva_01_ruta_nebular'],hangar:['hangar_estelar',newTracks[1],'nueva_02_horizonte_azul'],boss:['jefe_1',newTracks[3],'jefe_2','jefe_3','jefe_4','nueva_05_alerta_estelar','nueva_06_nucleo_final',newTracks[4]]};
+  for(let w=1;w<=10;w++)tracks['mundo'+w]=['mundo_'+String(w).padStart(2,'0')+'_a',newTracks[(w-1)%5],'mundo_'+String(w).padStart(2,'0')+'_b', ['nueva_01_ruta_nebular','nueva_02_horizonte_azul','nueva_03_tormenta_ionica','nueva_04_pulso_cosmico','nueva_05_alerta_estelar','nueva_06_nucleo_final'][(w-1)%6]];
   const player=new Audio();player.preload='auto';player.loop=false;
   let selected='',lastKey='',index=0,unlocked=false,attempting=false,error='';
   const api={active:true,tracks:37,getState:()=>({active:true,scene:lastKey,track:selected,playing:!player.paused,volume:player.volume,title:display(selected),error})};
