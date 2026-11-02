@@ -405,14 +405,24 @@ body,#app{font-family:Bahnschrift,'Arial Narrow','Trebuchet MS',system-ui,sans-s
 #pauseModal.gg-pause-art #modalButtons>.btn:nth-child(2){top:45.2%}
 #pauseModal.gg-pause-art #modalButtons>.btn:nth-child(3){top:58%}
 #pauseModal.gg-pause-art #modalButtons>.btn:nth-child(4){top:69.3%}
-#pauseModal.gg-pause-art.gg-pause-settings-open{background:#010713c9!important}
-#pauseModal.gg-pause-art.gg-pause-settings-open>.panel{width:min(92vw,430px)!important;aspect-ratio:auto;min-height:330px;padding:26px!important;background:linear-gradient(145deg,#081e37f7,#041220fa)!important;border:1px solid #55d6ecb2!important;border-radius:16px!important;box-shadow:0 0 45px #1f9eea45!important}
-#pauseModal.gg-pause-art.gg-pause-settings-open #modalTitle{display:block!important;margin:0 0 16px;font-size:22px}
-#pauseModal.gg-pause-art.gg-pause-settings-open #modalButtons{display:none}
-#pauseModal.gg-pause-art.gg-pause-settings-open .gg40-pause-settings{width:100%;margin:0;padding:19px;background:#061b2df8;border:1px solid #54cbe5;border-radius:10px;color:#ecfbff;display:grid;gap:12px}
-#pauseModal.gg-pause-art.gg-pause-settings-open .gg40-pause-settings[hidden]{display:none}
-#pauseModal.gg-pause-art.gg-pause-settings-open #modalEyebrow,#pauseModal.gg-pause-art.gg-pause-settings-open #modalBody{display:block!important}
-#pauseModal.gg-pause-art.gg-pause-settings-open #modalBody:empty{display:none!important}
+#pauseModal.gg-pause-art.gg-pause-settings-open{background:#010713c9!important;backdrop-filter:blur(1px)!important}
+#pauseModal.gg-pause-art.gg-pause-settings-open>.panel{width:min(94vw,88dvh,760px)!important;max-width:none!important;aspect-ratio:1/1!important;min-height:0!important;padding:0!important;background:transparent url('assets/ui/refs/pausa-ajustes-guardian.jpg?v=20261102-pausa-ajustes1') center/100% 100% no-repeat!important;border:0!important;border-radius:0!important;box-shadow:none!important;overflow:hidden!important}
+#pauseModal.gg-pause-art.gg-pause-settings-open #modalEyebrow,#pauseModal.gg-pause-art.gg-pause-settings-open #modalTitle,#pauseModal.gg-pause-art.gg-pause-settings-open #modalBody,#pauseModal.gg-pause-art.gg-pause-settings-open #modalButtons{display:none!important}
+#pauseModal.gg-pause-art.gg-pause-settings-open .gg40-pause-settings{position:absolute;inset:0;width:auto;height:auto;box-sizing:border-box;margin:0;padding:0;border:0;border-radius:0;background:transparent;color:transparent;display:block;overflow:hidden}
+#pauseModal.gg-pause-art.gg-pause-settings-open .gg40-pause-settings[hidden]{display:none!important}
+#pauseModal.gg-pause-art.gg-pause-settings-open .gg40-pause-subhead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+#pauseModal.gg-pause-art.gg-pause-settings-open .gg40-pause-settings label{position:absolute;left:46.8%;width:32%;height:4.4%;display:block;margin:0;padding:0;overflow:hidden;font-size:0;color:transparent}
+#pauseModal.gg-pause-art.gg-pause-settings-open #gg40PauseMusic{top:49.7%}
+#pauseModal.gg-pause-art.gg-pause-settings-open #gg40PauseSfx{top:57.8%}
+#pauseModal.gg-pause-art.gg-pause-settings-open .gg40-pause-settings input[type=range]{display:block;position:absolute;inset:0;width:100%;height:100%;max-width:none;margin:0;appearance:none;-webkit-appearance:none;accent-color:#37e8ff;background:transparent;cursor:pointer;touch-action:pan-x}
+#pauseModal.gg-pause-art.gg-pause-settings-open .gg40-pause-settings input[type=range]::-webkit-slider-runnable-track{height:28%;border:1px solid #34dfff;border-radius:99px;background:linear-gradient(90deg,#00cfff var(--gg-volume,55%),#071a31 var(--gg-volume,55%));box-shadow:0 0 8px #00cfffaa}
+#pauseModal.gg-pause-art.gg-pause-settings-open .gg40-pause-settings input[type=range]::-moz-range-track{height:28%;border:1px solid #34dfff;border-radius:99px;background:linear-gradient(90deg,#00cfff var(--gg-volume,55%),#071a31 var(--gg-volume,55%));box-shadow:0 0 8px #00cfffaa}
+#pauseModal.gg-pause-art.gg-pause-settings-open .gg40-pause-settings input[type=range]::-webkit-slider-thumb{appearance:none;-webkit-appearance:none;width:clamp(17px,3vw,39px);height:clamp(17px,3vw,39px);border:2px solid #c4f9ff;border-radius:50%;background:radial-gradient(circle at 34% 30%,#fff,#73efff 34%,#118bda 69%,#07376c);box-shadow:0 0 10px #38dcff,0 0 20px #078fff}
+#pauseModal.gg-pause-art.gg-pause-settings-open .gg40-pause-settings input[type=range]::-moz-range-thumb{width:clamp(17px,3vw,39px);height:clamp(17px,3vw,39px);border:2px solid #c4f9ff;border-radius:50%;background:radial-gradient(circle at 34% 30%,#fff,#73efff 34%,#118bda 69%,#07376c);box-shadow:0 0 10px #38dcff,0 0 20px #078fff}
+#pauseModal.gg-pause-art.gg-pause-settings-open #gg40PauseBack{position:absolute;left:18%;top:77.1%;width:64%;height:12.4%;margin:0;padding:0;border:2px solid transparent;border-radius:18px;background:transparent;color:transparent;font-size:1px;box-shadow:none;cursor:pointer}
+#pauseModal.gg-pause-art.gg-pause-settings-open #gg40PauseBack:hover{filter:brightness(1.08)}
+#pauseModal.gg-pause-art.gg-pause-settings-open #gg40PauseBack:focus-visible{outline:3px solid #e0ff9c;outline-offset:-8px}
+
 .gg40-pause-settings{position:relative;z-index:20;width:min(90vw,480px);padding:19px;margin:16px auto 0;background:#061b2df8;border:1px solid #54cbe5;border-radius:10px;color:#ecfbff;display:grid;gap:12px}
 .gg40-pause-settings[hidden]{display:none}
 .gg40-pause-settings label{display:flex;align-items:center;justify-content:space-between;gap:9px}
@@ -1448,10 +1458,9 @@ function announce(t,dur=2){$('announce').textContent=t;$('announce').style.opaci
 function gg40Resume(){if(!run||run.done)return;paused=false;closeModal();document.getElementById('gg40PauseSettings')?.remove();last=performance.now();}
 function gg40Leave(){if(!run)return;save.lastPlayed=run.level;persist();closeModal();playing=false;paused=false;run=null;UI.screen('levels');}
 function gg40PauseOptions(){let view=document.getElementById('gg40PauseSettings');if(!view){view=document.createElement('div');view.id='gg40PauseSettings';view.className='gg40-pause-settings';document.querySelector('#pauseModal>.panel').append(view);}document.getElementById('pauseModal').classList.add('gg-pause-settings-open');view.hidden=false;
- const conf=window.GG_QUALITY_TEST?.getSettings?.()||{};view.innerHTML='<div class="gg40-pause-subhead">AJUSTES DE PARTIDA</div><label>Volumen de música <input id="gg40PauseMusic" type="range" min="0" max="100" value="'+(conf.music??75)+'"></label><label>Volumen de efectos <input id="gg40PauseSfx" type="range" min="0" max="100" value="'+(conf.sfx??75)+'"></label><button class="btn" id="gg40PauseBack">← VOLVER A LA PAUSA</button>';
- view.querySelector('#gg40PauseMusic').oninput=e=>document.querySelector('#ggqMusicVol')?.setAttribute('value',e.target.value);
- view.querySelector('#gg40PauseMusic').onchange=e=>{const source=document.getElementById('ggqMusicVol');if(source){source.value=e.target.value;source.dispatchEvent(new Event('input',{bubbles:true}))}};
- view.querySelector('#gg40PauseSfx').onchange=e=>{const source=document.getElementById('ggqSfxVol');if(source){source.value=e.target.value;source.dispatchEvent(new Event('input',{bubbles:true}))}};
+ const conf=window.GG_QUALITY_TEST?.getSettings?.()||{};view.innerHTML='<div class="gg40-pause-subhead">AJUSTES DE PARTIDA</div><label aria-label="Volumen de música">Volumen de música <input id="gg40PauseMusic" type="range" min="0" max="100" step="1" value="'+(conf.music??75)+'" aria-label="Volumen de música"></label><label aria-label="Volumen de efectos">Volumen de efectos <input id="gg40PauseSfx" type="range" min="0" max="100" step="1" value="'+(conf.sfx??75)+'" aria-label="Volumen de efectos"></label><button class="btn" id="gg40PauseBack" type="button" aria-label="Volver a la pausa">← VOLVER A LA PAUSA</button>';
+ const bindVolume=(id,target)=>{const input=view.querySelector('#'+id);const sync=()=>{const source=document.getElementById(target);if(source){source.value=input.value;source.dispatchEvent(new Event('input',{bubbles:true}));}};input.addEventListener('input',()=>{input.style.setProperty('--gg-volume',input.value+'%');sync();});input.style.setProperty('--gg-volume',input.value+'%');};
+ bindVolume('gg40PauseMusic','ggqMusicVol');bindVolume('gg40PauseSfx','ggqSfxVol');
  view.querySelector('#gg40PauseBack').onclick=()=>{view.hidden=true;document.getElementById('pauseModal').classList.remove('gg-pause-settings-open');};}
 function pause(){if(!playing||paused||!run||run.done)return;leftHeld=false;rightHeld=false;paused=true;showModal('PAUSA','Tu nave y la misión quedan detenidas.',[{label:'CONTINUAR PARTIDA',primary:true,onClick:gg40Resume},{label:'REINICIAR NIVEL',onClick:()=>{const level=run.level;closeModal();document.getElementById('gg40PauseSettings')?.remove();start(level);}},{label:'OPCIONES',onClick:gg40PauseOptions},{label:'MAPA DE NIVELES',onClick:()=>{document.getElementById('gg40PauseSettings')?.remove();gg40Leave();}}],'GUARDIÁN GALÁCTICO');$('pauseModal').classList.add('gg-pause-art')}
 
