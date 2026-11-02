@@ -11,9 +11,9 @@ root.setAttribute('aria-label','Menú principal de Guardián Galáctico');
 root.innerHTML='<div class="gg-photo-ambient"></div><div class="gg-photo-stage" role="region" aria-label="Inicio del juego"></div>';
 document.body.append(root);
 const stage=root.querySelector('.gg-photo-stage'),ambient=root.querySelector('.gg-photo-ambient');
-const profilePanel=document.createElement('section');profilePanel.className='gg-home-profile';profilePanel.setAttribute('aria-label','Perfil de piloto y progreso');profilePanel.innerHTML='<div class="gg-home-profile-title">PERFIL DE PILOTO</div><div class="gg-home-profile-grid"><div><small>PILOTO</small><strong data-profile="name">PILOTO</strong></div><div><small>PIEZAS</small><strong data-profile="pieces">◈ 0</strong></div><div><small>MISIONES</small><strong data-profile="missions">0 / 200</strong></div><div><small>NAVES</small><strong data-profile="ships">5 / 60</strong></div></div><div class="gg-home-side-actions"><button type="button" class="gg-home-action" data-act="missions" aria-label="Abrir misiones"><span aria-hidden="true">✦</span>MISIONES</button><button type="button" class="gg-home-action" data-act="ranking" aria-label="Abrir ranking"><span aria-hidden="true">🏆</span>RANKING</button></div>';root.append(profilePanel);
-const homeArt='assets/ui/refs/principal.optim.webp';
-const menuRects=[[43,220,333,132],[45,365,332,117],[45,492,332,117],[44,618,335,116],[45,743,332,118]];
+const profilePanel=document.createElement('section');profilePanel.className='gg-home-profile';profilePanel.setAttribute('aria-label','Perfil de piloto y progreso');profilePanel.innerHTML='<div class="gg-home-profile-grid"><div><small>PILOTO</small><strong data-profile="name">PILOTO</strong></div><div><small>PIEZAS</small><strong data-profile="pieces">◈ 0</strong></div><div><small>NAVES</small><strong data-profile="ships">5 / 60</strong></div></div><div class="gg-home-side-actions"><button type="button" class="gg-home-action" data-act="missions" aria-label="Abrir misiones"><strong>MISIONES</strong><small data-profile="missions">NIVELES 0 / 200</small></button><button type="button" class="gg-home-action" data-act="ranking" aria-label="Abrir ranking"><strong>RANKING</strong><small>MEJORES PARTIDAS</small></button></div>';root.append(profilePanel);
+const homeArt='assets/ui/refs/principal.right-menu.jpg';
+const menuRects=[[43,265,390,114],[43,391,390,108],[43,507,390,108],[43,621,390,109],[43,734,390,111]];
 const worldNames=['AURIX','VOLTAR','ZENTHAR','CRYON','DRAKON','NEBULIS','ORION','KAELIX','VORTEX','ELYSIUM'];
 let active=false;
 function resize(){if(active)stage.style.transform=`translate(-50%,-50%) scale(${innerWidth/1672},${innerHeight/941})`}
@@ -26,20 +26,21 @@ function show(id){
   const profile=bridge.profile?.()||{};
   profilePanel.querySelector('[data-profile="name"]').textContent=profile.name||'PILOTO';
   profilePanel.querySelector('[data-profile="pieces"]').textContent='◈ '+Number(profile.pieces||0).toLocaleString('es-ES');
-  profilePanel.querySelector('[data-profile="missions"]').textContent=Number(profile.missions||0)+' / 200';
+  profilePanel.querySelectorAll('[data-profile="missions"]').forEach(el=>el.textContent=Number(profile.missions||0)+' / 200');
   profilePanel.querySelector('[data-profile="ships"]').textContent=Number(profile.ships||0)+' / 60';
   const level=Math.max(1,Math.min(200,Number(bridge.currentMission())||1));
   stage.innerHTML='';stage.style.width='1672px';stage.style.height='941px';
   stage.style.backgroundImage=`url("${homeArt}")`;
   ambient.style.backgroundImage=`url("${homeArt}")`;
-  const labels=['Jugar','Mapa galáctico','Hangar','Opciones','Salir'];
+  const labels=[['JUGAR','▶'],['MAPA GALÁCTICO','◎'],['HANGAR','♢'],['OPCIONES','⚙'],['SALIR','⇥']];
   menuRects.forEach(([x,y,w,h],i)=>{
     const b=document.createElement('button');b.type='button';b.className='gg-hit';b.dataset.act='nav:'+i;
-    b.setAttribute('aria-label',labels[i]);Object.assign(b.style,{left:x+'px',top:y+'px',width:w+'px',height:h+'px'});stage.append(b);
+    b.className='gg-hit gg-main-menu-action';b.setAttribute('aria-label',labels[i][0]);b.innerHTML='<span aria-hidden="true">'+labels[i][1]+'</span><strong>'+labels[i][0]+'</strong>';Object.assign(b.style,{left:x+'px',top:y+'px',width:w+'px',height:h+'px'});stage.append(b);
   });
   const b=document.createElement('button');b.type='button';b.className='gg-continue-main';
   b.dataset.act='continue';b.setAttribute('aria-label','Continuar misión '+level);
   b.innerHTML=`<span class="gg-continue-icon">↪</span><span>CONTINUAR<small>NIVEL ${level} DE 200 · ${worldNames[Math.floor((level-1)/20)]}</small></span>`;
+  Object.assign(b.style,{left:'57px',top:'140px',width:'370px',height:'105px'});
   stage.append(b);
   root.classList.add('active');resize();
 }
