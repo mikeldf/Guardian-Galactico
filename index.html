@@ -312,7 +312,7 @@ body,#app{font-family:Bahnschrift,'Arial Narrow','Trebuchet MS',system-ui,sans-s
 #cockpitPanel #cockpitSecondaryIcon{width:58px!important;height:58px!important}
 @media(max-width:940px){#playLayer{--gg-sidebar:250px}#cockpitPanel .ck-foot{display:none!important}#playLayer #cockpitPanel{padding:12px!important}#gameHud .hudBar{padding:9px 12px!important}}
 @media(max-width:600px){#playLayer{--gg-sidebar:0px!important}#playLayer #cockpitPanel{display:none!important}#playLayer #pickupHud{display:flex!important}#gameHud .hudBar{padding:6px 8px!important}}
-</style><link rel="stylesheet" href="assets/ui/gg_exact_ui.css?v=20261102-interface3"><style id="gg-phase26-warp-css">
+</style><link rel="stylesheet" href="assets/ui/gg_exact_ui.css?v=20261102-interface4"><style id="gg-phase26-warp-css">
 #planetZoom{position:fixed!important;inset:0!important;z-index:1300!important}
 #planetZoom #zoomOrb{width:clamp(180px,27vw,420px)!important;height:clamp(180px,27vw,420px)!important;background-size:contain!important;background-repeat:no-repeat!important;box-shadow:none!important;filter:drop-shadow(0 0 48px var(--pc))}
 #planetZoom.active{animation:ggP26Fade 2.2s both!important}
@@ -2843,7 +2843,7 @@ window.GG_SPRITE_DIAGNOSTICS={
 };
 </script>
 <script src="assets/audio/gg_audio_v2.js"></script>
-<script src="assets/ui/gg_exact_ui.js?v=20261102-interface3"></script><script src="assets/ui/classic_restored/gg50_original_visual.js"></script><script src="assets/audio/gg39_music.js?v=20261102-musicauto6"></script><script>(function(){
+<script src="assets/ui/gg_exact_ui.js?v=20261102-interface4"></script><script src="assets/ui/classic_restored/gg50_original_visual.js"></script><script src="assets/audio/gg39_music.js?v=20261102-musicauto6"></script><script>(function(){
 const overlay=document.getElementById('gg40Boot'),bar=document.getElementById('gg40LoadFill'),pct=document.getElementById('gg40LoadPct'),text=document.getElementById('gg40LoadText');
 if(!overlay)return;
 const files=['assets/ui/gg40_loading_bg.webp','assets/planetas/mundo_01_azul.webp','assets/embedded/36019be08849ec.webp','assets/ui/combate_mundo_01.webp'];
@@ -2851,9 +2851,10 @@ let count=0;const started=performance.now();
 const progress=()=>{const n=Math.min(100,Math.round(count/files.length*100));bar.style.width=n+'%';pct.textContent=n+'%';text.textContent=n<40?'Preparando hangares…':n<70?'Cargando mundos y naves…':n<100?'Sincronizando sistemas…':'Sistemas listos · entrando al menú…';};
 Promise.all(files.map(src=>new Promise(res=>{const i=new Image();i.onload=i.onerror=()=>{count++;progress();res()};i.src=src;if(i.complete&&i.naturalWidth){count++;progress();res()}}))).then(()=>{const show=()=>{overlay.dataset.state='ready';overlay.classList.add('done');setTimeout(()=>overlay.remove(),850)};const elapsed=performance.now()-started;if(elapsed>=950)show();else setTimeout(show,950-elapsed)});
 setTimeout(()=>{if(!overlay.classList.contains('done')){count=files.length;progress();overlay.dataset.state='fallback';overlay.classList.add('done');setTimeout(()=>overlay.remove(),850)}},8500);
-})();</script><script src="assets/ui/gg49_diagnostico.js"></script><link rel="stylesheet" href="assets/ui/gg_display_settings.css?v=20261102-interface3">
-<script src="assets/ui/gg_display_settings.js?v=20261102-interface3"></script>
+})();</script><script src="assets/ui/gg49_diagnostico.js"></script><link rel="stylesheet" href="assets/ui/gg_display_settings.css?v=20261102-interface4">
+<script src="assets/ui/gg_display_settings.js?v=20261102-interface4"></script>
 </body></html>
+
 
 
 
