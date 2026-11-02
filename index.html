@@ -394,6 +394,25 @@ body,#app{font-family:Bahnschrift,'Arial Narrow','Trebuchet MS',system-ui,sans-s
 #pauseModal #modalButtons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;margin-top:25px}
 #pauseModal #modalButtons>.btn{min-height:48px;padding:11px 9px;font-weight:800;white-space:normal}
 #pauseModal #modalButtons>.btn:last-child{border-color:#be877a;color:#ffe9df}
+#pauseModal.gg-pause-art{padding:0!important;overflow:auto;background:#010713a8!important;backdrop-filter:blur(2px)!important}
+#pauseModal.gg-pause-art>.panel{position:relative;flex:none;width:min(92vw,83dvh,600px)!important;max-width:none!important;aspect-ratio:1152/1304;padding:0!important;overflow:hidden;background:transparent url('assets/ui/refs/pausa-guardian.png') center/100% 100% no-repeat!important;border:0!important;border-radius:0!important;box-shadow:none!important}
+#pauseModal.gg-pause-art #modalEyebrow,#pauseModal.gg-pause-art #modalTitle,#pauseModal.gg-pause-art #modalBody{display:none!important}
+#pauseModal.gg-pause-art #modalButtons{position:absolute;inset:0;display:block;margin:0!important}
+#pauseModal.gg-pause-art #modalButtons>.btn{position:absolute;left:15%;width:70%;height:12.5%;min-height:0;padding:0 5% 0 24%!important;display:flex;align-items:center;justify-content:flex-start;border:0!important;border-radius:15px;background:transparent!important;box-shadow:none!important;color:#f4fdff!important;text-align:left;font-size:clamp(15px,2.6vw,25px);font-weight:900;letter-spacing:.035em;text-shadow:0 2px 5px #001329,0 0 9px #58cfff;white-space:normal}
+#pauseModal.gg-pause-art #modalButtons>.btn:hover{background:#58dfff16!important;filter:brightness(1.14)}
+#pauseModal.gg-pause-art #modalButtons>.btn:focus-visible{outline:2px solid #bdffff!important;outline-offset:-8px}
+#pauseModal.gg-pause-art #modalButtons>.btn:nth-child(1){top:30.5%}
+#pauseModal.gg-pause-art #modalButtons>.btn:nth-child(2){top:45.2%}
+#pauseModal.gg-pause-art #modalButtons>.btn:nth-child(3){top:58%}
+#pauseModal.gg-pause-art #modalButtons>.btn:nth-child(4){top:69.3%}
+#pauseModal.gg-pause-art.gg-pause-settings-open{background:#010713c9!important}
+#pauseModal.gg-pause-art.gg-pause-settings-open>.panel{width:min(92vw,430px)!important;aspect-ratio:auto;min-height:330px;padding:26px!important;background:linear-gradient(145deg,#081e37f7,#041220fa)!important;border:1px solid #55d6ecb2!important;border-radius:16px!important;box-shadow:0 0 45px #1f9eea45!important}
+#pauseModal.gg-pause-art.gg-pause-settings-open #modalTitle{display:block!important;margin:0 0 16px;font-size:22px}
+#pauseModal.gg-pause-art.gg-pause-settings-open #modalButtons{display:none}
+#pauseModal.gg-pause-art.gg-pause-settings-open .gg40-pause-settings{width:100%;margin:0;padding:19px;background:#061b2df8;border:1px solid #54cbe5;border-radius:10px;color:#ecfbff;display:grid;gap:12px}
+#pauseModal.gg-pause-art.gg-pause-settings-open .gg40-pause-settings[hidden]{display:none}
+#pauseModal.gg-pause-art.gg-pause-settings-open #modalEyebrow,#pauseModal.gg-pause-art.gg-pause-settings-open #modalBody{display:block!important}
+#pauseModal.gg-pause-art.gg-pause-settings-open #modalBody:empty{display:none!important}
 .gg40-pause-settings{position:relative;z-index:20;width:min(90vw,480px);padding:19px;margin:16px auto 0;background:#061b2df8;border:1px solid #54cbe5;border-radius:10px;color:#ecfbff;display:grid;gap:12px}
 .gg40-pause-settings[hidden]{display:none}
 .gg40-pause-settings label{display:flex;align-items:center;justify-content:space-between;gap:9px}
@@ -512,7 +531,7 @@ body,#app{font-family:Bahnschrift,'Arial Narrow','Trebuchet MS',system-ui,sans-s
 #hangar:not(.hidden){display:flex!important;visibility:visible!important;pointer-events:auto!important}
 </style>
 <link rel="stylesheet" href="assets/ui/gg49_restauracion.css">
-<link rel="stylesheet" href="assets/ui/classic_restored/gg50_original_visual.css"><link rel="stylesheet" href="assets/ui/classic_restored/gg51_futurista_limpio.css?v=20261102-selector27"><link rel="stylesheet" href="assets/ui/gg54_final.css?v=20261102-selector2"><link rel="stylesheet" href="assets/ui/gg58_hangar_map.css?v=20261102-neon6"><style id="gg57-threat-display">
+<link rel="stylesheet" href="assets/ui/classic_restored/gg50_original_visual.css"><link rel="stylesheet" href="assets/ui/classic_restored/gg51_futurista_limpio.css?v=20261102-selector27"><link rel="stylesheet" href="assets/ui/gg54_final.css?v=20261102-selector2"><link rel="stylesheet" href="assets/ui/gg58_hangar_map.css?v=20261102-neon6"><link rel="stylesheet" href="assets/ui/gg_missions_ui.css?v=20261102-missions3"><style id="gg57-threat-display">
 .gg57-tier-legend{display:flex;gap:8px;align-items:center;justify-content:center;flex-wrap:wrap;padding:8px 5px;margin:8px 0 4px;border-top:1px solid #59bfff42;font-size:10px;letter-spacing:.03em;font-weight:850;text-shadow:0 2px 4px #010913}
 .gg57-fight-legend{position:absolute;top:144px;left:50%;transform:translateX(-50%);background:#051729bc;border:1px solid #4481a77a;border-radius:6px;padding:5px 11px;white-space:nowrap;pointer-events:none;z-index:5;max-width:calc(100vw - 8px)}
 @media(max-width:600px){.gg57-fight-legend{top:126px;gap:4px;font-size:8px;padding:4px}.gg57-tier-legend{font-size:9px}}
@@ -1417,7 +1436,7 @@ $('audioBtn').onclick=()=>{sound=!sound;UI.settings();if(sound)tone(650)};$('ful
 document.querySelectorAll('[data-difficulty]').forEach(b=>b.addEventListener('click',()=>{save.difficulty=b.dataset.difficulty;persist();UI.settings();}));
 function tone(freq=500,dur=.055){if(!sound)return;try{audio ||= new (window.AudioContext||window.webkitAudioContext)();if(audio.state==='suspended')audio.resume();let o=audio.createOscillator(),g=audio.createGain();o.type='triangle';o.frequency.value=freq;g.gain.value=.016;g.gain.exponentialRampToValueAtTime(.001,audio.currentTime+dur);o.connect(g);g.connect(audio.destination);o.start();o.stop(audio.currentTime+dur+.01)}catch(e){}}
 function showModal(title,body,buttons,eyebrow='MISIÓN'){$('modalEyebrow').textContent=eyebrow;$('modalTitle').textContent=title;$('modalBody').textContent=body;$('modalButtons').innerHTML='';for(let def of buttons){let b=document.createElement('button');b.className='btn '+(def.primary?'primary':'');b.textContent=def.label;b.onclick=def.onClick;$('modalButtons').appendChild(b)}$('pauseModal').classList.remove('hidden')}
-function closeModal(){$('pauseModal').classList.add('hidden');$('pauseModal').classList.remove('gg-pilot-dialog','gg-home-rank-dialog')}
+function closeModal(){$('pauseModal').classList.add('hidden');$('pauseModal').classList.remove('gg-pilot-dialog','gg-home-rank-dialog','gg-pause-art','gg-pause-settings-open')}
 const GG_CINEMATIC_BACKGROUNDS=Array.from({length:10},(_,i)=>{const img=new Image();img.src='assets/ui/combate_mundo_'+String(i+1).padStart(2,'0')+'.webp';return img});
 const canvas=$('game'),ctx=canvas.getContext('2d');IMG.customBosses=BOSS_CUSTOM_SPRITES.map(src=>load(src));let W=1040,H=770;
 function resize(){let r=canvas.getBoundingClientRect(),dpr=Math.min(devicePixelRatio||1,2);canvas.width=Math.max(1,Math.round(r.width*dpr));canvas.height=Math.max(1,Math.round(r.height*dpr));H=clamp(W*r.height/Math.max(1,r.width),620,1150);ctx.setTransform(canvas.width/W,0,0,canvas.height/H,0,0);stars=Array.from({length:130},(_,i)=>({x:Math.random()*W,y:Math.random()*H,r:rand(.4,1.6),s:rand(25,120)}));if(run)run.py=H-112}
@@ -1427,13 +1446,13 @@ function start(lvl){save.lastPlayed=Math.max(1,Math.min(200,lvl));persist();wind
 function announce(t,dur=2){$('announce').textContent=t;$('announce').style.opacity='1';announcementUntil=time+dur}
 function gg40Resume(){if(!run||run.done)return;paused=false;closeModal();document.getElementById('gg40PauseSettings')?.remove();last=performance.now();}
 function gg40Leave(){if(!run)return;save.lastPlayed=run.level;persist();closeModal();playing=false;paused=false;run=null;UI.screen('levels');}
-function gg40PauseOptions(){let view=document.getElementById('gg40PauseSettings');if(!view){view=document.createElement('div');view.id='gg40PauseSettings';view.className='gg40-pause-settings';document.querySelector('#pauseModal>.panel').append(view);}view.hidden=false;
+function gg40PauseOptions(){let view=document.getElementById('gg40PauseSettings');if(!view){view=document.createElement('div');view.id='gg40PauseSettings';view.className='gg40-pause-settings';document.querySelector('#pauseModal>.panel').append(view);}document.getElementById('pauseModal').classList.add('gg-pause-settings-open');view.hidden=false;
  const conf=window.GG_QUALITY_TEST?.getSettings?.()||{};view.innerHTML='<div class="gg40-pause-subhead">AJUSTES DE PARTIDA</div><label>Volumen de música <input id="gg40PauseMusic" type="range" min="0" max="100" value="'+(conf.music??75)+'"></label><label>Volumen de efectos <input id="gg40PauseSfx" type="range" min="0" max="100" value="'+(conf.sfx??75)+'"></label><button class="btn" id="gg40PauseBack">← VOLVER A LA PAUSA</button>';
  view.querySelector('#gg40PauseMusic').oninput=e=>document.querySelector('#ggqMusicVol')?.setAttribute('value',e.target.value);
  view.querySelector('#gg40PauseMusic').onchange=e=>{const source=document.getElementById('ggqMusicVol');if(source){source.value=e.target.value;source.dispatchEvent(new Event('input',{bubbles:true}))}};
  view.querySelector('#gg40PauseSfx').onchange=e=>{const source=document.getElementById('ggqSfxVol');if(source){source.value=e.target.value;source.dispatchEvent(new Event('input',{bubbles:true}))}};
- view.querySelector('#gg40PauseBack').onclick=()=>{view.hidden=true;};}
-function pause(){if(!playing||paused||!run||run.done)return;leftHeld=false;rightHeld=false;paused=true;showModal('MISIÓN EN PAUSA','Tu nave y la misión quedan detenidas. Selecciona una acción para continuar.',[{label:'▶ CONTINUAR PARTIDA',primary:true,onClick:gg40Resume},{label:'↻ REINICIAR NIVEL',onClick:()=>{const level=run.level;closeModal();document.getElementById('gg40PauseSettings')?.remove();start(level);}},{label:'⚙ OPCIONES',onClick:gg40PauseOptions},{label:'⏏ SALIR DE LA PARTIDA',onClick:()=>{document.getElementById('gg40PauseSettings')?.remove();gg40Leave();}}],'GUARDIÁN GALÁCTICO · PAUSA')}
+ view.querySelector('#gg40PauseBack').onclick=()=>{view.hidden=true;document.getElementById('pauseModal').classList.remove('gg-pause-settings-open');};}
+function pause(){if(!playing||paused||!run||run.done)return;leftHeld=false;rightHeld=false;paused=true;showModal('PAUSA','Tu nave y la misión quedan detenidas.',[{label:'CONTINUAR PARTIDA',primary:true,onClick:gg40Resume},{label:'REINICIAR NIVEL',onClick:()=>{const level=run.level;closeModal();document.getElementById('gg40PauseSettings')?.remove();start(level);}},{label:'OPCIONES',onClick:gg40PauseOptions},{label:'MAPA DE NIVELES',onClick:()=>{document.getElementById('gg40PauseSettings')?.remove();gg40Leave();}}],'GUARDIÁN GALÁCTICO');$('pauseModal').classList.add('gg-pause-art')}
 
 $('pauseButton').onclick=pause;$('specialButton').onclick=useSpecial;
 window.addEventListener('keydown',e=>{if(e.code==='F8'){window.GG_SHOW_HITBOXES=!window.GG_SHOW_HITBOXES;e.preventDefault();return;}if(e.code==='F9'){window.GG_SHOW_COMBAT_METRICS=!window.GG_SHOW_COMBAT_METRICS;e.preventDefault();return;}if(['ArrowLeft','ArrowRight','Space','ArrowUp','ArrowDown'].includes(e.code))e.preventDefault();keys[e.code]=true;if(playing&&!paused&&e.code.startsWith('Digit')&&Number(e.code.slice(5))>=1&&Number(e.code.slice(5))<=6)setSecondary(Number(e.code.slice(5))-1);if((e.code==='Space'||e.code===window.GG_P3_KEYS?.special)&&playing&&!paused)useSpecial();if((['KeyX','ShiftLeft','ShiftRight'].includes(e.code)||e.code===window.GG_P3_KEYS?.secondary)&&playing&&!paused)fireSecondary();if(['Escape','KeyP'].includes(e.code)&&playing){if(paused){gg40Resume()}else pause()} });window.addEventListener('keyup',e=>keys[e.code]=false);document.addEventListener('visibilitychange',()=>{if(document.hidden&&playing&&!paused)pause()});
@@ -2568,6 +2587,9 @@ window.GG_DEBUG_ASSETS=()=>({enemies:IMG.enemigos.filter(x=>x.complete&&x.natura
  profile:()=>({name:ggPilotProfile.name,pieces:save.coins,missions:Math.min(200,Math.max(1,save.lastUnlocked)),ships:save.ships.length,bestScore:save.highestScore||0,wins:save.wins||0,bossWins:save.bossWins||0,perfect:save.perfect||0}),
  openRanking:()=>ggShowMissionsRanking(),
  openStats:()=>ggShowPilotStatistics(),
+ campaignMission:n=>{const m=MISSION_SCRIPTS[Math.max(0,Math.min(199,Number(n)-1))];return m?{nivel:m.nivel,mundo:m.mundo,nombre:m.nombre,oleadas:m.oleadas.length,enemigos:m.oleadas.reduce((a,w)=>a+(w.cantidad||0),0),recompensa:m.recompensa_monedas,objetivo:m.objetivo_exacto||m.objetivo}:null},
+ pilotRuns:()=>ggPilotProfile.runs.map(r=>({...r})),
+ selectCampaignMission:n=>{n=Math.floor(Number(n));if(!Number.isFinite(n)||n<1||n>save.lastUnlocked)return false;currentWorld=Math.floor((n-1)/20);UI.screen("levels");selectMission(n);return n},
  planet:i=>selectPlanet(i),
  enter:()=>enterSelectedPlanet(),
  mission:i=>selectMission(i),
@@ -2843,7 +2865,7 @@ window.GG_SPRITE_DIAGNOSTICS={
 };
 </script>
 <script src="assets/audio/gg_audio_v2.js"></script>
-<script src="assets/ui/gg_exact_ui.js?v=20261102-interface6"></script><script src="assets/ui/classic_restored/gg50_original_visual.js?v=20261102-selector17"></script><script src="assets/audio/gg39_music.js?v=20261102-musicauto6"></script><script>(function(){
+<script src="assets/ui/gg_exact_ui.js?v=20261102-interface6"></script><script src="assets/ui/classic_restored/gg50_original_visual.js?v=20261102-responsive1"></script><script src="assets/ui/gg_missions_ui.js?v=20261102-missions4"></script><script src="assets/audio/gg39_music.js?v=20261102-musicauto6"></script><script>(function(){
 const overlay=document.getElementById('gg40Boot'),bar=document.getElementById('gg40LoadFill'),pct=document.getElementById('gg40LoadPct'),text=document.getElementById('gg40LoadText');
 if(!overlay)return;
 const files=['assets/ui/gg40_loading_bg.webp','assets/planetas/mundo_01_azul.webp','assets/embedded/36019be08849ec.webp','assets/ui/combate_mundo_01.webp'];

@@ -1,0 +1,37 @@
+#ggMissions{position:fixed;inset:0;z-index:1300;display:none;overflow:hidden;color:#eff9ff;font-family:var(--gg-font-ui,'Exo 2','Segoe UI',sans-serif)}
+#ggMissions.active{display:block}
+#ggMissions .ggm-stage{position:absolute;left:50%;top:50%;width:1672px;height:941px;transform-origin:center center;background:url('refs/misiones-galacticas.png?v=20261102-missions3') center/100% 100% no-repeat;overflow:hidden}
+#ggMissions button{font:inherit;color:inherit}
+#ggMissions .ggm-coins{position:absolute;left:1334px;top:174px;width:205px;text-align:center;font:800 24px/1 'Exo 2',sans-serif;text-shadow:0 0 8px #3fbaff}
+#ggMissions .ggm-tabs{position:absolute;left:52px;top:306px;width:302px;display:grid;gap:16px}
+#ggMissions .ggm-tab{height:87px;border:2px solid transparent;background:transparent;cursor:pointer;text-align:left;padding:0 0 0 122px;font:800 21px/1 'Rajdhani',sans-serif;letter-spacing:.035em;text-shadow:0 1px 4px #001;transition:filter .15s,background .15s}
+#ggMissions .ggm-tab[aria-selected=true]{color:#eaffd9;text-shadow:0 0 10px #78ff28,0 1px 4px #001}
+#ggMissions .ggm-tab:hover,#ggMissions .ggm-tab:focus-visible{outline:none;filter:brightness(1.2);background:#25aaff12}
+#ggMissions .ggm-list{position:absolute;left:397px;top:300px;width:880px;height:513px;overflow:auto;scrollbar-width:thin;scrollbar-color:#16cfff #03132755;padding:0 7px 0 0;box-sizing:border-box}
+#ggMissions .ggm-row{position:relative;box-sizing:border-box;width:100%;height:116px;margin:0 0 14px;border:2px solid transparent;border-radius:17px;background:transparent;display:grid;grid-template-columns:1fr auto;grid-template-rows:1fr auto;align-content:center;align-items:center;padding:16px 24px 12px 25px;text-align:left;cursor:pointer;text-shadow:0 1px 4px #001}
+#ggMissions .ggm-row:hover,#ggMissions .ggm-row:focus-visible{outline:none;border-color:#4acfff8a;background:#159bff0a}
+#ggMissions .ggm-row.selected{border-color:#66dfff9c;background:#0e70bd12}
+#ggMissions .ggm-row:disabled{cursor:not-allowed;opacity:.83}
+#ggMissions .ggm-row strong{font:800 22px/1.05 'Rajdhani',sans-serif;letter-spacing:.025em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#ggMissions .ggm-row small{font:600 13px/1.2 'Exo 2',sans-serif;color:#b5e5ff;grid-column:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#ggMissions .ggm-row .ggm-state{grid-column:2;grid-row:1/3;justify-self:end;color:#9feaff;font:800 13px/1 'Exo 2',sans-serif;letter-spacing:.03em}
+#ggMissions .ggm-row .ggm-state.cleared{color:#a5ff65}.ggm-row .ggm-state.locked{color:#ffd36a}
+#ggMissions .ggm-details{position:absolute;left:1328px;top:289px;width:286px;height:500px;box-sizing:border-box;padding:23px 20px;display:flex;flex-direction:column;gap:12px;text-shadow:0 1px 4px #001}
+#ggMissions .ggm-details h2{font:900 21px/1.1 'Rajdhani',sans-serif;margin:0;color:#fff;text-align:center}
+#ggMissions .ggm-details .ggm-sub{font:700 13px/1.25 'Exo 2',sans-serif;color:#9cdfff;text-align:center;margin:0}
+#ggMissions .ggm-details .ggm-desc{font:600 14px/1.35 'Exo 2',sans-serif;margin:3px 0;color:#e1f4ff}
+#ggMissions .ggm-details dl{display:grid;grid-template-columns:1fr auto;gap:8px 6px;margin:0;font:600 13px/1.2 'Exo 2',sans-serif}
+#ggMissions .ggm-details dt{color:#9bdfff}.ggm-details dd{margin:0;text-align:right;font-weight:800}
+#ggMissions .ggm-play{margin-top:auto;min-height:58px;border:0;border-radius:12px;background:linear-gradient(#15a927e8,#00751c);box-shadow:0 0 13px #39ff5650,inset 0 0 0 2px #c9ff90aa;cursor:pointer;font:900 19px/1 'Rajdhani',sans-serif;letter-spacing:.045em}
+#ggMissions .ggm-play:hover:not(:disabled),#ggMissions .ggm-play:focus-visible{filter:brightness(1.15);outline:2px solid #d7ffbb;outline-offset:2px}
+#ggMissions .ggm-play:disabled{opacity:.5;cursor:not-allowed;filter:grayscale(.7)}
+#ggMissions .ggm-return{position:absolute;left:27px;top:842px;width:235px;height:72px;border:2px solid transparent;border-radius:16px;background:transparent;cursor:pointer;font:900 21px/1 'Rajdhani',sans-serif;letter-spacing:.04em;text-shadow:0 1px 4px #001}
+#ggMissions .ggm-return:hover,#ggMissions .ggm-return:focus-visible{outline:none;background:#19a9ff16;border-color:#5bdcff85}
+#ggMissions .ggm-empty{padding:45px 22px;text-align:center;color:#c9eaff;font:700 18px/1.4 'Exo 2',sans-serif}
+#ggMissions .ggm-summary{position:absolute;left:397px;top:300px;width:880px;height:513px;overflow:auto;display:flex;flex-direction:column;align-content:start;gap:7px;padding:0;box-sizing:border-box}
+#ggMissions .ggm-summary-row{flex:none;height:116px;box-sizing:border-box;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:13px 34px;gap:24px}
+#ggMissions .ggm-summary-row.single{grid-template-columns:1fr}
+#ggMissions .ggm-summary-row .ggm-stat{min-height:0;border:0;border-radius:0;background:transparent;padding:0;display:flex;flex-direction:column;justify-content:center;gap:5px;box-shadow:none}
+#ggMissions .ggm-stat{min-height:90px;border:1px solid #31bfff88;border-radius:12px;background:#031a34a8;padding:14px 18px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;gap:6px}
+#ggMissions .ggm-stat small{font:700 12px/1.1 'Exo 2',sans-serif;color:#92dfff;letter-spacing:.06em}.ggm-stat strong{font:900 24px/1 'Rajdhani',sans-serif}
+@media(max-width:800px){

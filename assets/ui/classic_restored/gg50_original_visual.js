@@ -16,7 +16,7 @@
  const add=(cls,x,y,w,h)=>{const e=document.createElement('div');e.className=cls;Object.assign(e.style,{left:x+'px',top:y+'px',width:w+'px',height:h+'px'});stage.append(e);return e;};
  const button=(cls,label,x,y,w,h,cb)=>{const b=document.createElement('button');b.className=cls;b.type='button';b.setAttribute('aria-label',label);Object.assign(b.style,{left:x+'px',top:y+'px',width:w+'px',height:h+'px'});b.addEventListener('click',cb);stage.append(b);return b;};
  const snap=()=>bridge.snapshot();
- function fit(){if(!active)return;const w=active==='levels'?1672:1680,h=active==='levels'?941:944;stage.style.width=w+'px';stage.style.height=h+'px';const sx=window.innerWidth/w,sy=window.innerHeight/h;stage.style.transform=`translate(-50%,-50%) scale(${sx},${sy})`;}
+ function fit(){if(!active)return;const w=active==='levels'?1672:1680,h=active==='levels'?941:944;stage.style.width=w+'px';stage.style.height=h+'px';const scale=Math.min(window.innerWidth/w,window.innerHeight/h);stage.style.transform=`translate(-50%,-50%) scale(${scale})`;}
  window.addEventListener('resize',fit);
  function hide(){active=null;root.classList.remove('active');}
  function drawMap(){

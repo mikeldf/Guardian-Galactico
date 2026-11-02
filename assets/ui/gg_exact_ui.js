@@ -11,7 +11,7 @@ root.setAttribute('aria-label','Menú principal de Guardián Galáctico');
 root.innerHTML='<div class="gg-photo-ambient"></div><div class="gg-photo-stage" role="region" aria-label="Inicio del juego"></div>';
 document.body.append(root);
 const stage=root.querySelector('.gg-photo-stage'),ambient=root.querySelector('.gg-photo-ambient');
-const profilePanel=document.createElement('section');profilePanel.className='gg-home-profile';profilePanel.setAttribute('aria-label','Monedas y navegación');profilePanel.innerHTML='<div class="gg-home-profile-grid"><div><strong data-profile="pieces">250</strong></div></div><div class="gg-home-side-actions"><button type="button" class="gg-home-action" data-act="ranking" aria-label="Abrir ranking"><span class="gg-action-copy"><strong>RANKING</strong></span></button><button type="button" class="gg-home-action" data-act="stats" aria-label="Abrir estadísticas"><span class="gg-action-copy"><strong>ESTADÍSTICAS</strong></span></button></div>';root.append(profilePanel);
+const profilePanel=document.createElement('section');profilePanel.className='gg-home-profile';profilePanel.setAttribute('aria-label','Monedas y navegación');profilePanel.innerHTML='<div class="gg-home-profile-grid"><div><strong data-profile="pieces">250</strong></div></div><div class="gg-home-side-actions"><button type="button" class="gg-home-action" data-act="ranking" aria-label="Abrir ranking"><span class="gg-action-copy"><strong>RANKING</strong></span></button><button type="button" class="gg-home-action" data-act="missions" aria-label="Abrir misiones"><span class="gg-action-copy"><strong>MISIONES</strong></span></button></div>';root.append(profilePanel);
 const homeArt='assets/ui/refs/principal.right-menu.jpg';
 const menuRects=[[43,265,390,118],[43,398,390,104],[43,507,390,107],[43,620,390,105],[43,734,390,106]];
 let active=false;
@@ -45,8 +45,8 @@ root.addEventListener('click',e=>{
   const [kind,value]=b.dataset.act.split(':');
   if(kind==='continue'){bridge.resume();return;}
   if(kind==='ranking'){bridge.openRanking?.();return;}
-  if(kind==='stats'){bridge.openStats?.();return;}
-  if(kind==='missions'){bridge.openCurrentLevels();return;}
+  if(kind==='missions'){window.GG_MISSIONS_UI?.open();return;}
+
   if(kind!=='nav')return;
   const i=Number(value);
   if(i===0)bridge.openCurrentLevels();
