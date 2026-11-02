@@ -248,6 +248,33 @@ for(const mission of MISSION_SCRIPTS){
   wave.velocidad=Math.min(1.25,Math.max(.95,Number(wave.velocidad)||1)*1.12);
  }
 }
+// Recorre las 36 siluetas en un mazo mezclado: no se repite ninguna hasta
+// haberlas mostrado todas, incluso al pasar de una misión a la siguiente.
+function ggBuildFormationDeck(seed){
+ const deck=Array.from({length:FORMATIONS.length},(_,i)=>i);
+ let state=seed>>>0;
+ for(let i=deck.length-1;i>0;i--){
+  state=(Math.imul(state,1664525)+1013904223)>>>0;
+  const j=state%(i+1);
+  [deck[i],deck[j]]=[deck[j],deck[i]];
+ }
+ return deck;
+}
+let ggFormationDeck=[],ggFormationDeckIndex=0,ggLastCampaignFormation=-1,ggFormationDeckCycle=0;
+function ggNextCampaignFormation(){
+ if(ggFormationDeckIndex>=ggFormationDeck.length){
+  ggFormationDeck=ggBuildFormationDeck(0x6d2b79f5+ggFormationDeckCycle++);
+  ggFormationDeckIndex=0;
+  if(ggFormationDeck[0]===ggLastCampaignFormation&&ggFormationDeck.length>1)
+   [ggFormationDeck[0],ggFormationDeck[1]]=[ggFormationDeck[1],ggFormationDeck[0]];
+ }
+ const id=ggFormationDeck[ggFormationDeckIndex++];
+ ggLastCampaignFormation=id;
+ return id;
+}
+for(const mission of MISSION_SCRIPTS)
+ for(const wave of mission.oleadas)
+  wave.formacion=ggNextCampaignFormation();
 window.GG38_AUDIT={settings:GG38_SETTINGS,enemySpriteSize:()=>gg38EnemySize({gg58New:0,r:18}),
  mission:(level)=>MISSION_SCRIPTS[Math.max(0,Math.min(199,level-1))].oleadas.map(w=>({cantidad:w.cantidad,tipos:[...new Set(w.tipos)]})),
  weaponFamilies:()=>Array.from({length:7},(_,t)=>({familia:GG36_ENEMY_FAMILIES[t],visual:GG36_REGULAR_STYLES[t]}))};
@@ -790,7 +817,7 @@ function f14Point(id,i,count){
 }
 function f14Pose(e,elapsed){
  const f=FORMATIONS[e.pattern],t=Math.max(0,elapsed)*Math.max(.55,f.velocidad||.9)*1.16,i=e.formationIndex||0,n=e.formationCount||9;
- const q=ggFormationSlot(e.pattern,i,n),a=i*2*Math.PI/n;
+ const q=ggFormationSlot(e.pattern,i,n);
  if(e.gg57PatternFrom!==undefined){
    const phase=clamp((e.age-(e.gg57MorphAt||0))/1.6,0,1),smooth=phase*phase*(3-2*phase);
    const previous=ggFormationSlot(e.gg57PatternFrom,i,n);
@@ -800,24 +827,21 @@ function f14Pose(e,elapsed){
  }
   let x=q[0],y=q[1];
  // Movimiento deliberadamente distinto para cada una de las 36 combinaciones.
- const style=e.pattern%6,group=(e.pattern/6)|0;
- const s=Math.sin(t*.8+group*.31),c=Math.cos(t*.7+group*.21);
- // La formación entera patrulla antes de lanzar ataques: no queda inmóvil tras entrar.
- const groupDrift=Math.sin(t*(.62+group*.03)+group*.42)*Math.min(76,54+group*4);
- x+=groupDrift;
- if(style===0){x+=33*s;y+=21*Math.sin(t*1.4+i*.13)}                 // desplazamiento horizontal
- if(style===1){x+=27*Math.sin(t*1.9+i*.26);y+=20*c}                // serpiente por relevos
- if(style===2){const rot=.16*s;const dx=x-W/2,dy=y-250;x=W/2+dx*Math.cos(rot)-dy*Math.sin(rot);y=250+dx*Math.sin(rot)+dy*Math.cos(rot)} // rotación
- if(style===3){x+=kSin(i)*17*s;y+=19*Math.sin(t*1.2+a)}            // respiración doble
- if(style===4){x+=27*Math.sin(t*.9);y+=20*Math.sin(t*1.3+i*.20)}   // órbita desplazada
- if(style===5){x+=(i%2?1:-1)*25*Math.sin(t);y+=18*Math.cos(t+i*.37)} // tijera
- if(group===1){x+=12*Math.sin(t*1.7+i*.6)}
- if(group===2){y+=10*Math.sin(t*2+i*.7)}
- if(group===3){x+=13*Math.sin(t*.6+i*.4)}
- if(group===4){x+=17*Math.cos(t+i*.3);y+=9*Math.sin(t*.9)}
- if(group===5){x+=13*Math.sin(t*1.5+i);y+=12*Math.cos(t*.65+i*.5)}
+ const s=Math.sin(t*.8+(e.group||0)*.31),c=Math.cos(t*.7+(e.group||0)*.21);
+ // Cada escuadrón ejecuta la coreografía declarada por su formación.
+ const move=e.formationMove||f.movimiento;
+ const phase=i*.34+(e.group||0)*.21;
+ if(move==='ondulación'){x+=32*Math.sin(t*1.45+phase);y+=16*Math.sin(t*1.05+phase*.7)}
+ else if(move==='órbita'){x+=27*Math.cos(t*.9+phase);y+=23*Math.sin(t*.9+phase)}
+ else if(move==='zigzag'){const tri=2/Math.PI*Math.asin(Math.sin(t*1.15+(e.group||0)*.4));x+=34*tri+Math.sin(phase)*9;y+=12*Math.sin(t*1.7+phase)}
+ else if(move==='picado'){x+=24*Math.sin(t*.82+phase);y+=Math.max(0,Math.sin(t*.72+(e.group||0)*.3))*29+9*Math.sin(t*1.3+phase)}
+ else if(move==='escolta'){x+=29*s+((i%3)-1)*7;y+=18*c+Math.sin(t+phase)*8}
+ else if(move==='circular'){const rot=.13*Math.sin(t*.72+(e.group||0)*.25),dx=x-W/2,dy=y-250;x=W/2+dx*Math.cos(rot)-dy*Math.sin(rot);y=250+dx*Math.sin(rot)+dy*Math.cos(rot)}
+ // Deriva lenta del grupo y pequeñas correcciones evitan que las figuras parezcan rígidas.
+ x+=Math.sin(t*(.62+((e.group||0)%6)*.03)+(e.group||0)*.42)*38;
+ x+=Math.sin(t*1.32+i*.73)*7;
+ y+=Math.cos(t*1.18+i*.67)*6;
  if(e.disrupted){const regroup=e.disruptedAt||0,amount=Math.min(1,Math.max(0,(e.age-regroup)/1.4));x+=(W/2-x)*.23*amount;y+=((i%3)-1)*17*amount;}
- x+=Math.sin(t*1.32+i*.73)*8; y+=Math.cos(t*1.18+i*.67)*7;
  return [clamp(x,60,W-60),clamp(y,91,Math.min(H*.55,H-285))];
 }
 function kSin(i){return i%2?-1:1}
