@@ -521,7 +521,7 @@ function ggShowPilotStatistics(){if(!ggPilotProfile.name){ggPromptPilotName(ggSh
 
 function ggRequirePilotName(after){if(ggPilotProfile.name){after?.();return true;}ggPromptPilotName(after);return false;}
 function ggRecordPilotRun(r,won){if(!r||!ggPilotProfile.name)return;ggPilotProfile.runs.push({name:ggPilotProfile.name,score:Math.max(0,Math.floor(Number(r.score)||0)),level:Math.max(1,Math.floor(Number(r.level)||1)),world:Math.max(0,Math.floor(Number(r.world)||0)),won:!!won,at:Date.now()});ggPilotProfile.runs.sort((a,b)=>b.score-a.score||a.at-b.at);ggPilotProfile.runs=ggPilotProfile.runs.slice(0,10);ggStorePilotProfile()}
-function ggShowMissionsRanking(){if(!ggPilotProfile.name){ggPromptPilotName(ggShowMissionsRanking);return;}window.GG_EXACT_UI?.hide();const top=ggPilotProfile.runs.slice(0,10);const rows=top.length?top.map((r,i)=>'<div class="gg-rank-row"><b>'+(i+1)+'</b><span>'+ggEscapeHtml(r.name)+'</span><strong>'+r.score.toLocaleString('es-ES')+'</strong><small>NIVEL '+r.level+' · '+(r.won?'VICTORIA':'PARTIDA')+'</small></div>').join(''):'<p class="gg-rank-empty">Aún no hay partidas registradas. ¡Juega tu primera misión para estrenar el ranking!</p>';showModal('MISIONES Y RANKING','',[{label:'IR A MISIONES',primary:true,onClick:()=>{closeModal();ggOpenCurrentLevels()}},{label:'CAMBIAR NOMBRE',onClick:()=>{closeModal();ggPromptPilotName(ggShowMissionsRanking)}},{label:'CERRAR',onClick:()=>{closeModal();UI.screen('home')}}],'CENTRO DE PILOTO');$('pauseModal').classList.add('gg-home-rank-dialog');$('modalBody').innerHTML='<div class="gg-rank-summary"><div><small>PILOTO</small><b>'+ggEscapeHtml(ggPilotProfile.name)+'</b></div><div><small>PIEZAS</small><b>◈ '+Number(save.coins||0).toLocaleString('es-ES')+'</b></div><div><small>MISIONES</small><b>'+Math.min(200,Math.max(0,save.lastUnlocked-1))+' / 200</b></div><div><small>MEJOR PUNTUACIÓN</small><b>'+Number(save.highestScore||0).toLocaleString('es-ES')+'</b></div></div><h3 class="gg-rank-heading">MEJORES PARTIDAS · ESTE DISPOSITIVO</h3><div class="gg-rank-list">'+rows+'</div>'}
+function ggShowMissionsRanking(){if(!ggPilotProfile.name){ggPromptPilotName(ggShowMissionsRanking);return;}window.GG_EXACT_UI?.hide();const top=ggPilotProfile.runs.slice(0,10);const rows=top.length?top.map((r,i)=>'<div class="gg-rank-row"><b>'+(i+1)+'</b><span>'+ggEscapeHtml(r.name)+'</span><strong>'+r.score.toLocaleString('es-ES')+'</strong><small>NIVEL '+r.level+' · '+(r.won?'VICTORIA':'PARTIDA')+'</small></div>').join(''):'<p class="gg-rank-empty">Aún no hay partidas registradas. ¡Juega tu primera misión para estrenar el ranking!</p>';showModal('MISIONES Y RANKING','',[{label:'IR A MISIONES',primary:true,onClick:()=>{closeModal();ggOpenCurrentLevels()}},{label:'CAMBIAR NOMBRE',onClick:()=>{closeModal();ggPromptPilotName(ggShowMissionsRanking)}},{label:'CERRAR',onClick:()=>{closeModal();UI.screen('home')}}],'CENTRO DE PILOTO');$('pauseModal').classList.add('gg-home-rank-dialog');$('modalBody').innerHTML='<div class="gg-rank-summary"><div><small>PILOTO</small><b>'+ggEscapeHtml(ggPilotProfile.name)+'</b></div><div><small>PIEZAS</small><b>◈ '+Number(save.coins||0).toLocaleString('es-ES')+'</b></div><div><small>MISIONES</small><b>'+Math.min(200,Math.max(1,save.lastUnlocked))+' / 200</b></div><div><small>MEJOR PUNTUACIÓN</small><b>'+Number(save.highestScore||0).toLocaleString('es-ES')+'</b></div></div><h3 class="gg-rank-heading">MEJORES PARTIDAS · ESTE DISPOSITIVO</h3><div class="gg-rank-list">'+rows+'</div>'}
 function ggChallengeFlags(state=save){return [state.wins>=30,state.bossWins>=10,state.highestScore>=30000,state.perfect>=15,state.lastUnlocked>=201]}
 function ggNewShipRule(i,state=save){
  const offset=i-30,world=Math.floor(offset/3),slot=offset%3,localLevel=[7,14,20][slot],globalLevel=world*20+localLevel;
@@ -1870,7 +1870,7 @@ window.GG_DEBUG_ASSETS=()=>({enemies:IMG.enemigos.filter(x=>x.complete&&x.natura
  stats:i=>shipStats(i),
  unlockRule:i=>ggUnlockRule(i),
  screen:id=>UI.screen(id),
- profile:()=>({name:ggPilotProfile.name,pieces:save.coins,missions:Math.min(200,Math.max(0,save.lastUnlocked-1)),ships:save.ships.length,bestScore:save.highestScore||0,wins:save.wins||0,bossWins:save.bossWins||0,perfect:save.perfect||0}),
+ profile:()=>({name:ggPilotProfile.name,pieces:save.coins,missions:Math.min(200,Math.max(1,save.lastUnlocked)),ships:save.ships.length,bestScore:save.highestScore||0,wins:save.wins||0,bossWins:save.bossWins||0,perfect:save.perfect||0}),
  openRanking:()=>ggShowMissionsRanking(),
  openStats:()=>ggShowPilotStatistics(),
  planet:i=>selectPlanet(i),
@@ -2013,4 +2013,5 @@ window.GG40_TEST={campaign:()=>({total:MISSION_SCRIPTS.length,worlds:Array.from(
 
 requestAnimationFrame(frame);UI.screen('home');
 })();
+
 
