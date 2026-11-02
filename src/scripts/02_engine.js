@@ -510,7 +510,7 @@ function ggPersistWeaponOnVictory(world,weapon){
 }
 function persist(){try{localStorage.setItem('GG_UNIVERSO_V3',JSON.stringify(save))}catch(e){}}
 const GG_PILOT_PROFILE_KEY='GG_GALACTICO_PILOT_PROFILE_V1';
-function ggCleanPilotName(value){return String(value||'').replace(/[\u0000-\u001f\u007f]/g,'').replace(/\s+/g,' ').trim().slice(0,18)}
+function ggCleanPilotName(value){return String(value||'').replace(/[\u0000-\u001f\u007f]/g,' ').replace(/\s+/g,' ').trim().slice(0,18)}
 function ggLoadPilotProfile(){try{const p=JSON.parse(localStorage.getItem(GG_PILOT_PROFILE_KEY)||'null')||{};const runs=Array.isArray(p.runs)?p.runs.filter(x=>x&&Number.isFinite(Number(x.score))&&Number.isInteger(Number(x.level))).map(x=>({name:ggCleanPilotName(x.name)||'PILOTO',score:Math.max(0,Math.min(1e9,Math.floor(Number(x.score)))),level:Math.max(1,Math.min(200,Math.floor(Number(x.level)))),world:Math.max(0,Math.min(9,Math.floor(Number(x.world)||0))),won:!!x.won,at:Math.max(0,Math.floor(Number(x.at)||0))})).sort((a,b)=>b.score-a.score||a.at-b.at).slice(0,10):[];return {name:ggCleanPilotName(p.name),runs}}catch{return {name:'',runs:[]}}}
 let ggPilotProfile=ggLoadPilotProfile();
 function ggStorePilotProfile(){try{localStorage.setItem(GG_PILOT_PROFILE_KEY,JSON.stringify(ggPilotProfile))}catch(e){}}
