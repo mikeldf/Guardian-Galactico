@@ -6,7 +6,7 @@
  document.body.append(root);
  const stage=root.querySelector('.ggm-stage'),content=root.querySelector('.ggm-content');let active=false,tab='campaign',selected=1;
  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
- function resize(){if(active){const scale=Math.min(innerWidth/1672,innerHeight/941);stage.style.transform=`translate(-50%,-50%) scale(${scale})`}}
+ function resize(){if(active){const sx=innerWidth/1672,sy=innerHeight/941;stage.style.transform=`translate(-50%,-50%) scale(${sx},${sy})`}}
  function profile(){return bridge.profile?.()||{}}
  function save(){return bridge.snapshot?.().save||{}}
  function mission(n){return bridge.campaignMission?.(n)||null}
