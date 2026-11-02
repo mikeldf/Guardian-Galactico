@@ -7,7 +7,7 @@
  const names=['AURIX','VOLTAR','ZENTHAR','CRYON','DRAKON','NEBULIS','ORION','KAELIX','VORTEX','ELYSIUM'];
  const pos=[[585,243],[839,186],[1086,217],[1369,242],[1406,481],[1353,706],[1080,756],[821,773],[554,745],[471,485]];
  const menuRects=[[23,205,278,91],[23,302,282,92],[24,400,282,91],[23,492,283,93],[23,589,283,95]];
- const mapArt='assets/ui/classic_restored/mapa_original_sin_textos.webp';
+ const mapArt='assets/ui/refs/mapa-estelar-guardian.png';
  const levelArt='assets/ui/refs/selector-cosmico.jpg';
  const root=document.createElement('div');root.id='gg50Classic';root.setAttribute('aria-label','Pantallas clásicas recuperadas de Guardián Galáctico');
  root.innerHTML='<div class="gg50-ambient"></div><main class="gg50-stage"></main>';document.body.append(root);
@@ -16,31 +16,31 @@
  const add=(cls,x,y,w,h)=>{const e=document.createElement('div');e.className=cls;Object.assign(e.style,{left:x+'px',top:y+'px',width:w+'px',height:h+'px'});stage.append(e);return e;};
  const button=(cls,label,x,y,w,h,cb)=>{const b=document.createElement('button');b.className=cls;b.type='button';b.setAttribute('aria-label',label);Object.assign(b.style,{left:x+'px',top:y+'px',width:w+'px',height:h+'px'});b.addEventListener('click',cb);stage.append(b);return b;};
  const snap=()=>bridge.snapshot();
- function fit(){if(!active)return;const w=active==='levels'?1672:1536,h=active==='levels'?941:1024;stage.style.width=w+'px';stage.style.height=h+'px';if(active==='levels'){const sx=window.innerWidth/w,sy=window.innerHeight/h;stage.style.transform=`translate(-50%,-50%) scale(${sx},${sy})`;return;}const s=Math.min(window.innerWidth/w,window.innerHeight/h);stage.style.transform=`translate(-50%,-50%) scale(${s})`;}
+ function fit(){if(!active)return;const w=active==='levels'?1672:1680,h=active==='levels'?941:944;stage.style.width=w+'px';stage.style.height=h+'px';const sx=window.innerWidth/w,sy=window.innerHeight/h;stage.style.transform=`translate(-50%,-50%) scale(${sx},${sy})`;}
  window.addEventListener('resize',fit);
  function hide(){active=null;root.classList.remove('active');}
  function drawMap(){
-  const {save,PLANET_ART}=snap();
-  // Decoración de mapa por capas: se reutilizan las naves, planetas y galaxia
-  // originales, pero no el bloque rasterizado que contenía cajas oscuras.
-  add('gg51-map-core',570,290,720,390).setAttribute('aria-hidden','true');
-  add('gg51-map-orbit',434,144,1034,648).setAttribute('aria-hidden','true');
-  add('gg51-map-sidebar',0,0,388,1024).setAttribute('aria-hidden','true');
-  const h=add('gg51-map-title',705,17,720,93);h.innerHTML='<b>MAPA GALÁCTICO</b><small>SELECCIONA UN PLANETA</small>';
-  pos.forEach(([x,y],i)=>{
-   const orb=add('gg51-map-orb',x-97,y-97,194,194);
-   const img=document.createElement('img');img.src=PLANET_ART[i];img.alt='';img.decoding='async';orb.append(img);
-  });
-  menuRects.forEach(([x,y,w,h],i)=>button('gg50-menu-hit',['Jugar','Mapa galáctico','Hangar','Opciones','Salir'][i],x,y,w,h,()=>{
-   if(i===0)bridge.openCurrentLevels(); else if(i===1)show('galaxy'); else if(i===2)bridge.screen('hangar'); else if(i===3)bridge.screen('settings'); else document.getElementById('exitBtn')?.click();
-  }));
-  pos.forEach(([x,y],i)=>{
+  const {save}=snap();
+  const background=add('gg58-map-art',0,0,1680,944);background.style.backgroundImage=`url("${mapArt}")`;background.setAttribute('aria-hidden','true');
+  const title=add('gg58-map-title',570,115,540,34);title.textContent='MAPA ESTELAR';
+  const coins=add('gg58-map-coins',1325,24,220,50);coins.textContent=Number(save.coins||0).toLocaleString('es-ES');coins.setAttribute('aria-label','Piezas disponibles: '+Number(save.coins||0));
+  const activeWorld=Math.max(0,Math.min(9,snap().currentWorld||0));
+  const activeDone=Math.max(0,Math.min(20,save.lastUnlocked-activeWorld*20-1));
+  const worldInfo=add('gg58-map-current',570,150,540,27);
+  worldInfo.textContent=`${names[activeWorld]} · ${activeDone}/20 SUPERADOS · ${save.lastUnlocked>activeWorld*20?'DISPONIBLE':'BLOQUEADO'}`;
+  const back=button('gg58-map-back','Volver al menú',22,839,258,80,()=>bridge.screen('home'));back.textContent='VOLVER';
+  const planets=[
+   {x:472,y:260,lx:463,ly:358},{x:729,y:258,lx:726,ly:359},{x:990,y:257,lx:990,ly:358},{x:1260,y:260,lx:1260,ly:359},
+   {x:1417,y:443,lx:1417,ly:543},{x:1236,y:635,lx:1242,ly:737},{x:971,y:660,lx:973,ly:758},{x:699,y:660,lx:700,ly:758},
+   {x:437,y:634,lx:422,ly:739},{x:265,y:443,lx:264,ly:543}
+  ];
+  planets.forEach(({x,y,lx,ly},i)=>{
    const completed=Math.max(0,Math.min(20,save.lastUnlocked-i*20-1));const unlocked=save.lastUnlocked>i*20;
-   const label=add('gg50-map-label'+(unlocked?'':' locked'),x-108,y+61,216,108);
-   const b=document.createElement('b');b.textContent=(i+1)+'. '+names[i];label.append(b);
-   const sub=document.createElement('small');sub.textContent=`Niveles ${i*20+1}–${i*20+20}`;label.append(sub);
-   const status=document.createElement('strong');status.textContent=unlocked?`${completed}/20 COMPLETADOS`:'BLOQUEADO';label.append(status);
-   button('gg50-map-planet','Visitar '+names[i],x-90,y-85,180,170,()=>{
+   const label=add('gg58-map-label'+(unlocked?'':' locked')+(i===activeWorld?' current':''),lx-118,ly-33,236,66);
+   const name=document.createElement('b');name.textContent=names[i];label.append(name);
+   const sub=document.createElement('small');sub.textContent=`${i*20+1}–${i*20+20}`;label.append(sub);
+   const status=document.createElement('strong');status.textContent=unlocked?`${completed}/20 SUPERADOS`:'🔒 BLOQUEADO';label.append(status);
+   button('gg58-map-planet','Visitar '+names[i],x-105,y-105,210,210,()=>{
     bridge.planet(i);
     window.GG_P28_ENTRY_RECT={x:innerWidth/2,y:innerHeight/2,size:110};
     bridge.enter();
@@ -65,22 +65,22 @@
    const global=start+i,cleared=global<save.lastUnlocked,open=global===save.lastUnlocked, boss=i===10||i===20;
    const b=document.createElement('button');b.type='button';b.className='gg50-level-card'+(cleared?' cleared':!open?' locked':'')+(boss?' boss':'')+(selectedLevel===global?' selected':'');
    const num=document.createElement('span');num.textContent=String(i);b.append(num);
-   if(cleared||!open){const stateIcon=document.createElement('i');stateIcon.className='gg50-level-state';stateIcon.textContent=cleared?'✓':'🔒';stateIcon.setAttribute('aria-hidden','true');b.append(stateIcon)}
+   if(cleared||!open){const stateIcon=document.createElement('img');stateIcon.className='gg50-level-state';stateIcon.src=cleared?'assets/ui/refs/level-check-badge.png?v=20261102-icons2':'assets/ui/refs/level-lock-badge.png?v=20261102-icons2';stateIcon.alt='';stateIcon.setAttribute('aria-hidden','true');b.append(stateIcon)}
    const status=cleared?'Superado':open?'Disponible':'Bloqueado';
    b.title=`Nivel ${i} · ${status}${boss?(i===20?' · Jefe final':' · Subjefe'):''}`;b.setAttribute('aria-label',b.title);b.setAttribute('aria-pressed',String(selectedLevel===global));
    b.addEventListener('click',()=>{selectedLevel=global;bridge.mission(global);show('levels');});grid.append(b);
   }
   const back=button('gg50-back','Volver al mapa galáctico',25,824,263,92,()=>bridge.screen('galaxy'));back.innerHTML='<span>VOLVER</span>';
-  const launch=button('gg50-launch','Iniciar nivel '+(selectedLevel-start),555,786,560,124,()=>{if(selectedLevel<=save.lastUnlocked)bridge.start(selectedLevel)});
-  launch.innerHTML=`<span>JUGAR NIVEL ${String(selectedLevel-start).padStart(2,'0')}</span>`;launch.disabled=selectedLevel>save.lastUnlocked;
+  const launch=button('gg50-launch','Jugar nivel',526,780,620,150,()=>{if(selectedLevel<=save.lastUnlocked)bridge.start(selectedLevel)});
+  launch.innerHTML='';launch.disabled=selectedLevel>save.lastUnlocked;
  }
  function changeWorld(n){world=n;selectedLevel=n*20+1;bridge.world(n);show('levels');}
  function show(id){
   if(id!=='galaxy'&&id!=='levels'){hide();return;}
-  active=id;const art=id==='galaxy'?mapArt:levelArt;stage.innerHTML='';
+  active=id;const art=id==='galaxy'?mapArt:levelArt;stage.innerHTML='';stage.style.backgroundImage='none';
   // En la ilustración original del selector había 50 números y textos incrustados.
   // Su composición se conserva sin superponerla detrás de las 20 casillas actuales.
-  stage.style.backgroundImage=id==='levels'?`url("${levelArt}")`:'none';stage.style.backgroundSize='100% 100%';stage.style.backgroundPosition='center';stage.style.backgroundRepeat='no-repeat';
+  if(id==='levels'){const bg=add('gg50-level-art',0,0,1672,941);bg.style.backgroundImage=`url("${levelArt}")`;bg.setAttribute('aria-hidden','true');}
   ambient.style.backgroundImage=`url("${art}")`;root.classList.add('active');
   if(id==='galaxy')drawMap();else drawLevels();fit();
  }

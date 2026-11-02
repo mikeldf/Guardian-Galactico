@@ -1,0 +1,156 @@
+/* Fase 58 · Integración de las dos nuevas ilustraciones del hangar y el mapa. */
+#hangar {
+  background:#020b1d url('refs/hangar-galactico-neon.png') center/100% 100% no-repeat!important;
+}
+
+/* El contador vivo cubre el cero que viene dibujado en la maqueta. */
+#hangar .gg44-currencies {height:100%!important}
+#hangar #hangarCoins {
+  top:3.4%!important;right:8.9%!important;width:9.4%!important;height:7%!important;
+  display:flex!important;align-items:center!important;justify-content:center!important;
+  box-sizing:border-box!important;padding:0 4px!important;border:0!important;border-radius:4px!important;
+  background:rgba(2,22,51,.96)!important;color:#fff!important;
+  font:900 clamp(18px,2vw,31px)/1 system-ui!important;text-shadow:0 0 8px #008cff!important;
+}
+
+/* El mapa usa la ilustración completa y deja los diez planetas seleccionables. */
+#galaxy {
+  position:absolute!important;inset:0!important;overflow:hidden!important;isolation:isolate!important;
+  background:#020b1d url('refs/mapa-estelar-guardian.png') center/100% 100% no-repeat!important;
+}
+#galaxy::before,#galaxy::after {display:none!important;content:none!important}
+#galaxy .gg-side-menu,#galaxy .galaxy-footnote {display:none!important}
+#galaxy .interface-header {
+  position:absolute!important;inset:0!important;z-index:10!important;display:block!important;
+  width:100%!important;height:100%!important;min-height:0!important;margin:0!important;padding:0!important;
+  border:0!important;background:transparent!important;box-shadow:none!important;pointer-events:none!important;
+}
+#galaxy .header-title {
+  position:absolute!important;left:35%!important;top:1%!important;width:30%!important;height:9%!important;
+  display:grid!important;place-items:center!important;margin:0!important;padding:0!important;transform:none!important;
+  text-align:center!important;pointer-events:none!important;
+}
+#galaxy .header-title .eyebrow {display:none!important}
+#galaxy .header-title h2 {
+  margin:0!important;color:#f2fbff!important;font-size:clamp(17px,2.2vw,35px)!important;
+  line-height:1!important;letter-spacing:.08em!important;text-shadow:0 2px 5px #001329,0 0 12px #159dff!important;
+}
+#galaxy .header-resource {
+  position:absolute!important;top:2.7%!important;right:10.5%!important;width:10%!important;height:6%!important;
+  display:grid!important;place-items:center!important;min-width:0!important;text-align:center!important;
+  color:#fff!important;font-size:clamp(16px,1.8vw,29px)!important;font-weight:900!important;
+  text-shadow:0 0 9px #008cff!important;pointer-events:none!important;
+}
+#galaxy #galaxyBack {
+  position:absolute!important;left:.5%!important;top:42%!important;width:6%!important;height:15%!important;
+  margin:0!important;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;
+  box-shadow:none!important;color:transparent!important;font-size:0!important;pointer-events:auto!important;cursor:pointer!important;
+}
+#galaxy .galaxy-layout {
+  position:absolute!important;inset:0!important;display:block!important;width:100%!important;height:100%!important;
+  min-height:0!important;max-width:none!important;margin:0!important;padding:0!important;overflow:visible!important;
+}
+#galaxy .galaxy-board {
+  position:absolute!important;inset:0!important;width:100%!important;height:100%!important;min-height:0!important;
+  overflow:visible!important;border:0!important;border-radius:0!important;background:transparent!important;
+  box-shadow:none!important;backdrop-filter:none!important;
+}
+#galaxy .orbit-ring,#galaxy .galaxy-core,#galaxy .galaxy-background-label {display:none!important}
+#galaxy #galaxyGrid {position:absolute!important;inset:0!important;width:100%!important;height:100%!important}
+#galaxy .world-pin {
+  position:absolute!important;width:14%!important;height:19%!important;min-height:0!important;padding:0!important;
+  transform:translate(-50%,-50%)!important;display:flex!important;flex-direction:column!important;
+  align-items:center!important;justify-content:center!important;gap:1px!important;border:0!important;border-radius:0!important;
+  background:transparent!important;box-shadow:none!important;overflow:visible!important;
+}
+#galaxy .world-pin img {display:none!important}
+#galaxy .world-pin.active::before {display:none!important;content:none!important}
+#galaxy .world-pin strong {
+  display:block!important;max-width:100%!important;color:#effaff!important;font-size:clamp(8px,.82vw,13px)!important;
+  line-height:1.08!important;text-align:center!important;white-space:normal!important;
+  text-shadow:0 1px 4px #00152a,0 0 7px #168dff!important;
+}
+#galaxy .world-pin small {
+  display:block!important;color:#c2eaff!important;font-size:clamp(6px,.54vw,9px)!important;
+  line-height:1.05!important;text-align:center!important;text-shadow:0 1px 4px #00152a!important;
+}
+#galaxy .world-pin.locked strong,#galaxy .world-pin.locked small {color:#e0e8f1!important}
+#galaxy .world-pin:hover strong,#galaxy .world-pin.active strong {color:#fff!important;text-shadow:0 0 8px #00d9ff,0 1px 4px #00152a!important}
+
+/* Los puntos interactivos se alinean con las placas vacías de la ilustración. */
+#galaxy .world-pin:nth-child(1) {left:27.5%!important;top:37.4%!important}
+#galaxy .world-pin:nth-child(2) {left:43.1%!important;top:37.6%!important}
+#galaxy .world-pin:nth-child(3) {left:59.1%!important;top:37.5%!important}
+#galaxy .world-pin:nth-child(4) {left:75.2%!important;top:37.6%!important}
+#galaxy .world-pin:nth-child(5) {left:84%!important;top:57.3%!important}
+#galaxy .world-pin:nth-child(6) {left:74.1%!important;top:78.3%!important}
+#galaxy .world-pin:nth-child(7) {left:58.3%!important;top:78.4%!important}
+#galaxy .world-pin:nth-child(8) {left:42.1%!important;top:78.4%!important}
+#galaxy .world-pin:nth-child(9) {left:24.7%!important;top:77.1%!important}
+#galaxy .world-pin:nth-child(10) {left:16%!important;top:56.8%!important}
+
+/* Información del mundo seleccionado y botón de entrada dentro de la barra inferior del encabezado. */
+#galaxy .planet-info {
+  position:absolute!important;left:34%!important;top:12.1%!important;width:32%!important;height:7.8%!important;
+  box-sizing:border-box!important;display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;
+  align-items:center!important;gap:7px!important;min-height:0!important;margin:0!important;padding:5px 12px!important;
+  border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;
+}
+#galaxy .planet-info>.eyebrow,#galaxy .planet-info .info-orb,#galaxy .planet-info #planetInfoBody>.eyebrow,
+#galaxy .planet-info #planetInfoBody>p,#galaxy .planet-info .aside-hint {display:none!important}
+#galaxy .planet-info #planetInfoBody {display:grid!important;grid-template-columns:1fr auto auto!important;align-items:center!important;gap:7px!important;min-width:0!important}
+#galaxy .planet-info #planetInfoBody h3 {margin:0!important;color:#f2fbff!important;font-size:clamp(11px,1.2vw,18px)!important;white-space:nowrap!important;text-shadow:0 1px 5px #001329!important}
+#galaxy .planet-info .info-status {display:flex!important;flex-direction:column!important;gap:1px!important;margin:0!important;padding:0!important;border:0!important;background:transparent!important;font-size:clamp(6px,.56vw,9px)!important;white-space:nowrap!important}
+#galaxy .planet-info .info-status b {font-size:clamp(8px,.72vw,11px)!important;color:#fff!important}
+#galaxy #enterPlanet {min-width:0!important;margin:0!important;padding:6px 9px!important;border:0!important;background:transparent!important;box-shadow:none!important;color:#fff!important;font-size:clamp(7px,.68vw,11px)!important;font-weight:900!important;line-height:1.1!important;white-space:normal!important;text-shadow:0 1px 4px #001329!important}
+
+/* La restauración visual clásica es la capa que se muestra encima del mapa DOM. */
+#gg50Classic .gg50-ambient {display:none!important}
+#gg50Classic .gg50-stage {overflow:hidden!important;background:none!important;box-shadow:none!important}
+#gg50Classic .gg58-map-art {position:absolute;inset:0;z-index:0;background-position:center;background-size:100% 100%;background-repeat:no-repeat;pointer-events:none}
+#gg50Classic .gg58-map-title {position:absolute;z-index:2;display:flex;align-items:center;justify-content:center;color:#f3fbff;font-size:34px;font-weight:950;letter-spacing:.08em;text-align:center;text-shadow:0 2px 6px #001329,0 0 15px #159dff;pointer-events:none}
+#gg50Classic .gg58-map-current {position:absolute;z-index:2;display:flex;align-items:center;justify-content:center;color:#f4fbff;font-size:21px;font-weight:900;letter-spacing:.04em;text-align:center;text-shadow:0 1px 5px #001329,0 0 8px #168dff;pointer-events:none}
+#gg50Classic .gg58-map-coins {position:absolute;z-index:3;display:flex;align-items:center;justify-content:center;box-sizing:border-box;border-radius:5px;background:rgba(2,22,51,.94);color:#fff;font-size:29px;font-weight:950;text-shadow:0 0 9px #008cff;pointer-events:none}
+#gg50Classic .gg58-map-back,#gg50Classic .gg58-map-planet {position:absolute;z-index:5;border:0;border-radius:0;background:transparent;color:transparent;font-size:0;cursor:pointer}
+#gg50Classic .gg58-map-back {display:flex!important;align-items:center!important;justify-content:center!important;color:#effaff!important;font:900 27px/1 'Rajdhani',sans-serif!important;letter-spacing:.1em!important;text-shadow:0 0 9px #00baff,0 2px 4px #001329!important}
+#gg50Classic .gg58-map-back:hover,#gg50Classic .gg58-map-back:focus-visible,
+#gg50Classic .gg58-map-planet:hover,#gg50Classic .gg58-map-planet:focus-visible {border:0;background:transparent;box-shadow:none;outline:none}
+#gg50Classic .gg58-map-label {position:absolute;z-index:4;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;border:0;border-radius:0;background:transparent;color:#effaff;box-shadow:none;text-align:center;padding:0;pointer-events:none}
+#gg50Classic .gg58-map-label b {font-size:20px;line-height:1.05;letter-spacing:.04em;color:#f4fbff;text-shadow:0 1px 5px #00152a,0 0 7px #168dff}
+#gg50Classic .gg58-map-label small {font-size:12px;line-height:1.05;color:#c2eaff;text-shadow:0 1px 4px #00152a}
+#gg50Classic .gg58-map-label strong {font-size:10px;line-height:1.05;color:#ffe08a;text-shadow:0 1px 4px #00152a}
+#gg50Classic .gg58-map-label.locked b,#gg50Classic .gg58-map-label.locked small {color:#e0e8f1}
+#gg50Classic .gg58-map-label.current b {color:#fff;text-shadow:0 0 9px #00dfff,0 1px 4px #00152a}
+
+/* Barras legibles y alineadas con las etiquetas impresas en la ilustración del hangar. */
+#hangar #detailStats {top:66.5%!important;height:21%!important;grid-template-rows:repeat(4,minmax(0,1fr))!important;gap:0!important}
+#hangar #detailStats .meter {height:18px!important;max-height:18px!important}
+#hangar #detailUpgrades {left:43%!important;top:72.5%!important;width:18%!important;height:13.5%!important;display:grid!important;grid-template-columns:1fr!important;grid-template-rows:repeat(3,minmax(0,1fr))!important;align-items:center!important;gap:0!important}
+#hangar #detailUpgrades button {display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;align-items:center!important;gap:6px!important;min-width:0!important;min-height:0!important;height:30px!important;padding:3px 6px!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;color:#effaff!important;font:800 clamp(10px,.8vw,14px)/1 'Exo 2',sans-serif!important;white-space:nowrap!important}
+#hangar .gg58-upgrade-meter {position:relative;display:block;min-width:0;width:100%;height:15px;box-sizing:border-box;overflow:hidden;border:1px solid #00ceff;border-radius:4px;background:rgba(2,20,43,.88);box-shadow:0 0 5px #00baff55}
+#hangar .gg58-upgrade-meter i {display:block;height:100%;background:repeating-linear-gradient(90deg,#05d7ff 0 18px,#075079 18px 21px);box-shadow:0 0 7px #00dfff}
+#hangar .gg58-upgrade-cost {font:800 clamp(8px,.62vw,11px)/1 'Rajdhani',sans-serif!important;color:#f2fbff!important;text-shadow:0 1px 4px #001329}
+
+/* Los textos de estado permanecen dentro de la casilla y usan las tipografías del juego. */
+#gg50Classic .gg50-level-card {font-family:'Oxanium',sans-serif!important}
+#gg50Classic .gg50-level-card small,#gg50Classic .gg50-level-summary span,
+#levels .level-node small {max-width:100%;overflow:hidden;text-overflow:ellipsis;font-family:'Exo 2',sans-serif!important;font-size:clamp(7px,.55vw,9px)!important;line-height:1!important;letter-spacing:0!important}
+#gg50Classic .gg50-level-card small {white-space:nowrap!important}
+
+@media(max-width:800px) {
+  #galaxy .world-pin {width:15%!important;height:20%!important}
+  #galaxy .world-pin strong {font-size:clamp(7px,1.8vw,11px)!important}
+  #galaxy .world-pin small {font-size:clamp(5px,1.15vw,8px)!important}
+  #galaxy .planet-info {left:33%!important;width:34%!important;padding:3px 5px!important;gap:2px!important}
+  #galaxy .planet-info #planetInfoBody {gap:3px!important}
+  #galaxy .planet-info #planetInfoBody h3 {font-size:clamp(9px,1.8vw,13px)!important}
+  #galaxy .planet-info .info-status {display:none!important}
+  #galaxy #enterPlanet {font-size:clamp(6px,1.25vw,9px)!important;padding:4px!important}
+  #hangar #hangarCoins {width:12%!important;right:8%!important;height:4.8%!important}
+  #gg50Classic .gg58-map-title {font-size:clamp(19px,2.1vw,29px)}
+  #gg50Classic .gg58-map-current {font-size:clamp(12px,1.35vw,18px)}
+  #gg50Classic .gg58-map-label b {font-size:clamp(12px,1.25vw,17px)}
+  #gg50Classic .gg58-map-label small {font-size:clamp(8px,.75vw,11px)}
+  #gg50Classic .gg58-map-label strong {font-size:clamp(7px,.65vw,9px)}
+  #gg50Classic .gg58-map-coins {font-size:clamp(17px,1.8vw,25px)}
+}

@@ -87,6 +87,7 @@
 #gg50Classic .gg51-map-sidebar{width:335px!important}
 
 /* Selector cósmico: ilustración nueva con nombres/controles HTML funcionales. */
+#gg50Classic .gg50-level-art{position:absolute;inset:0;z-index:0;background-position:center;background-size:100% 100%;background-repeat:no-repeat;filter:none;pointer-events:none}
 #gg50Classic .gg50-stage{z-index:1}
 #gg50Classic .gg50-stage{background-position:center!important;background-size:100% 100%!important}
 #gg50Classic .gg50-level-caption{position:absolute;z-index:4;left:60px;top:69px;width:410px;height:88px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;color:#f6fcff;text-align:center;pointer-events:none}
@@ -105,9 +106,9 @@
 #gg50Classic .gg50-level-grid{position:absolute;z-index:4;left:476px;top:314px;width:818px;height:416px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));grid-template-rows:repeat(4,minmax(0,1fr));gap:12px;box-sizing:border-box}
 #gg50Classic .gg50-level-card,#gg50Classic .gg51_futurista_limpio .gg50-level-card{position:relative;display:grid;place-items:center;min-width:0;min-height:0;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;opacity:1;color:#f7fdff;font:700 31px/1 'Oxanium',sans-serif;text-shadow:0 2px 5px #001326,0 0 9px #47cfff;cursor:pointer}
 #gg50Classic .gg50-level-card span{display:grid;width:100%;height:54%;place-items:center;box-sizing:border-box}
-#gg50Classic .gg50-level-card .gg50-level-state{position:absolute;top:8px;right:10px;display:grid;place-items:center;min-width:23px;height:23px;color:#b7cce0;font:900 20px/1 'Exo 2',sans-serif;font-style:normal;text-shadow:0 1px 5px #001326,0 0 8px #77d5ff66}
-#gg50Classic .gg50-level-card.cleared .gg50-level-state{color:#63ffd0;font-size:23px;text-shadow:0 0 7px #20eab9,0 0 13px #00a783}
-#gg50Classic .gg50-level-card.locked .gg50-level-state{font-size:28px;filter:grayscale(.15)}
+#gg50Classic .gg50-level-card .gg50-level-state{position:absolute;top:7px;right:8px;width:31px;height:21px;object-fit:contain;pointer-events:none;filter:drop-shadow(0 1px 4px #001326)}
+#gg50Classic .gg50-level-card.cleared .gg50-level-state{filter:drop-shadow(0 0 5px #35ff89b0)}
+#gg50Classic .gg50-level-card.locked .gg50-level-state{top:6px;right:11px;width:23px;height:22px;filter:drop-shadow(0 0 5px #ffb521a0)}
 #gg50Classic .gg50-level-card.locked span{color:#9db5ca;text-shadow:0 1px 4px #000}
 #gg50Classic .gg50-level-card.cleared span{color:#f2fffc;text-shadow:0 0 10px #70ffd5}
 #gg50Classic .gg50-level-card.boss span{color:#fff2ff;text-shadow:0 0 11px #d883ff}
@@ -117,8 +118,61 @@
 #gg50Classic .gg50-back{position:absolute;z-index:5;left:25px;top:824px;width:263px;height:92px;display:flex;align-items:center;justify-content:flex-start;padding:0 0 0 114px!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;color:#f2fbff;font:700 24px/1 'Rajdhani',sans-serif;letter-spacing:.05em;cursor:pointer}
 #gg50Classic .gg50-back span{white-space:nowrap}
 #gg50Classic .gg50-back:hover,#gg50Classic .gg50-back:focus-visible{outline:none!important;background:transparent!important;box-shadow:none!important;filter:brightness(1.2)}
-#gg50Classic .gg50-launch{position:absolute;z-index:5;left:555px;top:786px;width:560px;height:124px;display:flex;align-items:center;justify-content:flex-start;padding:0 0 0 40px!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;color:#fff;font:900 18px/1 'Orbitron',sans-serif;letter-spacing:.035em;text-shadow:0 0 8px #74efff,0 2px 3px #001626;cursor:pointer}
-#gg50Classic .gg50-launch span{white-space:nowrap}
-#gg50Classic .gg50-launch:disabled{opacity:.48;filter:grayscale(.8);cursor:not-allowed}
-#gg50Classic .gg50-launch:hover:not(:disabled),#gg50Classic .gg50-launch:focus-visible{outline:none!important;background:transparent!important;box-shadow:none!important;filter:brightness(1.18)}
+#gg50Classic .gg50-launch{position:absolute;z-index:5;left:526px;top:780px;width:620px;height:150px;display:block;padding:0!important;border:0!important;border-radius:0!important;background-color:transparent!important;background-image:url('../refs/level-play-button.png?v=20261102-play1')!important;background-size:100% 100%!important;background-position:center!important;background-repeat:no-repeat!important;box-shadow:none!important;color:transparent;font-size:1px;cursor:pointer}
+#gg50Classic .gg50-launch:disabled{opacity:1;filter:none;cursor:not-allowed}
+#gg50Classic .gg50-launch:hover:not(:disabled),#gg50Classic .gg50-launch:focus-visible{outline:none!important;background-color:transparent!important;background-image:url('../refs/level-play-button.png?v=20261102-play1')!important;box-shadow:none!important;filter:brightness(1.12)}
 
+/* Selector: retirar las placas oscuras heredadas que velaban la ilustración. */
+#gg50Classic .gg50-level-panel,#gg50Classic .gg50-world-details{background:transparent!important;border-color:transparent!important;box-shadow:none!important;backdrop-filter:none!important;opacity:1!important}
+#gg50Classic .gg50-dot-scrim{display:none!important}
+/* Los iconos bastan para indicar estado: no oscurecer casillas bloqueadas o superadas. */
+#gg50Classic .gg50-level-card.locked,#gg50Classic .gg50-level-card.cleared,#gg50Classic .gg50-level-card.selected{background:transparent!important;box-shadow:none!important;opacity:1!important}/* Dejar más aire entre el número del nivel y sus estrellas. */
+#gg50Classic .gg50-level-card span{transform:translateY(-8px)}
+#gg50Classic .gg50-level-card.selected span{transform:translateY(-8px) scale(1.13)}/* Resaltar ligeramente los niveles de la última fila. */
+#gg50Classic .gg50-level-grid .gg50-level-card:nth-child(n+16) span{font-size:31px;transform:translateY(-13px)}/* Hangar: usar la composición de referencia como fondo y conservar naves/datos dinámicos. */
+#hangar{position:absolute!important;inset:0!important;display:flex!important;justify-content:stretch!important;align-items:stretch!important;padding:0!important;overflow:hidden!important;background:#020b1d url('../refs/hangar-galactico.jpg') center/100% 100% no-repeat!important}
+#hangar .gg44-head{display:contents!important}
+#hangar .gg44-head h2{display:none!important}
+#hangar .gg44-back{position:absolute!important;left:1%!important;bottom:1%!important;width:16%!important;height:10%!important;z-index:25!important;border:0!important;background:transparent!important;color:transparent!important;opacity:0!important}
+#hangar .gg44-currencies{position:absolute!important;inset:0!important;height:10%!important;display:block!important;padding:0!important;background:none!important;border:0!important;z-index:20!important}
+#hangar #hangarCoins{position:absolute!important;right:9.5%!important;top:22%!important;width:90px!important;text-align:center!important;background:none!important;border:0!important;color:#fff!important;font:900 clamp(20px,2vw,32px)/1 system-ui!important;text-shadow:0 0 9px #008cff!important}
+#hangar .gg44-fleet{display:none!important}
+#hangar .gg44-layout{position:absolute!important;inset:0!important;display:block!important;width:100%!important;height:100%!important;max-width:none!important;margin:0!important;padding:0!important;overflow:hidden!important}
+#hangar .gg44-left,#hangar .gg44-info{display:contents!important}
+#hangar .gg44-display{position:absolute!important;left:7%!important;top:20%!important;width:48%!important;height:39%!important;border:0!important;background:transparent!important;box-shadow:none!important;overflow:visible!important}
+#hangar .gg44-hudtop,#hangar .gg44-deck,#hangar .gg44-spotlight{display:none!important}
+#hangar .gg44-display #detailImage{position:absolute!important;inset:0!important;margin:auto!important;width:85%!important;height:100%!important;max-width:none!important;max-height:none!important;object-fit:contain!important}
+#hangar .gg44-info-title{position:absolute!important;left:11%!important;top:18%!important;width:40%!important;display:block!important;text-align:center!important;background:transparent!important;border:0!important;box-shadow:none!important;z-index:8!important}
+#hangar .gg44-info-title small,#hangar .gg44-info-title .gg44-status,#hangar .gg44-info-title .gg44-class{display:none!important}
+#hangar .gg44-info-title h3{margin:0!important;font-size:clamp(17px,2vw,28px)!important;color:#fff!important;text-shadow:0 0 10px #04cfff!important}
+#hangar #detailStats{position:absolute!important;left:16.8%!important;top:67.5%!important;width:13.2%!important;height:16%!important;display:grid!important;grid-template-columns:1fr!important;grid-template-rows:repeat(4,1fr)!important;gap:4px!important;margin:0!important;padding:0!important;background:none!important;border:0!important}
+#hangar #detailStats .row{display:flex!important;width:100%!important;min-height:0!important;margin:0!important}
+#hangar #detailStats .row>small{display:none!important}
+#hangar #detailStats .meter{height:17px!important;width:100%!important;flex:1!important;border:1px solid #00cfff!important;border-radius:4px!important;background:#031934!important;box-shadow:0 0 5px #00baff!important}
+#hangar #detailStats .meter span{height:100%!important;background:repeating-linear-gradient(90deg,#06d9ff 0 19px,#063357 19px 22px)!important}
+#hangar .gg44-right{position:absolute!important;top:24%!important;right:1.6%!important;width:34.5%!important;height:66%!important;min-height:0!important;padding:0!important;background:transparent!important;border:0!important;box-shadow:none!important;overflow:hidden!important}
+#hangar .gg44-list-head{position:absolute!important;left:4%!important;right:16%!important;top:0!important;height:9%!important;display:flex!important;align-items:center!important;justify-content:space-between!important;padding:0 6%!important;background:transparent!important;border:0!important;box-shadow:none!important}
+#hangar .gg44-list-head strong{font-size:clamp(14px,1.4vw,22px)!important;color:#effaff!important;text-shadow:0 0 8px #168eff!important}
+#hangar .gg44-list-head strong span{display:none!important}
+#hangar .gg44-list-head small{display:none!important}
+#hangar .gg44-sort-label{font-size:10px!important;color:#b7e9ff!important}
+#hangar .gg44-sort-label select{font-size:10px!important;max-width:92px!important;background:#041b35!important;color:#e4faff!important;border:1px solid #1596df!important}
+#hangar .gg44-list-footer{display:none!important}
+#hangar .hangarGrid.gg44-ship-grid{position:absolute!important;top:10%!important;left:4%!important;right:15%!important;bottom:0!important;width:auto!important;height:auto!important;max-height:none!important;display:grid!important;grid-template-columns:1fr!important;grid-auto-rows:18%!important;align-content:start!important;gap:1%!important;overflow-x:hidden!important;overflow-y:auto!important;background:transparent!important;border:0!important;padding:0!important;scrollbar-width:thin!important;scrollbar-color:#46dfff transparent!important}
+#hangar .hangarGrid.gg44-ship-grid .shipCard{display:flex!important;flex-direction:row!important;justify-content:flex-start!important;gap:10px!important;min-height:0!important;height:100%!important;padding:4px 12px!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;text-align:left!important}
+#hangar .hangarGrid.gg44-ship-grid .shipCard.selected{background:transparent!important;border:0!important;box-shadow:none!important;filter:brightness(1.18)!important}
+#hangar .hangarGrid.gg44-ship-grid .gg-native-thumb{width:70px!important;height:70px!important;flex:0 0 70px!important}
+#hangar .hangarGrid.gg44-ship-grid .gg-native-thumb img{width:68px!important;height:68px!important;max-width:68px!important}
+#hangar .hangarGrid.gg44-ship-grid .gg-native-text{align-items:flex-start!important;text-align:left!important}
+#hangar .hangarGrid.gg44-ship-grid strong{font-size:clamp(12px,1.05vw,17px)!important;text-align:left!important}
+#hangar .hangarGrid.gg44-ship-grid small{font-size:clamp(9px,.75vw,12px)!important;text-align:left!important}
+#hangar .gg44-special{display:none!important}
+#hangar #detailUpgrades{position:absolute!important;left:43%!important;top:70%!important;width:17%!important;display:flex!important;flex-direction:column!important;gap:4px!important;margin:0!important;padding:0!important;background:transparent!important;border:0!important}
+#hangar #detailUpgrades button{min-height:22px!important;height:22px!important;width:100%!important;padding:2px 4px!important;font-size:clamp(8px,.7vw,12px)!important;line-height:1!important;background:#041932c8!important;border:1px solid #06bffa!important;border-radius:4px!important;color:#eafaff!important;box-shadow:0 0 6px #00baff!important;white-space:nowrap!important}
+#hangar .gg44-actions{position:absolute!important;left:30%!important;top:57%!important;z-index:12!important;display:flex!important;gap:6px!important;max-width:39%!important}
+#hangar .gg44-actions .btn{min-height:30px!important;padding:5px 10px!important;font-size:11px!important}
+#hangar #detailLocked{display:none!important}
+@media(max-width:800px){#hangar .gg44-right{top:25%!important;right:1%!important;width:36%!important;height:65%!important}#hangar .gg44-list-head{right:10%!important}#hangar .hangarGrid.gg44-ship-grid{right:12%!important;grid-auto-rows:18%!important}#hangar .gg44-list-head strong{font-size:12px!important}#hangar .gg44-sort-label{display:none!important}#hangar #detailStats{left:16.8%!important;width:14%!important}#hangar #detailUpgrades{left:43%!important;width:18%!important}#hangar .gg44-actions{left:28%!important;top:58%!important}}/* Eliminar el pseudo-fondo antiguo desenfocado que oscurecía el arte del hangar. */
+#hangar::before,#hangar::after{display:none!important;content:none!important;background:none!important;filter:none!important;opacity:0!important}/* Alinear los datos dinámicos con las áreas reservadas de la ilustración. */
+#hangar #hangarCoins{right:11.1%!important;top:21%!important;width:90px!important;padding:7px 4px!important;border-radius:5px!important;background:rgba(3,29,55,.94)!important}
+#hangar .gg44-list-head{display:none!important}
