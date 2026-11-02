@@ -11,7 +11,7 @@ root.setAttribute('aria-label','Menú principal de Guardián Galáctico');
 root.innerHTML='<div class="gg-photo-ambient"></div><div class="gg-photo-stage" role="region" aria-label="Inicio del juego"></div>';
 document.body.append(root);
 const stage=root.querySelector('.gg-photo-stage'),ambient=root.querySelector('.gg-photo-ambient');
-const profilePanel=document.createElement('section');profilePanel.className='gg-home-profile';profilePanel.setAttribute('aria-label','Perfil de piloto y progreso');profilePanel.innerHTML='<div class="gg-home-profile-grid"><div><small>PILOTO</small><strong data-profile="name">PILOTO</strong></div><div><small>PIEZAS</small><strong data-profile="pieces">◈ 0</strong></div><div><small>NAVES</small><strong data-profile="ships">5 / 60</strong></div></div><div class="gg-home-side-actions"><button type="button" class="gg-home-action" data-act="missions" aria-label="Abrir misiones"><strong>MISIONES</strong><small data-profile="missions">NIVELES 0 / 200</small></button><button type="button" class="gg-home-action" data-act="ranking" aria-label="Abrir ranking"><strong>RANKING</strong><small>MEJORES PARTIDAS</small></button></div>';root.append(profilePanel);
+const profilePanel=document.createElement('section');profilePanel.className='gg-home-profile';profilePanel.setAttribute('aria-label','Perfil de piloto y progreso');profilePanel.innerHTML='<div class="gg-home-profile-grid"><div><small>PILOTO</small><strong data-profile="name">PILOTO</strong></div><div><small>PIEZAS</small><strong data-profile="pieces">◈ 0</strong></div><div><small>NAVES</small><strong data-profile="ships">5 / 60</strong></div></div><div class="gg-home-side-actions"><button type="button" class="gg-home-action" data-act="ranking" aria-label="Abrir ranking"><span class="gg-action-icon" aria-hidden="true">🏆</span><span class="gg-action-copy"><strong>RANKING</strong><small>MEJORES PARTIDAS</small></span></button><button type="button" class="gg-home-action" data-act="stats" aria-label="Abrir estadísticas"><span class="gg-action-icon gg-chart-icon" aria-hidden="true">▂▄▇</span><span class="gg-action-copy"><strong>ESTADÍSTICAS</strong><small>PROGRESO DEL PILOTO</small></span></button></div>';root.append(profilePanel);
 const homeArt='assets/ui/refs/principal.right-menu.jpg';
 const menuRects=[[43,265,390,114],[43,391,390,108],[43,507,390,108],[43,621,390,109],[43,734,390,111]];
 const worldNames=['AURIX','VOLTAR','ZENTHAR','CRYON','DRAKON','NEBULIS','ORION','KAELIX','VORTEX','ELYSIUM'];
@@ -26,7 +26,6 @@ function show(id){
   const profile=bridge.profile?.()||{};
   profilePanel.querySelector('[data-profile="name"]').textContent=profile.name||'PILOTO';
   profilePanel.querySelector('[data-profile="pieces"]').textContent='◈ '+Number(profile.pieces||0).toLocaleString('es-ES');
-  profilePanel.querySelectorAll('[data-profile="missions"]').forEach(el=>el.textContent=Number(profile.missions||0)+' / 200');
   profilePanel.querySelector('[data-profile="ships"]').textContent=Number(profile.ships||0)+' / 60';
   const level=Math.max(1,Math.min(200,Number(bridge.currentMission())||1));
   stage.innerHTML='';stage.style.width='1672px';stage.style.height='941px';
@@ -49,6 +48,7 @@ root.addEventListener('click',e=>{
   const [kind,value]=b.dataset.act.split(':');
   if(kind==='continue'){bridge.resume();return;}
   if(kind==='ranking'){bridge.openRanking?.();return;}
+  if(kind==='stats'){bridge.openStats?.();return;}
   if(kind==='missions'){bridge.openCurrentLevels();return;}
   if(kind!=='nav')return;
   const i=Number(value);

@@ -251,3 +251,37 @@
 #ggExactUI .gg-continue-icon{display:grid;width:39px;height:39px;place-items:center;border:2px solid #80dfff;border-radius:50%;background:#06264799;color:#b9efff;font-size:28px;line-height:1}
 @media(max-width:700px){#ggExactUI .gg-home-profile-grid{left:39%;top:1.3%;width:24%;grid-template-columns:1.15fr 1fr .9fr;gap:0 3px}#ggExactUI .gg-home-profile-grid small{font-size:7px}#ggExactUI .gg-home-profile-grid strong{font-size:10px}#ggExactUI .gg-home-side-actions{left:76.5%;top:40.3%;width:20.5%;height:27%;gap:8%}#ggExactUI .gg-home-action{font-size:clamp(10px,2.1vw,15px);letter-spacing:0;padding:2px}#ggExactUI .gg-home-action small{font-size:clamp(7px,1.15vw,9px)}#ggExactUI button.gg-hit.gg-main-menu-action{gap:5px;padding-left:8px;font-size:clamp(10px,1.8vw,16px)}#ggExactUI button.gg-hit.gg-main-menu-action>span{width:24px;height:24px;font-size:14px}#ggExactUI .gg-continue-main{left:57px!important;top:140px!important;width:370px!important;height:105px!important;padding:2px 8px;font-size:12px}#ggExactUI .gg-continue-main small{font-size:8px}#ggExactUI .gg-continue-icon{width:23px;height:23px;font-size:16px}}
 
+/* Fuentes locales: funcionan también cuando el juego se ejecuta sin Internet. */
+@font-face{font-family:'Orbitron';src:url('fonts/Orbitron-Variable.ttf') format('truetype');font-style:normal;font-weight:400 900;font-display:swap}
+@font-face{font-family:'Rajdhani';src:url('fonts/Rajdhani-Bold.ttf') format('truetype');font-style:normal;font-weight:700;font-display:swap}
+@font-face{font-family:'Oxanium';src:url('fonts/Oxanium-Variable.ttf') format('truetype');font-style:normal;font-weight:400 900;font-display:swap}
+@font-face{font-family:'Exo 2';src:url('fonts/Exo2-Variable.ttf') format('truetype');font-style:normal;font-weight:100 900;font-display:swap}
+:root{--gg-font-title:'Orbitron',sans-serif;--gg-font-menu:'Rajdhani',sans-serif;--gg-font-level:'Oxanium',sans-serif;--gg-font-ui:'Exo 2',sans-serif}
+html,body,#app,#pauseModal,#pauseModal button,#pauseModal input,#pauseModal select,#pauseModal textarea{font-family:var(--gg-font-ui)!important}
+#app h1,#app h2,#app h3,#pauseModal h1,#pauseModal h2,#pauseModal h3,.gg-rank-heading{font-family:var(--gg-font-title)!important}
+#ggExactUI .gg-main-menu-action,#ggExactUI .gg-continue-main,#ggExactUI .gg-home-action{font-family:var(--gg-font-menu)!important}
+#ggExactUI .gg-home-profile-grid{font-family:var(--gg-font-ui)!important}
+#ggExactUI .gg-level-button,.gg-level-button,.level-button,.level-grid button{font-family:var(--gg-font-level)!important}
+#ggExactUI .gg-home-action{flex-direction:row;justify-content:flex-start;gap:clamp(8px,1.2vw,20px);padding-left:clamp(8px,1.5vw,24px);text-align:left}
+#ggExactUI .gg-action-icon{display:grid;flex:none;width:clamp(25px,3vw,48px);height:clamp(25px,3vw,48px);place-items:center;color:#ffd54d;font:900 clamp(22px,2.7vw,42px)/1 'Exo 2',sans-serif;text-shadow:0 0 10px #ffc62b,0 2px 4px #281900}
+#ggExactUI .gg-chart-icon{color:#e9faff;letter-spacing:-.12em;text-shadow:0 0 9px #50cfff}
+#ggExactUI .gg-action-copy{display:flex;min-width:0;flex:1;flex-direction:column;align-items:center;justify-content:center;gap:3px;text-align:center}
+#ggExactUI .gg-home-action strong{font:700 clamp(13px,1.5vw,23px)/1.05 'Rajdhani',sans-serif;letter-spacing:.04em}
+#ggExactUI .gg-home-action small{font:600 clamp(8px,.8vw,12px)/1.1 'Exo 2',sans-serif;letter-spacing:.025em}
+.gg-statboard{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.gg-stat-card{display:flex;min-width:0;min-height:72px;flex-direction:column;justify-content:center;gap:7px;padding:11px;border:1px solid #2875a2;border-radius:7px;background:linear-gradient(145deg,#061c31,#041326);text-align:center}
+.gg-stat-card small{color:#8ed8f2;font:700 10px 'Exo 2',sans-serif;letter-spacing:.06em}
+.gg-stat-card strong{overflow:hidden;color:#fff;font:700 clamp(16px,2.2vw,25px) 'Oxanium',sans-serif;text-overflow:ellipsis;white-space:nowrap}
+.gg-stat-note{margin:12px 0 0;color:#9bc7dc;font:600 12px 'Exo 2',sans-serif;text-align:center}
+@media(max-width:700px){#ggExactUI .gg-home-action{gap:5px;padding:2px 4px}#ggExactUI .gg-action-icon{width:20px;height:24px;font-size:19px}#ggExactUI .gg-home-action strong{font-size:clamp(9px,1.7vw,13px)}#ggExactUI .gg-home-action small{font-size:clamp(6px,1vw,8px)}.gg-statboard{grid-template-columns:1fr 1fr}.gg-stat-card{min-height:56px;padding:7px}.gg-stat-card small{font-size:8px}}
+
+/* Preferencias de pantalla: control nativo en Windows y adaptación segura en navegador. */
+#settings .gg-display-card{grid-column:1/-1}
+#settings .gg-display-card .gg-display-row{display:grid;grid-template-columns:minmax(150px,1fr) minmax(180px,1.3fr);align-items:center;gap:12px;padding:9px 0;border-bottom:1px solid #34566c55;color:#cce6f1;font:600 12px 'Exo 2',sans-serif}
+#settings .gg-display-row>span{display:flex;justify-content:space-between;gap:8px}
+#settings .gg-display-row select{min-width:0;padding:8px 10px;border:1px solid #4f95a6;border-radius:6px;background:#102e3e;color:#fff;font:600 13px 'Exo 2',sans-serif}
+#settings .gg-display-row input[type=range]{width:100%;accent-color:#56e6ed}
+#settings .gg-display-actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:13px}
+#settings .gg-display-status{min-height:18px;margin:10px 0 0;color:#9be8f0;font:600 12px 'Exo 2',sans-serif}
+#settings .gg-display-hint{max-width:900px}
+@media(max-width:600px){#settings .gg-display-card .gg-display-row{grid-template-columns:1fr;gap:6px}#settings .gg-display-card{grid-column:auto}}
