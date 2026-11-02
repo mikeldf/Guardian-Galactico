@@ -45,12 +45,12 @@
 
 /* Fases 8–14: elimina el panel fijo inferior; armas conseguidas como power-ups */
 #arsenalPanel{display:none!important}
-#pickupHud{position:absolute;left:50%;top:91px;transform:translateX(-50%);z-index:5;display:flex;flex-wrap:wrap;justify-content:center;gap:9px;max-width:95%;pointer-events:none}
+#pickupHud{position:absolute;left:50%;top:126px;transform:translateX(-50%);z-index:5;display:flex;flex-wrap:wrap;justify-content:center;gap:9px;max-width:95%;pointer-events:none}
 #pickupHud span{background:#071e36d9;border:1px solid #3d9ab86d;border-radius:25px;color:#baf3ff;font-size:11px;font-weight:850;white-space:nowrap;padding:8px 12px;box-shadow:0 0 14px #0d8eb622;letter-spacing:.06em}
 #pickupHud #secondaryPill{border-color:#ddb36a7a;color:#ffdf93}
 #playLayer{cursor:none}
 #gameHud .hudControls{pointer-events:auto}
-@media(max-width:600px){#pickupHud{top:83px;gap:4px}#pickupHud span{padding:5px 8px;font-size:9px}}
+@media(max-width:600px){#pickupHud{top:116px;gap:4px}#pickupHud span{padding:5px 8px;font-size:9px}}
 
 /* FASE 10 — textura transparente y visualización del hangar */
 .shipCard img,.hangarDetail img,.hero-ship{image-rendering:auto;object-fit:contain;filter:drop-shadow(0 0 12px #22b9ff66) drop-shadow(0 9px 14px #03091ddd)}
