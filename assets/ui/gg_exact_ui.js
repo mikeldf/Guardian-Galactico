@@ -11,7 +11,7 @@ root.setAttribute('aria-label','Menú principal de Guardián Galáctico');
 root.innerHTML='<div class="gg-photo-ambient"></div><div class="gg-photo-stage" role="region" aria-label="Inicio del juego"></div>';
 document.body.append(root);
 const stage=root.querySelector('.gg-photo-stage'),ambient=root.querySelector('.gg-photo-ambient');
-const profilePanel=document.createElement('section');profilePanel.className='gg-home-profile';profilePanel.setAttribute('aria-label','Perfil de piloto y progreso');profilePanel.innerHTML='<div class="gg-home-profile-grid"><div><small>PILOTO</small><strong data-profile="name">PILOTO</strong></div><div><small>PIEZAS</small><strong data-profile="pieces">◈ 0</strong></div><div><small>MISIONES</small><strong data-profile="missions">0 / 200</strong></div><div><small>NAVES</small><strong data-profile="ships">5 / 60</strong></div></div><button type="button" class="gg-home-ranking-button" data-act="ranking" aria-label="Abrir misiones y ranking">MISIONES · RANKING <span aria-hidden="true">↗</span></button>';root.append(profilePanel);
+const profilePanel=document.createElement('section');profilePanel.className='gg-home-profile';profilePanel.setAttribute('aria-label','Perfil de piloto y progreso');profilePanel.innerHTML='<div class="gg-home-profile-title">PERFIL DE PILOTO</div><div class="gg-home-profile-grid"><div><small>PILOTO</small><strong data-profile="name">PILOTO</strong></div><div><small>PIEZAS</small><strong data-profile="pieces">◈ 0</strong></div><div><small>MISIONES</small><strong data-profile="missions">0 / 200</strong></div><div><small>NAVES</small><strong data-profile="ships">5 / 60</strong></div></div><div class="gg-home-side-actions"><button type="button" class="gg-home-action" data-act="missions" aria-label="Abrir misiones"><span aria-hidden="true">✦</span>MISIONES</button><button type="button" class="gg-home-action" data-act="ranking" aria-label="Abrir ranking"><span aria-hidden="true">🏆</span>RANKING</button></div>';root.append(profilePanel);
 const homeArt='assets/ui/refs/principal.optim.webp';
 const menuRects=[[43,220,333,132],[45,365,332,117],[45,492,332,117],[44,618,335,116],[45,743,332,118]];
 const worldNames=['AURIX','VOLTAR','ZENTHAR','CRYON','DRAKON','NEBULIS','ORION','KAELIX','VORTEX','ELYSIUM'];
@@ -48,6 +48,7 @@ root.addEventListener('click',e=>{
   const [kind,value]=b.dataset.act.split(':');
   if(kind==='continue'){bridge.resume();return;}
   if(kind==='ranking'){bridge.openRanking?.();return;}
+  if(kind==='missions'){bridge.openCurrentLevels();return;}
   if(kind!=='nav')return;
   const i=Number(value);
   if(i===0)bridge.openCurrentLevels();
