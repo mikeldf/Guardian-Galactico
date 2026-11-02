@@ -1,6 +1,6 @@
 /* Fase 54: solo arreglos de composición; no se alteran controles ni sprites. */
 #gg50Classic {background: #010816 url('fondo_espacial_limpio.webp') center center / cover no-repeat !important;}
-#gg50Classic .gg50-stage {background-color:transparent!important; background-image:none!important; box-shadow:none!important;outline:0!important;}
+#gg50Classic .gg50-stage {background-color:transparent!important; box-shadow:none!important;outline:0!important;}
 #gg50Classic .gg50-ambient {display:none!important;}
 /* La imagen antigua se conserva únicamente como logotipo. El planeta grande es dinámico. */
 #gg50Classic .gg51-original-logo-planet {height:170px!important;overflow:hidden!important;mask-image:linear-gradient(#000 0%,#000 87%,transparent 100%);-webkit-mask-image:linear-gradient(#000 0%,#000 87%,transparent 100%);}
@@ -24,3 +24,4 @@
 #gg50Classic .gg52-bottom-deck:before,#gg50Classic .gg52-bottom-deck:after{display:none!important}
 /* Los bordes del bloque de ilustración espacial se desvanecen hacia el fondo común. */
 #gg50Classic .gg51-map-sidebar {mask-image:linear-gradient(to right,transparent 0%,#000 16%,#000 88%,transparent 100%)!important;-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 16%,#000 88%,transparent 100%)!important}
+

@@ -85,3 +85,41 @@
 #gg50Classic .gg50-map-label{z-index:4}
 /* Evita mostrar fragmentos de los planetas de la ilustración antigua en el menú lateral. */
 #gg50Classic .gg51-map-sidebar{width:335px!important}
+
+/* Selector cósmico: ilustración nueva con nombres/controles HTML funcionales. */
+#gg50Classic.gg50-levels-screen::before{content:"";position:absolute;inset:-24px;z-index:0;background:url('../refs/selector-cosmico.jpg') center center / cover no-repeat;filter:blur(20px) saturate(1.28) brightness(.84);pointer-events:none}
+#gg50Classic .gg50-stage{z-index:1}
+#gg50Classic .gg50-stage{background-position:center!important;background-size:100% 100%!important}
+#gg50Classic .gg50-level-caption{position:absolute;z-index:4;left:60px;top:69px;width:410px;height:88px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;color:#f6fcff;text-align:center;pointer-events:none}
+#gg50Classic .gg50-level-caption b{font:900 clamp(24px,2vw,34px)/1 'Orbitron',sans-serif;letter-spacing:.06em;text-shadow:0 0 12px #35cfff}
+#gg50Classic .gg50-level-caption small{font:700 15px/1 'Exo 2',sans-serif;letter-spacing:.12em;color:#a9eaff;text-shadow:0 1px 5px #00152c}
+#gg50Classic .gg50-level-coins{position:absolute;z-index:4;left:1350px;top:72px;width:238px;height:78px;display:flex;align-items:center;justify-content:flex-start;color:#fff;font:700 29px/1 'Exo 2',sans-serif;text-shadow:0 0 9px #4bcfff}
+#gg50Classic .gg50-dot-scrim{position:absolute;z-index:4;border-radius:12px;background:linear-gradient(180deg,#03172de8,#04192fee);pointer-events:none}
+#gg50Classic .gg50-world-dots{position:absolute;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:10px}
+#gg50Classic .gg50-planet-dot{flex:none;width:27px;height:27px;padding:0;border:2px solid #00cfff;border-radius:50%;background:#05213d;box-shadow:0 0 7px #10caff88;cursor:pointer}
+#gg50Classic .gg50-planet-dot.active{border-color:#ffe557;background:radial-gradient(circle at 35% 30%,#fff7a4,#ffc52c 58%,#a95b00);box-shadow:0 0 12px #ffcf36}
+#gg50Classic .gg50-planet-dot:hover,#gg50Classic .gg50-planet-dot:focus-visible{outline:none;filter:brightness(1.28);transform:scale(1.08)}
+#gg50Classic .gg50-world-arrow{z-index:6;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;color:transparent!important;font-size:1px!important;cursor:pointer}
+#gg50Classic .gg50-world-arrow:hover,#gg50Classic .gg50-world-arrow:focus-visible{outline:none!important;background:transparent!important;box-shadow:none!important;filter:brightness(1.25)}
+#gg50Classic .gg50-planet-well{position:absolute;z-index:3;left:32px;top:288px;width:394px;height:397px;display:grid;place-items:center;border:0;border-radius:50%;background:radial-gradient(circle,#020a1a 0 66%,transparent 72%);overflow:hidden}
+#gg50Classic .gg50-planet-well img{width:365px;height:365px;object-fit:contain;border-radius:50%;filter:drop-shadow(0 0 19px #4ac0ffac)}
+#gg50Classic .gg50-level-grid{position:absolute;z-index:4;left:476px;top:314px;width:818px;height:416px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));grid-template-rows:repeat(4,minmax(0,1fr));gap:12px;box-sizing:border-box}
+#gg50Classic .gg50-level-card,#gg50Classic .gg51_futurista_limpio .gg50-level-card{position:relative;display:grid;place-items:center;min-width:0;min-height:0;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;opacity:1;color:#f7fdff;font:700 31px/1 'Oxanium',sans-serif;text-shadow:0 2px 5px #001326,0 0 9px #47cfff;cursor:pointer}
+#gg50Classic .gg50-level-card span{display:grid;width:100%;height:54%;place-items:center;box-sizing:border-box}
+#gg50Classic .gg50-level-card .gg50-level-state{position:absolute;top:8px;right:10px;display:grid;place-items:center;min-width:23px;height:23px;color:#b7cce0;font:900 20px/1 'Exo 2',sans-serif;font-style:normal;text-shadow:0 1px 5px #001326,0 0 8px #77d5ff66}
+#gg50Classic .gg50-level-card.cleared .gg50-level-state{color:#63ffd0;font-size:23px;text-shadow:0 0 7px #20eab9,0 0 13px #00a783}
+#gg50Classic .gg50-level-card.locked .gg50-level-state{font-size:28px;filter:grayscale(.15)}
+#gg50Classic .gg50-level-card.locked span{color:#9db5ca;text-shadow:0 1px 4px #000}
+#gg50Classic .gg50-level-card.cleared span{color:#f2fffc;text-shadow:0 0 10px #70ffd5}
+#gg50Classic .gg50-level-card.boss span{color:#fff2ff;text-shadow:0 0 11px #d883ff}
+#gg50Classic .gg50-level-card.selected span{transform:scale(1.13);color:#fff;text-shadow:0 0 11px #4ee9ff,0 0 22px #168cff}
+#gg50Classic .gg50-level-card:hover span,#gg50Classic .gg50-level-card:focus-visible span{filter:brightness(1.3)}
+#gg50Classic .gg50-level-card:hover,#gg50Classic .gg50-level-card:focus-visible{outline:none!important;border:0!important;background:transparent!important;box-shadow:none!important}
+#gg50Classic .gg50-back{position:absolute;z-index:5;left:25px;top:824px;width:263px;height:92px;display:flex;align-items:center;justify-content:flex-start;padding:0 0 0 114px!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;color:#f2fbff;font:700 24px/1 'Rajdhani',sans-serif;letter-spacing:.05em;cursor:pointer}
+#gg50Classic .gg50-back span{white-space:nowrap}
+#gg50Classic .gg50-back:hover,#gg50Classic .gg50-back:focus-visible{outline:none!important;background:transparent!important;box-shadow:none!important;filter:brightness(1.2)}
+#gg50Classic .gg50-launch{position:absolute;z-index:5;left:555px;top:786px;width:560px;height:124px;display:flex;align-items:center;justify-content:flex-start;padding:0 0 0 68px!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;color:#fff;font:700 25px/1 'Rajdhani',sans-serif;letter-spacing:.04em;cursor:pointer}
+#gg50Classic .gg50-launch span{white-space:nowrap}
+#gg50Classic .gg50-launch:disabled{opacity:.48;filter:grayscale(.8);cursor:not-allowed}
+#gg50Classic .gg50-launch:hover:not(:disabled),#gg50Classic .gg50-launch:focus-visible{outline:none!important;background:transparent!important;box-shadow:none!important;filter:brightness(1.18)}
+
