@@ -89,8 +89,8 @@
 .gg37-primaryrow{display:flex;align-items:center;gap:12px;margin-bottom:7px}
 .gg37-primaryicon{width:49px;height:49px;clip-path:polygon(9px 0,100% 0,100% calc(100% - 9px),calc(100% - 9px) 100%,0 100%,0 9px)}
 #cockpitPanel #cockpitWeaponIcon{width:45px!important;height:45px!important;object-fit:contain;filter:drop-shadow(0 0 8px #e7a85b8c)}
-.gg37-primaryinfo{display:flex;flex-direction:column;justify-content:center;gap:4px}
-#cockpitPanel #cockpitPrimary{font-size:clamp(19px,1.6vw,24px)!important;letter-spacing:.035em!important;color:#ffd69b!important;white-space:nowrap}
+.gg37-primaryinfo{display:flex;flex:1;min-width:0;flex-direction:column;justify-content:center;gap:4px}
+#cockpitPanel #cockpitPrimary{display:block;min-width:0;overflow:hidden;text-overflow:ellipsis;font-size:clamp(15px,1.2vw,19px)!important;letter-spacing:.035em!important;color:#ffd69b!important;white-space:nowrap}
 .gg37-primaryinfo>span{font-size:9px;color:#9babc1;letter-spacing:.12em;font-weight:700}
 #cockpitPanel .gg37-powercells{gap:4px!important;margin:1px 0 6px!important}
 #cockpitPanel .gg37-powercells span{height:10px!important;transform:skew(-13deg)!important;background:#081727!important;border:1px solid #476079!important;border-radius:0!important}
@@ -140,7 +140,7 @@
 @media (max-width:700px){
  #playLayer{--gg-sidebar:0px!important;padding-right:0!important}
  #playLayer #cockpitPanel.gg37-cockpit{display:none!important}
- #playLayer #pickupHud{display:flex!important;left:50%!important;top:72px!important}
+ #playLayer #pickupHud{display:flex!important;left:50%!important;top:122px!important}
  #playLayer #gameHud{inset:0!important}
  #gameHud .hudBar{opacity:1!important}
 }
