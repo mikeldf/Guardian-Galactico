@@ -312,7 +312,7 @@ body,#app{font-family:Bahnschrift,'Arial Narrow','Trebuchet MS',system-ui,sans-s
 #cockpitPanel #cockpitSecondaryIcon{width:58px!important;height:58px!important}
 @media(max-width:940px){#playLayer{--gg-sidebar:250px}#cockpitPanel .ck-foot{display:none!important}#playLayer #cockpitPanel{padding:12px!important}#gameHud .hudBar{padding:9px 12px!important}}
 @media(max-width:600px){#playLayer{--gg-sidebar:0px!important}#playLayer #cockpitPanel{display:none!important}#playLayer #pickupHud{display:flex!important}#gameHud .hudBar{padding:6px 8px!important}}
-</style><link rel="stylesheet" href="assets/ui/gg_exact_ui.css?v=20261102-profile1"><style id="gg-phase26-warp-css">
+</style><link rel="stylesheet" href="assets/ui/gg_exact_ui.css?v=20261102-rightnav1"><style id="gg-phase26-warp-css">
 #planetZoom{position:fixed!important;inset:0!important;z-index:1300!important}
 #planetZoom #zoomOrb{width:clamp(180px,27vw,420px)!important;height:clamp(180px,27vw,420px)!important;background-size:contain!important;background-repeat:no-repeat!important;box-shadow:none!important;filter:drop-shadow(0 0 48px var(--pc))}
 #planetZoom.active{animation:ggP26Fade 2.2s both!important}
@@ -1398,7 +1398,7 @@ function selectMission(global){
  $('launchMission').disabled=!(cleared||open);$('launchMission').onclick=()=>start(global);$('missionLockNote').textContent=(cleared||open)?'Mueve el ratón; mantén clic izquierdo para disparar y clic derecho para misiles.':'Completa los niveles anteriores para desbloquear esta misión.';
 }
 window.UI={screen(id){if(id==='hangar')hangarFrom=currentScreen;UI.screen(id)}};
-$('playBtn').addEventListener('click',ggOpenCurrentLevels);$('missionsRankingBtn')?.addEventListener('click',ggShowMissionsRanking);
+$('playBtn').addEventListener('click',ggOpenCurrentLevels);missionsRankingBtn?.addEventListener('click',ggShowMissionsRanking);
 $('quickFull').addEventListener('click',()=>{if(!document.fullscreenElement)document.documentElement.requestFullscreen?.().catch(()=>{});else document.exitFullscreen?.()});
 $('exitBtn').addEventListener('click',()=>{showModal('SALIR DEL JUEGO','Para cerrar la versión del navegador, cierra esta pestaña. Tu progreso está guardado.',[{label:'VOLVER AL MENÚ',primary:true,onClick:()=>{closeModal();UI.screen('home')}}],'SALIR')});
 $('galaxyBack').addEventListener('click',()=>UI.screen('home'));
@@ -2839,7 +2839,7 @@ window.GG_SPRITE_DIAGNOSTICS={
 };
 </script>
 <script src="assets/audio/gg_audio_v2.js"></script>
-<script src="assets/ui/gg_exact_ui.js?v=20261102-profile1"></script><script src="assets/ui/classic_restored/gg50_original_visual.js"></script><script src="assets/audio/gg39_music.js?v=20261102-musicauto6"></script><script>(function(){
+<script src="assets/ui/gg_exact_ui.js?v=20261102-rightnav1"></script><script src="assets/ui/classic_restored/gg50_original_visual.js"></script><script src="assets/audio/gg39_music.js?v=20261102-musicauto6"></script><script>(function(){
 const overlay=document.getElementById('gg40Boot'),bar=document.getElementById('gg40LoadFill'),pct=document.getElementById('gg40LoadPct'),text=document.getElementById('gg40LoadText');
 if(!overlay)return;
 const files=['assets/ui/gg40_loading_bg.webp','assets/planetas/mundo_01_azul.webp','assets/embedded/36019be08849ec.webp','assets/ui/combate_mundo_01.webp'];
@@ -2850,3 +2850,4 @@ setTimeout(()=>{if(!overlay.classList.contains('done')){count=files.length;progr
 })();</script><script src="assets/ui/gg49_diagnostico.js"></script><link rel="stylesheet" href="assets/ui/gg_display_settings.css">
 <script src="assets/ui/gg_display_settings.js"></script>
 </body></html>
+
