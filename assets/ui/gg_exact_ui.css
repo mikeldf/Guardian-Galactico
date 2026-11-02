@@ -288,15 +288,15 @@ html,body,#app,#pauseModal,#pauseModal button,#pauseModal input,#pauseModal sele
 
 /* Menú cósmico adjunto: la ilustración ya contiene los marcos y los iconos.
    La capa HTML aporta únicamente los nombres y mantiene los botones activos. */
-#ggExactUI .gg-home-profile-grid{left:43.5%;top:1.1%;width:20%;height:6%;grid-template-columns:1fr;align-items:center}
+#ggExactUI .gg-home-profile-grid{left:44.6%;top:1.1%;width:19%;height:6%;grid-template-columns:1fr;align-items:center}
 #ggExactUI .gg-home-profile-grid>div{padding:0;border:0;background:transparent;text-align:left}
 #ggExactUI .gg-home-profile-grid strong{color:#fff;font:700 clamp(19px,1.9vw,29px)/1 'Exo 2',sans-serif;letter-spacing:.04em;text-shadow:0 0 8px #56cfff}
 #ggExactUI .gg-home-side-actions{left:76.2%;top:40.1%;width:20.5%;height:28%;gap:8%}
 #ggExactUI .gg-home-action{flex-direction:row;gap:0;padding:5px 8px;text-align:center}
-#ggExactUI .gg-home-action .gg-action-copy{display:flex;min-width:0;flex:1;align-items:center;justify-content:center}
+#ggExactUI .gg-home-action .gg-action-copy{display:flex;min-width:0;flex:1;box-sizing:border-box;align-items:center;justify-content:center;padding-left:100px}
 #ggExactUI .gg-home-action strong{font:700 clamp(17px,1.8vw,27px)/1.05 'Rajdhani',sans-serif;letter-spacing:.04em}
-#ggExactUI button.gg-hit.gg-main-menu-action{justify-content:center;gap:0;padding:0;text-align:center;font:700 clamp(21px,2vw,30px)/1 'Rajdhani',sans-serif;letter-spacing:.04em}
+#ggExactUI button.gg-hit.gg-main-menu-action{justify-content:flex-start;gap:0;padding:0 10px 0 150px;text-align:left;font:700 clamp(21px,2vw,30px)/1 'Rajdhani',sans-serif;letter-spacing:.04em}
 #ggExactUI button.gg-hit.gg-main-menu-action:first-child{color:#eaffed}
 #ggExactUI .gg-continue-main{left:43px!important;top:138px!important;width:390px!important;height:112px!important;justify-content:center;padding:0;font:700 clamp(21px,2vw,30px)/1 'Rajdhani',sans-serif;letter-spacing:.04em}
 #ggExactUI .gg-continue-main:hover,#ggExactUI .gg-continue-main:focus-visible{background:#23aaff1c!important}
-@media(max-width:700px){#ggExactUI .gg-home-profile-grid{left:43.5%;top:1.2%;width:20%;height:5.7%;grid-template-columns:1fr}#ggExactUI .gg-home-profile-grid strong{font-size:clamp(13px,1.8vw,19px)}#ggExactUI .gg-home-side-actions{left:76.2%;top:40.1%;width:20.5%;height:28%;gap:8%}#ggExactUI .gg-home-action strong{font-size:clamp(10px,1.6vw,17px)}#ggExactUI button.gg-hit.gg-main-menu-action{padding:0;font-size:clamp(12px,1.8vw,21px)}#ggExactUI .gg-continue-main{left:43px!important;top:138px!important;width:390px!important;height:112px!important;font-size:clamp(12px,1.8vw,21px)}}
+@media(max-width:700px){#ggExactUI .gg-home-profile-grid{left:44.6%;top:1.2%;width:19%;height:5.7%;grid-template-columns:1fr}#ggExactUI .gg-home-profile-grid strong{font-size:clamp(13px,1.8vw,19px)}#ggExactUI .gg-home-side-actions{left:76.2%;top:40.1%;width:20.5%;height:28%;gap:8%}#ggExactUI .gg-home-action strong{font-size:clamp(10px,1.6vw,17px)}#ggExactUI .gg-home-action .gg-action-copy{padding-left:65px}#ggExactUI button.gg-hit.gg-main-menu-action{padding:0 6px 0 105px;font-size:clamp(12px,1.8vw,21px)}#ggExactUI .gg-continue-main{left:43px!important;top:138px!important;width:390px!important;height:112px!important;font-size:clamp(12px,1.8vw,21px)}}
