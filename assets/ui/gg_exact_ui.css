@@ -300,3 +300,10 @@ html,body,#app,#pauseModal,#pauseModal button,#pauseModal input,#pauseModal sele
 #ggExactUI .gg-continue-main{left:43px!important;top:138px!important;width:390px!important;height:112px!important;justify-content:center;padding:0;font:700 clamp(21px,2vw,30px)/1 'Rajdhani',sans-serif;letter-spacing:.04em}
 #ggExactUI .gg-continue-main:hover,#ggExactUI .gg-continue-main:focus-visible{background:#23aaff1c!important}
 @media(max-width:700px){#ggExactUI .gg-home-profile-grid{left:44.6%;top:1.2%;width:19%;height:5.7%;grid-template-columns:1fr}#ggExactUI .gg-home-profile-grid strong{font-size:clamp(13px,1.8vw,19px)}#ggExactUI .gg-home-side-actions{left:76.2%;top:40.1%;width:20.5%;height:28%;gap:8%}#ggExactUI .gg-home-action strong{font-size:clamp(10px,1.6vw,17px)}#ggExactUI .gg-home-action .gg-action-copy{padding-left:65px}#ggExactUI button.gg-hit.gg-main-menu-action{padding:0 6px 0 105px;font-size:clamp(12px,1.8vw,21px)}#ggExactUI .gg-continue-main{left:43px!important;top:138px!important;width:390px!important;height:112px!important;font-size:clamp(12px,1.8vw,21px)}}
+
+/* El contenedor de texto no debe heredar el aro circular de los iconos. */
+#ggExactUI .gg-home-action>span.gg-action-copy{display:flex!important;flex:1 1 auto!important;width:auto!important;height:auto!important;min-width:0;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important}
+/* No dibujar una caja al pasar el ratón o usar el foco del teclado. */
+#ggExactUI .gg-home-action:hover,#ggExactUI .gg-home-action:focus-visible,
+#ggExactUI button.gg-hit.gg-main-menu-action:hover,#ggExactUI button.gg-hit.gg-main-menu-action:focus-visible,
+#ggExactUI .gg-continue-main:hover,#ggExactUI .gg-continue-main:focus-visible{outline:none!important;border-color:transparent!important;background:transparent!important;box-shadow:none!important;filter:brightness(1.2)}
