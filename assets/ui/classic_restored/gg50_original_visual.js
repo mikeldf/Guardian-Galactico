@@ -16,7 +16,7 @@
  const add=(cls,x,y,w,h)=>{const e=document.createElement('div');e.className=cls;Object.assign(e.style,{left:x+'px',top:y+'px',width:w+'px',height:h+'px'});stage.append(e);return e;};
  const button=(cls,label,x,y,w,h,cb)=>{const b=document.createElement('button');b.className=cls;b.type='button';b.setAttribute('aria-label',label);Object.assign(b.style,{left:x+'px',top:y+'px',width:w+'px',height:h+'px'});b.addEventListener('click',cb);stage.append(b);return b;};
  const snap=()=>bridge.snapshot();
- function fit(){if(!active)return;const w=active==='levels'?1672:1536,h=active==='levels'?941:1024;stage.style.width=w+'px';stage.style.height=h+'px';const s=Math.min(window.innerWidth/w,window.innerHeight/h);stage.style.transform=`translate(-50%,-50%) scale(${s})`;}
+ function fit(){if(!active)return;const w=active==='levels'?1672:1536,h=active==='levels'?941:1024;stage.style.width=w+'px';stage.style.height=h+'px';if(active==='levels'){const sx=window.innerWidth/w,sy=window.innerHeight/h;stage.style.transform=`translate(-50%,-50%) scale(${sx},${sy})`;return;}const s=Math.min(window.innerWidth/w,window.innerHeight/h);stage.style.transform=`translate(-50%,-50%) scale(${s})`;}
  window.addEventListener('resize',fit);
  function hide(){active=null;root.classList.remove('active');}
  function drawMap(){
@@ -57,7 +57,6 @@
   const coins=add('gg50-level-coins',1350,72,238,78);coins.textContent=Number(save.coins||0).toLocaleString('es-ES');coins.setAttribute('aria-label','Piezas disponibles: '+Number(save.coins||0));
   button('gg50-world-arrow','Planeta anterior',501,190,132,89,()=>changeWorld((world+9)%10));
   button('gg50-world-arrow','Planeta siguiente',1093,190,132,89,()=>changeWorld((world+1)%10));
-  const scrub=add('gg50-dot-scrim',678,213,402,50);scrub.setAttribute('aria-hidden','true');
   const dots=add('gg50-world-dots',700,221,370,30);dots.setAttribute('aria-label','Seleccionar planeta');
   names.forEach((planetName,i)=>{const dot=document.createElement('button');dot.type='button';dot.className='gg50-planet-dot'+(i===world?' active':'');dot.setAttribute('aria-label','Ir al planeta '+planetName);dot.title=planetName;dot.addEventListener('click',()=>changeWorld(i));dots.append(dot)});
   const planet=add('gg50-planet-well',32,288,394,397);const img=document.createElement('img');img.src=state.PLANET_ART[world];img.alt='Planeta '+name;img.draggable=false;planet.append(img);
@@ -78,7 +77,7 @@
  function changeWorld(n){world=n;selectedLevel=n*20+1;bridge.world(n);show('levels');}
  function show(id){
   if(id!=='galaxy'&&id!=='levels'){hide();return;}
-  active=id;const art=id==='galaxy'?mapArt:levelArt;root.classList.toggle('gg50-levels-screen',id==='levels');stage.innerHTML='';
+  active=id;const art=id==='galaxy'?mapArt:levelArt;stage.innerHTML='';
   // En la ilustración original del selector había 50 números y textos incrustados.
   // Su composición se conserva sin superponerla detrás de las 20 casillas actuales.
   stage.style.backgroundImage=id==='levels'?`url("${levelArt}")`:'none';stage.style.backgroundSize='100% 100%';stage.style.backgroundPosition='center';stage.style.backgroundRepeat='no-repeat';
