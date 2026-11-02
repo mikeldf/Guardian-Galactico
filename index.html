@@ -1206,7 +1206,7 @@ const SECONDARIES=[{name:'MISILES RECTOS',abbr:'RECTOS',color:'#ffae5a',cost:1,i
 const GG_P26_EARLY_TIERS=[1,2,2,3,3,4,4,5,5,6];
 /* FASE 35: la progresión de las primeras diez misiones ya está equilibrada en MISSION_SCRIPTS; no sobreescribirla aquí. */
 window.GG_P26_EARLY_AUDIT=()=>MISSION_SCRIPTS.slice(0,10).map(m=>({nivel:m.nivel,oleadas:m.oleadas.length,enemigos:m.oleadas.reduce((n,w)=>n+w.cantidad,0),tipos:[...new Set(m.oleadas.flatMap(w=>w.tipos))].sort()}));
-const defaultSave=()=>({lastUnlocked:1,lastPlayed:1,coins:250,selected:0,ships:[0,1,2,3,4],upgrades:{},worldWeaponLevels:Array(10).fill(1),campaignSchema:200,wins:0,bossWins:0,highestScore:0,perfect:0,difficulty:'normal'});let save=defaultSave();try{let s=JSON.parse(localStorage.getItem('GG_UNIVERSO_V3')||'null');if(s)save={...defaultSave(),...s,lastPlayed:Number.isInteger(s.lastPlayed)?s.lastPlayed:Math.min(s.campaignSchema===200?200:500,Math.max(1,s.lastUnlocked||1))}}catch(e){};
+const defaultSave=()=>({lastUnlocked:1,lastPlayed:1,coins:0,coinBalanceVersion:1,selected:0,ships:[0,1,2,3,4],upgrades:{},worldWeaponLevels:Array(10).fill(1),campaignSchema:200,wins:0,bossWins:0,highestScore:0,perfect:0,difficulty:'normal'});let save=defaultSave();try{let s=JSON.parse(localStorage.getItem('GG_UNIVERSO_V3')||'null');if(s)save={...defaultSave(),...s,coinBalanceVersion:Number(s.coinBalanceVersion)||0,lastPlayed:Number.isInteger(s.lastPlayed)?s.lastPlayed:Math.min(s.campaignSchema===200?200:500,Math.max(1,s.lastUnlocked||1))}}catch(e){};
 if(save.campaignSchema!==200){save.lastUnlocked=gg40LegacyLevel(save.lastUnlocked);save.lastPlayed=gg40LegacyLevel(save.lastPlayed||save.lastUnlocked);save.worldWeaponLevels=Array.isArray(save.worldWeaponLevels)?save.worldWeaponLevels.map(v=>Math.max(1,Math.min(40,1+Math.floor((Math.max(1,Number(v)||1)-1)*5.7)))):Array(10).fill(1);save.campaignSchema=200;}
 /* Fase 45: limitar la campaña actual a 200 sin borrar el progreso guardado. */
 save.lastUnlocked=Math.max(1,Math.min(201,Math.trunc(Number(save.lastUnlocked)||1)));
@@ -1223,6 +1223,7 @@ function ggPersistWeaponOnVictory(world,weapon){
  if(Number.isInteger(world)&&world>=0&&world<10)save.worldWeaponLevels[world]=Math.max(1,Math.min(GG40_MAX_POWER,Math.trunc(weapon)||1));
 }
 function persist(){try{localStorage.setItem('GG_UNIVERSO_V3',JSON.stringify(save))}catch(e){}}
+if(save.coinBalanceVersion!==1){save.coins=0;save.coinBalanceVersion=1;persist()}
 const GG_PILOT_PROFILE_KEY='GG_GALACTICO_PILOT_PROFILE_V1';
 function ggCleanPilotName(value){return String(value||'').replace(/[\u0000-\u001f\u007f]/g,' ').replace(/\s+/g,' ').trim().slice(0,18)}
 function ggLoadPilotProfile(){try{const p=JSON.parse(localStorage.getItem(GG_PILOT_PROFILE_KEY)||'null')||{};const runs=Array.isArray(p.runs)?p.runs.filter(x=>x&&Number.isFinite(Number(x.score))&&Number.isInteger(Number(x.level))).map(x=>({name:ggCleanPilotName(x.name)||'PILOTO',score:Math.max(0,Math.min(1e9,Math.floor(Number(x.score)))),level:Math.max(1,Math.min(200,Math.floor(Number(x.level)))),world:Math.max(0,Math.min(9,Math.floor(Number(x.world)||0))),won:!!x.won,at:Math.max(0,Math.floor(Number(x.at)||0))})).sort((a,b)=>b.score-a.score||a.at-b.at).slice(0,10):[];return {name:ggCleanPilotName(p.name),runs}}catch{return {name:'',runs:[]}}}
