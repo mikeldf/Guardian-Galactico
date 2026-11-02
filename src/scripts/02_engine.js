@@ -99,7 +99,8 @@ const GG56_EVENTS=[
 ];
 function gg56EventIndex(level,wave){return (level*17+wave*13+Math.floor((level-1)/20)*3)%GG56_EVENTS.length;}
 function gg56SectorEvent(r,waveFoes,waveIndex){
- if(r.local<4||!waveFoes.length||!(waveIndex===1||(r.local>=12&&waveIndex===r.waveCount-1&&waveIndex>1)))return;
+ // La primera oleada sirve de calentamiento; cada oleada posterior trae un evento distinto.
+ if(r.local<4||!waveFoes.length||waveIndex<1)return;
  const e=GG56_EVENTS[gg56EventIndex(r.level,waveIndex)];
  r.gg56Event=e.id;r.gg56EventLabel=e.name;r.gg56EventTip=e.tip;r.gg56EventUntil=r.elapsed+13;
  r.gg56EventsSeen=(r.gg56EventsSeen||0)+1;
