@@ -1,0 +1,84 @@
+
+/* Fase 44: nueva interfaz de hangar inspirada en la maqueta aprobada.
+   Vista a dos columnas y fondo histórico auténtico del proyecto. */
+#hangar{--gg44-cyan:#65dcff;--gg44-gold:#f9bb67;--gg44-ink:#dff7ff;display:flex!important;flex-direction:column!important;justify-content:initial!important;align-items:stretch!important;padding:0!important;overflow:hidden!important;background:#061220!important;isolation:isolate}
+#hangar::before{content:"";inset:-16px!important;position:absolute!important;z-index:-2!important;pointer-events:none;background:linear-gradient(180deg,#050c19a6,#0713227a 40%,#030c1bdf),url('../../assets/embedded/4d50e99b147320.jpg') 50% 40%/cover no-repeat!important;filter:blur(6px) saturate(1.16)!important;opacity:.94!important}
+#hangar::after{content:"";inset:0;position:absolute;z-index:-1;pointer-events:none;background:linear-gradient(120deg,rgba(3,9,18,.23),rgba(9,40,69,.10) 40%,rgba(2,11,21,.28)),repeating-linear-gradient(0deg,transparent 0 48px,#77baf907 49px 50px)}
+#hangar>*{z-index:1}
+#hangar .gg44-head{height:88px;min-height:88px;width:100%;margin:0!important;display:grid;grid-template-columns:180px minmax(260px,1fr) auto;gap:18px;align-items:center;padding:10px clamp(18px,3vw,48px);border-bottom:2px solid #65bdeb88;background:linear-gradient(90deg,#071726ef,#103553ec,#071726ef)!important;box-shadow:0 14px 25px #0009}
+#hangar .gg44-back{height:48px;white-space:nowrap;border:1px solid #63caff;background:linear-gradient(180deg,#164567e9,#071c34f0);box-shadow:inset 0 2px #b1f4ff50,0 0 17px #4ebfff34;border-radius:10px;padding:0 22px;font-size:15px;font-weight:800;letter-spacing:.11em;color:#e6f8ff}
+#hangar .gg44-back:hover,#hangar .gg44-back:focus-visible{background:linear-gradient(180deg,#2678a4,#0b3355);outline:2px solid #63d9fb;outline-offset:2px}
+#hangar .gg44-head h2{font-size:clamp(19px,2.3vw,32px)!important;text-align:center;margin:0!important;letter-spacing:.095em!important;font-weight:900;white-space:nowrap;color:#e3faff;text-shadow:0 0 24px #45aff955}
+#hangar .gg44-head-mark{font-size:26px;color:#72d9ff;margin-right:10px}
+#hangar .gg44-head-sub{opacity:.75}
+#hangar .gg44-currencies{display:flex;align-items:center;gap:13px;font-weight:800;letter-spacing:.03em}
+#hangar .gg44-currencies>span{white-space:nowrap;padding:12px 17px;border:1px solid #6bc0e9aa;background:linear-gradient(160deg,#12283edb,#081428ec);border-radius:9px;box-shadow:inset 0 1px #9feaff33}
+#hangar .gg44-fleet{color:#fff0f0}
+#hangar .gg44-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.12fr);width:min(1740px,calc(100% - 36px));min-height:0;flex:1;gap:18px;margin:18px auto 15px;overflow:hidden}
+#hangar .gg44-left{display:flex;flex-direction:column;gap:12px;min-width:0;min-height:0;overflow:hidden}
+#hangar .gg44-display{position:relative;display:flex;flex:1 1 auto;min-height:0;overflow:hidden;align-items:center;justify-content:center;background:linear-gradient(180deg,#05182d35,#04131e08 38%,#061c2988 100%),radial-gradient(ellipse at 50% 40%,#1b7eac47,transparent 65%);border:1px solid #85cbef7e;border-radius:14px 14px 6px 6px;box-shadow:inset 0 0 60px #3d8bcd22,0 4px 20px #0007}
+#hangar .gg44-hudtop{position:absolute;top:15px;left:19px;right:19px;display:flex;justify-content:space-between;gap:8px;font-size:10px;letter-spacing:.2em;color:#94d8efbd;z-index:3;text-shadow:0 1px 5px #000}
+#hangar .gg44-deck{position:absolute;left:6%;right:6%;bottom:3%;height:39%;border-radius:50%;transform:perspective(420px) rotateX(58deg);background:radial-gradient(ellipse at center,#0c5c91a1 0%,#041e36 47%,#2388bfcc 49%,#0d2943 51%,#df922e 54%,#164b7a 57%,#063051 61%,transparent 63%),repeating-radial-gradient(ellipse at center,#63d2ff50 0 1px,transparent 2px 32px);box-shadow:0 0 30px #41afff55;pointer-events:none;z-index:0}
+#hangar .gg44-deck::before{content:"";position:absolute;inset:8%;border:5px solid #57a4d2a0;border-radius:50%;box-shadow:inset 0 0 25px #49b5fb88,0 0 16px #ffc56c9b}
+#hangar .gg44-deck-inner{position:absolute;inset:35%;background:#40caff66;border-radius:50%;filter:blur(24px)}
+#hangar .gg44-display #detailImage{display:block!important;flex:none!important;position:relative!important;z-index:2!important;width:min(83%,550px)!important;height:75%!important;max-height:520px!important;max-width:none!important;object-fit:contain!important;aspect-ratio:auto!important;filter:drop-shadow(0 23px 23px #000e) drop-shadow(0 0 24px #1cc9ffc7)!important;animation:gg44float 4.4s ease-in-out infinite!important}
+@keyframes gg44float{0%,100%{transform:translateY(-7px)}50%{transform:translateY(1px)}}
+@media(prefers-reduced-motion:reduce){#hangar .gg44-display #detailImage{animation:none!important}}
+#hangar .gg44-spotlight{position:absolute;bottom:7%;left:25%;right:25%;height:5%;background:#7ad9ff55;filter:blur(21px);border-radius:50%;pointer-events:none}
+#hangar .gg44-assetwarning{position:absolute;z-index:5;bottom:12px;left:12px;right:12px;padding:10px;background:#371a22e8;border:1px solid #ff9b67;color:#ffeed8;font-size:12px;text-align:center}
+#hangar .gg44-assetwarning[hidden]{display:none!important}
+#hangar .gg44-info{position:relative;flex:0 0 auto;max-height:49%;overflow:auto;display:flex;flex-direction:column;gap:8px;min-width:0;padding:18px 21px;border:1px solid #7ac8eabf;border-radius:11px;background:linear-gradient(130deg,#0e304acc,#06172df0);box-shadow:inset 0 1px 0 #bdedff3d,0 10px 20px #0009}
+#hangar .gg44-info::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,#64d6ff,transparent)}
+#hangar .gg44-info-title{display:flex;justify-content:space-between;align-items:start;gap:10px}
+#hangar .gg44-info-title small{color:#9fdaed;font-size:12px;font-weight:850;letter-spacing:.14em}
+#hangar .gg44-info-title h3{font-size:clamp(23px,2.6vw,35px)!important;margin:0!important;line-height:1.15;letter-spacing:.02em!important;text-transform:none!important;color:#f2fdff}
+#hangar .gg44-class{font-size:12px;color:#92bfd6}
+#hangar .gg44-status{font-size:10px;letter-spacing:.13em;color:#91c6df;text-align:right}
+#hangar .gg44-stats{display:grid!important;gap:6px!important;margin:1px 0!important}
+#hangar .gg44-stats .row{min-height:17px;margin:0!important;display:grid!important;grid-template-columns:94px 1fr;align-items:center!important;gap:10px!important}
+#hangar .gg44-stats small{width:auto!important;color:#e5f7ff;font-weight:750;font-size:12px;white-space:nowrap}
+#hangar .gg44-stats .meter{height:10px;max-width:none;background:#040b20;border:1px solid #6da7bb55;border-radius:4px}
+#hangar .gg44-stats .meter span{background:linear-gradient(90deg,#39c7f7,#7ff6e7)!important;box-shadow:0 0 12px #52e8f99a}
+#hangar .gg44-below{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
+#hangar .gg44-special{font-size:12px;color:#a7d0dd;flex:1 1 180px}
+#hangar .gg44-upgrades{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:0!important}
+#hangar .gg44-upgrades button{padding:6px 9px!important;font-size:10px!important;letter-spacing:0!important;border:1px solid #559fc0;border-radius:5px!important;background:#123850b8}
+#hangar .gg44-actions{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:2px 0 0}
+#hangar .gg44-actions .btn{min-height:33px;font-size:12px;font-weight:850;padding:8px 14px!important;border-radius:6px;background:linear-gradient(180deg,#226e88,#09596b);border:1px solid #79eff8}
+#hangar .gg44-actions .btn:disabled{opacity:.55!important}
+#hangar .gg44-status-note{font-size:11px;color:#a1dbd6;line-height:1.3;flex:1 1 140px}
+#hangar .gg44-right{position:relative;display:flex;flex-direction:column;min-width:0;min-height:0;padding:15px 16px 0;border:2px solid #69c1ed9d;border-radius:14px;background:linear-gradient(120deg,#0d2741ed,#06172ae8);box-shadow:inset 0 0 30px #2082c122,0 13px 25px #0008;overflow:hidden}
+#hangar .gg44-list-head{display:flex;flex:none;align-items:center;justify-content:space-between;gap:12px;min-height:60px;padding:3px 2px 14px;border-bottom:1px solid #5e91b97d;margin-bottom:10px}
+#hangar .gg44-list-head>div{min-width:0}
+#hangar .gg44-list-head strong{display:block;font-size:clamp(15px,1.5vw,21px);letter-spacing:.07em}
+#hangar .gg44-list-head strong span{opacity:.75}
+#hangar .gg44-list-head small{display:block;margin-top:4px;color:#86c6d8;font-size:10px;letter-spacing:.07em}
+#hangar .gg44-sort-label{font-size:11px;white-space:nowrap;display:flex;align-items:center;gap:6px;color:#a2dcf0}
+#hangar .gg44-sort-label select{max-width:160px;padding:8px 9px;border-radius:6px;border:1px solid #7cbeda;background:#0b2c47;color:#dff7ff;font:inherit}
+#hangar .hangarGrid.gg44-ship-grid{position:relative!important;top:auto!important;left:auto!important;bottom:auto!important;right:auto!important;width:100%!important;min-width:0!important;max-width:none!important;height:auto!important;min-height:0!important;max-height:none!important;flex:1 1 auto!important;display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;align-content:start!important;align-items:stretch!important;justify-content:stretch!important;flex-wrap:initial!important;flex-direction:initial!important;gap:9px!important;padding:3px 4px 12px!important;margin:0!important;overflow-x:hidden!important;overflow-y:auto!important;background:transparent!important;border:none!important;scrollbar-color:#55bfff #092539;scrollbar-width:thin!important;scroll-snap-type:none!important}
+#hangar .hangarGrid.gg44-ship-grid .shipCard{position:relative!important;display:flex!important;flex:initial!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;width:100%!important;height:auto!important;min-width:0!important;min-height:133px!important;gap:4px!important;margin:0!important;padding:9px 4px!important;border-radius:8px!important;border:1px solid #548cacad!important;background:linear-gradient(160deg,#103452ed,#041327fa)!important;text-align:center!important;filter:none!important;opacity:1!important;scroll-snap-align:none!important;box-shadow:inset 0 1px #bbecff19!important}
+#hangar .hangarGrid.gg44-ship-grid .shipCard.selected{border:2px solid #6beaff!important;background:linear-gradient(150deg,#0b6580ed,#08344ee8)!important;box-shadow:0 0 18px #43dfff7a,inset 0 0 15px #30bcf957!important;transform:none!important}
+#hangar .hangarGrid.gg44-ship-grid .shipCard:hover:not(.selected){border-color:#7bd7f4!important;box-shadow:0 0 12px #51d2fe55!important}
+#hangar .hangarGrid.gg44-ship-grid .shipCard:focus-visible{outline:2px solid #80efff;outline-offset:2px}
+#hangar .hangarGrid.gg44-ship-grid .gg-native-thumb{position:relative!important;flex:none!important;width:100%!important;height:87px!important;display:flex!important;align-items:center!important;justify-content:center!important}
+#hangar .hangarGrid.gg44-ship-grid .gg-native-thumb img{width:100%!important;height:87px!important;max-width:130px!important;aspect-ratio:auto!important;object-fit:contain!important;filter:drop-shadow(0 0 8px #54caff55)!important}
+#hangar .hangarGrid.gg44-ship-grid .shipCard.lock .gg-native-thumb img{filter:grayscale(.8) brightness(.48)!important}
+#hangar .hangarGrid.gg44-ship-grid .gg-native-lock{position:absolute!important;left:calc(50% - 15px)!important;top:26px!important;font-size:25px!important;opacity:.85;color:#e5f6ff}
+#hangar .hangarGrid.gg44-ship-grid .gg-native-text{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:2px!important;min-width:0!important;width:100%!important;flex:initial!important}
+#hangar .hangarGrid.gg44-ship-grid strong{max-width:100%!important;font-size:12px!important;line-height:1.2!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;text-align:center!important;color:#f3faff}
+#hangar .hangarGrid.gg44-ship-grid small{font-size:10px!important;line-height:1.15!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;max-width:100%!important;color:#a8d0e2!important;text-align:center!important}
+#hangar .hangarGrid.gg44-ship-grid .shipCard:not(.lock) small{color:#7cefc5!important}
+#hangar .gg44-list-footer{min-height:30px;display:flex;align-items:center;justify-content:center;border-top:1px solid #5186a065;color:#7fc5d4;font-size:10px;letter-spacing:.1em}
+@media(max-height:850px) and (min-width:901px){#hangar .gg44-layout{margin:10px auto 8px}#hangar .gg44-info{padding:11px 16px;gap:6px}#hangar .gg44-display #detailImage{height:78%!important}#hangar .gg44-head{height:74px;min-height:74px}#hangar .gg44-stats{gap:3px!important}#hangar .gg44-upgrades button{padding:5px 7px!important}}
+@media(min-width:901px) and (max-width:1230px){#hangar .gg44-layout{grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:10px;width:calc(100% - 20px)}#hangar .hangarGrid.gg44-ship-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+@media(max-width:900px){#hangar{overflow-y:auto!important;overflow-x:hidden!important}#hangar .gg44-head{height:auto;min-height:68px;grid-template-columns:auto 1fr;gap:8px;padding:10px 12px}#hangar .gg44-head h2{font-size:clamp(17px,3.5vw,24px)!important;white-space:normal;text-align:right}#hangar .gg44-head-mark{font-size:19px;margin-right:3px}#hangar .gg44-back{font-size:12px;height:40px;padding:0 12px}#hangar .gg44-currencies{grid-column:1/-1;justify-content:flex-end;font-size:12px}#hangar .gg44-currencies>span{padding:5px 9px}#hangar .gg44-layout{grid-template-columns:1fr;width:calc(100% - 22px);flex:none;overflow:visible;gap:12px;margin:12px auto}#hangar .gg44-left{overflow:visible;min-height:0}#hangar .gg44-display{flex:none;height:clamp(260px,55vw,400px)}#hangar .gg44-display #detailImage{height:75%!important}#hangar .gg44-info{flex:none;max-height:none;overflow:visible}#hangar .gg44-right{min-height:410px;height:470px}#hangar .hangarGrid.gg44-ship-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+@media(max-width:540px){#hangar .gg44-head h2{font-size:15px!important}#hangar .gg44-head-sub{font-size:12px}#hangar .gg44-display{height:245px}#hangar .gg44-display #detailImage{height:80%!important;width:90%!important}#hangar .gg44-hudtop{font-size:8px;letter-spacing:.04em}#hangar .gg44-info{padding:12px}#hangar .gg44-info-title h3{font-size:25px!important}#hangar .gg44-right{height:480px;padding:12px 9px 0}#hangar .gg44-list-head{flex-wrap:wrap}#hangar .hangarGrid.gg44-ship-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:6px!important}#hangar .gg44-list-footer{font-size:9px}}
+/* Refinamiento de legibilidad: el fondo conserva la arquitectura espacial sin mostrar menús de referencia fantasma. */
+#hangar::before{background:linear-gradient(180deg,#051020a5,#07132285 38%,#030c1bde),url('../../assets/embedded/4d50e99b147320.jpg') 50% 38%/165% auto no-repeat!important;filter:blur(8px) saturate(1.2)!important}
+@media(max-width:900px){
+ #hangar .gg44-head{display:flex!important;flex-wrap:wrap!important;align-content:center!important;align-items:center!important;min-height:100px!important;height:auto!important;gap:9px 10px!important;padding:10px 12px!important}
+ #hangar .gg44-back{order:1;flex:none}
+ #hangar .gg44-head h2{order:2;flex:1 1 160px;max-width:none;min-width:0;line-height:1.2;justify-self:auto;text-align:right}
+ #hangar .gg44-currencies{order:3;flex:1 1 100%;display:flex;justify-content:flex-end;align-items:center;margin:0!important;min-height:24px}
+}
+

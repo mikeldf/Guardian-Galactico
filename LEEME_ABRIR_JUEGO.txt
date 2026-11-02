@@ -1,0 +1,7 @@
+GUARDIÁN GALÁCTICO — FASE 29 — JUEGO COMPLETO
+
+1. Extrae ESTE ÚNICO ZIP en una carpeta nueva.
+2. Abre index.html con Chrome o Edge.
+3. Conserva la carpeta assets junto a index.html.
+
+No necesitas descargar otras partes. Imágenes optimizadas para facilitar la descarga.

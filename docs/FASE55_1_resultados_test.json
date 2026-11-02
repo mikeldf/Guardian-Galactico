@@ -1,0 +1,23 @@
+{
+  "checks": 219,
+  "eventFamilies": [
+    "ace",
+    "combo",
+    "courier",
+    "intercept",
+    "recharge",
+    "shift",
+    "supply"
+  ],
+  "sampleLevels": {
+    "intercept": 4,
+    "supply": 5,
+    "shift": 6,
+    "combo": 7,
+    "courier": 8,
+    "recharge": 9,
+    "ace": 10,
+    "undefined": 21
+  },
+  "announcements": 358
+}

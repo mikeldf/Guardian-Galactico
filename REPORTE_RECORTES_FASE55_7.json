@@ -1,0 +1,807 @@
+{
+  "recutSource": "Original Fase 55.6 sin filtros intermedios",
+  "models": 50,
+  "gapRowsReconstructed": 70,
+  "details": [
+    {
+      "id": 1,
+      "original": "assets/gg58_new/enemies/mundo_01/01.png",
+      "sourceSize": [
+        83,
+        83
+      ],
+      "freshCutoutSize": [
+        79,
+        79
+      ],
+      "bands": 1,
+      "recoveredBlankLineRows": 0,
+      "unwantedMattePixelsRemoved": 164,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 2,
+      "original": "assets/gg58_new/enemies/mundo_01/02.png",
+      "sourceSize": [
+        111,
+        111
+      ],
+      "freshCutoutSize": [
+        81,
+        81
+      ],
+      "bands": 2,
+      "recoveredBlankLineRows": 1,
+      "unwantedMattePixelsRemoved": 202,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 3,
+      "original": "assets/gg58_new/enemies/mundo_01/03.png",
+      "sourceSize": [
+        102,
+        102
+      ],
+      "freshCutoutSize": [
+        102,
+        102
+      ],
+      "bands": 1,
+      "recoveredBlankLineRows": 0,
+      "unwantedMattePixelsRemoved": 260,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 4,
+      "original": "assets/gg58_new/enemies/mundo_01/04.png",
+      "sourceSize": [
+        124,
+        124
+      ],
+      "freshCutoutSize": [
+        128,
+        128
+      ],
+      "bands": 2,
+      "recoveredBlankLineRows": 2,
+      "unwantedMattePixelsRemoved": 394,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 5,
+      "original": "assets/gg58_new/enemies/mundo_01/05.png",
+      "sourceSize": [
+        127,
+        127
+      ],
+      "freshCutoutSize": [
+        131,
+        131
+      ],
+      "bands": 2,
+      "recoveredBlankLineRows": 1,
+      "unwantedMattePixelsRemoved": 378,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 6,
+      "original": "assets/gg58_new/enemies/mundo_02/01.png",
+      "sourceSize": [
+        92,
+        92
+      ],
+      "freshCutoutSize": [
+        89,
+        89
+      ],
+      "bands": 1,
+      "recoveredBlankLineRows": 0,
+      "unwantedMattePixelsRemoved": 188,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 7,
+      "original": "assets/gg58_new/enemies/mundo_02/02.png",
+      "sourceSize": [
+        107,
+        107
+      ],
+      "freshCutoutSize": [
+        84,
+        84
+      ],
+      "bands": 1,
+      "recoveredBlankLineRows": 0,
+      "unwantedMattePixelsRemoved": 264,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 8,
+      "original": "assets/gg58_new/enemies/mundo_02/03.png",
+      "sourceSize": [
+        114,
+        114
+      ],
+      "freshCutoutSize": [
+        116,
+        116
+      ],
+      "bands": 1,
+      "recoveredBlankLineRows": 0,
+      "unwantedMattePixelsRemoved": 514,
+      "outlyingPixelsRemoved": 5
+    },
+    {
+      "id": 9,
+      "original": "assets/gg58_new/enemies/mundo_02/04.png",
+      "sourceSize": [
+        131,
+        131
+      ],
+      "freshCutoutSize": [
+        135,
+        135
+      ],
+      "bands": 2,
+      "recoveredBlankLineRows": 2,
+      "unwantedMattePixelsRemoved": 683,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 10,
+      "original": "assets/gg58_new/enemies/mundo_02/05.png",
+      "sourceSize": [
+        125,
+        125
+      ],
+      "freshCutoutSize": [
+        129,
+        129
+      ],
+      "bands": 2,
+      "recoveredBlankLineRows": 4,
+      "unwantedMattePixelsRemoved": 645,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 11,
+      "original": "assets/gg58_new/enemies/mundo_03/01.png",
+      "sourceSize": [
+        95,
+        95
+      ],
+      "freshCutoutSize": [
+        92,
+        92
+      ],
+      "bands": 1,
+      "recoveredBlankLineRows": 0,
+      "unwantedMattePixelsRemoved": 139,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 12,
+      "original": "assets/gg58_new/enemies/mundo_03/02.png",
+      "sourceSize": [
+        99,
+        99
+      ],
+      "freshCutoutSize": [
+        95,
+        95
+      ],
+      "bands": 1,
+      "recoveredBlankLineRows": 0,
+      "unwantedMattePixelsRemoved": 169,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 13,
+      "original": "assets/gg58_new/enemies/mundo_03/03.png",
+      "sourceSize": [
+        127,
+        127
+      ],
+      "freshCutoutSize": [
+        130,
+        130
+      ],
+      "bands": 1,
+      "recoveredBlankLineRows": 0,
+      "unwantedMattePixelsRemoved": 369,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 14,
+      "original": "assets/gg58_new/enemies/mundo_03/04.png",
+      "sourceSize": [
+        132,
+        132
+      ],
+      "freshCutoutSize": [
+        136,
+        136
+      ],
+      "bands": 1,
+      "recoveredBlankLineRows": 0,
+      "unwantedMattePixelsRemoved": 438,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 15,
+      "original": "assets/gg58_new/enemies/mundo_03/05.png",
+      "sourceSize": [
+        133,
+        133
+      ],
+      "freshCutoutSize": [
+        136,
+        136
+      ],
+      "bands": 2,
+      "recoveredBlankLineRows": 5,
+      "unwantedMattePixelsRemoved": 463,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 16,
+      "original": "assets/gg58_new/enemies/mundo_04/01.png",
+      "sourceSize": [
+        98,
+        98
+      ],
+      "freshCutoutSize": [
+        96,
+        96
+      ],
+      "bands": 1,
+      "recoveredBlankLineRows": 0,
+      "unwantedMattePixelsRemoved": 182,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 17,
+      "original": "assets/gg58_new/enemies/mundo_04/02.png",
+      "sourceSize": [
+        100,
+        100
+      ],
+      "freshCutoutSize": [
+        100,
+        100
+      ],
+      "bands": 1,
+      "recoveredBlankLineRows": 0,
+      "unwantedMattePixelsRemoved": 334,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 18,
+      "original": "assets/gg58_new/enemies/mundo_04/03.png",
+      "sourceSize": [
+        117,
+        117
+      ],
+      "freshCutoutSize": [
+        119,
+        119
+      ],
+      "bands": 1,
+      "recoveredBlankLineRows": 0,
+      "unwantedMattePixelsRemoved": 549,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 19,
+      "original": "assets/gg58_new/enemies/mundo_04/04.png",
+      "sourceSize": [
+        133,
+        133
+      ],
+      "freshCutoutSize": [
+        136,
+        136
+      ],
+      "bands": 2,
+      "recoveredBlankLineRows": 8,
+      "unwantedMattePixelsRemoved": 879,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 20,
+      "original": "assets/gg58_new/enemies/mundo_04/05.png",
+      "sourceSize": [
+        129,
+        129
+      ],
+      "freshCutoutSize": [
+        132,
+        132
+      ],
+      "bands": 2,
+      "recoveredBlankLineRows": 12,
+      "unwantedMattePixelsRemoved": 881,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 21,
+      "original": "assets/gg58_new/enemies/mundo_05/01.png",
+      "sourceSize": [
+        93,
+        93
+      ],
+      "freshCutoutSize": [
+        91,
+        91
+      ],
+      "bands": 1,
+      "recoveredBlankLineRows": 0,
+      "unwantedMattePixelsRemoved": 189,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 22,
+      "original": "assets/gg58_new/enemies/mundo_05/02.png",
+      "sourceSize": [
+        102,
+        102
+      ],
+      "freshCutoutSize": [
+        101,
+        101
+      ],
+      "bands": 1,
+      "recoveredBlankLineRows": 0,
+      "unwantedMattePixelsRemoved": 321,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 23,
+      "original": "assets/gg58_new/enemies/mundo_05/03.png",
+      "sourceSize": [
+        119,
+        119
+      ],
+      "freshCutoutSize": [
+        121,
+        121
+      ],
+      "bands": 2,
+      "recoveredBlankLineRows": 1,
+      "unwantedMattePixelsRemoved": 406,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 24,
+      "original": "assets/gg58_new/enemies/mundo_05/04.png",
+      "sourceSize": [
+        133,
+        133
+      ],
+      "freshCutoutSize": [
+        135,
+        135
+      ],
+      "bands": 2,
+      "recoveredBlankLineRows": 5,
+      "unwantedMattePixelsRemoved": 533,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 25,
+      "original": "assets/gg58_new/enemies/mundo_05/05.png",
+      "sourceSize": [
+        126,
+        126
+      ],
+      "freshCutoutSize": [
+        130,
+        130
+      ],
+      "bands": 2,
+      "recoveredBlankLineRows": 3,
+      "unwantedMattePixelsRemoved": 492,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 26,
+      "original": "assets/gg58_new/enemies/mundo_06/01.png",
+      "sourceSize": [
+        79,
+        79
+      ],
+      "freshCutoutSize": [
+        74,
+        74
+      ],
+      "bands": 1,
+      "recoveredBlankLineRows": 0,
+      "unwantedMattePixelsRemoved": 264,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 27,
+      "original": "assets/gg58_new/enemies/mundo_06/02.png",
+      "sourceSize": [
+        103,
+        103
+      ],
+      "freshCutoutSize": [
+        103,
+        103
+      ],
+      "bands": 1,
+      "recoveredBlankLineRows": 0,
+      "unwantedMattePixelsRemoved": 503,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 28,
+      "original": "assets/gg58_new/enemies/mundo_06/03.png",
+      "sourceSize": [
+        117,
+        117
+      ],
+      "freshCutoutSize": [
+        118,
+        118
+      ],
+      "bands": 1,
+      "recoveredBlankLineRows": 0,
+      "unwantedMattePixelsRemoved": 661,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 29,
+      "original": "assets/gg58_new/enemies/mundo_06/04.png",
+      "sourceSize": [
+        131,
+        131
+      ],
+      "freshCutoutSize": [
+        135,
+        135
+      ],
+      "bands": 2,
+      "recoveredBlankLineRows": 1,
+      "unwantedMattePixelsRemoved": 654,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 30,
+      "original": "assets/gg58_new/enemies/mundo_06/05.png",
+      "sourceSize": [
+        125,
+        125
+      ],
+      "freshCutoutSize": [
+        129,
+        129
+      ],
+      "bands": 2,
+      "recoveredBlankLineRows": 9,
+      "unwantedMattePixelsRemoved": 712,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 31,
+      "original": "assets/gg58_new/enemies/mundo_07/01.png",
+      "sourceSize": [
+        86,
+        86
+      ],
+      "freshCutoutSize": [
+        82,
+        82
+      ],
+      "bands": 1,
+      "recoveredBlankLineRows": 0,
+      "unwantedMattePixelsRemoved": 203,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 32,
+      "original": "assets/gg58_new/enemies/mundo_07/02.png",
+      "sourceSize": [
+        99,
+        99
+      ],
+      "freshCutoutSize": [
+        96,
+        96
+      ],
+      "bands": 1,
+      "recoveredBlankLineRows": 0,
+      "unwantedMattePixelsRemoved": 770,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 33,
+      "original": "assets/gg58_new/enemies/mundo_07/03.png",
+      "sourceSize": [
+        116,
+        116
+      ],
+      "freshCutoutSize": [
+        117,
+        117
+      ],
+      "bands": 1,
+      "recoveredBlankLineRows": 0,
+      "unwantedMattePixelsRemoved": 934,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 34,
+      "original": "assets/gg58_new/enemies/mundo_07/04.png",
+      "sourceSize": [
+        138,
+        138
+      ],
+      "freshCutoutSize": [
+        139,
+        139
+      ],
+      "bands": 2,
+      "recoveredBlankLineRows": 9,
+      "unwantedMattePixelsRemoved": 1493,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 35,
+      "original": "assets/gg58_new/enemies/mundo_07/05.png",
+      "sourceSize": [
+        134,
+        134
+      ],
+      "freshCutoutSize": [
+        134,
+        134
+      ],
+      "bands": 2,
+      "recoveredBlankLineRows": 3,
+      "unwantedMattePixelsRemoved": 1221,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 36,
+      "original": "assets/gg58_new/enemies/mundo_08/01.png",
+      "sourceSize": [
+        116,
+        116
+      ],
+      "freshCutoutSize": [
+        84,
+        84
+      ],
+      "bands": 1,
+      "recoveredBlankLineRows": 0,
+      "unwantedMattePixelsRemoved": 320,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 37,
+      "original": "assets/gg58_new/enemies/mundo_08/02.png",
+      "sourceSize": [
+        88,
+        88
+      ],
+      "freshCutoutSize": [
+        83,
+        83
+      ],
+      "bands": 1,
+      "recoveredBlankLineRows": 0,
+      "unwantedMattePixelsRemoved": 462,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 38,
+      "original": "assets/gg58_new/enemies/mundo_08/03.png",
+      "sourceSize": [
+        116,
+        116
+      ],
+      "freshCutoutSize": [
+        117,
+        117
+      ],
+      "bands": 1,
+      "recoveredBlankLineRows": 0,
+      "unwantedMattePixelsRemoved": 669,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 39,
+      "original": "assets/gg58_new/enemies/mundo_08/04.png",
+      "sourceSize": [
+        124,
+        124
+      ],
+      "freshCutoutSize": [
+        128,
+        128
+      ],
+      "bands": 1,
+      "recoveredBlankLineRows": 0,
+      "unwantedMattePixelsRemoved": 1139,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 40,
+      "original": "assets/gg58_new/enemies/mundo_08/05.png",
+      "sourceSize": [
+        125,
+        125
+      ],
+      "freshCutoutSize": [
+        128,
+        128
+      ],
+      "bands": 1,
+      "recoveredBlankLineRows": 0,
+      "unwantedMattePixelsRemoved": 1113,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 41,
+      "original": "assets/gg58_new/enemies/mundo_09/01.png",
+      "sourceSize": [
+        115,
+        115
+      ],
+      "freshCutoutSize": [
+        90,
+        90
+      ],
+      "bands": 2,
+      "recoveredBlankLineRows": 3,
+      "unwantedMattePixelsRemoved": 163,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 42,
+      "original": "assets/gg58_new/enemies/mundo_09/02.png",
+      "sourceSize": [
+        99,
+        99
+      ],
+      "freshCutoutSize": [
+        96,
+        96
+      ],
+      "bands": 1,
+      "recoveredBlankLineRows": 0,
+      "unwantedMattePixelsRemoved": 362,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 43,
+      "original": "assets/gg58_new/enemies/mundo_09/03.png",
+      "sourceSize": [
+        110,
+        110
+      ],
+      "freshCutoutSize": [
+        108,
+        108
+      ],
+      "bands": 1,
+      "recoveredBlankLineRows": 0,
+      "unwantedMattePixelsRemoved": 276,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 44,
+      "original": "assets/gg58_new/enemies/mundo_09/04.png",
+      "sourceSize": [
+        124,
+        124
+      ],
+      "freshCutoutSize": [
+        128,
+        128
+      ],
+      "bands": 1,
+      "recoveredBlankLineRows": 0,
+      "unwantedMattePixelsRemoved": 870,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 45,
+      "original": "assets/gg58_new/enemies/mundo_09/05.png",
+      "sourceSize": [
+        124,
+        124
+      ],
+      "freshCutoutSize": [
+        128,
+        128
+      ],
+      "bands": 2,
+      "recoveredBlankLineRows": 1,
+      "unwantedMattePixelsRemoved": 1016,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 46,
+      "original": "assets/gg58_new/enemies/mundo_10/01.png",
+      "sourceSize": [
+        93,
+        93
+      ],
+      "freshCutoutSize": [
+        89,
+        89
+      ],
+      "bands": 1,
+      "recoveredBlankLineRows": 0,
+      "unwantedMattePixelsRemoved": 208,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 47,
+      "original": "assets/gg58_new/enemies/mundo_10/02.png",
+      "sourceSize": [
+        106,
+        106
+      ],
+      "freshCutoutSize": [
+        104,
+        104
+      ],
+      "bands": 1,
+      "recoveredBlankLineRows": 0,
+      "unwantedMattePixelsRemoved": 196,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 48,
+      "original": "assets/gg58_new/enemies/mundo_10/03.png",
+      "sourceSize": [
+        117,
+        117
+      ],
+      "freshCutoutSize": [
+        119,
+        119
+      ],
+      "bands": 1,
+      "recoveredBlankLineRows": 0,
+      "unwantedMattePixelsRemoved": 319,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 49,
+      "original": "assets/gg58_new/enemies/mundo_10/04.png",
+      "sourceSize": [
+        133,
+        133
+      ],
+      "freshCutoutSize": [
+        139,
+        139
+      ],
+      "bands": 1,
+      "recoveredBlankLineRows": 0,
+      "unwantedMattePixelsRemoved": 377,
+      "outlyingPixelsRemoved": 0
+    },
+    {
+      "id": 50,
+      "original": "assets/gg58_new/enemies/mundo_10/05.png",
+      "sourceSize": [
+        131,
+        131
+      ],
+      "freshCutoutSize": [
+        135,
+        135
+      ],
+      "bands": 1,
+      "recoveredBlankLineRows": 0,
+      "unwantedMattePixelsRemoved": 514,
+      "outlyingPixelsRemoved": 0
+    }
+  ]
+}

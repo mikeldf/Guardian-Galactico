@@ -1,0 +1,29 @@
+GUARDIÁN GALÁCTICO · FASE 45 · CORRECCIÓN REAL DE HANGAR Y MAPA
+
+Versión de campaña activa: 10 mundos de 20 niveles = 200 niveles.
+Cada mundo: subjefe en nivel 10, jefe final en nivel 20.
+Las 60 naves, las 50 mejoras de armas, misiones dinámicas, músicas y guardados se conservan.
+
+CAMBIO CLAVE:
+- Desactivada la capa gráfica antigua que se superponía al juego y dibujaba
+  el hangar anterior y una cuadrícula de 50 misiones por planeta.
+- El hangar usa sus controles HTML interactivos: nave grande a la izquierda,
+  catálogo completo a la derecha, estadísticas y botón VOLVER arriba.
+- Las imágenes de referencia que ya tenían menús dibujados no se usan como fondo.
+- Mapa galáctico: 10 planetas y 20 niveles reales por mundo.
+- Eliminados los textos de cinco sectores / 50 misiones en el selector actual.
+- El progreso antiguo se adapta automáticamente a la estructura de 200.
+
+IMPORTANTE PARA LA PRUEBA EN WINDOWS:
+1. Extrae ESTE ZIP COMPLETO en UNA CARPETA NUEVA.
+2. Haz doble clic en ABRIR_GUARDIAN_GALACTICO_FASE45.cmd o en index.html.
+3. Entra en HANGAR y confirma que ARRIBA se lee "FASE 45".
+4. El mapa de niveles muestra 20 misiones por planeta, 10 y 20 como jefes.
+5. NO copies index.html suelto a una carpeta de versiones antiguas.
+6. Los CSV de 500 misiones guardados dentro de docs/historico_500_niveles
+   son documentos de desarrollo anteriores, NO niveles jugables activos.
+
+Esta versión se ha probado con navegador automatizado. Queda pendiente
+validación en el equipo Windows del usuario.
+
+El icono de Windows aún NO se ha integrado, según lo acordado.

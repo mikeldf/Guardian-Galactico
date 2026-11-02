@@ -1,0 +1,201 @@
+﻿NIVEL GLOBAL,MUNDO,NIVEL LOCAL,TIPO DE MISIÓN,MECÁNICA JUGABLE,ENCUENTRO
+1,1,1,PATRULLA TÁCTICA,Combate de introducción,MISIÓN
+2,1,2,CORREDOR DE SUMINISTROS,Portador de suministros con power-up al ser derrotado,MISIÓN
+3,1,3,INTERCEPCIÓN,Interceptores marcados; bonus al abatirlos,MISIÓN
+4,1,4,CORREDOR DE SUMINISTROS,Portador de suministros con power-up al ser derrotado,MISIÓN
+5,1,5,ASALTO DE FLANCOS,Entradas simultáneas desde los dos flancos,MISIÓN
+6,1,6,CORREDOR DE SUMINISTROS,Portador de suministros con power-up al ser derrotado,MISIÓN
+7,1,7,ASALTO DE FLANCOS,Entradas simultáneas desde los dos flancos,MISIÓN
+8,1,8,EMBOSCADA ESCALONADA,Refuerzos llegan retrasados,MISIÓN
+9,1,9,ASALTO DE FLANCOS,Entradas simultáneas desde los dos flancos,MISIÓN
+10,1,10,ENCUENTRO DE JEFE,Subjefe o jefe final del mundo,SUBJEFE
+11,1,11,CAZA DE INCURSORES,Más incursiones en picado,MISIÓN
+12,1,12,EMBOSCADA ESCALONADA,Refuerzos llegan retrasados,MISIÓN
+13,1,13,CAZA DE INCURSORES,Más incursiones en picado,MISIÓN
+14,1,14,CAZA DEL COMANDANTE,"Capitán reforzado, al derrotarlo se desorganiza el escuadrón",MISIÓN
+15,1,15,CAZA DE INCURSORES,Más incursiones en picado,MISIÓN
+16,1,16,CAZA DEL COMANDANTE,"Capitán reforzado, al derrotarlo se desorganiza el escuadrón",MISIÓN
+17,1,17,FORMACIÓN CAMBIANTE,La figura de las naves cambia a mitad de la oleada,MISIÓN
+18,1,18,CAZA DEL COMANDANTE,"Capitán reforzado, al derrotarlo se desorganiza el escuadrón",MISIÓN
+19,1,19,FORMACIÓN CAMBIANTE,La figura de las naves cambia a mitad de la oleada,MISIÓN
+20,1,20,ENCUENTRO DE JEFE,Subjefe o jefe final del mundo,JEFE FINAL
+21,2,1,CAZA DE INCURSORES,Más incursiones en picado,MISIÓN
+22,2,2,CAZA DEL COMANDANTE,"Capitán reforzado, al derrotarlo se desorganiza el escuadrón",MISIÓN
+23,2,3,CAZA DE INCURSORES,Más incursiones en picado,MISIÓN
+24,2,4,CAZA DEL COMANDANTE,"Capitán reforzado, al derrotarlo se desorganiza el escuadrón",MISIÓN
+25,2,5,FORMACIÓN CAMBIANTE,La figura de las naves cambia a mitad de la oleada,MISIÓN
+26,2,6,CAZA DEL COMANDANTE,"Capitán reforzado, al derrotarlo se desorganiza el escuadrón",MISIÓN
+27,2,7,FORMACIÓN CAMBIANTE,La figura de las naves cambia a mitad de la oleada,MISIÓN
+28,2,8,INTERCEPCIÓN,Interceptores marcados; bonus al abatirlos,MISIÓN
+29,2,9,FORMACIÓN CAMBIANTE,La figura de las naves cambia a mitad de la oleada,MISIÓN
+30,2,10,ENCUENTRO DE JEFE,Subjefe o jefe final del mundo,SUBJEFE
+31,2,11,CORREDOR DE SUMINISTROS,Portador de suministros con power-up al ser derrotado,MISIÓN
+32,2,12,INTERCEPCIÓN,Interceptores marcados; bonus al abatirlos,MISIÓN
+33,2,13,CORREDOR DE SUMINISTROS,Portador de suministros con power-up al ser derrotado,MISIÓN
+34,2,14,ASALTO DE FLANCOS,Entradas simultáneas desde los dos flancos,MISIÓN
+35,2,15,CORREDOR DE SUMINISTROS,Portador de suministros con power-up al ser derrotado,MISIÓN
+36,2,16,ASALTO DE FLANCOS,Entradas simultáneas desde los dos flancos,MISIÓN
+37,2,17,EMBOSCADA ESCALONADA,Refuerzos llegan retrasados,MISIÓN
+38,2,18,ASALTO DE FLANCOS,Entradas simultáneas desde los dos flancos,MISIÓN
+39,2,19,EMBOSCADA ESCALONADA,Refuerzos llegan retrasados,MISIÓN
+40,2,20,ENCUENTRO DE JEFE,Subjefe o jefe final del mundo,JEFE FINAL
+41,3,1,CORREDOR DE SUMINISTROS,Portador de suministros con power-up al ser derrotado,MISIÓN
+42,3,2,ASALTO DE FLANCOS,Entradas simultáneas desde los dos flancos,MISIÓN
+43,3,3,CORREDOR DE SUMINISTROS,Portador de suministros con power-up al ser derrotado,MISIÓN
+44,3,4,ASALTO DE FLANCOS,Entradas simultáneas desde los dos flancos,MISIÓN
+45,3,5,EMBOSCADA ESCALONADA,Refuerzos llegan retrasados,MISIÓN
+46,3,6,ASALTO DE FLANCOS,Entradas simultáneas desde los dos flancos,MISIÓN
+47,3,7,EMBOSCADA ESCALONADA,Refuerzos llegan retrasados,MISIÓN
+48,3,8,CAZA DE INCURSORES,Más incursiones en picado,MISIÓN
+49,3,9,EMBOSCADA ESCALONADA,Refuerzos llegan retrasados,MISIÓN
+50,3,10,ENCUENTRO DE JEFE,Subjefe o jefe final del mundo,SUBJEFE
+51,3,11,CAZA DEL COMANDANTE,"Capitán reforzado, al derrotarlo se desorganiza el escuadrón",MISIÓN
+52,3,12,CAZA DE INCURSORES,Más incursiones en picado,MISIÓN
+53,3,13,CAZA DEL COMANDANTE,"Capitán reforzado, al derrotarlo se desorganiza el escuadrón",MISIÓN
+54,3,14,FORMACIÓN CAMBIANTE,La figura de las naves cambia a mitad de la oleada,MISIÓN
+55,3,15,CAZA DEL COMANDANTE,"Capitán reforzado, al derrotarlo se desorganiza el escuadrón",MISIÓN
+56,3,16,FORMACIÓN CAMBIANTE,La figura de las naves cambia a mitad de la oleada,MISIÓN
+57,3,17,INTERCEPCIÓN,Interceptores marcados; bonus al abatirlos,MISIÓN
+58,3,18,FORMACIÓN CAMBIANTE,La figura de las naves cambia a mitad de la oleada,MISIÓN
+59,3,19,INTERCEPCIÓN,Interceptores marcados; bonus al abatirlos,MISIÓN
+60,3,20,ENCUENTRO DE JEFE,Subjefe o jefe final del mundo,JEFE FINAL
+61,4,1,CAZA DEL COMANDANTE,"Capitán reforzado, al derrotarlo se desorganiza el escuadrón",MISIÓN
+62,4,2,FORMACIÓN CAMBIANTE,La figura de las naves cambia a mitad de la oleada,MISIÓN
+63,4,3,CAZA DEL COMANDANTE,"Capitán reforzado, al derrotarlo se desorganiza el escuadrón",MISIÓN
+64,4,4,FORMACIÓN CAMBIANTE,La figura de las naves cambia a mitad de la oleada,MISIÓN
+65,4,5,INTERCEPCIÓN,Interceptores marcados; bonus al abatirlos,MISIÓN
+66,4,6,FORMACIÓN CAMBIANTE,La figura de las naves cambia a mitad de la oleada,MISIÓN
+67,4,7,INTERCEPCIÓN,Interceptores marcados; bonus al abatirlos,MISIÓN
+68,4,8,CORREDOR DE SUMINISTROS,Portador de suministros con power-up al ser derrotado,MISIÓN
+69,4,9,INTERCEPCIÓN,Interceptores marcados; bonus al abatirlos,MISIÓN
+70,4,10,ENCUENTRO DE JEFE,Subjefe o jefe final del mundo,SUBJEFE
+71,4,11,ASALTO DE FLANCOS,Entradas simultáneas desde los dos flancos,MISIÓN
+72,4,12,CORREDOR DE SUMINISTROS,Portador de suministros con power-up al ser derrotado,MISIÓN
+73,4,13,ASALTO DE FLANCOS,Entradas simultáneas desde los dos flancos,MISIÓN
+74,4,14,EMBOSCADA ESCALONADA,Refuerzos llegan retrasados,MISIÓN
+75,4,15,ASALTO DE FLANCOS,Entradas simultáneas desde los dos flancos,MISIÓN
+76,4,16,EMBOSCADA ESCALONADA,Refuerzos llegan retrasados,MISIÓN
+77,4,17,CAZA DE INCURSORES,Más incursiones en picado,MISIÓN
+78,4,18,EMBOSCADA ESCALONADA,Refuerzos llegan retrasados,MISIÓN
+79,4,19,CAZA DE INCURSORES,Más incursiones en picado,MISIÓN
+80,4,20,ENCUENTRO DE JEFE,Subjefe o jefe final del mundo,JEFE FINAL
+81,5,1,ASALTO DE FLANCOS,Entradas simultáneas desde los dos flancos,MISIÓN
+82,5,2,EMBOSCADA ESCALONADA,Refuerzos llegan retrasados,MISIÓN
+83,5,3,ASALTO DE FLANCOS,Entradas simultáneas desde los dos flancos,MISIÓN
+84,5,4,EMBOSCADA ESCALONADA,Refuerzos llegan retrasados,MISIÓN
+85,5,5,CAZA DE INCURSORES,Más incursiones en picado,MISIÓN
+86,5,6,EMBOSCADA ESCALONADA,Refuerzos llegan retrasados,MISIÓN
+87,5,7,CAZA DE INCURSORES,Más incursiones en picado,MISIÓN
+88,5,8,CAZA DEL COMANDANTE,"Capitán reforzado, al derrotarlo se desorganiza el escuadrón",MISIÓN
+89,5,9,CAZA DE INCURSORES,Más incursiones en picado,MISIÓN
+90,5,10,ENCUENTRO DE JEFE,Subjefe o jefe final del mundo,SUBJEFE
+91,5,11,FORMACIÓN CAMBIANTE,La figura de las naves cambia a mitad de la oleada,MISIÓN
+92,5,12,CAZA DEL COMANDANTE,"Capitán reforzado, al derrotarlo se desorganiza el escuadrón",MISIÓN
+93,5,13,FORMACIÓN CAMBIANTE,La figura de las naves cambia a mitad de la oleada,MISIÓN
+94,5,14,INTERCEPCIÓN,Interceptores marcados; bonus al abatirlos,MISIÓN
+95,5,15,FORMACIÓN CAMBIANTE,La figura de las naves cambia a mitad de la oleada,MISIÓN
+96,5,16,INTERCEPCIÓN,Interceptores marcados; bonus al abatirlos,MISIÓN
+97,5,17,CORREDOR DE SUMINISTROS,Portador de suministros con power-up al ser derrotado,MISIÓN
+98,5,18,INTERCEPCIÓN,Interceptores marcados; bonus al abatirlos,MISIÓN
+99,5,19,CORREDOR DE SUMINISTROS,Portador de suministros con power-up al ser derrotado,MISIÓN
+100,5,20,ENCUENTRO DE JEFE,Subjefe o jefe final del mundo,JEFE FINAL
+101,6,1,FORMACIÓN CAMBIANTE,La figura de las naves cambia a mitad de la oleada,MISIÓN
+102,6,2,INTERCEPCIÓN,Interceptores marcados; bonus al abatirlos,MISIÓN
+103,6,3,FORMACIÓN CAMBIANTE,La figura de las naves cambia a mitad de la oleada,MISIÓN
+104,6,4,INTERCEPCIÓN,Interceptores marcados; bonus al abatirlos,MISIÓN
+105,6,5,CORREDOR DE SUMINISTROS,Portador de suministros con power-up al ser derrotado,MISIÓN
+106,6,6,INTERCEPCIÓN,Interceptores marcados; bonus al abatirlos,MISIÓN
+107,6,7,CORREDOR DE SUMINISTROS,Portador de suministros con power-up al ser derrotado,MISIÓN
+108,6,8,ASALTO DE FLANCOS,Entradas simultáneas desde los dos flancos,MISIÓN
+109,6,9,CORREDOR DE SUMINISTROS,Portador de suministros con power-up al ser derrotado,MISIÓN
+110,6,10,ENCUENTRO DE JEFE,Subjefe o jefe final del mundo,SUBJEFE
+111,6,11,EMBOSCADA ESCALONADA,Refuerzos llegan retrasados,MISIÓN
+112,6,12,ASALTO DE FLANCOS,Entradas simultáneas desde los dos flancos,MISIÓN
+113,6,13,EMBOSCADA ESCALONADA,Refuerzos llegan retrasados,MISIÓN
+114,6,14,CAZA DE INCURSORES,Más incursiones en picado,MISIÓN
+115,6,15,EMBOSCADA ESCALONADA,Refuerzos llegan retrasados,MISIÓN
+116,6,16,CAZA DE INCURSORES,Más incursiones en picado,MISIÓN
+117,6,17,CAZA DEL COMANDANTE,"Capitán reforzado, al derrotarlo se desorganiza el escuadrón",MISIÓN
+118,6,18,CAZA DE INCURSORES,Más incursiones en picado,MISIÓN
+119,6,19,CAZA DEL COMANDANTE,"Capitán reforzado, al derrotarlo se desorganiza el escuadrón",MISIÓN
+120,6,20,ENCUENTRO DE JEFE,Subjefe o jefe final del mundo,JEFE FINAL
+121,7,1,EMBOSCADA ESCALONADA,Refuerzos llegan retrasados,MISIÓN
+122,7,2,CAZA DE INCURSORES,Más incursiones en picado,MISIÓN
+123,7,3,EMBOSCADA ESCALONADA,Refuerzos llegan retrasados,MISIÓN
+124,7,4,CAZA DE INCURSORES,Más incursiones en picado,MISIÓN
+125,7,5,CAZA DEL COMANDANTE,"Capitán reforzado, al derrotarlo se desorganiza el escuadrón",MISIÓN
+126,7,6,CAZA DE INCURSORES,Más incursiones en picado,MISIÓN
+127,7,7,CAZA DEL COMANDANTE,"Capitán reforzado, al derrotarlo se desorganiza el escuadrón",MISIÓN
+128,7,8,FORMACIÓN CAMBIANTE,La figura de las naves cambia a mitad de la oleada,MISIÓN
+129,7,9,CAZA DEL COMANDANTE,"Capitán reforzado, al derrotarlo se desorganiza el escuadrón",MISIÓN
+130,7,10,ENCUENTRO DE JEFE,Subjefe o jefe final del mundo,SUBJEFE
+131,7,11,INTERCEPCIÓN,Interceptores marcados; bonus al abatirlos,MISIÓN
+132,7,12,FORMACIÓN CAMBIANTE,La figura de las naves cambia a mitad de la oleada,MISIÓN
+133,7,13,INTERCEPCIÓN,Interceptores marcados; bonus al abatirlos,MISIÓN
+134,7,14,CORREDOR DE SUMINISTROS,Portador de suministros con power-up al ser derrotado,MISIÓN
+135,7,15,INTERCEPCIÓN,Interceptores marcados; bonus al abatirlos,MISIÓN
+136,7,16,CORREDOR DE SUMINISTROS,Portador de suministros con power-up al ser derrotado,MISIÓN
+137,7,17,ASALTO DE FLANCOS,Entradas simultáneas desde los dos flancos,MISIÓN
+138,7,18,CORREDOR DE SUMINISTROS,Portador de suministros con power-up al ser derrotado,MISIÓN
+139,7,19,ASALTO DE FLANCOS,Entradas simultáneas desde los dos flancos,MISIÓN
+140,7,20,ENCUENTRO DE JEFE,Subjefe o jefe final del mundo,JEFE FINAL
+141,8,1,INTERCEPCIÓN,Interceptores marcados; bonus al abatirlos,MISIÓN
+142,8,2,CORREDOR DE SUMINISTROS,Portador de suministros con power-up al ser derrotado,MISIÓN
+143,8,3,INTERCEPCIÓN,Interceptores marcados; bonus al abatirlos,MISIÓN
+144,8,4,CORREDOR DE SUMINISTROS,Portador de suministros con power-up al ser derrotado,MISIÓN
+145,8,5,ASALTO DE FLANCOS,Entradas simultáneas desde los dos flancos,MISIÓN
+146,8,6,CORREDOR DE SUMINISTROS,Portador de suministros con power-up al ser derrotado,MISIÓN
+147,8,7,ASALTO DE FLANCOS,Entradas simultáneas desde los dos flancos,MISIÓN
+148,8,8,EMBOSCADA ESCALONADA,Refuerzos llegan retrasados,MISIÓN
+149,8,9,ASALTO DE FLANCOS,Entradas simultáneas desde los dos flancos,MISIÓN
+150,8,10,ENCUENTRO DE JEFE,Subjefe o jefe final del mundo,SUBJEFE
+151,8,11,CAZA DE INCURSORES,Más incursiones en picado,MISIÓN
+152,8,12,EMBOSCADA ESCALONADA,Refuerzos llegan retrasados,MISIÓN
+153,8,13,CAZA DE INCURSORES,Más incursiones en picado,MISIÓN
+154,8,14,CAZA DEL COMANDANTE,"Capitán reforzado, al derrotarlo se desorganiza el escuadrón",MISIÓN
+155,8,15,CAZA DE INCURSORES,Más incursiones en picado,MISIÓN
+156,8,16,CAZA DEL COMANDANTE,"Capitán reforzado, al derrotarlo se desorganiza el escuadrón",MISIÓN
+157,8,17,FORMACIÓN CAMBIANTE,La figura de las naves cambia a mitad de la oleada,MISIÓN
+158,8,18,CAZA DEL COMANDANTE,"Capitán reforzado, al derrotarlo se desorganiza el escuadrón",MISIÓN
+159,8,19,FORMACIÓN CAMBIANTE,La figura de las naves cambia a mitad de la oleada,MISIÓN
+160,8,20,ENCUENTRO DE JEFE,Subjefe o jefe final del mundo,JEFE FINAL
+161,9,1,CAZA DE INCURSORES,Más incursiones en picado,MISIÓN
+162,9,2,CAZA DEL COMANDANTE,"Capitán reforzado, al derrotarlo se desorganiza el escuadrón",MISIÓN
+163,9,3,CAZA DE INCURSORES,Más incursiones en picado,MISIÓN
+164,9,4,CAZA DEL COMANDANTE,"Capitán reforzado, al derrotarlo se desorganiza el escuadrón",MISIÓN
+165,9,5,FORMACIÓN CAMBIANTE,La figura de las naves cambia a mitad de la oleada,MISIÓN
+166,9,6,CAZA DEL COMANDANTE,"Capitán reforzado, al derrotarlo se desorganiza el escuadrón",MISIÓN
+167,9,7,FORMACIÓN CAMBIANTE,La figura de las naves cambia a mitad de la oleada,MISIÓN
+168,9,8,INTERCEPCIÓN,Interceptores marcados; bonus al abatirlos,MISIÓN
+169,9,9,FORMACIÓN CAMBIANTE,La figura de las naves cambia a mitad de la oleada,MISIÓN
+170,9,10,ENCUENTRO DE JEFE,Subjefe o jefe final del mundo,SUBJEFE
+171,9,11,CORREDOR DE SUMINISTROS,Portador de suministros con power-up al ser derrotado,MISIÓN
+172,9,12,INTERCEPCIÓN,Interceptores marcados; bonus al abatirlos,MISIÓN
+173,9,13,CORREDOR DE SUMINISTROS,Portador de suministros con power-up al ser derrotado,MISIÓN
+174,9,14,ASALTO DE FLANCOS,Entradas simultáneas desde los dos flancos,MISIÓN
+175,9,15,CORREDOR DE SUMINISTROS,Portador de suministros con power-up al ser derrotado,MISIÓN
+176,9,16,ASALTO DE FLANCOS,Entradas simultáneas desde los dos flancos,MISIÓN
+177,9,17,EMBOSCADA ESCALONADA,Refuerzos llegan retrasados,MISIÓN
+178,9,18,ASALTO DE FLANCOS,Entradas simultáneas desde los dos flancos,MISIÓN
+179,9,19,EMBOSCADA ESCALONADA,Refuerzos llegan retrasados,MISIÓN
+180,9,20,ENCUENTRO DE JEFE,Subjefe o jefe final del mundo,JEFE FINAL
+181,10,1,CORREDOR DE SUMINISTROS,Portador de suministros con power-up al ser derrotado,MISIÓN
+182,10,2,ASALTO DE FLANCOS,Entradas simultáneas desde los dos flancos,MISIÓN
+183,10,3,CORREDOR DE SUMINISTROS,Portador de suministros con power-up al ser derrotado,MISIÓN
+184,10,4,ASALTO DE FLANCOS,Entradas simultáneas desde los dos flancos,MISIÓN
+185,10,5,EMBOSCADA ESCALONADA,Refuerzos llegan retrasados,MISIÓN
+186,10,6,ASALTO DE FLANCOS,Entradas simultáneas desde los dos flancos,MISIÓN
+187,10,7,EMBOSCADA ESCALONADA,Refuerzos llegan retrasados,MISIÓN
+188,10,8,CAZA DE INCURSORES,Más incursiones en picado,MISIÓN
+189,10,9,EMBOSCADA ESCALONADA,Refuerzos llegan retrasados,MISIÓN
+190,10,10,ENCUENTRO DE JEFE,Subjefe o jefe final del mundo,SUBJEFE
+191,10,11,CAZA DEL COMANDANTE,"Capitán reforzado, al derrotarlo se desorganiza el escuadrón",MISIÓN
+192,10,12,CAZA DE INCURSORES,Más incursiones en picado,MISIÓN
+193,10,13,CAZA DEL COMANDANTE,"Capitán reforzado, al derrotarlo se desorganiza el escuadrón",MISIÓN
+194,10,14,FORMACIÓN CAMBIANTE,La figura de las naves cambia a mitad de la oleada,MISIÓN
+195,10,15,CAZA DEL COMANDANTE,"Capitán reforzado, al derrotarlo se desorganiza el escuadrón",MISIÓN
+196,10,16,FORMACIÓN CAMBIANTE,La figura de las naves cambia a mitad de la oleada,MISIÓN
+197,10,17,INTERCEPCIÓN,Interceptores marcados; bonus al abatirlos,MISIÓN
+198,10,18,FORMACIÓN CAMBIANTE,La figura de las naves cambia a mitad de la oleada,MISIÓN
+199,10,19,INTERCEPCIÓN,Interceptores marcados; bonus al abatirlos,MISIÓN
+200,10,20,ENCUENTRO DE JEFE,Subjefe o jefe final del mundo,JEFE FINAL

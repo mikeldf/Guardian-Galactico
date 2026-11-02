@@ -1,0 +1,23 @@
+GUARDIÁN GALÁCTICO — FASE 38
+ENEMIGOS MÁS PEQUEÑOS, ESCUADRONES MÁS NUMEROSOS Y ARMAS DIFERENCIADAS
+
+Base: Fase 37 (HUD futurista). Todo lo anterior se conserva.
+
+MEJORAS:
+- Enemigos normales al 63% de su tamaño anterior (la colisión sigue a la escala visual).
+- Nivel 1: oleadas de 9, 10 y 11 enemigos débiles, con entrada más coordinada.
+- Más miembros en las formaciones de otros niveles, límite de 16 por oleada.
+- 36 formaciones originales preservadas y ahora con patrullas un poco más móviles.
+- Las 70 armas enemigas usan siluetas claramente diferenciadas por familia: dardo, misil,
+  abanico, descarga eléctrica, fragmentador, rastreador y acelerador.
+- Proyectiles reducidos para que no tapen las naves ni parezcan enemigos gigantes.
+- Se conservan las 50 variantes de jefes, sus armas, los power-ups y el HUD de Fase 37.
+
+IMPORTANTE:
+- Esta actualización NO convierte los 500 niveles en 200. Ese rediseño sigue pendiente.
+- Se preservan las 60 naves y sus desbloqueos.
+- Los CSV de fases anteriores son históricos. El CSV FASE38_OLAS_ACTUALIZADAS.csv recoge
+  las nuevas cantidades de las 500 misiones.
+- La prueba definitiva en un PC Windows sigue pendiente.
+
+INSTALACIÓN: Extraer el ZIP completo y abrir index.html en Chrome o Edge.

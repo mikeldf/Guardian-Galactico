@@ -1,0 +1,50 @@
+
+/* FASE 39 — Sistema de diseño uniforme para todas las pantallas de menú */
+:root{--gg39-bg:#03111d;--gg39-panel:#091e2d;--gg39-cyan:#74e8ee;--gg39-stroke:#427d96;--gg39-text:#e1f8ff}
+#home,#galaxy,#levels,#hangar,#settings{--gg-accent:var(--gg39-cyan);background-color:var(--gg39-bg)}
+#home .btn,#galaxy .btn,#levels .btn,#hangar .btn,#settings .btn{border-radius:7px;letter-spacing:.065em}
+#home .btn:focus-visible,#galaxy .btn:focus-visible,#levels .btn:focus-visible,#hangar .btn:focus-visible,#settings .btn:focus-visible{outline:2px solid #8cfaff;outline-offset:2px}
+#home .panel,#galaxy .panel,#levels .panel,#hangar .panel,#settings .panel{border-color:#4f91a6aa;background:linear-gradient(135deg,#0a2436eb,#051522ed);box-shadow:inset 0 1px #b5fbff13,0 16px 32px #0008}
+#home .menu-head,#galaxy .interface-header,#levels .interface-header,#hangar .topline,#settings .interface-header{height:80px;min-height:80px;border-bottom:1px solid #599bb380;background:linear-gradient(90deg,#04131f,#0b2935,#04131f)!important}
+#galaxy .interface-header h2,#levels .interface-header h2,#hangar .topline h2,#settings .interface-header h2{font-size:clamp(21px,2.2vw,30px);font-weight:900;letter-spacing:.13em;color:#e3faff;text-shadow:0 0 20px #48daee33}
+#home .gg-side-menu .gg-nav-button,#galaxy .gg-side-menu .gg-nav-button,#hangar .gg-side-menu .gg-nav-button,#settings .gg-side-menu .gg-nav-button{border-radius:0}
+#settings.gg39-screen{padding:0!important;align-items:stretch;overflow:hidden!important;background:radial-gradient(ellipse at 50% 22%,#13495840,transparent 55%),linear-gradient(120deg,#03111f,#061c2a,#020b19)!important}
+#settings .gg39-header{position:relative;z-index:3;display:grid;grid-template-columns:220px minmax(0,1fr) 220px;align-items:center;padding:0 clamp(22px,3.7vw,72px)}
+#settings .gg39-header .header-title{text-align:center}#settings .gg39-header .header-title h2{margin:4px 0;font-size:27px}
+#settings .gg39-online{display:flex;justify-content:flex-end;align-items:center;gap:10px;min-width:0;font-size:10px;letter-spacing:.10em}
+#settings .gg39-settings-scroll{position:relative;z-index:2;overflow:auto;scrollbar-color:#3d8fa0 #061523;max-height:calc(100dvh - 80px);padding:22px clamp(22px,4vw,72px) 24px;display:flex;flex-direction:column;align-items:center;gap:18px}
+#settings .gg39-settings-intro{width:min(1180px,100%);display:grid;grid-template-columns:minmax(22px,1fr) auto minmax(22px,1fr);align-items:center;gap:22px;text-align:center}
+#settings .gg39-rule{height:1px;background:linear-gradient(90deg,transparent,#5dbad0,transparent)}
+#settings .gg39-settings-intro h3{font-size:clamp(17px,2vw,25px);letter-spacing:.11em;margin:4px 0 6px}
+#settings .gg39-settings-intro p{font-size:12px;color:#9ebfcf;margin:0}
+#settings .gg39-settings-grid{width:min(1180px,100%);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:start}
+#settings .gg39-settings-column{display:grid;gap:16px;min-width:0}
+#settings .gg39-setting-card{width:100%;margin:0;border-radius:8px;padding:20px 22px 18px;border:1px solid #427b91;position:relative;overflow:hidden}
+#settings .gg39-setting-card:before{content:'';position:absolute;width:38px;height:4px;top:0;left:calc(50% - 19px);background:#60e8ed;box-shadow:0 0 15px #4cfffa88}
+#settings .gg39-card-title{display:flex;align-items:center;gap:13px;padding-bottom:13px;margin-bottom:15px;border-bottom:1px solid #4f839450}
+#settings .gg39-card-title small{color:#77c8dd;letter-spacing:.2em;font-weight:800;font-size:9px}
+#settings .gg39-card-title h3{font-size:15px;letter-spacing:.08em;margin:4px 0 0;color:#e6faff}
+#settings .gg39-card-icon{display:grid;place-items:center;flex:none;width:38px;height:38px;background:linear-gradient(145deg,#183f51,#082331);border:1px solid #4b9bad;border-radius:6px;box-shadow:inset 0 0 13px #65cfe622;color:#8cfaff;font-size:24px}
+#settings .gg39-keycaps{display:grid;gap:7px}#settings .gg39-keycaps>div{border:1px solid #2e61744c;background:#061c29b5;padding:9px 11px;display:flex;justify-content:space-between;gap:12px;align-items:center}
+#settings .gg39-keycaps span{font-size:10px;letter-spacing:.07em;color:#9fb8c9}#settings .gg39-keycaps strong{font-size:11px;color:#e3faff;text-align:right;white-space:normal}
+#settings .gg39-note{color:#9ebdc9;font-size:12px;line-height:1.55;margin:12px 0 8px}
+#settings .gg39-difficulty{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}
+#settings .gg39-difficulty .btn{font-size:11px;min-width:0;padding:12px 5px}
+#settings .gg39-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:0}
+#settings .gg39-actions .btn{font-size:11px;min-width:0;padding:11px 6px}
+#settings .gg39-nowplaying{display:flex;justify-content:space-between;align-items:center;gap:8px;border-top:1px solid #38657960;margin-top:16px;padding-top:15px}
+#settings .gg39-nowplaying small{display:block;color:#75c9dc;letter-spacing:.1em;font-size:9px;margin-bottom:5px}
+#settings .gg39-nowplaying strong{font-size:12px;color:#e9f9ff}#settings .gg39-nowplaying .btn{flex:none}
+#settings #ggqSettings{margin:15px 0 0;padding-top:15px;border-top:1px solid #38657980}
+#settings #ggqSettings h3{display:none}#settings #ggqSettings label{font-size:12px;color:#cce6f1;display:flex;justify-content:space-between;align-items:center;gap:12px;border-bottom:1px solid #34566c55;padding:9px 1px;min-width:0}
+#settings #ggqSettings input[type=range]{min-width:105px;max-width:155px;width:40%;accent-color:#56e6ed}
+#settings #ggqSettings input[type=checkbox]{accent-color:#56e6ed;width:17px;height:17px}
+#settings #ggqSettings select{border:1px solid #4f95a6;background:#102e3e;color:white;border-radius:5px;padding:5px}
+#settings #ggqSettings .actionrow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:13px 0}
+#settings #ggqSettings .actionrow button{border:1px solid #4c90a6;background:#0d3346;color:#ddf8ff;min-height:39px;border-radius:6px;font-size:10px;font-weight:800;padding:7px 5px;cursor:pointer}
+#settings #ggqSettings #ggqStatus{font-size:12px;color:#9be8f0;min-height:14px}
+#settings #ggqSettings .smallprint{font-size:10px;color:#719aac;line-height:1.4}
+#settings .gg39-reset{display:block;margin:17px auto 0;border-color:#b16b60;font-size:10px;width:min(100%,235px)}
+#settings .gg39-settings-foot{font-size:10px;letter-spacing:.13em;color:#648e9b;text-align:center;margin:6px 0 12px}#settings .gg39-settings-foot span{color:#62ccd7;padding:0 14px}
+@media(max-width:960px){#settings .gg39-settings-grid{grid-template-columns:1fr;max-width:610px}#settings .gg39-header{grid-template-columns:170px 1fr 170px;padding:0 22px}#settings .gg39-header .header-resource{display:none}#settings .gg39-header{grid-template-columns:170px 1fr 170px}}
+@media(max-width:600px){#settings .gg39-header{grid-template-columns:110px 1fr;gap:6px;min-height:66px;height:66px;padding:0 9px}#settings .gg39-header .header-title h2{font-size:20px}#settings .gg39-header .eyebrow{font-size:7px}#settings .gg39-header .btn{font-size:10px;min-height:35px;padding:6px}#settings .gg39-settings-scroll{max-height:calc(100dvh - 66px);padding:12px 12px 24px;gap:13px}#settings .gg39-settings-intro{grid-template-columns:15px 1fr 15px;gap:10px}#settings .gg39-settings-intro p{font-size:10px}#settings .gg39-setting-card{padding:14px}#settings .gg39-difficulty{grid-template-columns:repeat(2,minmax(0,1fr))}#settings .gg39-nowplaying{flex-direction:column;align-items:stretch}#settings #ggqSettings .actionrow{grid-template-columns:1fr}#settings .gg39-settings-foot{font-size:8px}}

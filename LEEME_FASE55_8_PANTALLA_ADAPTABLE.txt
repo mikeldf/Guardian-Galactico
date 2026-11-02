@@ -1,0 +1,47 @@
+GUARDIÁN GALÁCTICO — FASE 55.8 · OPCIONES DE PANTALLA
+=======================================================
+
+Esta edición parte del ZIP "Guardian_Galactico_PC_Interfaces_Originales_Restauradas".
+No sustituye las interfaces originales ni cambia naves, enemigos, armas, niveles o balance.
+
+CAMBIOS APLICADOS
+----------------
+- Opciones > Sistema 05: Pantalla y resolución.
+- Modos: pantalla completa, ventana y ventana sin bordes (real en aplicación Electron).
+- Resoluciones preferidas de ventana: 1280x720, 1600x900, 1920x1080, 2560x1440, 3840x2160.
+- Tamaño de interfaz: 75 % a 150 %, en pasos de 5 %.
+- Configuración inicial: pantalla completa, 1920x1080 (tamaño preferido de ventana), 100 %.
+- Guardado de preferencias de pantalla entre sesiones.
+- Alt+Enter alterna ventana / pantalla completa en el navegador y en Electron.
+- La pantalla completa usa la resolución nativa del monitor; no fuerza físicamente 1920x1080.
+- Menú de Opciones verticalmente desplazable: todos los controles siguen accesibles.
+- Combate: en ventanas estrechas (< 760 px) el panel lateral se oculta para dar paso al área de juego.
+- Conservado el ajuste proporcional de las pantallas clásicas del mapa/selector.
+- App Electron: preload aislado + IPC para cambiar tamaño real, modo nativo y nivel de zoom.
+
+USO DURANTE EL DESARROLLO
+-------------------------
+Extrae el ZIP completo en una carpeta.
+Abre index.html con Chrome o Edge para seguir probando el juego HTML5.
+En el navegador, las opciones de modo ventana / sin bordes NO pueden cambiar las
+medidas o bordes externos del navegador (es una restricción de seguridad del navegador).
+Las opciones de resolución y ventana REAL están preparadas en app/main.cjs para la
+futura aplicación Electron .exe. En esta entrega NO se incluye un .exe compilado.
+
+PRUEBAS HECHAS EN ESTA ENTREGA
+-----------------------------
+- Comprobación de sintaxis del JavaScript añadido.
+- Componente de Opciones: cambios de modo, resolución y tamaño de interfaz.
+- Test de interfaz HTML5 en navegador automatizado con JS/CSS embebidos:
+  ventanas 1920x1080, 1280x720, 800x600, 640x480 y 560x380.
+- Escalado de las pantallas clásicas: los 10 planetas se mantienen visibles.
+- Menú Opciones: sin desbordamiento horizontal; desplazamiento vertical disponible.
+- Inicio de la misión 1: lienzo de combate dentro de la ventana.
+- No se observaron errores JavaScript durante las pruebas citadas.
+
+LÍMITES DE VERIFICACIÓN
+----------------------
+Los recursos de imágenes/sonidos no se pudieron probar visualmente en navegador completo
+porque el entorno de pruebas bloquea las URL locales. No se ha comprobado el .exe en Windows
+ni los cambios nativos reales de Electron; requieren compilación y prueba en Windows.
+No se modificó el motor de juego, por lo que no se ha ejecutado una campaña completa.

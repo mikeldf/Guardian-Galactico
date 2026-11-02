@@ -1,0 +1,222 @@
+{
+  "version": "1.0",
+  "frameRate": 14,
+  "frameCount": 8,
+  "slots": [
+    {
+      "slot": 1,
+      "name": "01_energia_basica",
+      "source": "proyectiles_neon",
+      "row": 1,
+      "column": 2,
+      "frames": 8,
+      "size": [
+        128,
+        128
+      ],
+      "orientation": "top"
+    },
+    {
+      "slot": 2,
+      "name": "02_energia_nivel_2",
+      "source": "proyectiles_neon",
+      "row": 1,
+      "column": 3,
+      "frames": 8,
+      "size": [
+        128,
+        128
+      ],
+      "orientation": "top"
+    },
+    {
+      "slot": 3,
+      "name": "03_energia_nivel_3",
+      "source": "proyectiles_neon",
+      "row": 1,
+      "column": 4,
+      "frames": 8,
+      "size": [
+        128,
+        128
+      ],
+      "orientation": "top"
+    },
+    {
+      "slot": 4,
+      "name": "04_energia_nivel_4",
+      "source": "proyectiles_neon",
+      "row": 1,
+      "column": 5,
+      "frames": 8,
+      "size": [
+        128,
+        128
+      ],
+      "orientation": "top"
+    },
+    {
+      "slot": 5,
+      "name": "05_laser_potente",
+      "source": "energia_galactica",
+      "row": 1,
+      "column": 3,
+      "frames": 8,
+      "size": [
+        128,
+        128
+      ],
+      "orientation": "top"
+    },
+    {
+      "slot": 6,
+      "name": "06_energia_violeta",
+      "source": "energia_galactica",
+      "row": 2,
+      "column": 3,
+      "frames": 8,
+      "size": [
+        128,
+        128
+      ],
+      "orientation": "top"
+    },
+    {
+      "slot": 7,
+      "name": "07_energia_maxima",
+      "source": "energia_galactica",
+      "row": 4,
+      "column": 4,
+      "frames": 8,
+      "size": [
+        128,
+        128
+      ],
+      "orientation": "top"
+    },
+    {
+      "slot": 8,
+      "name": "08_misil_recto",
+      "source": "misiles_explosiones",
+      "row": 1,
+      "column": 3,
+      "frames": 8,
+      "size": [
+        128,
+        128
+      ],
+      "orientation": "top"
+    },
+    {
+      "slot": 9,
+      "name": "09_misil_guiado",
+      "source": "misiles_explosiones",
+      "row": 2,
+      "column": 2,
+      "frames": 8,
+      "size": [
+        128,
+        128
+      ],
+      "orientation": "top"
+    },
+    {
+      "slot": 10,
+      "name": "10_haz_laser",
+      "source": "energia_galactica",
+      "row": 1,
+      "column": 5,
+      "frames": 8,
+      "size": [
+        128,
+        128
+      ],
+      "orientation": "top"
+    },
+    {
+      "slot": 11,
+      "name": "11_plasma_violeta",
+      "source": "energia_galactica",
+      "row": 2,
+      "column": 4,
+      "frames": 8,
+      "size": [
+        128,
+        128
+      ],
+      "orientation": "top"
+    },
+    {
+      "slot": 12,
+      "name": "12_salva_especial",
+      "source": "proyectiles_neon",
+      "row": 4,
+      "column": 4,
+      "frames": 8,
+      "size": [
+        128,
+        128
+      ],
+      "orientation": "top"
+    },
+    {
+      "slot": 13,
+      "name": "13_cadena_electrica",
+      "source": "energia_galactica",
+      "row": 4,
+      "column": 3,
+      "frames": 8,
+      "size": [
+        128,
+        128
+      ],
+      "orientation": "circular"
+    },
+    {
+      "slot": 14,
+      "name": "14_energia_rapida",
+      "source": "proyectiles_neon",
+      "row": 4,
+      "column": 3,
+      "frames": 8,
+      "size": [
+        128,
+        128
+      ],
+      "orientation": "top"
+    },
+    {
+      "slot": 15,
+      "name": "15_rayo_reforzado",
+      "source": "energia_galactica",
+      "row": 4,
+      "column": 5,
+      "frames": 8,
+      "size": [
+        128,
+        128
+      ],
+      "orientation": "top"
+    },
+    {
+      "slot": 16,
+      "name": "16_escudo_y_drones",
+      "source": "misiles_explosiones",
+      "row": 4,
+      "column": 2,
+      "frames": 8,
+      "size": [
+        128,
+        128
+      ],
+      "orientation": "circular"
+    }
+  ],
+  "impactFx": [
+    "explosion_misil",
+    "explosion_plasma",
+    "impacto_energia",
+    "onda_expansiva"
+  ],
+  "collisionShape": "unchanged from engine (visual only)"
+}

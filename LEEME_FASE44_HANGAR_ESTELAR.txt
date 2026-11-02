@@ -1,0 +1,28 @@
+GUARDIÁN GALÁCTICO — FASE 44 · HANGAR ESTELAR
+================================================
+Versión basada en la Fase 43.1, con toda la campaña, las 60 naves y el arsenal conservados.
+
+HANGAR
+- La nave seleccionada aparece grande a la izquierda sobre una plataforma con iluminación azul y naranja.
+- Abajo a la izquierda se muestran vida, ataque, velocidad, habilidad, mejoras, compra y selección de nave.
+- A la derecha se muestra una cuadrícula con las 60 naves. Desplázate para verlas todas.
+- Ordenación disponible: por defecto, disponibles primero y por nombre.
+- Botón VOLVER en la cabecera. La cantidad de monedas y las naves disponibles se actualizan desde el progreso guardado.
+- Las naves no se deforman: las imágenes conservan su relación de aspecto original.
+- La versión para teléfono mantiene la vista grande y apila los paneles verticalmente.
+
+OTROS SISTEMAS
+- Se mantienen los 200 niveles, 10 mundos, 60 naves, 50 mejoras de armas y misiones dinámicas.
+- Se conservan las condiciones originales de compra, desbloqueos y guardado.
+- El icono del ejecutable NO se ha integrado; está reservado para la última etapa.
+
+CÓMO ABRIR
+1. Extrae todo el ZIP a una carpeta nueva, sin mezclar con versiones anteriores.
+2. Abre index.html en Chrome o Edge de Windows. Conserva assets junto a index.html.
+3. Entra en HANGAR desde el menú principal.
+
+VERIFICACIONES
+- Sintaxis JavaScript comprobada.
+- En navegador automatizado: 60 tarjetas, selección de otra nave, ordenación y botón VOLVER.
+- Captura de pantalla con sprites del propio juego en resoluciones 1440x900 y 390x844.
+- Sigue pendiente una partida completa de validación en Windows del usuario.

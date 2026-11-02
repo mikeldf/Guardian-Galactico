@@ -1,0 +1,12 @@
+FASE 52 · limpieza visual de mapa galáctico y selector de niveles
+
+Cambios aplicados:
+- Se eliminó la composición inferior antigua del selector de niveles que dejaba ver un botón "JUGAR NIVEL" duplicado por detrás.
+- Se mantuvo el diseño clásico restaurado, pero con fondo limpio a pantalla completa fuera del marco central.
+- Se conservaron visibles todos los elementos del layout (sin recortar el UI) y se rellenaron los laterales con el fondo espacial limpio.
+- Se añadió una base inferior futurista limpia para el selector de niveles, sin restos rasterizados de la versión anterior.
+- Se mantuvo el mapa clásico sin rectángulos de hover sobre los planetas.
+
+Archivos tocados:
+- assets/ui/classic_restored/gg50_original_visual.css
+- assets/ui/classic_restored/gg50_original_visual.js

@@ -1,0 +1,147 @@
+/* GUARDIÁN GALÁCTICO · FASE 37 · Cockpit neón, adaptación propia del HUD lateral de Star Defender 4.
+   Todo el panel recibe información real de updateHud(). No altera el gameplay. */
+#playLayer { --gg-sidebar:clamp(310px,24.8vw,392px)!important; background:#010613!important }
+#playLayer #cockpitPanel.gg37-cockpit {
+ --g37-cyan:#4beaf6;--g37-ice:#b4f8ff;--g37-amber:#ffc67a;--g37-emerald:#46edce;
+ position:absolute!important;right:0!important;top:0!important;bottom:0!important;width:var(--gg-sidebar)!important;height:100%!important;
+ display:flex!important;flex-direction:column!important;grid-template-rows:none!important;align-content:initial!important;align-items:stretch!important;justify-content:flex-start!important;
+ overflow-x:hidden!important;overflow-y:auto!important;gap:clamp(5px,.55vh,8px)!important;
+ padding:clamp(11px,1.2vw,19px)!important;isolation:isolate;
+ border:0!important;border-left:3px solid #2adcf2!important;border-radius:0!important;
+ background:radial-gradient(ellipse at 100% 0%,#1b537067 0%,transparent 51%),linear-gradient(100deg,#112e46 0%,#061524 5%,#020a16 54%,#071a2c 100%)!important;
+ box-shadow:inset 8px 0 22px #1c8cac4b,inset -1px 0 #88e8ff2c, -13px 0 35px #0008!important;
+ scrollbar-width:thin;scrollbar-color:#2b7c92 transparent;color:#dcf8ff!important;
+ font-family:Bahnschrift,'Segoe UI Variable','Trebuchet MS',sans-serif!important;
+}
+#playLayer #cockpitPanel.gg37-cockpit::before{
+ content:""!important;inset:0!important;z-index:-1!important;display:block!important;position:absolute!important;pointer-events:none!important;opacity:1!important;
+ background:repeating-linear-gradient(0deg,transparent 0 42px,#7bd9eb05 43px 44px),radial-gradient(circle at 115% 90%,#256aa520,transparent 45%)!important;
+}
+#playLayer #cockpitPanel.gg37-cockpit::after{content:"";position:fixed;right:0;top:0;height:100%;width:2px;background:linear-gradient(transparent,#89eefe,transparent);pointer-events:none;opacity:.4}
+#cockpitPanel .gg37-rail{position:absolute;left:0;top:11%;height:68%;width:4px;display:flex;flex-direction:column;gap:9px;z-index:2;pointer-events:none}
+#cockpitPanel .gg37-rail i{width:3px;flex:1;background:linear-gradient(0deg,transparent,#54daee88,transparent);box-shadow:0 0 8px #24b8ff33}
+#cockpitPanel .gg37-head{flex-shrink:0!important;min-height:53px!important;display:flex!important;align-items:center!important;justify-content:space-between!important;padding:2px 1px 9px!important;margin:0!important;border:0!important;border-bottom:1px solid #70d9f550!important;box-shadow:0 1px 0 #0d263c!important;background:transparent!important;clip-path:none!important}
+.gg37-brandline{display:flex;align-items:center;gap:10px;min-width:0}
+.gg37-emblem{display:grid;place-items:center;width:42px;height:42px;flex-shrink:0;clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);border:1px solid #68e5ee;background:radial-gradient(circle at 38% 38%,#227b9b,#082b48 68%,#030f20);font-size:32px;color:#a9f9f5;text-shadow:0 0 15px #53e9ff;box-shadow:0 0 20px #00e5ff44}
+#cockpitPanel .gg37-brandline b{font-size:clamp(11px,.9vw,15px)!important;letter-spacing:.07em!important;line-height:1.1!important;color:#fff!important;font-weight:950!important;display:block;white-space:nowrap}
+#cockpitPanel .gg37-brandline b span{color:#6cf2f7!important}
+#cockpitPanel .gg37-brandline small{display:block!important;font-size:clamp(8px,.65vw,10px)!important;letter-spacing:.17em!important;color:#79b9d0!important;margin:6px 0 0!important;font-weight:650!important}
+.gg37-online{display:flex;align-items:center;gap:6px;white-space:nowrap;color:#5de5c3;font-size:8px;line-height:1.22;letter-spacing:.08em;font-weight:800}
+.gg37-online-dot{width:7px;height:7px;flex-shrink:0;background:#58f5ca;border-radius:50%;box-shadow:0 0 0 3px #48df9c16,0 0 11px #46f5bd;animation:gg37Blink 2.5s ease-in-out infinite}
+#cockpitPanel .gg37-mission{flex-shrink:0;min-height:67px;padding:8px 13px 7px;border:1px solid #2a6f8e;border-left:3px solid #4cdeec;clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,0 100%);background:linear-gradient(117deg,#0f3e57be,#061c2e 57%,#0a2338);box-shadow:inset 0 0 24px #06a2b414}
+.gg37-mission-top,.gg37-mission-foot,.gg37-titleline,.gg37-scorefoot,.gg37-cardtitle,.gg37-secondaryfoot,.gg37-boss-top{display:flex;justify-content:space-between;align-items:center;gap:6px}
+.gg37-kicker,.gg37-coordinates{font-size:9px;letter-spacing:.16em;color:#76aec3;font-weight:800}
+#cockpitPanel #gg37Planet{display:block;font-size:clamp(16px,1.3vw,20px)!important;letter-spacing:.095em!important;text-transform:uppercase;color:#ecfbff!important;line-height:1.3!important;text-shadow:0 0 14px #299ec64d!important;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.gg37-mission-foot{border-top:1px solid #4f91ab33;padding-top:5px;font-weight:800;letter-spacing:.06em;font-size:10px;color:#89d3ef}
+.gg37-mission-live{font-size:9px;color:#4df7c0}
+#playLayer #cockpitPanel.gg37-cockpit .gg37-card{
+ flex-shrink:0!important;display:block!important;min-width:0!important;min-height:0!important;height:auto!important;max-height:none!important;
+ padding:8px 13px 7px!important;margin:0!important;position:relative!important;
+ border:1px solid #235877!important;border-top-color:#397b95!important;border-left:3px solid #3e9dbd!important;border-radius:0!important;
+ clip-path:polygon(0 0,calc(100% - 11px) 0,100% 11px,100% 100%,0 100%)!important;
+ background:linear-gradient(124deg,#10324aab 0%,#071c30da 52%,#08182aef 100%)!important;
+ box-shadow:inset 0 0 0 1px #ffffff05,inset 0 0 29px #071e3811!important;
+ gap:0!important;justify-content:initial!important;align-items:stretch!important;
+}
+.gg37-card::after{content:"";position:absolute;top:0;left:0;width:52px;height:1px;background:#84f8ff;box-shadow:0 0 10px #3bdbfd88;pointer-events:none}
+#cockpitPanel .gg37-cardtitle{margin-bottom:9px!important;font-size:10px!important;letter-spacing:.12em!important;font-weight:900!important;color:#addcef!important;white-space:nowrap}
+#cockpitPanel .gg37-cardtitle>span{padding-right:7px;color:#47dded;font-size:10px!important}
+#cockpitPanel .gg37-cardtitle small{font-size:10px!important;color:#64dbf2!important;letter-spacing:.035em!important;margin-left:auto!important;white-space:nowrap}
+#cockpitPanel .gg37-armed{color:#55efbe!important}
+#cockpitPanel .gg37-score{padding-top:10px!important;padding-bottom:10px!important}
+#cockpitPanel .gg37-titleline{font-size:9px!important;letter-spacing:.15em;font-weight:800;color:#94ccdf}
+.gg37-titleline span:nth-child(2){color:#6097ad;font-size:9px}
+#cockpitPanel .gg37-score #cockpitScore{display:block!important;font-size:clamp(32px,3vw,44px)!important;line-height:1.05!important;letter-spacing:.07em!important;font-weight:950!important;font-variant-numeric:tabular-nums!important;color:#f8ffff!important;padding:5px 1px 4px!important;text-shadow:0 0 12px #22c7f75a!important;white-space:nowrap}
+.gg37-scorefoot{font-size:9px;letter-spacing:.085em;color:#67a9c4;margin-bottom:6px}
+.gg37-track{height:7px;position:relative;background:#08121e;border:1px solid #32607a;overflow:hidden;border-radius:2px;box-shadow:inset 0 1px 5px #000a}
+.gg37-track>i{display:block;height:100%;width:0;background:linear-gradient(90deg,#29aac3,#72f4ff);box-shadow:0 0 12px #44dceeb7;transition:width .18s linear}
+#cockpitPanel .gg37-scoretrack{height:4px!important}
+#cockpitPanel .gg37-scoretrack #gg34ScoreMeter{background:linear-gradient(90deg,#387bac,#6feafc)!important}
+.gg37-survival-content{display:flex;align-items:center;gap:10px;min-height:65px}
+.gg37-shipframe{position:relative;width:94px;height:69px;flex-shrink:0;display:grid;place-items:center;background:radial-gradient(ellipse at center,#2c9baf4a,transparent 76%);border:1px solid #247ca485;clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px)}
+.gg37-shipframe:before{content:"";position:absolute;inset:7px;border:1px dashed #4dc9c93d;border-radius:50%}
+#cockpitPanel #gg37ShipImage{height:62px;width:90px;object-fit:contain;filter:drop-shadow(0 0 10px #39b7eaa4);z-index:1}
+.gg37-shipscanner{position:absolute;left:6px;right:6px;top:0;height:2px;background:#93f8ff80;box-shadow:0 0 8px #5eddfd;animation:gg37Scan 3.9s linear infinite;pointer-events:none}
+.gg37-hullstats{min-width:0;flex:1}
+#cockpitPanel .gg37-shipname{font-size:12px;font-weight:900;color:#c9faff;letter-spacing:.045em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gg37-healthline{display:flex;align-items:baseline;justify-content:space-between;gap:6px;margin-top:4px}
+#cockpitPanel #cockpitLife{position:static!important;display:block!important;font-size:clamp(21px,1.8vw,27px)!important;line-height:1!important;color:#f2fcff!important}
+.gg37-healthline>span{font-size:9px;color:#7db5c6;letter-spacing:.13em;font-weight:800}
+#cockpitPanel .gg37-lifechips{display:flex;gap:5px;min-height:14px;padding:4px 0 1px!important;color:#78e6ff!important}
+.gg37-lifechips .alive{color:#6eeadf;font-size:12px;text-shadow:0 0 9px #65fff4}
+.gg37-lifechips .lost{color:#34526a;font-size:12px;text-shadow:none}
+.gg37-shieldline{border-top:1px solid #29739166;padding-top:7px;margin-top:6px;display:flex;justify-content:space-between;align-items:center;gap:13px}
+.gg37-shieldline>span{font-size:10px;color:#9ecbdf;white-space:nowrap;letter-spacing:.09em;font-weight:800}
+#cockpitPanel #cockpitShield{font-weight:950;color:#edfbff;font-size:13px!important}
+#cockpitPanel .gg37-shieldcells{flex:1;max-width:152px}
+#cockpitPanel.gg37-cockpit .gg34-segments{display:flex;gap:3px!important;width:100%;height:11px;align-items:center}
+#cockpitPanel.gg37-cockpit .gg34-segments span{flex:1;display:block;min-width:0;height:10px;background:#071729!important;border:1px solid #2f5475!important;transform:skew(-10deg);border-radius:0!important}
+#cockpitPanel .gg37-shieldcells span.active{background:#56bfff!important;border-color:#a2e5ff!important;box-shadow:0 0 10px #459bfa99!important}
+.gg37-energy-content{display:flex;align-items:center;gap:12px}
+.gg37-energyicon,.gg37-primaryicon,.gg37-weaponwell{display:grid;place-items:center;flex-shrink:0;border:1px solid #3181a6;background:radial-gradient(circle,#12618c5e,#081c31 75%);box-shadow:inset 0 0 10px #40cbff19;position:relative;overflow:hidden}
+.gg37-energyicon{width:42px;height:42px;clip-path:polygon(50% 0,100% 28%,100% 72%,50% 100%,0 72%,0 28%)}
+#cockpitPanel #cockpitEnergyIcon{width:34px!important;height:34px!important;object-fit:contain;filter:drop-shadow(0 0 5px #55e9ff)}
+.gg37-energycopy{flex:1;min-width:0}
+#cockpitPanel #gg37Ability{font-size:11px!important;font-weight:900;letter-spacing:.035em;color:#cbfaff!important;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gg37-energycopy>small{display:block;color:#779bb6;font-size:9px;letter-spacing:.1em;margin:4px 0 6px}
+#cockpitPanel .gg37-energytrack{width:100%;height:10px!important;margin:0!important;border:1px solid #2d6f80!important;padding:0!important;box-shadow:inset 0 0 5px #000!important}
+#cockpitPanel #cockpitEnergy{display:block!important;height:100%!important;background:repeating-linear-gradient(90deg,#43e9c9 0 14px,#0b6161 14px 16px)!important;box-shadow:0 0 8px #52dfc599!important}
+.gg37-primaryrow{display:flex;align-items:center;gap:12px;margin-bottom:7px}
+.gg37-primaryicon{width:49px;height:49px;clip-path:polygon(9px 0,100% 0,100% calc(100% - 9px),calc(100% - 9px) 100%,0 100%,0 9px)}
+#cockpitPanel #cockpitWeaponIcon{width:45px!important;height:45px!important;object-fit:contain;filter:drop-shadow(0 0 8px #e7a85b8c)}
+.gg37-primaryinfo{display:flex;flex-direction:column;justify-content:center;gap:4px}
+#cockpitPanel #cockpitPrimary{font-size:clamp(19px,1.6vw,24px)!important;letter-spacing:.035em!important;color:#ffd69b!important;white-space:nowrap}
+.gg37-primaryinfo>span{font-size:9px;color:#9babc1;letter-spacing:.12em;font-weight:700}
+#cockpitPanel .gg37-powercells{gap:4px!important;margin:1px 0 6px!important}
+#cockpitPanel .gg37-powercells span{height:10px!important;transform:skew(-13deg)!important;background:#081727!important;border:1px solid #476079!important;border-radius:0!important}
+#cockpitPanel .gg37-powercells span.active{background:linear-gradient(0deg,#eaa449,#ffdfa3)!important;border-color:#ffe4a9!important;box-shadow:0 0 9px #ffb34c87!important}
+#cockpitPanel .gg37-weaponhint{font-size:9px!important;line-height:1.2!important;white-space:nowrap!important;overflow:hidden;text-overflow:ellipsis;color:#a0bace!important;letter-spacing:.035em!important}
+.gg37-secondaryrow{display:flex;align-items:center;gap:10px;min-height:60px}
+.gg37-weaponwell{width:60px;height:60px;clip-path:polygon(0 12px,12px 0,100% 0,100% calc(100% - 12px),calc(100% - 12px) 100%,0 100%)}
+#cockpitPanel .gg37-secondary #cockpitSecondaryIcon{display:block!important;height:54px!important;width:54px!important;object-fit:contain;opacity:.3;filter:grayscale(.7) drop-shadow(0 0 8px #0a7dad3d)!important}
+#cockpitPanel .gg37-secondary #cockpitSecondaryIcon.gg37-loaded{opacity:1!important;filter:drop-shadow(0 0 9px #e8b16d82)!important}
+.gg37-secondaryinfo{min-width:0;flex:1}
+#cockpitPanel #cockpitSecondary{font-size:clamp(12px,1.15vw,16px)!important;line-height:1.2!important;display:block!important;color:#e8fcff!important;overflow-wrap:anywhere}
+.gg37-secondaryinfo>span{font-size:9px;color:#709ab2;line-height:1.25;display:block;margin-top:5px}
+.gg37-ammo{text-align:center;flex-shrink:0;min-width:45px;border-left:1px solid #2d718b4f;padding-left:10px}
+#cockpitPanel #cockpitAmmo{font-size:clamp(24px,2.1vw,32px)!important;line-height:1!important;font-variant-numeric:tabular-nums!important;color:#ffc987!important;display:block!important}
+.gg37-ammo>small{display:block;font-size:9px;color:#8cb4c6;letter-spacing:.1em;margin-top:4px}
+.gg37-secondaryfoot{border-top:1px solid #34728a52;margin-top:8px;padding-top:7px;font-size:9px;letter-spacing:.025em;color:#7db5c7}
+#cockpitPanel #gg37MissileState{color:#f2b97c!important}
+#cockpitPanel .gg37-threat{border-left-color:#e9ae68!important}
+.gg37-threatline{display:flex;align-items:center;gap:12px;margin:2px 0 8px}
+.gg37-radar{position:relative;height:53px;width:53px;flex-shrink:0;border:1px solid #327b8a;border-radius:50%;background:radial-gradient(circle at center,#0f4054 0%,#071e30 72%);box-shadow:0 0 0 3px #0b283b,inset 0 0 9px #22b2db5c;overflow:hidden}
+.gg37-radar:before,.gg37-radar:after{content:"";position:absolute;border:1px solid #3c93a35e;border-radius:50%;inset:11px}.gg37-radar:after{inset:20px}
+.gg37-radar-line{position:absolute;inset:-50%;background:conic-gradient(from 0deg,transparent 0 270deg,#6be8dd28 340deg,#70ecdf88 360deg);animation:gg37Sweep 4s linear infinite;transform-origin:center}
+.gg37-radar-dot{position:absolute;left:32px;top:13px;width:4px;height:4px;border-radius:50%;background:#ffcc87;box-shadow:0 0 8px #ffe2a3}
+.gg37-threatcopy{min-width:0;flex:1}
+#cockpitPanel #cockpitBoss{font-size:clamp(13px,1.2vw,17px)!important;color:#ffdbab!important;line-height:1.25!important;display:block!important}
+#cockpitPanel #gg37ThreatName{display:block!important;font-size:9px!important;color:#83b1c7!important;line-height:1.3!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:5px;letter-spacing:.035em}
+#cockpitPanel .gg37-wavecells{margin-bottom:0!important;gap:3px!important}
+#cockpitPanel .gg37-wavecells span{height:7px!important;transform:skew(-12deg)!important}
+#cockpitPanel .gg37-wavecells span.active{background:#f9bf7c!important;border-color:#ffdb98!important;box-shadow:0 0 6px #ffc27c77!important}
+.gg37-boss-gauge{margin-top:10px;padding-top:7px;border-top:1px solid #98663f7c}
+.gg37-boss-gauge[hidden]{display:none!important}
+.gg37-boss-top{font-size:9px;color:#ffc58a;letter-spacing:.04em;margin-bottom:6px;font-weight:850}
+#cockpitPanel #gg37BossBar{background:linear-gradient(90deg,#d35b4b,#ffc079)!important;box-shadow:0 0 12px #ff7e65!important}
+#cockpitPanel .gg37-footer{margin-top:auto!important;display:flex!important;flex-shrink:0;justify-content:space-between;align-items:center;gap:5px;min-height:22px!important;padding:7px 2px 0!important;border-top:1px solid #3e96ae46;font-size:9px!important;letter-spacing:.09em!important;color:#699bad!important;white-space:nowrap;overflow:hidden!important}
+#cockpitPanel.gg37-critical .gg37-survival{border-left-color:#ff6b6b!important;box-shadow:inset 0 0 18px #fa35391c!important}
+#cockpitPanel.gg37-critical #gg37HullPct{color:#ff8f90!important;animation:gg37Blink 1.2s infinite}
+/* Mantener toda la acción dentro del lienzo panorámico y liberar su parte superior. */
+#playLayer #gameHud .hudBar{opacity:.72!important;min-height:57px;max-width:100%!important;pointer-events:none!important}
+#playLayer #gameHud .hudBar>div:nth-child(2){background:#07172b8a!important;border-bottom:1px solid #2f8eb15c!important;border-radius:0!important}
+#playLayer #pickupHud{display:none!important}
+#gameHud .hudControls{bottom:12px!important}
+@keyframes gg37Blink{50%{opacity:.45}}
+@keyframes gg37Scan{0%,100%{top:4px;opacity:0}13%{opacity:.7}85%{opacity:.7}95%{top:62px;opacity:0}}
+@keyframes gg37Sweep{to{transform:rotate(360deg)}}
+@media (max-width:1120px){#playLayer{--gg-sidebar:295px!important}#playLayer #cockpitPanel.gg37-cockpit{padding:10px!important;gap:6px!important}#cockpitPanel .gg37-online{display:none}}
+@media (max-height:780px) and (min-width:701px){#playLayer #cockpitPanel.gg37-cockpit{gap:5px!important;padding:7px 9px!important}#playLayer #cockpitPanel .gg37-card{padding:7px 10px!important}#cockpitPanel .gg37-head{min-height:45px!important}#cockpitPanel .gg37-mission{min-height:58px;padding:6px 10px}#cockpitPanel .gg37-cardtitle{margin-bottom:6px!important}#cockpitPanel .gg37-shipframe{height:48px;width:72px}#cockpitPanel #gg37ShipImage{width:67px;height:45px}#cockpitPanel .gg37-weaponwell{width:45px;height:45px}#cockpitPanel .gg37-secondary #cockpitSecondaryIcon{height:41px!important;width:41px!important}#cockpitPanel .gg37-radar{width:42px;height:42px}#cockpitPanel .gg37-score #cockpitScore{font-size:30px!important}#cockpitPanel .gg37-footer{display:none!important}}
+@media (max-width:700px){
+ #playLayer{--gg-sidebar:0px!important;padding-right:0!important}
+ #playLayer #cockpitPanel.gg37-cockpit{display:none!important}
+ #playLayer #pickupHud{display:flex!important;left:50%!important;top:72px!important}
+ #playLayer #gameHud{inset:0!important}
+ #gameHud .hudBar{opacity:1!important}
+}
+@media (prefers-reduced-motion:reduce){#cockpitPanel .gg37-online-dot,#cockpitPanel .gg37-shipscanner,#cockpitPanel .gg37-radar-line{animation:none!important}}

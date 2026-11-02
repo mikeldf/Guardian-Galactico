@@ -1,0 +1,6 @@
+
+#ggqSettings{margin-top:16px;display:grid;gap:12px;background:linear-gradient(140deg,#0b2437bb,#0a122b);border:1px solid #4383a77d;border-radius:12px;padding:16px}
+#ggqSettings h3{margin:0;color:#9be9ff;font-size:15px;letter-spacing:.11em}#ggqSettings label{display:flex;align-items:center;justify-content:space-between;gap:12px;color:#d9effc;font-size:13px;flex-wrap:wrap}
+#ggqSettings input[type=range]{accent-color:#68e8ff;width:180px}#ggqSettings button{border:1px solid #4a91af;background:#11344c;border-radius:7px;color:#d9f5ff;font-size:13px;padding:10px 12px;cursor:pointer}
+#ggqSettings button:hover{background:#1b5677}#ggqSettings .actionrow{display:flex;flex-wrap:wrap;gap:8px}#ggqStatus{min-height:20px;color:#9fe9ca;font-size:12px}
+#ggqSettings .smallprint{font-size:11px;color:#92afc2;line-height:1.5}

@@ -1,0 +1,82 @@
+{
+  "logic": [
+    {
+      "variant": "inline",
+      "formations": 36,
+      "uniqueFormations": 36,
+      "minXSpan": 277,
+      "maxXSpan": 481,
+      "rapidDrops": 1,
+      "slowDrops": 2,
+      "cap": 2,
+      "distinctPickupSfx": 11,
+      "fx": [
+        "pickup_weapon",
+        "pickup_shield",
+        "pickup_energy",
+        "pickup_health",
+        "pickup_coin",
+        "pickup_missile",
+        "pickup_homing",
+        "pickup_laser",
+        "pickup_plasma",
+        "pickup_salvo",
+        "pickup_electric"
+      ]
+    },
+    {
+      "variant": "modular",
+      "formations": 36,
+      "uniqueFormations": 36,
+      "minXSpan": 277,
+      "maxXSpan": 481,
+      "rapidDrops": 1,
+      "slowDrops": 2,
+      "cap": 2,
+      "distinctPickupSfx": 11,
+      "fx": [
+        "pickup_weapon",
+        "pickup_shield",
+        "pickup_energy",
+        "pickup_health",
+        "pickup_coin",
+        "pickup_missile",
+        "pickup_homing",
+        "pickup_laser",
+        "pickup_plasma",
+        "pickup_salvo",
+        "pickup_electric"
+      ]
+    }
+  ],
+  "musicFiles": 32,
+  "newTracks": [
+    "nueva_01_ruta_nebular.mp3",
+    "nueva_02_horizonte_azul.mp3",
+    "nueva_03_tormenta_ionica.mp3",
+    "nueva_04_pulso_cosmico.mp3",
+    "nueva_05_alerta_estelar.mp3",
+    "nueva_06_nucleo_final.mp3"
+  ],
+  "structures": [
+    {
+      "entry": "index.html",
+      "hasThreatGuide": true,
+      "hasMissionGuide": true
+    },
+    {
+      "entry": "index_modular.html",
+      "hasThreatGuide": true,
+      "hasMissionGuide": true
+    }
+  ],
+  "assets": {
+    "shipsNew": 30,
+    "originalEnemySprites": 16,
+    "originalResourcesRetained": true
+  },
+  "originalFilesPreserved": 2002,
+  "browserLiveTest": "No completada: navegador bloqueado por política de entorno",
+  "entrySyntax": "OK, JS principal y modular",
+  "musicIntegrity": "6 archivos MP3 nuevos verificados con ffprobe"
+}

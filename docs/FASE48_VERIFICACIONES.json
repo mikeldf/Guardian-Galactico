@@ -1,0 +1,17 @@
+{
+  "base": "Fase 46, restored unfragmented HTML",
+  "css_inline_chars": 88143,
+  "inline_scripts": 6,
+  "direct_html_links": 11,
+  "missing_direct_links": [],
+  "files_in_package": 1879,
+  "total_zip_bytes": 113019476,
+  "important_assets": {
+    "assets/ui/gg_phase28_transition.css": true,
+    "assets/ui/gg_f37_cockpit_neon.css": true,
+    "assets/audio/gg39_music.js": true,
+    "assets/planetas/mundo_01_azul.webp": true
+  },
+  "local_asset_dir_count": 1844,
+  "zip_integrity": "passed"
+}

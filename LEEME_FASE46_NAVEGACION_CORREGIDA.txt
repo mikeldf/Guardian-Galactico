@@ -1,0 +1,9 @@
+GUARDIÁN GALÁCTICO — FASE 46
+
+Corrección del error por el que el hangar aparecía encima de Jugar, Continuar, Opciones y Mapa.
+Causa: regla CSS #hangar { display:flex!important } prevalecía sobre .hidden { display:none!important }.
+Solución: #hangar.hidden { display:none!important } con prioridad correcta.
+
+Conservados: las 60 naves y el hangar a dos columnas, los 200 niveles, las 50 mejoras de armas, las 26 pistas musicales, la pantalla de carga, el menú de pausa y el progreso en el navegador. El icono del ejecutable sigue sin integrarse.
+
+Para jugar: extraer TODO el ZIP en una carpeta nueva, abrir index.html. No mezclar con ZIP antiguos. Si Chrome mantiene una pestaña vieja, cerrarla y abrir el index.html nuevo.

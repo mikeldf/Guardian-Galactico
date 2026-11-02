@@ -1,0 +1,59 @@
+{
+  "name": "Guardián Galáctico",
+  "version": "0.55.0",
+  "platforms": [
+    "PC HTML5",
+    "Windows Electron"
+  ],
+  "stable_entry": "index.html",
+  "source_entry": "index_modular.html",
+  "modules": {
+    "css": 13,
+    "js": 6
+  },
+  "campaign": {
+    "worlds": 10,
+    "levels_per_world": 20,
+    "total": 200
+  },
+  "ships": 60,
+  "player_weapon_upgrades": 50,
+  "icon_installed": false,
+  "assets_root": "assets/",
+  "instructions": "No borres assets ni abras HTML desde dentro del ZIP.",
+  "qa_phase": 55,
+  "qa_tests": {
+    "runtime_passed": 42,
+    "runtime_total": 42,
+    "regression_passed": 26,
+    "regression_total": 26,
+    "resources_validated": 1852,
+    "images_verified": 1797,
+    "music_verified": 26
+  },
+  "display_settings": {
+    "modes": [
+      "fullscreen",
+      "window",
+      "borderless"
+    ],
+    "window_resolutions": [
+      "1280x720",
+      "1600x900",
+      "1920x1080",
+      "2560x1440",
+      "3840x2160"
+    ],
+    "interface_scale_percent": [
+      75,
+      150
+    ],
+    "default": {
+      "mode": "fullscreen",
+      "resolution": "1920x1080",
+      "scale": 100
+    },
+    "native_windows_ready_for_build": true,
+    "native_windows_runtime_verified": false
+  }
+}

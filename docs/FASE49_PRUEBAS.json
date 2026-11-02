@@ -1,0 +1,101 @@
+{
+  "models": {
+    "tested": 60,
+    "loaded": 60,
+    "missing": [],
+    "finished": true,
+    "origin": "about:"
+  },
+  "game": {
+    "ships": 60,
+    "levels": 200,
+    "worlds": [
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20
+    ],
+    "weapon": 50
+  },
+  "screen_home": {
+    "active": [
+      "home"
+    ],
+    "hangarCards": 60
+  },
+  "screen_galaxy": {
+    "active": [
+      "galaxy"
+    ],
+    "hangarCards": 0
+  },
+  "screen_levels": {
+    "active": [
+      "levels"
+    ],
+    "hangarCards": 0
+  },
+  "screen_hangar": {
+    "active": [
+      "hangar"
+    ],
+    "hangarCards": 60
+  },
+  "screen_settings": {
+    "active": [
+      "settings"
+    ],
+    "hangarCards": 60
+  },
+  "ship31": {
+    "name": "Fulgor Rojo",
+    "width": 512
+  },
+  "back": [
+    "home"
+  ],
+  "combat": {
+    "screen": "play",
+    "ships": 60,
+    "wave": 0
+  },
+  "weapon50": {
+    "maximum": 50,
+    "current": 50,
+    "info": {
+      "name": "PRISMA GALÁCTICO",
+      "color": "#f4c8ff",
+      "hue": 0,
+      "mechanic": "prisma",
+      "family": 9,
+      "stage": 5,
+      "total": 50,
+      "display": "ARMA 10 / 10"
+    },
+    "worldSave": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "pause": {
+    "paused": true,
+    "playing": true,
+    "overlay": true
+  },
+  "missing": [],
+  "errors": []
+}

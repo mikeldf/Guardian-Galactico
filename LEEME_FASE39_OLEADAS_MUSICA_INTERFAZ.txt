@@ -1,0 +1,12 @@
+GUARDIÁN GALÁCTICO — FASE 39
+
+- Más enemigos en cada oleada: nivel 1 = 20, 22 y 24. Incremento progresivo, máximo 40 por oleada.
+- Formaciones reordenadas en hasta cinco filas, con desplazamiento y entrada escalonada.
+- Conserva el tamaño reducido de la Fase 38, las colisiones, la cadencia y el límite de proyectiles.
+- 26 composiciones MP3 ORIGINALES creadas para este juego (no incluyen música ajena).
+- Dos pistas por mundo con rotación automática, cuatro de jefes, una de menú y una de hangar.
+- La música se habilita con la primera interacción, respeta sonido y volumen de Opciones y pausa durante la pausa de combate.
+- Pantalla Opciones completamente rediseñada. Misma familia visual y simetría de menús, mapa, niveles y hangar.
+- Todo el progreso y las 60 naves se conservan. Siguen presentes los 500 niveles; no se ha aplicado el plan de 200.
+
+Abrir index.html con Chrome/Edge. Extraer el ZIP completo antes de jugar.

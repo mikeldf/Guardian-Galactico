@@ -1,0 +1,38 @@
+GUARDIÁN GALÁCTICO — FASE 51
+CORRECCIÓN VISUAL DEL MAPA GALÁCTICO Y DEL SELECTOR DE NIVELES
+
+BASE: Fase 50. No se ha cambiado el motor del juego.
+
+CAMBIOS:
+- Eliminada la copia desenfocada que se veía en los laterales.
+- Fondo espacial nítido sin franjas borrosas.
+- Mapa galáctico recompuesto con las ilustraciones y los planetas existentes.
+- Etiquetas de planetas transparentes: sin rectángulos opacos.
+- El clic en un planeta abre directamente el selector de niveles sin panel emergente.
+- Selector original de 20 niveles conservando la nave, el planeta, el logotipo y el suelo espacial.
+- Se han ocultado del selector los antiguos números incrustados de 50 niveles.
+- Cabeceras transparentes y paneles con estética de cristal futurista.
+- Las 200 misiones, 60 naves, 50 mejoras y sistemas anteriores permanecen en su lugar.
+- El icono de Windows NO está integrado, por petición del usuario.
+
+ESTRUCTURA:
+index.html
+assets/ui/classic_restored/gg50_original_visual.js   (visual y navegación)
+assets/ui/classic_restored/gg51_futurista_limpio.css (nuevos estilos)
+assets/ui/classic_restored/*                         (gráficos ya existentes)
+
+PROBADO AUTOMÁTICAMENTE EN CHROMIUM:
+- 10/10 planetas cargados
+- 20 niveles por mundo
+- Clic en planeta -> selector de niveles -> iniciar misión
+- 60 naves en el hangar
+- 50 niveles de arma y 200 misiones
+- Opciones abre correctamente
+- Sin errores JavaScript ni rutas de recursos perdidas en los recorridos comprobados
+
+PENDIENTE:
+Prueba visual y jugable en Windows del usuario. Aplicación .exe aún no compilada.
+
+ABRIR:
+Extraer el ZIP en una carpeta nueva y abrir index.html en Chrome o Edge.
+No mover el HTML fuera de la carpeta; assets debe estar a su lado.

@@ -1,0 +1,87 @@
+/* Fase 51 · Retoques visuales no destructivos sobre los diseños aprobados.
+   La imagen original se conserva íntegra. No se reescriben sprites ni lógica. */
+#gg50Classic {
+  background-color:#020918;
+  background-image:
+   radial-gradient(circle at 8% 13%,#b8edffbb 0 1px,transparent 1.7px),
+   radial-gradient(circle at 71% 37%,#a9bbff9e 0 1px,transparent 1.8px),
+   radial-gradient(circle at 42% 72%,#66baffb2 0 1px,transparent 1.7px),
+   radial-gradient(circle at 86% 86%,#c4f7ff99 0 1px,transparent 1.7px),
+   radial-gradient(ellipse at center,#102a4a 0%,#030d20 70%,#010512 100%);
+  background-size:189px 181px,263px 251px,339px 291px,409px 359px,cover;
+}
+/* La capa "ambient" ya no hace blur de una copia a pantalla completa. */
+#gg50Classic .gg50-ambient {display:none!important;filter:none!important}
+#gg50Classic .gg50-stage {box-shadow:none!important;outline:0!important}
+/* Planetas: nombres, rango y estado sin paneles HTML opacos ni rectángulos. */
+#gg50Classic .gg50-map-label,
+#gg50Classic .gg50-map-label.locked {
+  border:0!important;border-radius:0!important;
+  background:none!important;box-shadow:none!important;
+  padding:4px 6px!important;
+  filter:none!important;
+  gap:3px;
+}
+#gg50Classic .gg50-map-label b {color:#f8ffff;font-size:20px;letter-spacing:.075em;text-shadow:0 2px 3px #000,0 0 10px #0cf,0 0 22px #08adff}
+#gg50Classic .gg50-map-label small {color:#d2f8ff;font-weight:700;text-shadow:0 2px 4px #000,0 0 9px #00aefa}
+#gg50Classic .gg50-map-label strong {color:#ffe2a1;font-weight:900;text-shadow:0 2px 4px #000,0 0 12px #ffb84d}
+#gg50Classic .gg50-map-label.locked b,#gg50Classic .gg50-map-label.locked small {color:#b5cae0}
+/* No aparece el rectángulo de hover/click sobre los planetas; solo aro circular ligero. */
+#gg50Classic .gg50-map-planet,
+#gg50Classic .gg50-map-planet:hover,
+#gg50Classic .gg50-map-planet:focus,
+#gg50Classic .gg50-map-planet:active {background:transparent!important;border:0!important;border-radius:50%!important;outline:0!important;box-shadow:none!important}
+#gg50Classic .gg50-map-planet:focus-visible {outline:2px solid #90f4ff!important;outline-offset:3px!important;box-shadow:0 0 16px #17ccff7a!important}
+/* Cabecera del selector transparente, con texto holográfico sobre la ilustración. */
+#gg50Classic .gg50-level-head {
+  background:transparent!important;border:0!important;box-shadow:none!important;
+}
+#gg50Classic .gg50-level-head small {color:#bdefff;text-shadow:0 1px 5px #000,0 0 14px #009fffc0}
+#gg50Classic .gg50-level-head b {color:#f3fbff;text-shadow:0 2px 6px #000,0 0 22px #00b5ff}
+/* Información del planeta con cristal oscuro semitransparente en lugar de bloque opaco. */
+#gg50Classic .gg50-world-details {
+  background:linear-gradient(145deg,#031228b6,#051b35a6)!important;
+  border:1px solid #45c9ff85!important;box-shadow:inset 0 0 28px #00b7ff14,0 0 14px #00a7ff20!important;
+  backdrop-filter:none!important;
+}
+#gg50Classic .gg50-world-details h3 {color:#f5ffff;text-shadow:0 0 15px #22bfff}
+#gg50Classic .gg50-world-details .gg50-detail-line {border-top-color:#5adcf352}
+/* Cuadrícula de 20 niveles: acabado vidrio/circuitería; los botones mantienen contraste. */
+#gg50Classic .gg50-level-panel {
+  border-color:#4edcffc2!important;border-radius:14px;
+  background:linear-gradient(145deg,#061a35ed,#020e26ee)!important;
+  box-shadow:0 0 23px #0b9cf74a,inset 0 0 44px #0068bd20!important;
+}
+#gg50Classic .gg50-level-heading {color:#e3fdff;text-shadow:0 0 17px #34bbff;border-bottom-color:#72cfff5d}
+#gg50Classic .gg50-level-card {background:linear-gradient(155deg,#1037638f,#04162b9c)!important;border-color:#44baffc9;box-shadow:inset 0 1px 9px #80eeff19,0 0 7px #03a4ff25}
+#gg50Classic .gg50-level-card.cleared {background:linear-gradient(155deg,#075553a8,#073044aa)!important;border-color:#7affdda3}
+#gg50Classic .gg50-level-card.selected {background:linear-gradient(155deg,#0962a4c9,#03304acc)!important;border-color:#90fdff!important;box-shadow:0 0 20px #16c8ffb0,inset 0 0 18px #45edff36!important}
+#gg50Classic .gg50-level-card.locked {background:#04142490!important;opacity:.9;border-color:#416886a6}
+#gg50Classic .gg50-level-card.boss {border-color:#e5b2ff}
+#gg50Classic .gg50-level-summary {background:transparent!important;border:0!important;box-shadow:none!important;padding-inline:5px}
+/* Una nave, mundo y HUD activos no se alteran. */
+
+/* Composición original: solo los fragmentos sin números viejos. */
+#gg50Classic .gg51-original-logo-planet,
+#gg50Classic .gg51-original-floor{position:absolute;z-index:0;pointer-events:none;background-image:url('niveles_original.png');background-repeat:no-repeat;background-size:1536px 1024px}
+#gg50Classic .gg51-original-logo-planet{background-position:0 0}
+#gg50Classic .gg51-original-floor{background-position:0 -807px}
+#gg50Classic .gg50-level-head,#gg50Classic .gg50-world-details,#gg50Classic .gg50-level-panel{z-index:2}
+#gg50Classic .gg50-world-details {background:linear-gradient(145deg,#03122899,#051b3580)!important}
+#gg50Classic .gg50-level-panel {background:linear-gradient(145deg,#061a35ae,#020e26d4)!important}
+#gg50Classic .gg50-back,#gg50Classic .gg50-launch,#gg50Classic .gg50-world-arrow {z-index:3}
+
+/* Mapa sin los paneles oscuros incrustados en la captura antigua. */
+#gg50Classic .gg51-map-core,#gg50Classic .gg51-map-orbit,#gg50Classic .gg51-map-sidebar,#gg50Classic .gg51-map-title,#gg50Classic .gg51-map-orb{position:absolute;pointer-events:none}
+#gg50Classic .gg51-map-sidebar{z-index:2;background:url('mapa_original_sin_textos.webp') 0 0 / 1536px 1024px no-repeat}
+#gg50Classic .gg51-map-core{z-index:1;background:url('mapa_original_sin_textos.webp') -591px -282px / 1536px 1024px no-repeat;-webkit-mask-image:radial-gradient(ellipse at center,#000 36%,#000 47%,transparent 77%);mask-image:radial-gradient(ellipse at center,#000 36%,#000 47%,transparent 77%);filter:drop-shadow(0 0 25px #6a83ff65)}
+#gg50Classic .gg51-map-orbit{z-index:1;border:2px dashed #68d7ff91;border-radius:50%;box-shadow:0 0 32px #00aeff22,inset 0 0 34px #00c8ff18}
+#gg50Classic .gg51-map-orb{z-index:2;display:grid;place-items:center}
+#gg50Classic .gg51-map-orb img{width:190px;height:190px;object-fit:contain;filter:drop-shadow(0 0 21px #50d7ff8c)}
+#gg50Classic .gg51-map-title{z-index:3;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#f5feff;text-shadow:0 0 12px #159dff,0 0 28px #1672ef}
+#gg50Classic .gg51-map-title b{font-size:55px;font-weight:1000;letter-spacing:.065em;line-height:1.1}
+#gg50Classic .gg51-map-title small{font-size:18px;letter-spacing:.2em;font-weight:800;color:#a9eeff;margin-top:6px}
+/* Los nombres son texto independiente, no un recuadro. */
+#gg50Classic .gg50-map-label{z-index:4}
+/* Evita mostrar fragmentos de los planetas de la ilustración antigua en el menú lateral. */
+#gg50Classic .gg51-map-sidebar{width:335px!important}

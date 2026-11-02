@@ -1,0 +1,40 @@
+GUARDIÁN GALÁCTICO — FASE 50
+RECUPERACIÓN DE LOS DISEÑOS VISUALES ORIGINALES
+
+Base: Fase 49, con toda la campaña moderna de 200 niveles, 60 naves, 50 niveles de armas y demás mejoras.
+Recuperación visual de las cuatro pantallas antiguas: archivo original "Guardian_Galactico_PC_4_Pantallas_Exactas_Interactivas".
+
+QUÉ SE HA RESTAURADO
+- Mapa galáctico original: planetas grandes en círculo alrededor de una galaxia, logotipo, fondo espacial y menú azul; etiquetas dinámicas actualizadas a 20 niveles por mundo.
+- Selector original: fondo artístico, gran planeta a la izquierda, cabecera metálica, botón Volver y botón verde Jugar. Los 20 niveles están integrados en 2 filas y todos son interactivos.
+- Menú principal: se conserva la portada gráfica clásica y los botones interactivos de Continuar, Jugar, Mapa, Hangar, Opciones y Salir.
+- Hangar: se conserva el hangar aprobado de la Fase 44/49 con nave grande a la izquierda y lista de las 60 naves a la derecha.
+- Opciones, HUD, música, pausa y demás sistemas: se mantienen.
+
+NO SE HA MODIFICADO
+- La campaña sigue teniendo 200 niveles, no 500.
+- Las 60 naves y todos sus archivos gráficos.
+- Las 50 mejoras del arma principal y los sprites aprobados.
+- Los enemigos, jefes, música, oleadas, controles y guardados.
+- El icono de Windows sigue SIN añadir por petición del usuario.
+
+CONTENIDO NUEVO
+assets/ui/classic_restored/
+  - mapa_original_sin_textos.webp: imagen original con los 10 planetas, sin etiquetas antiguas 500 niveles.
+  - niveles_original.png: arte original del selector antiguo, utilizado como fondo decorativo.
+  - gg50_original_visual.css: paneles dinámicos fieles al diseño original.
+  - gg50_original_visual.js: navegación y estados conectados con el motor actual.
+
+CORRECCIÓN TÉCNICA
+Normalización de las rutas CSS del fondo planetario y de la transición para que no se resuelvan bajo assets/ui/assets por error.
+
+VALIDACIÓN (navegador automatizado)
+- Menú/Mapa/Niveles/Hangar/Opciones muestran una sola pantalla cada vez.
+- Selección de planeta y transición a los niveles.
+- 20 botones por mundo, lanzamiento real de la misión.
+- 200 niveles, 60 naves y 50 mejoras conservados.
+- Sin errores JavaScript ni solicitudes de assets locales ausentes en las pruebas de navegación.
+
+CÓMO ABRIRLO
+Extraer el ZIP COMPLETO en una carpeta nueva. Mantener index.html y assets en la misma carpeta.
+Abrir index.html con Chrome o Edge en Windows. Para la aplicación Windows se mantienen package.json y app/main.cjs. Todavía NO es un ejecutable .exe compilado.

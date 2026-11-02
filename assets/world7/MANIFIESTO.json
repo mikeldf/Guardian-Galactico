@@ -1,0 +1,258 @@
+{
+  "world": 7,
+  "worldName": "Planeta Tecnológico",
+  "entries": [
+    {
+      "category": "enemy",
+      "name": "Sonda Azul",
+      "file": "01_Enemigos/01_Sonda_Azul.optim.webp",
+      "canvas": [
+        512,
+        512
+      ],
+      "margins": [
+        174,
+        112,
+        171,
+        111
+      ],
+      "sourceRegion": [
+        9,
+        11,
+        183,
+        325
+      ]
+    },
+    {
+      "category": "enemy",
+      "name": "Escarabajo Cuantico",
+      "file": "01_Enemigos/02_Escarabajo_Cuantico.optim.webp",
+      "canvas": [
+        512,
+        512
+      ],
+      "margins": [
+        154,
+        150,
+        146,
+        152
+      ],
+      "sourceRegion": [
+        182,
+        59,
+        405,
+        312
+      ]
+    },
+    {
+      "category": "enemy",
+      "name": "Ojo Mecanico",
+      "file": "01_Enemigos/03_Ojo_Mecanico.optim.webp",
+      "canvas": [
+        512,
+        512
+      ],
+      "margins": [
+        160,
+        135,
+        160,
+        136
+      ],
+      "sourceRegion": [
+        407,
+        37,
+        629,
+        312
+      ]
+    },
+    {
+      "category": "enemy",
+      "name": "Lanza Cibernetica",
+      "file": "01_Enemigos/04_Lanza_Cibernetica.optim.webp",
+      "canvas": [
+        512,
+        512
+      ],
+      "margins": [
+        190,
+        113,
+        186,
+        112
+      ],
+      "sourceRegion": [
+        621,
+        17,
+        775,
+        326
+      ]
+    },
+    {
+      "category": "enemy",
+      "name": "Nodo Rastreador",
+      "file": "01_Enemigos/05_Nodo_Rastreador.optim.webp",
+      "canvas": [
+        512,
+        512
+      ],
+      "margins": [
+        148,
+        126,
+        124,
+        124
+      ],
+      "sourceRegion": [
+        776,
+        45,
+        1041,
+        315
+      ]
+    },
+    {
+      "category": "enemy",
+      "name": "Gusano de Titanio",
+      "file": "01_Enemigos/06_Gusano_de_Titanio.optim.webp",
+      "canvas": [
+        512,
+        512
+      ],
+      "margins": [
+        177,
+        114,
+        155,
+        112
+      ],
+      "sourceRegion": [
+        1032,
+        28,
+        1235,
+        330
+      ]
+    },
+    {
+      "category": "enemy",
+      "name": "Cazador Veloz",
+      "file": "01_Enemigos/07_Cazador_Veloz.optim.webp",
+      "canvas": [
+        512,
+        512
+      ],
+      "margins": [
+        193,
+        117,
+        158,
+        117
+      ],
+      "sourceRegion": [
+        1236,
+        37,
+        1432,
+        332
+      ]
+    },
+    {
+      "category": "subboss",
+      "name": "Centinela Cuantico",
+      "file": "02_Subjefes/01_Centinela_Cuantico.optim.webp",
+      "canvas": [
+        768,
+        768
+      ],
+      "margins": [
+        206,
+        216,
+        207,
+        213
+      ],
+      "sourceRegion": [
+        12,
+        327,
+        370,
+        675
+      ]
+    },
+    {
+      "category": "subboss",
+      "name": "Ejecutor de Acero",
+      "file": "02_Subjefes/02_Ejecutor_de_Acero.optim.webp",
+      "canvas": [
+        768,
+        768
+      ],
+      "margins": [
+        211,
+        241,
+        207,
+        239
+      ],
+      "sourceRegion": [
+        370,
+        333,
+        725,
+        639
+      ]
+    },
+    {
+      "category": "subboss",
+      "name": "Nucleo Blindado",
+      "file": "02_Subjefes/03_Nucleo_Blindado.optim.webp",
+      "canvas": [
+        768,
+        768
+      ],
+      "margins": [
+        246,
+        232,
+        227,
+        229
+      ],
+      "sourceRegion": [
+        727,
+        319,
+        1042,
+        633
+      ]
+    },
+    {
+      "category": "subboss",
+      "name": "Mente Enjambre",
+      "file": "02_Subjefes/04_Mente_Enjambre.optim.webp",
+      "canvas": [
+        768,
+        768
+      ],
+      "margins": [
+        241,
+        222,
+        195,
+        218
+      ],
+      "sourceRegion": [
+        1033,
+        339,
+        1411,
+        678
+      ]
+    },
+    {
+      "category": "boss",
+      "name": "Omega Robotico",
+      "file": "03_Jefe_Final/05_Omega_Robotico.optim.webp",
+      "canvas": [
+        1024,
+        768
+      ],
+      "margins": [
+        44,
+        196,
+        44,
+        200
+      ],
+      "sourceRegion": [
+        142,
+        615,
+        1307,
+        1082
+      ]
+    }
+  ]
+}

@@ -1,0 +1,652 @@
+[
+  {
+    "file": "arma_01_evolucion_01.png",
+    "crop": [
+      236,
+      212,
+      275,
+      300
+    ],
+    "size": [
+      39,
+      88
+    ]
+  },
+  {
+    "file": "arma_01_evolucion_02.png",
+    "crop": [
+      216,
+      207,
+      296,
+      304
+    ],
+    "size": [
+      80,
+      97
+    ]
+  },
+  {
+    "file": "arma_01_evolucion_03.png",
+    "crop": [
+      194,
+      198,
+      317,
+      313
+    ],
+    "size": [
+      123,
+      115
+    ]
+  },
+  {
+    "file": "arma_01_evolucion_04.png",
+    "crop": [
+      184,
+      187,
+      328,
+      325
+    ],
+    "size": [
+      144,
+      138
+    ]
+  },
+  {
+    "file": "arma_01_evolucion_05.png",
+    "crop": [
+      184,
+      187,
+      328,
+      325
+    ],
+    "size": [
+      144,
+      138
+    ]
+  },
+  {
+    "file": "arma_02_evolucion_01.png",
+    "crop": [
+      182,
+      212,
+      329,
+      300
+    ],
+    "size": [
+      147,
+      88
+    ]
+  },
+  {
+    "file": "arma_02_evolucion_02.png",
+    "crop": [
+      182,
+      205,
+      330,
+      306
+    ],
+    "size": [
+      148,
+      101
+    ]
+  },
+  {
+    "file": "arma_02_evolucion_03.png",
+    "crop": [
+      182,
+      198,
+      330,
+      313
+    ],
+    "size": [
+      148,
+      115
+    ]
+  },
+  {
+    "file": "arma_02_evolucion_04.png",
+    "crop": [
+      182,
+      187,
+      330,
+      325
+    ],
+    "size": [
+      148,
+      138
+    ]
+  },
+  {
+    "file": "arma_02_evolucion_05.png",
+    "crop": [
+      182,
+      187,
+      330,
+      325
+    ],
+    "size": [
+      148,
+      138
+    ]
+  },
+  {
+    "file": "arma_03_evolucion_01.png",
+    "crop": [
+      205,
+      212,
+      306,
+      300
+    ],
+    "size": [
+      101,
+      88
+    ]
+  },
+  {
+    "file": "arma_03_evolucion_02.png",
+    "crop": [
+      188,
+      205,
+      323,
+      306
+    ],
+    "size": [
+      135,
+      101
+    ]
+  },
+  {
+    "file": "arma_03_evolucion_03.png",
+    "crop": [
+      187,
+      198,
+      323,
+      313
+    ],
+    "size": [
+      136,
+      115
+    ]
+  },
+  {
+    "file": "arma_03_evolucion_04.png",
+    "crop": [
+      182,
+      187,
+      329,
+      325
+    ],
+    "size": [
+      147,
+      138
+    ]
+  },
+  {
+    "file": "arma_03_evolucion_05.png",
+    "crop": [
+      182,
+      187,
+      329,
+      325
+    ],
+    "size": [
+      147,
+      138
+    ]
+  },
+  {
+    "file": "arma_04_evolucion_01.png",
+    "crop": [
+      212,
+      212,
+      300,
+      300
+    ],
+    "size": [
+      88,
+      88
+    ]
+  },
+  {
+    "file": "arma_04_evolucion_02.png",
+    "crop": [
+      190,
+      205,
+      322,
+      306
+    ],
+    "size": [
+      132,
+      101
+    ]
+  },
+  {
+    "file": "arma_04_evolucion_03.png",
+    "crop": [
+      184,
+      198,
+      327,
+      313
+    ],
+    "size": [
+      143,
+      115
+    ]
+  },
+  {
+    "file": "arma_04_evolucion_04.png",
+    "crop": [
+      184,
+      187,
+      327,
+      325
+    ],
+    "size": [
+      143,
+      138
+    ]
+  },
+  {
+    "file": "arma_04_evolucion_05.png",
+    "crop": [
+      184,
+      187,
+      327,
+      325
+    ],
+    "size": [
+      143,
+      138
+    ]
+  },
+  {
+    "file": "arma_05_evolucion_01.png",
+    "crop": [
+      183,
+      212,
+      329,
+      300
+    ],
+    "size": [
+      146,
+      88
+    ]
+  },
+  {
+    "file": "arma_05_evolucion_02.png",
+    "crop": [
+      192,
+      205,
+      321,
+      306
+    ],
+    "size": [
+      129,
+      101
+    ]
+  },
+  {
+    "file": "arma_05_evolucion_03.png",
+    "crop": [
+      185,
+      198,
+      327,
+      313
+    ],
+    "size": [
+      142,
+      115
+    ]
+  },
+  {
+    "file": "arma_05_evolucion_04.png",
+    "crop": [
+      182,
+      187,
+      330,
+      325
+    ],
+    "size": [
+      148,
+      138
+    ]
+  },
+  {
+    "file": "arma_05_evolucion_05.png",
+    "crop": [
+      182,
+      187,
+      330,
+      325
+    ],
+    "size": [
+      148,
+      138
+    ]
+  },
+  {
+    "file": "arma_06_evolucion_01.png",
+    "crop": [
+      192,
+      214,
+      318,
+      298
+    ],
+    "size": [
+      126,
+      84
+    ]
+  },
+  {
+    "file": "arma_06_evolucion_02.png",
+    "crop": [
+      182,
+      211,
+      329,
+      303
+    ],
+    "size": [
+      147,
+      92
+    ]
+  },
+  {
+    "file": "arma_06_evolucion_03.png",
+    "crop": [
+      182,
+      198,
+      329,
+      313
+    ],
+    "size": [
+      147,
+      115
+    ]
+  },
+  {
+    "file": "arma_06_evolucion_04.png",
+    "crop": [
+      182,
+      187,
+      329,
+      325
+    ],
+    "size": [
+      147,
+      138
+    ]
+  },
+  {
+    "file": "arma_06_evolucion_05.png",
+    "crop": [
+      182,
+      187,
+      329,
+      325
+    ],
+    "size": [
+      147,
+      138
+    ]
+  },
+  {
+    "file": "arma_07_evolucion_01.png",
+    "crop": [
+      184,
+      213,
+      328,
+      297
+    ],
+    "size": [
+      144,
+      84
+    ]
+  },
+  {
+    "file": "arma_07_evolucion_02.png",
+    "crop": [
+      183,
+      205,
+      329,
+      306
+    ],
+    "size": [
+      146,
+      101
+    ]
+  },
+  {
+    "file": "arma_07_evolucion_03.png",
+    "crop": [
+      183,
+      198,
+      329,
+      313
+    ],
+    "size": [
+      146,
+      115
+    ]
+  },
+  {
+    "file": "arma_07_evolucion_04.png",
+    "crop": [
+      183,
+      187,
+      329,
+      325
+    ],
+    "size": [
+      146,
+      138
+    ]
+  },
+  {
+    "file": "arma_07_evolucion_05.png",
+    "crop": [
+      183,
+      187,
+      329,
+      325
+    ],
+    "size": [
+      146,
+      138
+    ]
+  },
+  {
+    "file": "arma_08_evolucion_01.png",
+    "crop": [
+      199,
+      212,
+      312,
+      300
+    ],
+    "size": [
+      113,
+      88
+    ]
+  },
+  {
+    "file": "arma_08_evolucion_02.png",
+    "crop": [
+      182,
+      205,
+      329,
+      306
+    ],
+    "size": [
+      147,
+      101
+    ]
+  },
+  {
+    "file": "arma_08_evolucion_03.png",
+    "crop": [
+      182,
+      198,
+      329,
+      313
+    ],
+    "size": [
+      147,
+      115
+    ]
+  },
+  {
+    "file": "arma_08_evolucion_04.png",
+    "crop": [
+      182,
+      187,
+      329,
+      325
+    ],
+    "size": [
+      147,
+      138
+    ]
+  },
+  {
+    "file": "arma_08_evolucion_05.png",
+    "crop": [
+      182,
+      187,
+      329,
+      325
+    ],
+    "size": [
+      147,
+      138
+    ]
+  },
+  {
+    "file": "arma_09_evolucion_01.png",
+    "crop": [
+      190,
+      214,
+      321,
+      298
+    ],
+    "size": [
+      131,
+      84
+    ]
+  },
+  {
+    "file": "arma_09_evolucion_02.png",
+    "crop": [
+      183,
+      205,
+      328,
+      306
+    ],
+    "size": [
+      145,
+      101
+    ]
+  },
+  {
+    "file": "arma_09_evolucion_03.png",
+    "crop": [
+      182,
+      198,
+      330,
+      313
+    ],
+    "size": [
+      148,
+      115
+    ]
+  },
+  {
+    "file": "arma_09_evolucion_04.png",
+    "crop": [
+      182,
+      187,
+      330,
+      325
+    ],
+    "size": [
+      148,
+      138
+    ]
+  },
+  {
+    "file": "arma_09_evolucion_05.png",
+    "crop": [
+      182,
+      187,
+      330,
+      325
+    ],
+    "size": [
+      148,
+      138
+    ]
+  },
+  {
+    "file": "arma_10_evolucion_01.png",
+    "crop": [
+      182,
+      212,
+      330,
+      300
+    ],
+    "size": [
+      148,
+      88
+    ]
+  },
+  {
+    "file": "arma_10_evolucion_02.png",
+    "crop": [
+      182,
+      205,
+      330,
+      306
+    ],
+    "size": [
+      148,
+      101
+    ]
+  },
+  {
+    "file": "arma_10_evolucion_03.png",
+    "crop": [
+      182,
+      198,
+      330,
+      313
+    ],
+    "size": [
+      148,
+      115
+    ]
+  },
+  {
+    "file": "arma_10_evolucion_04.png",
+    "crop": [
+      182,
+      187,
+      330,
+      325
+    ],
+    "size": [
+      148,
+      138
+    ]
+  },
+  {
+    "file": "arma_10_evolucion_05.png",
+    "crop": [
+      182,
+      187,
+      330,
+      325
+    ],
+    "size": [
+      148,
+      138
+    ]
+  }
+]

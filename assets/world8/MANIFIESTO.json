@@ -1,0 +1,233 @@
+{
+  "mundo": 8,
+  "nombre": "Planeta Oscuro",
+  "niveles_globales": [
+    351,
+    400
+  ],
+  "encuentros": [
+    360,
+    370,
+    380,
+    390,
+    400
+  ],
+  "sprites": [
+    {
+      "codigo": "M8_ENEMIGO_01",
+      "nombre": "Espectro de Obsidiana",
+      "tipo": "01_Enemigos",
+      "archivo": "01_Enemigos/M8_ENEMIGO_01.optim.webp",
+      "resolucion": [
+        512,
+        512
+      ],
+      "pixeles_transparentes": 181401,
+      "canal_alfa": true,
+      "caja_fuente": [
+        8,
+        55,
+        195,
+        378
+      ]
+    },
+    {
+      "codigo": "M8_ENEMIGO_02",
+      "nombre": "Cuchilla Dimensional",
+      "tipo": "01_Enemigos",
+      "archivo": "01_Enemigos/M8_ENEMIGO_02.optim.webp",
+      "resolucion": [
+        512,
+        512
+      ],
+      "pixeles_transparentes": 132763,
+      "canal_alfa": true,
+      "caja_fuente": [
+        196,
+        55,
+        428,
+        378
+      ]
+    },
+    {
+      "codigo": "M8_ENEMIGO_03",
+      "nombre": "Orbe del Vacío",
+      "tipo": "01_Enemigos",
+      "archivo": "01_Enemigos/M8_ENEMIGO_03.optim.webp",
+      "resolucion": [
+        512,
+        512
+      ],
+      "pixeles_transparentes": 158856,
+      "canal_alfa": true,
+      "caja_fuente": [
+        430,
+        69,
+        660,
+        378
+      ]
+    },
+    {
+      "codigo": "M8_ENEMIGO_04",
+      "nombre": "Aguja Umbría",
+      "tipo": "01_Enemigos",
+      "archivo": "01_Enemigos/M8_ENEMIGO_04.optim.webp",
+      "resolucion": [
+        512,
+        512
+      ],
+      "pixeles_transparentes": 171360,
+      "canal_alfa": true,
+      "caja_fuente": [
+        662,
+        69,
+        834,
+        378
+      ]
+    },
+    {
+      "codigo": "M8_ENEMIGO_05",
+      "nombre": "Medusa Abisal",
+      "tipo": "01_Enemigos",
+      "archivo": "01_Enemigos/M8_ENEMIGO_05.optim.webp",
+      "resolucion": [
+        512,
+        512
+      ],
+      "pixeles_transparentes": 130461,
+      "canal_alfa": true,
+      "caja_fuente": [
+        835,
+        69,
+        1068,
+        379
+      ]
+    },
+    {
+      "codigo": "M8_ENEMIGO_06",
+      "nombre": "Acechador Nocturno",
+      "tipo": "01_Enemigos",
+      "archivo": "01_Enemigos/M8_ENEMIGO_06.optim.webp",
+      "resolucion": [
+        512,
+        512
+      ],
+      "pixeles_transparentes": 106322,
+      "canal_alfa": true,
+      "caja_fuente": [
+        1069,
+        69,
+        1316,
+        379
+      ]
+    },
+    {
+      "codigo": "M8_ENEMIGO_07",
+      "nombre": "Guadaña Oscura",
+      "tipo": "01_Enemigos",
+      "archivo": "01_Enemigos/M8_ENEMIGO_07.optim.webp",
+      "resolucion": [
+        512,
+        512
+      ],
+      "pixeles_transparentes": 159313,
+      "canal_alfa": true,
+      "caja_fuente": [
+        1317,
+        55,
+        1536,
+        379
+      ]
+    },
+    {
+      "codigo": "M8_SUBJEFE_01",
+      "nombre": "Serpiente Dimensional",
+      "tipo": "02_Subjefes",
+      "archivo": "02_Subjefes/M8_SUBJEFE_01.optim.webp",
+      "resolucion": [
+        768,
+        768
+      ],
+      "pixeles_transparentes": 317756,
+      "canal_alfa": true,
+      "caja_fuente": [
+        0,
+        482,
+        306,
+        931
+      ]
+    },
+    {
+      "codigo": "M8_SUBJEFE_02",
+      "nombre": "Guardián del Vacío",
+      "tipo": "02_Subjefes",
+      "archivo": "02_Subjefes/M8_SUBJEFE_02.optim.webp",
+      "resolucion": [
+        768,
+        768
+      ],
+      "pixeles_transparentes": 280668,
+      "canal_alfa": true,
+      "caja_fuente": [
+        303,
+        506,
+        640,
+        931
+      ]
+    },
+    {
+      "codigo": "M8_SUBJEFE_03",
+      "nombre": "Núcleo Dimensional",
+      "tipo": "02_Subjefes",
+      "archivo": "02_Subjefes/M8_SUBJEFE_03.optim.webp",
+      "resolucion": [
+        768,
+        768
+      ],
+      "pixeles_transparentes": 412331,
+      "canal_alfa": true,
+      "caja_fuente": [
+        632,
+        506,
+        857,
+        931
+      ]
+    },
+    {
+      "codigo": "M8_SUBJEFE_04",
+      "nombre": "Ángel Oscuro",
+      "tipo": "02_Subjefes",
+      "archivo": "02_Subjefes/M8_SUBJEFE_04.optim.webp",
+      "resolucion": [
+        768,
+        768
+      ],
+      "pixeles_transparentes": 306146,
+      "canal_alfa": true,
+      "caja_fuente": [
+        852,
+        510,
+        1132,
+        931
+      ]
+    },
+    {
+      "codigo": "M8_JEFE_FINAL",
+      "nombre": "Devorador Dimensional",
+      "tipo": "03_Jefe_Final",
+      "archivo": "03_Jefe_Final/M8_JEFE_FINAL.optim.webp",
+      "resolucion": [
+        1024,
+        768
+      ],
+      "pixeles_transparentes": 456706,
+      "canal_alfa": true,
+      "caja_fuente": [
+        1120,
+        427,
+        1536,
+        931
+      ]
+    }
+  ]
+}

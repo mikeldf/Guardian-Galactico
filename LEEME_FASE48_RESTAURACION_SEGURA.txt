@@ -1,0 +1,15 @@
+GUARDIÁN GALÁCTICO — FASE 48: RESTAURACIÓN DE INTERFAZ Y RECURSOS
+
+Se revierte la extracción de CSS/JS y la supresión de recursos que rompió la presentación en la Fase 47.
+Base restaurada: Fase 46 (última distribución anterior a la limpieza defectuosa).
+El código principal y estilos integrados regresan a index.html. Se conservan el nuevo hangar, 60 naves, 200 misiones, 10 familias y 50 niveles de mejoras, 26 pistas musicales.
+Ajuste aplicado: la restauración de partidas admite potencia de 1 a 50 (antes 1 a 40).
+
+INSTRUCCIONES PARA WINDOWS:
+1. Extrae TODO el archivo ZIP a una carpeta NUEVA con la opción «Extraer todo».
+2. En esa carpeta deben quedar juntos index.html y la carpeta assets.
+3. Abre index.html desde la carpeta extraída con Edge o Chrome.
+4. No ejecutes index.html desde la vista previa interior del ZIP ni copies el HTML aislado.
+5. No mezcles los archivos con los de Fase 47.
+
+Esta restauración no integra el icono del juego.

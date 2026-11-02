@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- GUARDIÁN GALÁCTICO FASE 48: restauración segura de interfaz y recursos desde Fase 46. -->
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" name="viewport"/><meta content="#050d20" name="theme-color"/><title>Guardián Galáctico · Edición PC 55</title>
+<link rel="stylesheet" href="src/styles/00_game_base.css"><link rel="stylesheet" href="src/styles/01_game_layout.css"><link rel="stylesheet" href="src/styles/02_game_look.css"><link rel="stylesheet" href="src/styles/03_game_worlds.css">
+<link rel="stylesheet" href="src/styles/04_game_combat.css"><link rel="stylesheet" href="assets/ui/nueva_interfaz.css"><link rel="stylesheet" href="src/styles/05_game_hangar.css"><link rel="stylesheet" href="assets/ui/gg_exact_ui.css"><link rel="stylesheet" href="src/styles/06_game_accessibility.css">
+<link rel="stylesheet" href="assets/ui/gg_phase28_transition.css"><link rel="stylesheet" href="assets/ui/gg_combate_cinematico.css"><link rel="stylesheet" href="assets/ui/gg_f34_hud_futurista.css"><link rel="stylesheet" href="assets/ui/gg_f37_cockpit_neon.css"><link rel="stylesheet" href="src/styles/07_game_audio.css"><link rel="stylesheet" href="src/styles/08_game_extra.css">
+
+<link rel="stylesheet" href="src/styles/09_game_options.css">
+<link rel="stylesheet" href="src/styles/10_game_presentation.css">
+
+<link rel="stylesheet" href="src/styles/11_game_overrides.css">
+<link rel="stylesheet" href="assets/ui/gg49_restauracion.css">
+<link rel="stylesheet" href="assets/ui/classic_restored/gg50_original_visual.css"><link rel="stylesheet" href="assets/ui/classic_restored/gg51_futurista_limpio.css"><link rel="stylesheet" href="assets/ui/gg54_final.css"><link rel="stylesheet" href="assets/ui/gg57_threat_guide.css"></head><body><div id="gg40Boot" role="status" aria-live="polite" data-state="loading"><div class="gg40-bg"></div><div class="gg40-frame"><div class="gg40-glyph">✧</div><h1>GUARDIÁN <span>GALÁCTICO</span></h1><div class="gg40-strap">INICIALIZANDO SISTEMAS DE DEFENSA</div><div class="gg40-meter"><i id="gg40LoadFill"></i></div><div class="gg40-progress"><span id="gg40LoadText">Preparando sistemas…</span><strong id="gg40LoadPct">0%</strong></div><div class="gg40-status"><span>Preparando hangares y 60 naves</span><span>Cargando mapas de 10 planetas</span><span>Sincronizando armamento</span><span>Verificando 200 misiones</span></div><div class="gg40-hint">CONSEJO: recoge mejoras para desbloquear 10 armas y 50 niveles de potencia.</div></div></div><div id="app"><div id="ambient"></div>
+<section class="screen screen-desktop" data-edition="premium" id="home">
+<header class="menu-head"><div class="microbrand"><span class="brandmark">✦</span> GG <span>— UNIVERSO 200</span></div><div class="menu-head-right"><span class="online-led"></span> EDICIÓN ESPACIAL · PC <button class="tiny-btn" id="quickFull" title="Pantalla completa">⛶ PANTALLA COMPLETA</button></div></header>
+<div class="landing-grid">
+<div class="landing-copy"><div class="pretitle"><span class="line"></span> ARCADE ESPACIAL · EDICIÓN PC</div><h1>GUARDIÁN<br/><span>GALÁCTICO</span></h1><div class="mini-line"></div>
+<p class="tagline">10 planetas. 200 misiones. Una galaxia por defender.</p>
+<div class="homeActions"><button class="btn primary launch" id="playBtn"><span class="gg-nav-ico">▶</span> JUGAR</button><button class="btn launch secondary" id="continueBtn">↳   CONTINUAR <span>ÚLTIMA MISIÓN</span></button><div class="menu-buttons"><button class="btn outline" id="galaxyBtn"><span class="gg-nav-ico">◎</span> MAPA GALÁCTICO</button><button class="btn outline" id="hangarBtn"><span class="gg-nav-ico">♢</span> HANGAR</button><button class="btn outline" id="settingsBtn"><span class="gg-nav-ico">⚙</span> OPCIONES</button><button class="btn outline" id="exitBtn"><span class="gg-nav-ico">⇥</span> SALIR</button></div></div>
+<div class="home-progress" id="homeStats"></div>
+</div>
+<div class="landing-visual"><div class="scene-rings"></div><img alt="Falcon X: nave de combate" class="hero-ship" id="homeShipImg"/><div class="hero-hud top">NAVE ACTIVA <span id="homeShipName">FALCON X</span></div><div class="hero-hud bottom"><span class="signal">●</span> SISTEMAS OPERATIVOS <span class="blink-signal">·</span> FASE 10 · SPRITES 2.5D</div></div>
+</div>
+<footer class="menu-footer"><span>© GUARDIÁN GALÁCTICO · PROTOTIPO ORIGINAL</span><span>RATÓN: MOVIMIENTO HORIZONTAL · ESC: VOLVER / PAUSA</span></footer>
+<div class="phase-edition">EDICIÓN PC • MOTOR ARCADE 2.5D • FASE 16 · EDICIÓN PREMIUM PC</div></section>
+<section class="screen screen-desktop hidden" id="galaxy"><nav class="gg-side-menu" aria-label="Navegación principal">
+<button type="button" data-go="levels-current" class="gg-nav-button"><span class="gg-nav-ico">▶</span> JUGAR</button>
+<button type="button" data-go="galaxy" class="gg-nav-button gg-menu-map"><span class="gg-nav-ico">◎</span> MAPA GALÁCTICO</button>
+<button type="button" data-go="hangar" class="gg-nav-button gg-menu-hangar"><span class="gg-nav-ico">♢</span> HANGAR</button>
+<button type="button" data-go="settings" class="gg-nav-button"><span class="gg-nav-ico">⚙</span> OPCIONES</button>
+<button type="button" data-go="exit" class="gg-nav-button"><span class="gg-nav-ico">⇥</span> SALIR</button>
+</nav>
+<header class="interface-header"><button class="btn small soft" id="galaxyBack">← VOLVER AL MENÚ</button><div class="header-title"><div class="eyebrow">FASE 3 · NAVEGACIÓN ESTELAR</div><h2>MAPA GALÁCTICO</h2></div><div class="header-resource" id="galaxyCoins">◈ 0 MONEDAS</div></header>
+<div class="galaxy-layout"><div class="galaxy-board" id="galaxyBoard"><div class="orbit-ring ring-one"></div><div class="orbit-ring ring-two"></div><div class="orbit-ring ring-three"></div><div class="galaxy-core"><div class="core-disc"></div><small>NÚCLEO</small></div><div id="galaxyGrid"></div><span class="galaxy-background-label label-left">SECTOR EXTERIOR</span><span class="galaxy-background-label label-right">CUADRANTE A-10</span></div>
+<aside class="planet-info panel" id="planetInfo"><div class="eyebrow">SELECCIONA UN PLANETA</div><div id="planetInfoBody"><h3>Diez mundos por descubrir</h3><p>Selecciona un planeta en el mapa para ver su misión, progreso y entrar en su superficie.</p></div><button class="btn primary" disabled="" id="enterPlanet">ENTRAR AL PLANETA →</button><div class="aside-hint">Puedes visitar los planetas bloqueados para ver sus niveles; solo podrás jugar los desbloqueados.</div></aside></div>
+<div class="galaxy-footnote"><span>10 PLANETAS · 20 NIVELES POR MUNDO</span><span>DESPLAZA EL RATÓN Y PULSA SOBRE UN PLANETA</span></div>
+</section>
+<section class="screen screen-desktop hidden" id="levels"><header class="interface-header"><button class="btn small soft" id="levelsBack">← MAPA GALÁCTICO</button><div class="header-title"><div class="eyebrow" id="worldEyebrow">MUNDO 01 · 20 MISIONES</div><h2 id="levelWorldTitle">PLANETA AZUL</h2></div><button class="btn small soft" id="levelsHangar">◈ HANGAR</button></header>
+<img id="gg-level-planet" alt="Planeta seleccionado" src="assets/planetas/mundo_01_azul.webp"><div class="world-intro"><img id="worldIntroPlanet" class="gg-intro-planet" src="assets/planetas/mundo_01_azul.webp" alt="Planeta seleccionado" draggable="false"><div id="levelWorldDesc">Descripción del planeta</div><div id="worldProgress"></div></div>
+<div class="level-layout"><div class="journey-main"><div class="journey-head"><div><strong>RUTA DE EXPLORACIÓN</strong><small>Explora los dos sectores de diez niveles del planeta</small></div><div class="journey-controls"><button aria-label="Zona anterior" id="zonesPrev">←</button><span id="journeyPage">SECTORES 1 — 2</span><button aria-label="Zona siguiente" id="zonesNext">→</button></div></div><div id="levelViewport" tabindex="0"><div id="levelGrid"></div></div><div class="route-legend"><span><i class="dot complete"></i> Completado</span><span><i class="dot current"></i> Disponible</span><span><i class="dot locked"></i> Bloqueado</span><span><i class="dot major"></i> Subjefe (10) / Jefe final (20)</span></div></div>
+<aside class="mission-info panel" id="missionInfo"><div class="eyebrow">INFORMACIÓN DE LA MISIÓN</div><div class="mission-number" id="selectedMissionNumber">01</div><div class="eyebrow" id="selectedMissionZone">SECTOR 1 / 2</div><h3 id="selectedMissionName">Exploración inicial</h3><p id="selectedMissionDesc">Selecciona un nivel en el mapa.</p><div id="blueBossMissionPreview" class="blueBossMissionPreview" hidden><img id="blueBossMissionImg" alt="Sprite del jefe"/><strong id="blueBossMissionCaption"></strong></div><div id="missionMeta"></div><div class="gg57-tier-legend" aria-label="Clases enemigas"><span style="color:#69dfff">● DÉBIL</span><span style="color:#ffd475">◆ MEDIO</span><span style="color:#ff947b">▲ FUERTE</span><span style="color:#e1a9ff">★ ÉLITE</span></div><button class="btn primary" id="launchMission">▶ INICIAR NIVEL</button><small id="missionLockNote">Selecciona un nivel desbloqueado.</small></aside></div>
+<div class="map-bottom"><span>SUBJEFE: 10  |  JEFE FINAL: 20</span><span id="mapWorldGlobal">NIVELES GLOBALES 1—20</span></div></section>
+<section class="screen hidden" id="hangar" aria-label="Hangar estelar">
+  <header class="gg44-head">
+    <button type="button" class="gg44-back" id="hangarBack">← &nbsp; VOLVER</button>
+    <h2><span class="gg44-head-mark">✦</span> HANGAR ESTELAR <span class="gg44-head-sub">· 60 NAVES</span> <small class="gg45-version">FASE 55 · RECURSOS VERIFICADOS</small></h2>
+    <div class="gg44-currencies"><span id="hangarCoins">◈ 250 monedas</span><span class="gg44-fleet">✦ <b id="gg44Owned">5/60</b></span></div>
+  </header>
+  <main class="gg44-layout">
+    <section class="gg44-left" aria-label="Vista grande y mejoras de la nave">
+      <div class="gg44-display" id="gg44Display">
+        <div class="gg44-hudtop"><span>◈ HANGAR DE LA FLOTA</span><span>VISTA DE NAVE // 01</span></div>
+        <div class="gg44-deck" aria-hidden="true"><div class="gg44-deck-inner"></div></div>
+        <img src="" id="detailImage" alt="Vista grande de la nave seleccionada"/>
+        <div class="gg44-spotlight" aria-hidden="true"></div>
+        <div class="gg44-assetwarning" id="gg43AssetWarning" hidden>Imágenes no encontradas. Extrae el ZIP completo y conserva la carpeta assets junto a index.html.</div>
+      </div>
+      <div class="gg44-info" id="hangarInfoPanel">
+        <div class="gg44-info-title"><div><small>NAVE PRINCIPAL</small><h3 id="detailName">Falcon X</h3><span class="gg44-class" id="detailClass"></span></div><span class="gg44-status">ESTADÍSTICAS</span></div>
+        <div id="detailStats" class="gg44-stats"></div>
+        <div class="gg44-below"><div class="gg44-special" id="detailSpecial"></div><div id="detailUpgrades" class="gg44-upgrades"></div></div>
+        <div class="gg44-actions"><button type="button" class="btn primary" id="selectShip">ELEGIR NAVE</button><button type="button" class="btn" id="buyShipWithCoins" hidden>COMPRAR CON MONEDAS</button><span id="detailLocked" class="gg44-status-note"></span></div>
+      </div>
+    </section>
+    <aside class="gg44-right" aria-label="Catálogo de 60 naves">
+      <div class="gg44-list-head"><div><strong>TODAS LAS NAVES <span>(60)</span></strong><small>SELECCIONA UNA NAVE PARA VERLA EN GRANDE</small></div>
+        <label class="gg44-sort-label">Orden: <select id="gg44SortShips" aria-label="Ordenar naves"><option value="default">Por defecto</option><option value="available">Disponibles primero</option><option value="name">Por nombre</option></select></label>
+      </div>
+      <div class="hangarGrid gg44-ship-grid" id="hangarGrid"></div>
+      <footer class="gg44-list-footer">60 NAVES · DESPLÁZATE PARA EXPLORAR EL HANGAR</footer>
+    </aside>
+  </main>
+</section>
+<section class="screen screen-desktop hidden gg39-screen" id="settings">
+<nav class="gg-side-menu" aria-label="Navegación principal">
+<button class="gg-nav-button" data-go="levels-current" type="button"><span class="gg-nav-ico">▶</span> JUGAR</button>
+<button class="gg-nav-button" data-go="galaxy" type="button"><span class="gg-nav-ico">◎</span> MAPA GALÁCTICO</button>
+<button class="gg-nav-button" data-go="hangar" type="button"><span class="gg-nav-ico">♢</span> HANGAR</button>
+<button class="gg-nav-button" data-go="settings" type="button"><span class="gg-nav-ico">⚙</span> OPCIONES</button>
+<button class="gg-nav-button" data-go="exit" type="button"><span class="gg-nav-ico">⇥</span> SALIR</button>
+</nav>
+<header class="interface-header gg39-header"><button class="btn small soft" onclick="UI.screen('home')">← VOLVER AL MENÚ</button><div class="header-title"><div class="eyebrow">CENTRO DE CONTROL · SISTEMAS DE LA NAVE</div><h2>OPCIONES</h2></div><div class="header-resource gg39-online"><span class="online-led"></span> CONFIGURACIÓN DE PILOTO</div></header>
+<div class="gg39-settings-scroll"><div class="gg39-settings-intro"><span class="gg39-rule"></span><div><div class="eyebrow">CONFIGURACIÓN GALÁCTICA</div><h3>PERSONALIZA TU EXPERIENCIA</h3><p>Los mismos controles, tecnología y estética de toda la nave, en una sola pantalla.</p></div><span class="gg39-rule"></span></div>
+<div class="gg39-settings-grid">
+<div class="gg39-settings-column">
+<div class="panel gg39-setting-card"><div class="gg39-card-title"><span class="gg39-card-icon">⌘</span><div><small>SISTEMA 01</small><h3>CONTROLES DE COMBATE</h3></div></div><div class="gg39-keycaps"><div><span>MOVIMIENTO</span><strong>RATÓN · A/D · ← →</strong></div><div><span>DISPARO PRINCIPAL</span><strong>CLIC IZQUIERDO</strong></div><div><span>MISILES</span><strong>CLIC DERECHO</strong></div><div><span>HABILIDAD</span><strong>ESPACIO</strong></div><div><span>PAUSA</span><strong>P · ESC</strong></div></div><p class="gg39-note">La nave se desplaza horizontalmente y sigue el ratón sin necesidad de hacer clic.</p></div>
+<div class="panel gg39-setting-card"><div class="gg39-card-title"><span class="gg39-card-icon">◈</span><div><small>SISTEMA 02</small><h3>DIFICULTAD</h3></div></div><p class="gg39-note">Ajusta resistencia, cadencia y velocidad de los ataques enemigos.</p><div class="settingsRow gg39-difficulty"><button class="btn" data-difficulty="facil">FÁCIL</button><button class="btn primary" data-difficulty="normal">NORMAL</button><button class="btn" data-difficulty="dificil">DIFÍCIL</button><button class="btn" data-difficulty="experto">EXPERTO</button></div></div>
+</div>
+<div class="gg39-settings-column">
+<div class="panel gg39-setting-card"><div class="gg39-card-title"><span class="gg39-card-icon">♫</span><div><small>SISTEMA 03</small><h3>AUDIO Y MÚSICA</h3></div></div><div class="settingsRow gg39-actions"><button class="btn" id="audioBtn">🔊 SONIDO ACTIVADO</button><button class="btn" id="fullscreenBtn">⛶ PANTALLA COMPLETA</button></div><div class="gg39-nowplaying"><div><small>BANDA SONORA ORIGINAL · 32 PISTAS</small><strong id="gg39NowPlaying">SELECCIÓN MUSICAL ACTIVA</strong></div><button type="button" class="btn small" id="gg39NextTrack" title="Siguiente pista">SIGUIENTE ›</button></div></div>
+<div class="panel gg39-setting-card gg39-prefs-card"><div class="gg39-card-title"><span class="gg39-card-icon">⚙</span><div><small>SISTEMA 04</small><h3>SONIDO, ACCESIBILIDAD Y DATOS</h3></div></div><div class="gg39-note">Ajusta volumen, brillo ambiental, teclas alternativas y copias de seguridad. Los cambios se guardan automáticamente.</div><button class="btn warn small gg39-reset" id="resetBtn">REINICIAR PROGRESO</button></div>
+</div>
+</div>
+<div class="gg39-settings-foot">GUARDIÁN GALÁCTICO <span>◆</span> SISTEMAS LISTOS <span>◆</span> EDICIÓN PC</div></div>
+</section>
+<div id="planetZoom" aria-live="off" aria-label="Animación de aproximación al planeta"><canvas id="gg28StarCanvas" aria-hidden="true"></canvas><div class="warp-stars"></div><div class="warp-horizon"></div><div class="gg28-space-aura"></div><div id="zoomOrb"></div><div class="warp-rim"></div><div class="gg28-atmosphere"></div><div class="gg28-flare"></div><div class="warp-message"><div class="warp-kicker">INICIANDO APROXIMACIÓN</div><strong id="warpPlanetName">PLANETA AZUL</strong><span id="gg28FlightStatus">RUMBO A LA ÓRBITA</span><div class="warp-progress"><i></i></div></div></div>
+<div class="hidden" id="playLayer"><canvas id="game"></canvas><div id="gameHud"><div class="hudBar"><div><small id="hudWorld">PLANETA 1</small><div><b id="hudLife">♥♥♥♥</b> <span id="hudShield">◆</span></div></div><div style="text-align:center"><small id="hudLevel">NIVEL 1</small><div><b id="hudWave">OLEADA 1</b></div></div><div style="text-align:right"><small>PUNTOS</small><div><b id="hudScore">0</b></div></div></div><div id="announce"></div><div id="gg42Directive" role="status" aria-live="polite"><b id="gg42ModeName">PATRULLA TÁCTICA</b><span id="gg42ModeTip">OBJETIVO: DESTRUIR LA FLOTA ENEMIGA</span></div><div aria-live="polite" id="pickupHud"><span id="powerPill">DISPARO NIVEL 1</span><span id="secondaryPill">SIN MISILES — RECOGE UN POWER-UP</span></div><div class="hudControls"><button id="pauseButton" title="Pausar">Ⅱ</button><button id="specialButton" title="Habilidad especial">⚡</button></div><div class="arsenal-panel" id="arsenalPanel"><div class="arsenal-top"><div><b id="arsenalPrimary">POTENCIA 1/7</b><small> · CLIC IZQUIERDO · DISPARAR</small></div><strong id="arsenalSelected">MISILES RECTOS · 22</strong></div><div class="arsenal-row"><button class="arsenal-card" data-arsenal="0" title="Seleccionar RECTOS" type="button"><span>1 · RECTOS</span><small>--</small></button><button class="arsenal-card" data-arsenal="1" title="Seleccionar GUIADOS" type="button"><span>2 · GUIADOS</span><small>--</small></button><button class="arsenal-card" data-arsenal="2" title="Seleccionar LÁSER" type="button"><span>3 · LÁSER</span><small>--</small></button><button class="arsenal-card" data-arsenal="3" title="Seleccionar PLASMA" type="button"><span>4 · PLASMA</span><small>--</small></button><button class="arsenal-card" data-arsenal="4" title="Seleccionar SALVA" type="button"><span>5 · SALVA</span><small>--</small></button><button class="arsenal-card" data-arsenal="5" title="Seleccionar CADENA" type="button"><span>6 · CADENA</span><small>--</small></button></div><div class="arsenal-help">RATÓN: mover sin clic · CLIC IZQUIERDO: disparar · CLIC IZQUIERDO · DISPARAR · 1–6: elegir arma · SHIFT / X / CLIC DERECHO: disparar arma secundaria · RUEDA: cambiar · ESPACIO: habilidad · ESC: pausa</div></div></div><aside aria-label="Panel táctico futurista de combate" class="cockpit-panel gg37-cockpit" id="cockpitPanel">
+  <div class="gg37-rail" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  <header class="gg37-head cockpit-mark gg34-logo">
+    <div class="gg37-brandline"><div class="gg37-emblem">◈</div><div><b>GUARDIÁN <span>GALÁCTICO</span></b><small>SISTEMA DE COMBATE // HUD-37</small></div></div>
+    <div class="gg37-online"><span class="gg37-online-dot"></span><span>ENLACE<br>ACTIVO</span></div>
+  </header>
+  <section class="gg37-mission" aria-label="Ubicación de la misión">
+    <div class="gg37-mission-top"><span class="gg37-kicker">SECTOR OPERATIVO</span><span class="gg37-coordinates" id="gg37Sector">01 // 10</span></div>
+    <strong id="gg37Planet">PLANETA AZUL</strong>
+    <div class="gg37-mission-foot"><span id="gg37Level">MISIÓN 01 / 20</span><span class="gg37-mission-live">● EN CURSO</span></div>
+  </section>
+  <section class="gg37-card gg37-score gg34-score ck-block" aria-label="Puntuación">
+    <div class="gg37-titleline"><span>✧ PUNTUACIÓN</span><span>MISIÓN ACTUAL</span></div>
+    <strong id="cockpitScore" class="gg37-digits">0</strong>
+    <div class="gg37-scorefoot"><span>◉ REGISTRO DE COMBATE</span><span id="gg37Multiplier">DATOS EN VIVO</span></div>
+    <div class="gg37-track gg37-scoretrack"><i id="gg34ScoreMeter" style="width:0%"></i></div>
+  </section>
+  <section class="gg37-card gg37-survival" aria-label="Integridad y escudo">
+    <div class="gg37-cardtitle"><span>01</span> INTEGRIDAD DE NAVE <small id="gg37HullPct">100%</small></div>
+    <div class="gg37-survival-content">
+      <div class="gg37-shipframe"><img id="gg37ShipImage" alt="Nave equipada"/><span class="gg37-shipscanner"></span></div>
+      <div class="gg37-hullstats">
+        <div class="gg37-shipname" id="gg37ShipName">FALCON X</div>
+        <div class="gg37-healthline"><strong id="cockpitLife">4 / 4</strong><span>VIDAS</span></div>
+        <div id="gg34LifeIcons" class="gg37-lifechips" aria-label="Vidas restantes"></div>
+      </div>
+    </div>
+    <div class="gg37-shieldline"><span>⬡ ESCUDO <span id="cockpitShield">0</span></span><div id="gg34ShieldCells" class="gg34-segments gg37-shieldcells" aria-label="Carga de escudo"></div></div>
+  </section>
+  <section class="gg37-card gg37-energy gg34-energy ck-block" aria-label="Energía especial">
+    <div class="gg37-cardtitle"><span>02</span> ENERGÍA ESPECIAL <small id="gg34EnergyLabel">100%</small></div>
+    <div class="gg37-energy-content"><div class="gg37-energyicon"><img id="cockpitEnergyIcon" alt=""/></div><div class="gg37-energycopy"><strong id="gg37Ability">HABILIDAD DISPONIBLE</strong><small>ESPACIO · ACTIVAR</small><div class="gg37-track gg37-energytrack ck-progress"><i id="cockpitEnergy" style="width:100%"></i></div></div></div>
+  </section>
+  <section class="gg37-card gg37-primary gg34-primary ck-block" aria-label="Arma principal">
+    <div class="gg37-cardtitle"><span>03</span> CAÑÓN PRINCIPAL <small class="gg37-armed">● ARMADO</small></div>
+    <div class="gg37-primaryrow"><div class="gg37-primaryicon"><img id="cockpitWeaponIcon" alt=""/></div><div class="gg37-primaryinfo"><strong id="cockpitPrimary">NIVEL 1 / 7</strong><span>CADENCIA DE POTENCIA</span></div></div>
+    <div id="gg40WeaponFamily" class="gg40-weapon-label">ARMA 1 / 10 · POTENCIA 1/50</div><div id="gg34WeaponCells" class="gg34-segments gg37-powercells" aria-label="Potencia del disparo principal"></div>
+    <div id="gg34WeaponWorldHint" class="gg34-world-hint gg37-weaponhint">POTENCIA CONSERVADA EN ESTE MUNDO</div>
+  </section>
+  <section class="gg37-card gg37-secondary gg34-secondary ck-block" aria-label="Arma secundaria">
+    <div class="gg37-cardtitle"><span>04</span> ARMA SECUNDARIA <small id="gg37MissileState">SIN EQUIPAR</small></div>
+    <div class="gg37-secondaryrow"><div class="gg37-weaponwell"><img id="cockpitSecondaryIcon" alt="Arma secundaria" aria-hidden="true"/></div><div class="gg37-secondaryinfo"><strong id="cockpitSecondary">SIN EQUIPAR</strong><span>RECOGE UN POWER-UP PARA ACTIVAR</span></div><div class="gg37-ammo"><strong id="cockpitAmmo">0</strong><small>CARGAS</small></div></div>
+    <div class="gg37-secondaryfoot"><span id="gg37SecondaryHint">ESPERANDO SUMINISTRO</span><span>SHIFT / CLIC DERECHO</span></div>
+  </section>
+  <section class="gg37-card gg37-threat gg34-wave ck-wave ck-block" aria-label="Oleada y enemigos">
+    <div class="gg37-cardtitle"><span>05</span> RADAR TÁCTICO <small id="gg34World">MUNDO 1</small></div>
+    <div class="gg37-threatline"><div class="gg37-radar"><span class="gg37-radar-line"></span><span class="gg37-radar-dot"></span></div><div class="gg37-threatcopy"><strong id="cockpitBoss">OLEADA 1</strong><small id="gg37ThreatName">ANÁLISIS DE AMENAZAS EN CURSO</small></div></div>
+    <div id="gg34WaveCells" class="gg34-segments gg37-wavecells" aria-label="Progreso de oleadas"></div>
+    <div id="gg37BossGauge" class="gg37-boss-gauge" hidden><div class="gg37-boss-top"><span id="gg37BossName">OBJETIVO PRIORITARIO</span><span id="gg37BossPct">100%</span></div><div class="gg37-track"><i id="gg37BossBar" style="width:100%"></i></div></div>
+  </section>
+  <footer class="gg37-footer"><span>◉ NAVE ENLAZADA</span><span>ESC · PAUSA</span><span>GG // 037</span></footer>
+</aside></div>
+<section class="screen hidden" id="pauseModal"><div class="panel" style="max-width:440px;width:min(95%,440px);text-align:center"><div class="eyebrow" id="modalEyebrow">Misión</div><h2 id="modalTitle">EN PAUSA</h2><div class="subheading" id="modalBody"></div><div class="row flexcenter" id="modalButtons"></div></div></section>
+</div>
+<script src="src/scripts/00_data_and_assets.js"></script><script src="src/scripts/01_setup.js"></script>
+<script src="src/scripts/02_engine.js"></script>\n<link rel="stylesheet" href="src/styles/12_game_more.css">
+<script src="src/scripts/03_quality_settings.js"></script>
+
+<script src="src/scripts/04_effects.js"></script>
+<script src="assets/audio/gg_audio_v2.js"></script>
+<script src="assets/ui/gg_exact_ui.js"></script><script src="assets/ui/classic_restored/gg50_original_visual.js"></script><script src="assets/audio/gg39_music.js"></script><script src="src/scripts/05_loading.js"></script><script src="assets/ui/gg49_diagnostico.js"></script></body></html>

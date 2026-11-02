@@ -1,0 +1,12 @@
+GUARDIÁN GALÁCTICO · FASE 40
+
+Campaña completa: 10 mundos x 20 niveles = 200 misiones. Subjefes en niveles 10 y jefes finales en 20.
+El arsenal enemigo y los sprites históricos siguen presentes. Los jefes de la campaña son 2 por mundo (20 encuentros principales).
+Jugador: 5 familias de arma principal x 8 mejoras = 40 rangos. Nueva familia al completar 8,16,24,32. Cada familia cambia patrón y color.
+Las mejoras principales se conservan entre niveles del mismo planeta al ganar y comienzan en nivel 1 en mundos sin progreso previo.
+ESC durante combate: continuar, reiniciar nivel, opciones básicas de audio o salir a mapa. Salir no registra victoria ficticia.
+Pantalla de carga real con preload de recursos esenciales y transición al menú.
+ICONO WINDOWS: NO INTEGRADO A PETICIÓN DEL USUARIO. Se integrará al final del proyecto.
+Guardado antiguo 500 niveles se migra una sola vez de forma aproximada a la campaña de 200; para mayor seguridad exporta una copia de progreso.
+Las auditorías CSV históricas de 500 niveles están en docs/historico_500_niveles.
+Esta versión requiere prueba final real en Windows antes de considerar la Fase 24 cerrada.

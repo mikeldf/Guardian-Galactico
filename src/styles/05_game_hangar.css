@@ -1,0 +1,25 @@
+
+/* PRIORIDAD DE COMBATE — 30 octubre 2026: pantalla panoramica sin bandas vacias */
+#playLayer{--gg-sidebar:clamp(300px,23vw,382px);padding:0 var(--gg-sidebar) 0 0!important;align-items:stretch!important;justify-content:flex-start!important;background:#020a19!important}
+#playLayer #game{display:block!important;flex:1 1 auto!important;width:100%!important;height:100%!important;min-width:0!important;max-width:none!important;object-fit:fill!important;border:0!important;box-shadow:inset 0 0 0 2px #3b9fba80!important}
+#playLayer #gameHud{position:absolute!important;inset:0 var(--gg-sidebar) 0 0!important;width:auto!important;align-items:stretch!important}
+#gameHud .hudBar{width:100%!important;max-width:none!important;padding:12px 22px!important;gap:12px;background:linear-gradient(#010d1eef,#010d1e00)}
+#gameHud .hudBar b{font-size:clamp(15px,1.3vw,22px)}
+#gameHud .hudControls{width:100%!important;max-width:none!important;bottom:12px!important}
+/* Información de armas solo en el panel derecho: no se duplica encima de los enemigos. */
+#playLayer #pickupHud{display:none!important}
+#playLayer #cockpitPanel{display:flex!important;flex-direction:column!important;position:absolute!important;right:0!important;top:0!important;bottom:0!important;transform:none!important;width:var(--gg-sidebar)!important;max-height:none!important;height:100%!important;border-radius:0!important;padding:clamp(15px,1.35vw,24px)!important;background:linear-gradient(160deg,#122938,#061323 56%,#071724)!important;border:0!important;border-left:3px solid #51b7d4!important;box-shadow:inset 12px 0 33px #06101f,0 0 36px #06131d!important;overflow-y:auto!important;font-size:clamp(14px,1.14vw,18px)!important;z-index:42!important}
+#cockpitPanel .cockpit-mark{font-size:clamp(28px,2.2vw,38px)!important;padding-bottom:12px!important}
+#cockpitPanel .cockpit-mark span{font-size:clamp(11px,.85vw,13px)!important}
+#cockpitPanel .ck-block{padding:clamp(11px,1.05vw,17px) 4px!important}
+#cockpitPanel .ck-block small{font-size:clamp(11px,.88vw,14px)!important;letter-spacing:.055em!important}
+#cockpitPanel .ck-block strong{font-size:clamp(18px,1.32vw,23px)!important}
+#cockpitPanel .ck-stat,#cockpitPanel .ck-weapon{font-size:clamp(13px,1.04vw,17px)!important;padding:12px 3px!important;align-items:center!important}
+#cockpitPanel .ck-stat b,#cockpitPanel .ck-weapon b{font-size:clamp(19px,1.5vw,25px)!important}
+#cockpitPanel .ck-progress{height:23px!important}
+#cockpitPanel .ck-foot{display:block!important;font-size:12px!important;line-height:1.6!important;margin-top:auto!important}
+#cockpitPanel .gg-stat-label img{width:30px!important;height:30px!important}
+#cockpitPanel .gg-weapon-flex{gap:12px!important}
+#cockpitPanel #cockpitSecondaryIcon{width:58px!important;height:58px!important}
+@media(max-width:940px){#playLayer{--gg-sidebar:250px}#cockpitPanel .ck-foot{display:none!important}#playLayer #cockpitPanel{padding:12px!important}#gameHud .hudBar{padding:9px 12px!important}}
+@media(max-width:600px){#playLayer{--gg-sidebar:0px!important}#playLayer #cockpitPanel{display:none!important}#playLayer #pickupHud{display:flex!important}#gameHud .hudBar{padding:6px 8px!important}}

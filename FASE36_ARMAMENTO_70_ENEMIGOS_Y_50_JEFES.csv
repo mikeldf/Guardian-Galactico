@@ -1,0 +1,121 @@
+﻿ID,Mundo,Enemigo,Patrón,Sprite original 1-16,Sprite propio,Notas
+1,Aurix,Tipo 1,Dardo frontal,1,assets/enemy_weapon_unique/enemy_001.webp,Única por perfil; variación visual y patrón
+2,Aurix,Tipo 2,Tiro dirigido,4,assets/enemy_weapon_unique/enemy_002.webp,Única por perfil; variación visual y patrón
+3,Aurix,Tipo 3,Abanico,14,assets/enemy_weapon_unique/enemy_003.webp,Única por perfil; variación visual y patrón
+4,Aurix,Tipo 4,Pulso ondulante,12,assets/enemy_weapon_unique/enemy_004.webp,Única por perfil; variación visual y patrón
+5,Aurix,Tipo 5,Fragmentador,14,assets/enemy_weapon_unique/enemy_005.webp,Única por perfil; variación visual y patrón
+6,Aurix,Tipo 6,Rastreador,16,assets/enemy_weapon_unique/enemy_006.webp,Única por perfil; variación visual y patrón
+7,Aurix,Tipo 7,Acelerador,6,assets/enemy_weapon_unique/enemy_007.webp,Única por perfil; variación visual y patrón
+8,Voltar,Tipo 1,Dardo frontal,2,assets/enemy_weapon_unique/enemy_008.webp,Única por perfil; variación visual y patrón
+9,Voltar,Tipo 2,Tiro dirigido,6,assets/enemy_weapon_unique/enemy_009.webp,Única por perfil; variación visual y patrón
+10,Voltar,Tipo 3,Abanico,13,assets/enemy_weapon_unique/enemy_010.webp,Única por perfil; variación visual y patrón
+11,Voltar,Tipo 4,Pulso ondulante,7,assets/enemy_weapon_unique/enemy_011.webp,Única por perfil; variación visual y patrón
+12,Voltar,Tipo 5,Fragmentador,8,assets/enemy_weapon_unique/enemy_012.webp,Única por perfil; variación visual y patrón
+13,Voltar,Tipo 6,Rastreador,11,assets/enemy_weapon_unique/enemy_013.webp,Única por perfil; variación visual y patrón
+14,Voltar,Tipo 7,Acelerador,7,assets/enemy_weapon_unique/enemy_014.webp,Única por perfil; variación visual y patrón
+15,Zenthar,Tipo 1,Dardo frontal,3,assets/enemy_weapon_unique/enemy_015.webp,Única por perfil; variación visual y patrón
+16,Zenthar,Tipo 2,Tiro dirigido,12,assets/enemy_weapon_unique/enemy_016.webp,Única por perfil; variación visual y patrón
+17,Zenthar,Tipo 3,Abanico,4,assets/enemy_weapon_unique/enemy_017.webp,Única por perfil; variación visual y patrón
+18,Zenthar,Tipo 4,Pulso ondulante,13,assets/enemy_weapon_unique/enemy_018.webp,Única por perfil; variación visual y patrón
+19,Zenthar,Tipo 5,Fragmentador,11,assets/enemy_weapon_unique/enemy_019.webp,Única por perfil; variación visual y patrón
+20,Zenthar,Tipo 6,Rastreador,9,assets/enemy_weapon_unique/enemy_020.webp,Única por perfil; variación visual y patrón
+21,Zenthar,Tipo 7,Acelerador,3,assets/enemy_weapon_unique/enemy_021.webp,Única por perfil; variación visual y patrón
+22,Cryon,Tipo 1,Dardo frontal,4,assets/enemy_weapon_unique/enemy_022.webp,Única por perfil; variación visual y patrón
+23,Cryon,Tipo 2,Tiro dirigido,2,assets/enemy_weapon_unique/enemy_023.webp,Única por perfil; variación visual y patrón
+24,Cryon,Tipo 3,Abanico,5,assets/enemy_weapon_unique/enemy_024.webp,Única por perfil; variación visual y patrón
+25,Cryon,Tipo 4,Pulso ondulante,8,assets/enemy_weapon_unique/enemy_025.webp,Única por perfil; variación visual y patrón
+26,Cryon,Tipo 5,Fragmentador,15,assets/enemy_weapon_unique/enemy_026.webp,Única por perfil; variación visual y patrón
+27,Cryon,Tipo 6,Rastreador,10,assets/enemy_weapon_unique/enemy_027.webp,Única por perfil; variación visual y patrón
+28,Cryon,Tipo 7,Acelerador,16,assets/enemy_weapon_unique/enemy_028.webp,Única por perfil; variación visual y patrón
+29,Drakon,Tipo 1,Dardo frontal,1,assets/enemy_weapon_unique/enemy_029.webp,Única por perfil; variación visual y patrón
+30,Drakon,Tipo 2,Tiro dirigido,4,assets/enemy_weapon_unique/enemy_030.webp,Única por perfil; variación visual y patrón
+31,Drakon,Tipo 3,Abanico,14,assets/enemy_weapon_unique/enemy_031.webp,Única por perfil; variación visual y patrón
+32,Drakon,Tipo 4,Pulso ondulante,12,assets/enemy_weapon_unique/enemy_032.webp,Única por perfil; variación visual y patrón
+33,Drakon,Tipo 5,Fragmentador,14,assets/enemy_weapon_unique/enemy_033.webp,Única por perfil; variación visual y patrón
+34,Drakon,Tipo 6,Rastreador,16,assets/enemy_weapon_unique/enemy_034.webp,Única por perfil; variación visual y patrón
+35,Drakon,Tipo 7,Acelerador,6,assets/enemy_weapon_unique/enemy_035.webp,Única por perfil; variación visual y patrón
+36,Nebulis,Tipo 1,Dardo frontal,2,assets/enemy_weapon_unique/enemy_036.webp,Única por perfil; variación visual y patrón
+37,Nebulis,Tipo 2,Tiro dirigido,6,assets/enemy_weapon_unique/enemy_037.webp,Única por perfil; variación visual y patrón
+38,Nebulis,Tipo 3,Abanico,13,assets/enemy_weapon_unique/enemy_038.webp,Única por perfil; variación visual y patrón
+39,Nebulis,Tipo 4,Pulso ondulante,7,assets/enemy_weapon_unique/enemy_039.webp,Única por perfil; variación visual y patrón
+40,Nebulis,Tipo 5,Fragmentador,8,assets/enemy_weapon_unique/enemy_040.webp,Única por perfil; variación visual y patrón
+41,Nebulis,Tipo 6,Rastreador,11,assets/enemy_weapon_unique/enemy_041.webp,Única por perfil; variación visual y patrón
+42,Nebulis,Tipo 7,Acelerador,7,assets/enemy_weapon_unique/enemy_042.webp,Única por perfil; variación visual y patrón
+43,Orion,Tipo 1,Dardo frontal,3,assets/enemy_weapon_unique/enemy_043.webp,Única por perfil; variación visual y patrón
+44,Orion,Tipo 2,Tiro dirigido,12,assets/enemy_weapon_unique/enemy_044.webp,Única por perfil; variación visual y patrón
+45,Orion,Tipo 3,Abanico,4,assets/enemy_weapon_unique/enemy_045.webp,Única por perfil; variación visual y patrón
+46,Orion,Tipo 4,Pulso ondulante,13,assets/enemy_weapon_unique/enemy_046.webp,Única por perfil; variación visual y patrón
+47,Orion,Tipo 5,Fragmentador,11,assets/enemy_weapon_unique/enemy_047.webp,Única por perfil; variación visual y patrón
+48,Orion,Tipo 6,Rastreador,9,assets/enemy_weapon_unique/enemy_048.webp,Única por perfil; variación visual y patrón
+49,Orion,Tipo 7,Acelerador,3,assets/enemy_weapon_unique/enemy_049.webp,Única por perfil; variación visual y patrón
+50,Kaelix,Tipo 1,Dardo frontal,4,assets/enemy_weapon_unique/enemy_050.webp,Única por perfil; variación visual y patrón
+51,Kaelix,Tipo 2,Tiro dirigido,2,assets/enemy_weapon_unique/enemy_051.webp,Única por perfil; variación visual y patrón
+52,Kaelix,Tipo 3,Abanico,5,assets/enemy_weapon_unique/enemy_052.webp,Única por perfil; variación visual y patrón
+53,Kaelix,Tipo 4,Pulso ondulante,8,assets/enemy_weapon_unique/enemy_053.webp,Única por perfil; variación visual y patrón
+54,Kaelix,Tipo 5,Fragmentador,15,assets/enemy_weapon_unique/enemy_054.webp,Única por perfil; variación visual y patrón
+55,Kaelix,Tipo 6,Rastreador,10,assets/enemy_weapon_unique/enemy_055.webp,Única por perfil; variación visual y patrón
+56,Kaelix,Tipo 7,Acelerador,16,assets/enemy_weapon_unique/enemy_056.webp,Única por perfil; variación visual y patrón
+57,Vortex,Tipo 1,Dardo frontal,1,assets/enemy_weapon_unique/enemy_057.webp,Única por perfil; variación visual y patrón
+58,Vortex,Tipo 2,Tiro dirigido,4,assets/enemy_weapon_unique/enemy_058.webp,Única por perfil; variación visual y patrón
+59,Vortex,Tipo 3,Abanico,14,assets/enemy_weapon_unique/enemy_059.webp,Única por perfil; variación visual y patrón
+60,Vortex,Tipo 4,Pulso ondulante,12,assets/enemy_weapon_unique/enemy_060.webp,Única por perfil; variación visual y patrón
+61,Vortex,Tipo 5,Fragmentador,14,assets/enemy_weapon_unique/enemy_061.webp,Única por perfil; variación visual y patrón
+62,Vortex,Tipo 6,Rastreador,16,assets/enemy_weapon_unique/enemy_062.webp,Única por perfil; variación visual y patrón
+63,Vortex,Tipo 7,Acelerador,6,assets/enemy_weapon_unique/enemy_063.webp,Única por perfil; variación visual y patrón
+64,Elysium,Tipo 1,Dardo frontal,2,assets/enemy_weapon_unique/enemy_064.webp,Única por perfil; variación visual y patrón
+65,Elysium,Tipo 2,Tiro dirigido,6,assets/enemy_weapon_unique/enemy_065.webp,Única por perfil; variación visual y patrón
+66,Elysium,Tipo 3,Abanico,13,assets/enemy_weapon_unique/enemy_066.webp,Única por perfil; variación visual y patrón
+67,Elysium,Tipo 4,Pulso ondulante,7,assets/enemy_weapon_unique/enemy_067.webp,Única por perfil; variación visual y patrón
+68,Elysium,Tipo 5,Fragmentador,8,assets/enemy_weapon_unique/enemy_068.webp,Única por perfil; variación visual y patrón
+69,Elysium,Tipo 6,Rastreador,11,assets/enemy_weapon_unique/enemy_069.webp,Única por perfil; variación visual y patrón
+70,Elysium,Tipo 7,Acelerador,7,assets/enemy_weapon_unique/enemy_070.webp,Única por perfil; variación visual y patrón
+1,Aurix,Jefe 1,Jefe multifase,6,assets/enemy_weapon_unique/boss_001.webp,"Única por jefe, mantiene patrones por fase"
+2,Aurix,Jefe 2,Jefe multifase,14,assets/enemy_weapon_unique/boss_002.webp,"Única por jefe, mantiene patrones por fase"
+3,Aurix,Jefe 3,Jefe multifase,8,assets/enemy_weapon_unique/boss_003.webp,"Única por jefe, mantiene patrones por fase"
+4,Aurix,Jefe 4,Jefe multifase,11,assets/enemy_weapon_unique/boss_004.webp,"Única por jefe, mantiene patrones por fase"
+5,Aurix,Jefe 5,Jefe multifase,16,assets/enemy_weapon_unique/boss_005.webp,"Única por jefe, mantiene patrones por fase"
+6,Voltar,Jefe 1,Jefe multifase,7,assets/enemy_weapon_unique/boss_006.webp,"Única por jefe, mantiene patrones por fase"
+7,Voltar,Jefe 2,Jefe multifase,13,assets/enemy_weapon_unique/boss_007.webp,"Única por jefe, mantiene patrones por fase"
+8,Voltar,Jefe 3,Jefe multifase,10,assets/enemy_weapon_unique/boss_008.webp,"Única por jefe, mantiene patrones por fase"
+9,Voltar,Jefe 4,Jefe multifase,15,assets/enemy_weapon_unique/boss_009.webp,"Única por jefe, mantiene patrones por fase"
+10,Voltar,Jefe 5,Jefe multifase,12,assets/enemy_weapon_unique/boss_010.webp,"Única por jefe, mantiene patrones por fase"
+11,Zenthar,Jefe 1,Jefe multifase,12,assets/enemy_weapon_unique/boss_011.webp,"Única por jefe, mantiene patrones por fase"
+12,Zenthar,Jefe 2,Jefe multifase,8,assets/enemy_weapon_unique/boss_012.webp,"Única por jefe, mantiene patrones por fase"
+13,Zenthar,Jefe 3,Jefe multifase,11,assets/enemy_weapon_unique/boss_013.webp,"Única por jefe, mantiene patrones por fase"
+14,Zenthar,Jefe 4,Jefe multifase,5,assets/enemy_weapon_unique/boss_014.webp,"Única por jefe, mantiene patrones por fase"
+15,Zenthar,Jefe 5,Jefe multifase,7,assets/enemy_weapon_unique/boss_015.webp,"Única por jefe, mantiene patrones por fase"
+16,Cryon,Jefe 1,Jefe multifase,6,assets/enemy_weapon_unique/boss_016.webp,"Única por jefe, mantiene patrones por fase"
+17,Cryon,Jefe 2,Jefe multifase,14,assets/enemy_weapon_unique/boss_017.webp,"Única por jefe, mantiene patrones por fase"
+18,Cryon,Jefe 3,Jefe multifase,8,assets/enemy_weapon_unique/boss_018.webp,"Única por jefe, mantiene patrones por fase"
+19,Cryon,Jefe 4,Jefe multifase,11,assets/enemy_weapon_unique/boss_019.webp,"Única por jefe, mantiene patrones por fase"
+20,Cryon,Jefe 5,Jefe multifase,16,assets/enemy_weapon_unique/boss_020.webp,"Única por jefe, mantiene patrones por fase"
+21,Drakon,Jefe 1,Jefe multifase,7,assets/enemy_weapon_unique/boss_021.webp,"Única por jefe, mantiene patrones por fase"
+22,Drakon,Jefe 2,Jefe multifase,13,assets/enemy_weapon_unique/boss_022.webp,"Única por jefe, mantiene patrones por fase"
+23,Drakon,Jefe 3,Jefe multifase,10,assets/enemy_weapon_unique/boss_023.webp,"Única por jefe, mantiene patrones por fase"
+24,Drakon,Jefe 4,Jefe multifase,15,assets/enemy_weapon_unique/boss_024.webp,"Única por jefe, mantiene patrones por fase"
+25,Drakon,Jefe 5,Jefe multifase,12,assets/enemy_weapon_unique/boss_025.webp,"Única por jefe, mantiene patrones por fase"
+26,Nebulis,Jefe 1,Jefe multifase,12,assets/enemy_weapon_unique/boss_026.webp,"Única por jefe, mantiene patrones por fase"
+27,Nebulis,Jefe 2,Jefe multifase,8,assets/enemy_weapon_unique/boss_027.webp,"Única por jefe, mantiene patrones por fase"
+28,Nebulis,Jefe 3,Jefe multifase,11,assets/enemy_weapon_unique/boss_028.webp,"Única por jefe, mantiene patrones por fase"
+29,Nebulis,Jefe 4,Jefe multifase,5,assets/enemy_weapon_unique/boss_029.webp,"Única por jefe, mantiene patrones por fase"
+30,Nebulis,Jefe 5,Jefe multifase,7,assets/enemy_weapon_unique/boss_030.webp,"Única por jefe, mantiene patrones por fase"
+31,Orion,Jefe 1,Jefe multifase,6,assets/enemy_weapon_unique/boss_031.webp,"Única por jefe, mantiene patrones por fase"
+32,Orion,Jefe 2,Jefe multifase,14,assets/enemy_weapon_unique/boss_032.webp,"Única por jefe, mantiene patrones por fase"
+33,Orion,Jefe 3,Jefe multifase,8,assets/enemy_weapon_unique/boss_033.webp,"Única por jefe, mantiene patrones por fase"
+34,Orion,Jefe 4,Jefe multifase,11,assets/enemy_weapon_unique/boss_034.webp,"Única por jefe, mantiene patrones por fase"
+35,Orion,Jefe 5,Jefe multifase,16,assets/enemy_weapon_unique/boss_035.webp,"Única por jefe, mantiene patrones por fase"
+36,Kaelix,Jefe 1,Jefe multifase,7,assets/enemy_weapon_unique/boss_036.webp,"Única por jefe, mantiene patrones por fase"
+37,Kaelix,Jefe 2,Jefe multifase,13,assets/enemy_weapon_unique/boss_037.webp,"Única por jefe, mantiene patrones por fase"
+38,Kaelix,Jefe 3,Jefe multifase,10,assets/enemy_weapon_unique/boss_038.webp,"Única por jefe, mantiene patrones por fase"
+39,Kaelix,Jefe 4,Jefe multifase,15,assets/enemy_weapon_unique/boss_039.webp,"Única por jefe, mantiene patrones por fase"
+40,Kaelix,Jefe 5,Jefe multifase,12,assets/enemy_weapon_unique/boss_040.webp,"Única por jefe, mantiene patrones por fase"
+41,Vortex,Jefe 1,Jefe multifase,12,assets/enemy_weapon_unique/boss_041.webp,"Única por jefe, mantiene patrones por fase"
+42,Vortex,Jefe 2,Jefe multifase,8,assets/enemy_weapon_unique/boss_042.webp,"Única por jefe, mantiene patrones por fase"
+43,Vortex,Jefe 3,Jefe multifase,11,assets/enemy_weapon_unique/boss_043.webp,"Única por jefe, mantiene patrones por fase"
+44,Vortex,Jefe 4,Jefe multifase,5,assets/enemy_weapon_unique/boss_044.webp,"Única por jefe, mantiene patrones por fase"
+45,Vortex,Jefe 5,Jefe multifase,7,assets/enemy_weapon_unique/boss_045.webp,"Única por jefe, mantiene patrones por fase"
+46,Elysium,Jefe 1,Jefe multifase,6,assets/enemy_weapon_unique/boss_046.webp,"Única por jefe, mantiene patrones por fase"
+47,Elysium,Jefe 2,Jefe multifase,14,assets/enemy_weapon_unique/boss_047.webp,"Única por jefe, mantiene patrones por fase"
+48,Elysium,Jefe 3,Jefe multifase,8,assets/enemy_weapon_unique/boss_048.webp,"Única por jefe, mantiene patrones por fase"
+49,Elysium,Jefe 4,Jefe multifase,11,assets/enemy_weapon_unique/boss_049.webp,"Única por jefe, mantiene patrones por fase"
+50,Elysium,Jefe 5,Jefe multifase,16,assets/enemy_weapon_unique/boss_050.webp,"Única por jefe, mantiene patrones por fase"

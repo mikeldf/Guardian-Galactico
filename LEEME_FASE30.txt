@@ -1,0 +1,25 @@
+GUARDIÁN GALÁCTICO — FASE 30: NUEVAS ARMAS ENEMIGAS
+
+APERTURA
+1. Descomprime este ZIP en una carpeta nueva.
+2. Dentro de la carpeta extraída, haz doble clic en index.html.
+3. Utiliza Chrome o Edge. No hay que instalar Codex ni componentes adicionales.
+
+QUÉ CAMBIA
+- Los 16 tipos gráficos de proyectil enemigo proceden de la lámina aprobada.
+- Animaciones de 8 fotogramas por tipo, con transparencia real, integradas en assets/enemy_weapon_v3/.
+- 8 tipos de impacto actualizados.
+- Tamaños de dibujo mayores para disparos, láseres, misiles, plasma, ondas y meteoritos.
+- Eliminado el gran resplandor blanco añadido encima de cada proyectil enemigo; animaciones de bajo parpadeo.
+- No se modificaron daños, velocidades, cadencias ni hitboxes.
+- Se mantienen las 60 naves, 10 mundos y 500 misiones de la versión base de Fase 29.
+
+COMPROBACIONES
+- Sintaxis JavaScript sin errores en las cinco secciones del HTML.
+- Prueba de navegador aislada: 16/16 hojas cargadas; 8/8 impactos cargados; misión iniciada sin errores.
+- Integridad ZIP verificada; index.html en raíz.
+
+LIMITACIONES
+- La sesión no reproduce todas las situaciones de los 500 niveles: queda pendiente la prueba de jugabilidad completa en Windows.
+- Las animaciones contienen un pulso visual sutil de la lámina fija; no son 8 dibujos manualmente independientes de cada arma.
+- Se han reutilizado las 16 categorías existentes del motor, sin cambiar el comportamiento de las armas.

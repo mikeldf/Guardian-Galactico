@@ -1,0 +1,42 @@
+{
+  "name": "guardian-galactico",
+  "version": "0.55.8",
+  "private": true,
+  "productName": "Guardián Galáctico",
+  "main": "app/main.cjs",
+  "description": "Aplicación de escritorio para Windows del juego Guardián Galáctico",
+  "scripts": {
+    "start": "electron .",
+    "dist:win": "electron-builder --win portable --x64"
+  },
+  "devDependencies": {
+    "electron": "^39.0.0",
+    "electron-builder": "^26.0.0"
+  },
+  "build": {
+    "appId": "com.guardiangalactico.game",
+    "productName": "Guardian Galactico",
+    "asar": true,
+    "files": [
+      "index.html",
+      "index_modular.html",
+      "assets/**/*",
+      "src/**/*",
+      "app/main.cjs",
+      "app/preload.cjs",
+      "GG_APP_MANIFEST.json",
+      "package.json",
+      "app/windows/**/*"
+    ],
+    "directories": {
+      "output": "dist-windows"
+    },
+    "win": {
+      "target": [
+        "portable"
+      ],
+      "artifactName": "Guardian_Galactico_${version}_Portable.${ext}"
+    },
+    "compression": "normal"
+  }
+}

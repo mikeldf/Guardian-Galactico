@@ -1,0 +1,191 @@
+/* Presentación fotográfica aprobada: la ilustración es la capa visual;
+   todas las acciones, niveles y estados siguen conectados al motor del juego. */
+#ggExactUI{position:fixed;inset:0;z-index:1100;background:#030915;overflow:hidden;display:none;font-family:'Arial Narrow',Bahnschrift,'Segoe UI',sans-serif;color:#e8f7ff}
+#ggExactUI.active{display:block}
+#ggExactUI .gg-photo-ambient{position:absolute;inset:-35px;background-size:cover;background-position:center;filter:blur(20px) brightness(.40);opacity:.75;pointer-events:none}
+#ggExactUI .gg-photo-stage{position:absolute;left:50%;top:50%;transform-origin:center center;background-position:center;background-size:100% 100%;background-repeat:no-repeat;overflow:hidden;box-shadow:0 0 70px #000b,0 0 0 1px #74bdff30}
+#ggExactUI button.gg-hit{position:absolute;background:transparent;border:2px solid transparent;border-radius:12px;padding:0;cursor:pointer;z-index:3;outline-offset:2px;color:transparent;font-size:1px}
+#ggExactUI button.gg-hit:hover,#ggExactUI button.gg-hit:focus-visible{border-color:#6be6ff;box-shadow:inset 0 0 25px #1db8fb42,0 0 16px #41caff88;background:rgba(31,128,223,.09);outline:none}
+#ggExactUI button.gg-hit:disabled{cursor:not-allowed;border:0;background:transparent;box-shadow:none}
+#ggExactUI button.gg-photo-planet{border-radius:50%;}
+#ggExactUI .gg-dynamic{position:absolute;z-index:4}
+#ggExactUI .gg-progress-patch{background:linear-gradient(90deg,#03102cea,#091633f5);border:1px solid #499ed57c;border-radius:7px;text-align:center;font-size:12px;font-weight:800;color:#cff3ff;padding:3px 6px;box-shadow:0 5px 12px #000b;white-space:nowrap}
+#ggExactUI .gg-progress-patch.locked{color:#a8b8d7}
+#ggExactUI .gg-level-button{position:absolute;width:78px;height:87px;border:1px solid #2088d4;cursor:pointer;background:linear-gradient(160deg,#052241 0%,#07101f 88%);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;box-shadow:inset 0 0 8px #0673a340;color:#dcefff;z-index:4;font-weight:800}
+#ggExactUI .gg-level-button b{font-size:28px;line-height:30px}
+#ggExactUI .gg-level-button small{font-size:14px;letter-spacing:1px;color:#6c8da7}
+#ggExactUI .gg-level-button.cleared small{color:#ffc14b}
+#ggExactUI .gg-level-button.selected{border:2px solid #7ceeff;box-shadow:0 0 16px #2aafff,inset 0 0 15px #098dff91;background:linear-gradient(170deg,#063a80,#071831)}
+#ggExactUI .gg-level-button.lock{opacity:1}
+#ggExactUI .gg-level-button:hover:not(:disabled){border-color:white;filter:brightness(1.25)}
+#ggExactUI .gg-level-button:disabled{cursor:not-allowed;opacity:1!important}
+#ggExactUI .gg-level-title{position:absolute;left:699px;top:24px;width:695px;height:115px;display:flex;align-items:center;justify-content:center;flex-direction:column;background:linear-gradient(90deg,transparent,#041529fb 15%,#061e39fd 85%,transparent);border-radius:10px;z-index:3;text-shadow:0 0 14px #2a94ff;font-weight:900}
+#ggExactUI .gg-level-title .world-count{font-size:22px;color:#9fe6ff;letter-spacing:1px}
+#ggExactUI .gg-level-title .world-name{font-size:46px;color:#f1faff}
+#ggExactUI .gg-play-text{position:absolute;left:1147px;top:877px;width:318px;text-align:center;font-size:35px;font-weight:900;color:#d0ffd3;background:linear-gradient(90deg,#00491a,#00551e);border-radius:8px;text-shadow:0 0 13px #56f58e;z-index:3;pointer-events:none}
+#ggExactUI .gg-planet-replace{position:absolute;left:44px;top:156px;width:488px;height:385px;z-index:2;background:radial-gradient(ellipse at center,#113a63fc,#0c1e3df8 65%,#03102500 93%);display:flex;align-items:center;justify-content:center}
+#ggExactUI .gg-planet-replace img{height:350px;width:350px;object-fit:contain;filter:drop-shadow(0 0 18px #68baff)}
+#ggExactUI .gg-world-info{position:absolute;left:80px;top:580px;width:420px;z-index:3;background:#041426ef;padding:10px 17px;border-radius:8px;line-height:1.4;font-size:17px}
+#ggExactUI .gg-ship-card{position:absolute;top:738px;width:200px;height:208px;border:1px solid #258bce;background:linear-gradient(160deg,#071a31,#041023 90%);color:#e4f4ff;z-index:4;border-radius:8px;cursor:pointer;display:flex;align-items:center;flex-direction:column;justify-content:space-between;padding:5px;box-shadow:inset 0 0 20px #146cc044}
+#ggExactUI .gg-ship-card.selected{border:3px solid #7ee9ff;box-shadow:0 0 12px #168dff,inset 0 0 14px #2163c6}
+#ggExactUI .gg-ship-card img{object-fit:contain;width:100%;height:152px;filter:drop-shadow(0 0 10px #218eff8a)}
+#ggExactUI .gg-ship-card span{font-size:18px;line-height:25px;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:100%}
+#ggExactUI .gg-ship-card.lock img{filter:grayscale(.4) brightness(.78)}
+#ggExactUI .gg-ship-info{position:absolute;z-index:4;left:1123px;top:217px;width:391px;min-height:340px;background:linear-gradient(145deg,#092744,#031629);border:2px solid #319ee6;border-radius:12px;padding:20px 22px;box-shadow:0 0 20px #1257c673;overflow:hidden}
+#ggExactUI .gg-ship-info h3{font-size:27px;line-height:30px;margin:0 0 3px;font-weight:900}
+#ggExactUI .gg-ship-info .name{color:#71deff;font-size:19px}
+#ggExactUI .gg-ship-info .gg-stat{display:flex;align-items:center;gap:10px;margin-top:14px;font-size:15px}
+#ggExactUI .gg-stat>span:first-child{width:116px;flex:none}
+#ggExactUI .gg-meter{height:11px;background:#061429;border:1px solid #164770;flex:1;overflow:hidden}
+#ggExactUI .gg-meter>i{display:block;height:100%;background:linear-gradient(90deg,#34bbff,#17f0ff)}
+#ggExactUI .gg-ship-info .desc{font-size:14px;color:#beddf3;margin-top:12px;line-height:1.5}
+#ggExactUI .gg-ship-info button{margin-top:8px;border:1px solid #6bccff;color:#e9fbff;background:#07507a;padding:8px 12px;border-radius:5px;cursor:pointer;font-size:13px}
+#ggExactUI .gg-ship-info button:disabled{opacity:.5;cursor:not-allowed}
+#ggExactUI .gg-ship-large{position:absolute;left:418px;top:211px;width:680px;height:395px;z-index:3;display:flex;align-items:center;justify-content:center;background:radial-gradient(ellipse,#0a2548f6 0%,#071324dc 51%,transparent 81%);pointer-events:none}
+#ggExactUI .gg-ship-large img{max-width:75%;height:85%;object-fit:contain;filter:drop-shadow(0 0 18px #4bd0ff)}
+#ggExactUI .gg-resource-bar{position:absolute;left:1130px;top:27px;width:360px;height:65px;z-index:3;background:linear-gradient(90deg,#061426fa,#081831fa);border-radius:8px;border:1px solid #3280b5;display:flex;justify-content:space-around;align-items:center;font-size:20px;font-weight:800}
+#ggExactUI .gg-tab-panel{position:absolute;left:110px;top:735px;width:1100px;min-height:208px;z-index:5;display:flex;gap:18px;align-items:center;justify-content:center;background:linear-gradient(160deg,#07192ff9,#061122fd);border:1px solid #3cb1ec;border-radius:10px;padding:18px}
+#ggExactUI .gg-tab-panel button{color:#e9f8ff;background:#0a3d63;border:1px solid #5db8ed;padding:12px 20px;border-radius:8px;cursor:pointer}
+#ggExactUI .gg-tab-panel p{font-size:18px}
+#ggExactUI .gg-nextpage{position:absolute;top:799px;z-index:6;border:0;background:#071d3ce9;color:#99e9ff;font-size:55px;cursor:pointer;line-height:64px;width:60px;border-radius:9px;}
+#ggExactUI .gg-nextpage:hover{background:#134d78}
+#ggExactUI .gg-title-note{position:absolute;top:128px;left:630px;color:#fff;background:#031324e9;border:1px solid #358bd1;border-radius:6px;padding:7px 10px;font-size:16px;z-index:5}
+#ggExactUI .gg-logo-note{position:absolute;left:24px;bottom:15px;font-size:12px;z-index:4;color:#a7c2d8;background:#061222cc;border-radius:4px;padding:5px 8px}
+
+#ggExactUI .gg-map-label{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;text-align:center;background:linear-gradient(90deg,#041127,#071932);border:1px solid #418eda;border-radius:6px;box-shadow:0 8px 16px #0008;pointer-events:none;color:#d2ebff}
+#ggExactUI .gg-map-label b{font-size:19px;font-weight:900;color:#f7fbff;text-shadow:0 0 6px #3c8dff}
+#ggExactUI .gg-map-label small{font-size:14px;color:#65c8f4}
+#ggExactUI .gg-map-label strong{font-size:14px;color:#ffc65c}
+
+/* Fase 26: vistas panorámicas sin bandas laterales desenfocadas. */
+#ggExactUI .gg-photo-ambient{display:none!important}
+#ggExactUI .gg-photo-stage{box-shadow:none!important}
+#ggExactUI .gg-map-label{background:transparent!important;border:0!important;box-shadow:none!important;gap:2px!important;text-shadow:0 2px 5px #000,0 0 6px #00243a;min-height:54px!important;justify-content:flex-start!important;}
+#ggExactUI .gg-map-label b{font-size:14px!important;line-height:17px!important;text-shadow:0 2px 4px #000,0 0 6px #0877b5}
+#ggExactUI .gg-map-label small{font-size:11px!important;line-height:12px!important;color:#b8edff!important}
+#ggExactUI .gg-map-label strong{font-size:11px!important;line-height:12px!important;color:#ffd67b!important}
+#ggExactUI .gg-map-orb{position:absolute;z-index:2;object-fit:contain;pointer-events:none;filter:drop-shadow(0 0 9px #84e9ffa0);}
+#ggExactUI .gg-preview-three{position:absolute;z-index:5;left:1245px;top:716px;width:218px;height:226px;display:flex;flex-direction:column;align-items:center;justify-content:space-around;background:#04152de8;border-radius:6px;pointer-events:none}
+#ggExactUI .gg-preview-three img{width:154px;height:70px;object-fit:contain;filter:drop-shadow(0 0 7px #56ccff)}
+#ggExactUI .gg-preview-three .side{transform:rotateX(59deg) scaleX(1.13)}
+#ggExactUI .gg-preview-three .front{transform:rotate(180deg) scale(.76)}
+#ggExactUI .gg-ship-large{background:radial-gradient(ellipse,#061835ba,transparent 76%)!important}
+#ggExactUI .gg-tab-panel{background:linear-gradient(160deg,#04162ef5,#061123f6)!important;justify-content:space-around!important;align-items:stretch!important;flex-wrap:wrap!important}
+#ggExactUI .gg-tab-panel button{flex:1;min-width:154px;max-width:250px;min-height:60px;text-align:center;font-size:17px;font-weight:700;padding:10px;transition:filter .12s}
+#ggExactUI .gg-tab-panel button:hover:not(:disabled){filter:brightness(1.3)}
+#ggExactUI .gg-tab-panel button:disabled{opacity:.43;cursor:not-allowed}
+#ggExactUI .gg-tab-panel .gg-tab-title{flex-basis:100%;font-size:18px;font-weight:850;text-align:left;margin:0 0 6px;color:#9fddff}
+#ggExactUI .gg-tab-panel .gg-tab-detail{flex-basis:100%;text-align:center;color:#c7ecff;font-size:15px;min-height:34px}
+#ggExactUI .gg-tab-panel button.active{border-color:#f0d06e;background:linear-gradient(145deg,#07517b,#0a2a50)}
+#ggExactUI .gg-resource-bar{pointer-events:none}
+#ggExactUI .gg-ship-info .gg-stat{margin-top:10px}
+/* La nave fija de la maqueta queda oculta bajo una placa oscura, y encima se dibuja la nave realmente elegida. */
+#ggExactUI .gg-ship-large{background:radial-gradient(ellipse at center,#031427 7%,#07182bef 49%,#091a2de6 72%,#0a1428a0 83%,transparent 99%)!important}
+#ggExactUI .gg-ship-large img{max-width:91%!important;height:95%!important;filter:drop-shadow(0 0 14px #2bc4ff)!important}
+
+/* FASE 27: estados compactos legibles de los 50 niveles. */
+#ggExactUI .gg-level-button{width:74px!important;border-radius:10px!important;gap:4px!important;padding:5px!important;justify-content:center!important;box-sizing:border-box!important}
+#ggExactUI .gg-level-button b{font-size:26px!important;line-height:30px!important}
+#ggExactUI .gg-level-button small{font-size:17px!important;line-height:20px!important;letter-spacing:0!important;white-space:nowrap!important}
+#ggExactUI .gg-level-button.cleared{background:linear-gradient(150deg,#103848,#05232a)!important}
+#ggExactUI .gg-level-button.cleared small{color:#74f6bf!important}
+#ggExactUI .gg-level-button.open small{color:#dbf6ff!important}
+/* Mapa regenerado sin planetas ni cartelas impresas por detrás. */
+#ggExactUI .gg-map-label{min-height:50px!important;gap:1px!important}
+#ggExactUI .gg-map-label b{font-size:14px!important;line-height:17px!important}
+#ggExactUI .gg-map-label small,#ggExactUI .gg-map-label strong{font-size:10px!important;line-height:11px!important}
+#ggExactUI .gg-map-orb{filter:drop-shadow(0 0 13px #53cbffb0)!important}
+/* Hangar: la antigua barra de 4 pestañas de la maqueta queda cubierta completamente. */
+#ggExactUI .gg-hangar-tabstrip{position:absolute;left:96px;top:657px;width:1137px;height:78px;z-index:8;display:flex;gap:10px;padding:7px 10px;box-sizing:border-box;background:linear-gradient(170deg,#061427,#0b2347);border:2px solid #3f9bd1;border-radius:12px;box-shadow:0 0 17px #051a35ef}
+#ggExactUI .gg-hangar-tab{flex:1;background:linear-gradient(165deg,#05162f,#103557);border:2px solid #417aaf;border-radius:10px;color:#e7f8ff;font-size:23px;font-weight:900;letter-spacing:1px;cursor:pointer;text-shadow:0 0 10px #63b8fc}
+#ggExactUI .gg-hangar-tab.selected{background:linear-gradient(130deg,#086db7,#043d85);box-shadow:0 0 15px #36bbff,inset 0 0 15px #52b9ff7d;border-color:#a0eaff}
+#ggExactUI .gg-hangar-tab:hover{filter:brightness(1.24)}
+
+/* Corrección de selector: 50 casillas uniformes, sin rótulos SUPERADO pisados,
+   sin cartelas/estrellas impresas por detrás de las casillas reales. */
+#ggExactUI .gg-level-grid-clean{
+  z-index:3;
+  border-radius:9px;
+  border:1px solid #2f7199;
+  background:
+    radial-gradient(ellipse at 48% 10%,rgba(16,65,105,.45),transparent 75%),
+    linear-gradient(165deg,#041224 0%,#061a30 65%,#030e20 100%);
+  box-shadow:inset 0 0 45px #020711,0 0 16px #030c1da0;
+  pointer-events:none;
+}
+#ggExactUI .gg-level-button{
+  width:79px!important;
+  height:88px!important;
+  min-height:88px!important;
+  box-sizing:border-box!important;
+  padding:6px 3px!important;
+  gap:5px!important;
+  border-radius:9px!important;
+  background:linear-gradient(155deg,#0b2a4d,#051629 74%)!important;
+  border:1.5px solid #4097ce!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  flex-direction:column!important;
+  box-shadow:inset 0 0 11px #1b7fce32,0 2px 7px #000b!important;
+  overflow:hidden!important;
+}
+#ggExactUI .gg-level-button b{font-size:26px!important;line-height:30px!important;white-space:nowrap}
+#ggExactUI .gg-level-button small{font-size:17px!important;line-height:20px!important;white-space:nowrap!important;letter-spacing:0!important}
+#ggExactUI .gg-level-button.cleared{background:linear-gradient(#123e47,#08202b)!important;border-color:#4cbaa8!important}
+#ggExactUI .gg-level-button.cleared small{color:#a6ffd1!important}
+#ggExactUI .gg-level-button.open{border:2px solid #9eebff!important;background:linear-gradient(#185284,#0a264c)!important}
+#ggExactUI .gg-level-button.lock{background:linear-gradient(#0a1d35,#061327)!important;color:#afc7db!important}
+#ggExactUI .gg-level-button.selected{box-shadow:0 0 0 2px #59e9ff,0 0 21px #3de6ff,inset 0 0 15px #1e91ff!important}
+#ggExactUI .gg-level-button:focus-visible{outline:3px solid #d5ffff!important;outline-offset:2px}
+#ggExactUI .gg-play-clean-backdrop{
+  z-index:5;pointer-events:none;border-radius:12px;
+  border:1px solid #235879;
+  background:linear-gradient(170deg,#071a30 0%,#051322 70%,#071e2b 100%);
+  box-shadow:inset 0 0 34px #02101e,0 0 14px #020817;
+}
+#ggExactUI .gg-play-actual{
+  position:absolute;z-index:7;left:1111px;top:869px;
+  width:325px;height:75px;
+  background:linear-gradient(180deg,#128438,#045b2a 54%,#033918)!important;
+  border:3px solid #74fb95;border-radius:12px;
+  box-shadow:0 0 17px #27e5628c,inset 0 0 20px #a0ffb735;
+  color:#ebffeb;font-size:26px;font-weight:900;letter-spacing:.015em;
+  text-shadow:0 0 10px #87ffaa;cursor:pointer;white-space:nowrap;
+}
+#ggExactUI .gg-play-actual:hover{filter:brightness(1.15)}
+#ggExactUI .gg-play-actual:focus-visible{outline:3px solid white;outline-offset:4px}
+
+/* Corrección: un solo borde de selección, sin marco antiguo impreso. */
+#ggExactUI .gg-hangar-strip-cover{position:absolute;left:75px;top:727px;width:1157px;height:238px;z-index:3;background:linear-gradient(160deg,#07162afc,#091d36fd 60%,#031124fd);border:2px solid #276b9d;border-radius:12px;box-shadow:inset 0 0 35px #0c355c,0 0 16px #07162b;pointer-events:none}
+#ggExactUI .gg-ship-card{z-index:4}
+#ggExactUI .gg-ship-card:not(.selected){border-color:#396b90!important;box-shadow:inset 0 0 16px #18508d55!important}
+#ggExactUI .gg-ship-card.selected{border:3px solid #89eaff!important;box-shadow:0 0 20px #39baff!important;background:linear-gradient(#11386f,#081e39)!important}
+/* Botón nuevo encima de JUGAR, sin alterar la ilustración original. */
+#ggExactUI .gg-continue-main{position:absolute;left:43px;top:105px;width:334px;height:95px;z-index:7;display:flex;align-items:center;justify-content:center;gap:17px;border:3px solid #58dfff;border-radius:16px;clip-path:polygon(5% 0,95% 0,100% 17%,100% 84%,95% 100%,5% 100%,0 84%,0 16%);background:linear-gradient(175deg,#123a62 0%,#05243f 50%,#07142f 100%);box-shadow:inset 0 0 0 3px #071a38,inset 0 0 22px #2dbaff80,0 0 17px #209cfe7a;color:white;font-size:28px;letter-spacing:1px;font-weight:950;cursor:pointer;text-shadow:0 0 12px #65bcff}
+#ggExactUI .gg-continue-main:hover,#ggExactUI .gg-continue-main:focus-visible{background:linear-gradient(175deg,#1f5c90,#0b3773);box-shadow:0 0 25px #43d0ff;outline:2px solid #b7f4ff}
+#ggExactUI .gg-continue-main>span:last-child{display:flex;flex-direction:column;align-items:flex-start;line-height:1.08}
+#ggExactUI .gg-continue-main small{font-size:13px;letter-spacing:.8px;font-weight:800;color:#b5faff;line-height:1.7}
+#ggExactUI .gg-continue-icon{font-size:49px;color:#66dfff;line-height:1}
+
+/* Hangar Serie II — lista vertical real y desbloqueos legibles (60 naves). */
+#ggExactUI .gg-hangar-strip-cover{left:83px!important;top:637px!important;width:1142px!important;height:341px!important;border-radius:9px!important;background:linear-gradient(165deg,#07162bfa,#041429fe 70%,#071427)!important}
+#ggExactUI .gg-hangar-tabstrip{left:98px!important;top:651px!important;width:1123px!important;height:69px!important}
+#ggExactUI .gg-ship-vertical-list{position:absolute;z-index:10;left:101px;top:725px;width:1114px;height:245px;overflow-y:auto;overscroll-behavior:contain;scrollbar-gutter:stable;scrollbar-width:auto;scrollbar-color:#37a8e8 #05172b;border:1px solid #3688b8;border-radius:9px;background:linear-gradient(160deg,#051225f9,#091d35f9);padding:5px 7px;box-sizing:border-box;display:flex;flex-direction:column;gap:4px}
+#ggExactUI .gg-ship-list-row{flex:none;width:100%;min-height:66px;box-sizing:border-box;cursor:pointer;display:grid;grid-template-columns:95px minmax(0,1fr) 136px;align-items:center;gap:12px;text-align:left;padding:4px 12px;color:#f0f9ff;border-radius:7px;border:1px solid #285a82;background:linear-gradient(90deg,#09233d,#04172d);font:inherit;box-shadow:inset 0 0 12px #12385b77}
+#ggExactUI .gg-ship-list-row:hover,#ggExactUI .gg-ship-list-row:focus-visible{background:#11456c;border-color:#81caff;outline:2px solid #aceeff;outline-offset:-2px}
+#ggExactUI .gg-ship-list-row.selected{background:linear-gradient(90deg,#104b83,#0a2648)!important;border:2px solid #83ebff;box-shadow:0 0 12px #2b9cffab,inset 0 0 12px #29acff55}
+#ggExactUI .gg-ship-list-thumb{position:relative;display:flex;align-items:center;justify-content:center;width:82px;height:56px;overflow:visible}
+#ggExactUI .gg-ship-list-thumb img{width:82px;height:56px;object-fit:contain;filter:drop-shadow(0 0 8px #4dbfff9d)}
+#ggExactUI .gg-ship-list-row.locked .gg-ship-list-thumb img{filter:grayscale(.8) brightness(.46)}
+#ggExactUI .gg-lock-large{position:absolute;left:25px;top:7px;font-size:34px;line-height:42px;filter:drop-shadow(0 2px 6px #000);pointer-events:none}
+#ggExactUI .gg-ship-list-body{display:flex;flex-direction:column;gap:4px;min-width:0}
+#ggExactUI .gg-ship-list-body strong{font-size:19px;line-height:22px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#ggExactUI .gg-ship-list-body small{font-size:14px;line-height:17px;color:#ffdd94;letter-spacing:.1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#ggExactUI .gg-ship-list-row:not(.locked) .gg-ship-list-body small{color:#88ffdb}
+#ggExactUI .gg-ship-list-trailing{font-size:12px;font-weight:850;text-align:right;letter-spacing:.3px;color:#accde5}
+#ggExactUI .gg-ship-list-row.equipped .gg-ship-list-trailing{color:#8dffcd}
+#ggExactUI .gg-ship-list-row.locked .gg-ship-list-trailing{color:#f4bd86}
+#ggExactUI .gg-ship-large.locked img{filter:grayscale(.64) brightness(.62)!important}
+#ggExactUI .gg-large-lock{position:absolute;z-index:6;left:50%;top:50%;transform:translate(-50%,-50%);font-size:92px;filter:drop-shadow(0 6px 12px #000);pointer-events:none}
+#ggExactUI .gg-ship-info .desc{overflow-wrap:anywhere;line-height:1.3;font-size:13px}

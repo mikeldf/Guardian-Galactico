@@ -1,0 +1,11 @@
+GUARDIÁN GALÁCTICO — MUNDO 9: PLANETA CUÁNTICO
+
+7 enemigos · 4 subjefes · 1 jefe final
+12 sprites PNG con transparencia real, recortados de la hoja aprobada.
+
+Niveles globales 401–450. Subjefes en 410, 420, 430, 440; jefe final en 450.
+
+Resolución: enemigos 512x512; subjefes 768x768; jefe final 1024x768.
+Estos sprites son estáticos; no incluyen fotogramas separados de animación.
+
+Los recursos se encuentran en tres carpetas y se relacionan por el MANIFIESTO.json.

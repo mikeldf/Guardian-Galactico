@@ -1,0 +1,262 @@
+[
+  {
+    "id": "mundo_01_a",
+    "title": "Arrecife estelar · Pulso A",
+    "scene": "combat",
+    "world": 0,
+    "variant": 0,
+    "duration": 30.0,
+    "bytes": 428444,
+    "sha256": "6edbce9d3b010656f2463483bddc603da33dc28d6c0537455fde3f6c093113ef"
+  },
+  {
+    "id": "mundo_01_b",
+    "title": "Arrecife estelar · Pulso B",
+    "scene": "combat",
+    "world": 0,
+    "variant": 1,
+    "duration": 30.72,
+    "bytes": 438524,
+    "sha256": "82cb520f448f88f80e4c3c4f304d25a69529648f52978f45280cabb229c939d8"
+  },
+  {
+    "id": "mundo_02_a",
+    "title": "Forja solar · Pulso A",
+    "scene": "combat",
+    "world": 1,
+    "variant": 0,
+    "duration": 27.23,
+    "bytes": 389636,
+    "sha256": "7666017e42b5edfe45dd273b44166eb541b9378370690b788f205f977e69b40f"
+  },
+  {
+    "id": "mundo_02_b",
+    "title": "Forja solar · Pulso B",
+    "scene": "combat",
+    "world": 1,
+    "variant": 1,
+    "duration": 26.48,
+    "bytes": 379052,
+    "sha256": "90ff92476c48808627014758c4909fbe99f9d27f512705af2c7e13fe48e5d740"
+  },
+  {
+    "id": "mundo_03_a",
+    "title": "Cristales del vacío · Pulso A",
+    "scene": "combat",
+    "world": 2,
+    "variant": 0,
+    "duration": 32.27,
+    "bytes": 460196,
+    "sha256": "d8d3ea2d3520f80a49b21242891df0cc58ab6659c4f45ba39f394e156a0b4371"
+  },
+  {
+    "id": "mundo_03_b",
+    "title": "Cristales del vacío · Pulso B",
+    "scene": "combat",
+    "world": 2,
+    "variant": 1,
+    "duration": 33.1,
+    "bytes": 471788,
+    "sha256": "0bd13f892664f9aa84e32b614585cdcd50f3c66de405ccc6268e30f01afecd0d"
+  },
+  {
+    "id": "mundo_04_a",
+    "title": "Roca orbital · Pulso A",
+    "scene": "combat",
+    "world": 3,
+    "variant": 0,
+    "duration": 30.48,
+    "bytes": 434996,
+    "sha256": "c23bb8419d8b382ea2e47195648225b851888c0f3b756789f3c6394e0d4ca8fe"
+  },
+  {
+    "id": "mundo_04_b",
+    "title": "Roca orbital · Pulso B",
+    "scene": "combat",
+    "world": 3,
+    "variant": 1,
+    "duration": 29.54,
+    "bytes": 421892,
+    "sha256": "53e5e246712e5371524c89c15ae66027f2d9522886b58db0b92d5bb46fc61c08"
+  },
+  {
+    "id": "mundo_05_a",
+    "title": "Nebulosa viva · Pulso A",
+    "scene": "combat",
+    "world": 4,
+    "variant": 0,
+    "duration": 28.87,
+    "bytes": 412316,
+    "sha256": "ff0488b0821ebf792d8fa230ace60e09359609dd8f523ec8b075f2b146208d77"
+  },
+  {
+    "id": "mundo_05_b",
+    "title": "Nebulosa viva · Pulso B",
+    "scene": "combat",
+    "world": 4,
+    "variant": 1,
+    "duration": 29.54,
+    "bytes": 421892,
+    "sha256": "68110d445a05ee824cc92ddbacf57d0844b2b5c2190dc0bc638dab5a7df2ccc3"
+  },
+  {
+    "id": "mundo_06_a",
+    "title": "Laboratorio tóxico · Pulso A",
+    "scene": "combat",
+    "world": 5,
+    "variant": 0,
+    "duration": 26.3,
+    "bytes": 376532,
+    "sha256": "1f86e00527e2ba1c06cf5312101c2661b658a7a1edb15013ca3a8536be61c9c4"
+  },
+  {
+    "id": "mundo_06_b",
+    "title": "Laboratorio tóxico · Pulso B",
+    "scene": "combat",
+    "world": 5,
+    "variant": 1,
+    "duration": 25.6,
+    "bytes": 366452,
+    "sha256": "aa2c23a44de71cd0aa8559b1f99bafc464a59b1c8cc42bfde616bd6f8ef9de64"
+  },
+  {
+    "id": "mundo_07_a",
+    "title": "Máquinas del cosmos · Pulso A",
+    "scene": "combat",
+    "world": 6,
+    "variant": 0,
+    "duration": 25.95,
+    "bytes": 371492,
+    "sha256": "0db6b13d3cbfc255fcef905900a735f48ff5bfd298c03c3b2091949761972e38"
+  },
+  {
+    "id": "mundo_07_b",
+    "title": "Máquinas del cosmos · Pulso B",
+    "scene": "combat",
+    "world": 6,
+    "variant": 1,
+    "duration": 26.48,
+    "bytes": 379052,
+    "sha256": "622501622a0f9fa275768d3d3d3b75c18d503fb72ba2ba0a28dd3ad9d2b1474e"
+  },
+  {
+    "id": "mundo_08_a",
+    "title": "Sombras del abismo · Pulso A",
+    "scene": "combat",
+    "world": 7,
+    "variant": 0,
+    "duration": 33.39,
+    "bytes": 475820,
+    "sha256": "73eec0229ceeb8a80c9f6fa3cbfa87afb54adf845972c0c56be37ecfccfb932a"
+  },
+  {
+    "id": "mundo_08_b",
+    "title": "Sombras del abismo · Pulso B",
+    "scene": "combat",
+    "world": 7,
+    "variant": 1,
+    "duration": 32.27,
+    "bytes": 460196,
+    "sha256": "afed178553067951ca526713142ddee004251c9da3aa199e8930f38d237671d4"
+  },
+  {
+    "id": "mundo_09_a",
+    "title": "Horizonte cuántico · Pulso A",
+    "scene": "combat",
+    "world": 8,
+    "variant": 0,
+    "duration": 28.03,
+    "bytes": 400724,
+    "sha256": "8ea82fd0d5f7d904399ed35185ee5b9f923a7ccabe9273971a18923c2000727c"
+  },
+  {
+    "id": "mundo_09_b",
+    "title": "Horizonte cuántico · Pulso B",
+    "scene": "combat",
+    "world": 8,
+    "variant": 1,
+    "duration": 28.66,
+    "bytes": 409292,
+    "sha256": "22651555d82fb6da372f7aaa3a584aca325c2f05061e27bcbd730f45de347b8f"
+  },
+  {
+    "id": "mundo_10_a",
+    "title": "El núcleo final · Pulso A",
+    "scene": "combat",
+    "world": 9,
+    "variant": 0,
+    "duration": 24.94,
+    "bytes": 357380,
+    "sha256": "e24eb398a4562cad90ecab9f08a53b6291da11fefe9d15373a1961a2437b050c"
+  },
+  {
+    "id": "mundo_10_b",
+    "title": "El núcleo final · Pulso B",
+    "scene": "combat",
+    "world": 9,
+    "variant": 1,
+    "duration": 24.3,
+    "bytes": 348308,
+    "sha256": "670de9bed9ed49f363a9b4b977a2a90f7d5aa3df69089556deb7ad3014c66a68"
+  },
+  {
+    "id": "jefe_1",
+    "title": "Combate jefe · Tema 1",
+    "scene": "boss",
+    "world": null,
+    "variant": 0,
+    "duration": 24.62,
+    "bytes": 352844,
+    "sha256": "04098c145cc3dd64143f7cc228aa2665bc60df9e283e2a3d6235171e2c4c0168"
+  },
+  {
+    "id": "jefe_2",
+    "title": "Combate jefe · Tema 2",
+    "scene": "boss",
+    "world": null,
+    "variant": 0,
+    "duration": 23.56,
+    "bytes": 338228,
+    "sha256": "0215bd685cc122108acc333570f8818e714ae9a0d49bad1ad131c7ac0ee01196"
+  },
+  {
+    "id": "jefe_3",
+    "title": "Combate jefe · Tema 3",
+    "scene": "boss",
+    "world": null,
+    "variant": 0,
+    "duration": 25.95,
+    "bytes": 371492,
+    "sha256": "9c9289f4dec9d06f1718ab15fd8abc830e830ddde9c6d942c6f2ed961d830c52"
+  },
+  {
+    "id": "jefe_4",
+    "title": "Combate jefe · Tema 4",
+    "scene": "boss",
+    "world": null,
+    "variant": 0,
+    "duration": 22.46,
+    "bytes": 322604,
+    "sha256": "090b8a30cd939e4c7f921bce7043500a2774da1f134cf6df7f73f77ac45e1d42"
+  },
+  {
+    "id": "menu_principal",
+    "title": "Estrellas en órbita",
+    "scene": "menu",
+    "world": null,
+    "variant": 0,
+    "duration": 36.92,
+    "bytes": 525212,
+    "sha256": "de0545eb5862e741f3ab7791d618fb9682c093f9c876f57c78edc15d21ac4694"
+  },
+  {
+    "id": "hangar_estelar",
+    "title": "Hangar de pilotos",
+    "scene": "hangar",
+    "world": null,
+    "variant": 0,
+    "duration": 41.74,
+    "bytes": 592748,
+    "sha256": "42d4dd6699b9c59d0d7d9c4fe26aa07118ea7ded52d77e839eb5ae880baa1304"
+  }
+]

@@ -1,0 +1,15 @@
+GUARDIÁN GALÁCTICO — FASE 34
+
+NOVEDADES
+- Panel de combate futurista integrado: puntuación, vidas, escudo, energía, arma principal, arma secundaria y oleada con indicadores dinámicos. No es una imagen fija.
+- La potencia del disparo principal se conserva entre niveles de un mismo mundo, tras ganar una misión.
+- Cada planeta conserva su propio nivel de disparo; al entrar por primera vez en otro mundo, se empieza con potencia 1.
+- La potencia se guarda en localStorage, y viaja con la copia de seguridad de progreso exportada/importada.
+- Se mantienen las 60 naves, los 500 niveles, las armas enemigas y las reglas previas de combate.
+
+NOTAS
+- La potencia de disparo conseguida durante una misión solo se guarda si completas la misión; si pierdes, vuelves a la última potencia guardada de ese mundo.
+- Esta fase no añade todavía la pantalla de carga inicial; queda planificada para una fase posterior.
+
+INSTALACIÓN
+Extrae todo el contenido del ZIP en una carpeta nueva y abre index.html con Chrome o Edge.

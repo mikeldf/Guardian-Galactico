@@ -1,0 +1,68 @@
+/* FASE 29 – COMBATE CINEMÁTICO. HUD REAL, NO UNA CAPTURA ESTÁTICA. */
+#playLayer{--gg-sidebar:clamp(242px,18.4vw,306px)!important;background:#010718!important}
+#playLayer #game{background:#031024!important;box-shadow:inset 0 0 0 1px #0b3b79!important}
+#playLayer #gameHud{pointer-events:none!important}
+#playLayer #gameHud button{pointer-events:auto!important}
+#gameHud .hudBar{display:flex!important;justify-content:center!important;align-items:flex-start!important;background:linear-gradient(180deg,#020d2dd9,#020e2800)!important;padding:10px!important;min-height:62px!important}
+#gameHud .hudBar>div:first-child,#gameHud .hudBar>div:last-child{display:none!important}
+#gameHud .hudBar>div:nth-child(2){position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 32px 8px!important;min-width:240px!important;max-width:82%!important;background:linear-gradient(90deg,#082b4b12,#071a3ab8 15%,#071a3ae5 85%,#082b4b12)!important;border-bottom:2px solid #30bdff!important;box-shadow:0 6px 18px -11px #19baff!important}
+#gameHud .hudBar>div:nth-child(2):before,#gameHud .hudBar>div:nth-child(2):after{content:'';position:absolute;top:20px;width:36px;height:12px;border-bottom:2px solid #21c3ff;filter:drop-shadow(0 0 6px #20c0ff)}
+#gameHud .hudBar>div:nth-child(2):before{right:100%;transform:skew(37deg)}
+#gameHud .hudBar>div:nth-child(2):after{left:100%;transform:skew(-37deg)}
+#gameHud #hudLevel{display:block;color:#8bd7ff;font-size:10px!important;font-weight:900;letter-spacing:.2em;text-transform:uppercase}
+#gameHud #hudWave{display:block;font-weight:900!important;color:#e1f7ff!important;font-size:clamp(15px,1.44vw,24px)!important;letter-spacing:.03em!important;text-shadow:0 0 13px #39caff75}
+#playLayer #cockpitPanel{
+ display:flex!important;position:absolute!important;top:0!important;bottom:0!important;right:0!important;
+ width:var(--gg-sidebar)!important;height:100%!important;max-height:none!important;
+ padding:clamp(13px,1.15vw,22px)!important;gap:clamp(5px,.8vh,12px)!important;
+ background:linear-gradient(105deg,#02132bf7 0%,#05132bfd 65%,#011020fa 100%)!important;
+ border:0!important;border-left:2px solid #1fd4ff!important;border-right:2px solid #1a80bf!important;
+ border-radius:0!important;box-sizing:border-box!important;box-shadow:inset 11px 0 40px -27px #21bdff,0 0 25px #034f9b!important;overflow-y:auto!important;overflow-x:hidden!important;
+ scrollbar-width:thin;scrollbar-color:#107eae #031123!important;
+}
+#playLayer #cockpitPanel:before{content:'';position:absolute;inset:8px 7px;pointer-events:none;opacity:.8;border:1px solid #0d6fac;clip-path:polygon(0 21px,21px 0,calc(100% - 21px) 0,100% 21px,100% calc(100% - 21px),calc(100% - 21px) 100%,21px 100%,0 calc(100% - 21px));z-index:0}
+#cockpitPanel .cockpit-mark{display:none!important}
+#cockpitPanel .ck-block,#cockpitPanel .ck-stat{
+ position:relative!important;flex-shrink:0!important;box-sizing:border-box!important;
+ background:linear-gradient(100deg,#091b39f2,#04142beb)!important;
+ padding:clamp(9px,.9vh,14px) 12px!important;
+ margin:0!important;min-height:0!important;
+ border:1px solid #17609c!important;border-left:2px solid #32d4ff!important;border-radius:0!important;
+ box-shadow:inset 0 0 14px #07336480!important;
+ clip-path:polygon(0 10px,10px 0,calc(100% - 9px) 0,100% 9px,100% 100%,0 100%)!important;
+ gap:4px!important;
+}
+#cockpitPanel .ck-block small,#cockpitPanel .ck-stat span{
+ color:#94d6ff!important;font-weight:850!important;letter-spacing:.055em!important;
+ font-size:clamp(10px,.84vw,14px)!important;line-height:1.2!important;
+}
+#cockpitPanel .ck-block strong,#cockpitPanel .ck-stat b,#cockpitPanel .ck-weapon b{
+ color:#dfefff!important;text-shadow:0 0 10px #39a9ff8a!important;
+ font-weight:950!important;font-size:clamp(17px,1.35vw,23px)!important;
+}
+#cockpitPanel .ck-block:first-of-type strong{font-size:clamp(25px,2.25vw,38px)!important;letter-spacing:.1em!important}
+#cockpitPanel .ck-stat{display:flex!important;align-items:center!important;justify-content:space-between!important;min-height:60px!important}
+#cockpitPanel .ck-stat span{display:inline-flex;align-items:center;gap:8px}
+#cockpitPanel .ck-stat:first-of-type span:before{content:'🚀';filter:drop-shadow(0 0 5px #21aaff)}
+#cockpitPanel .ck-progress{height:18px!important;margin-top:9px!important;background:repeating-linear-gradient(90deg,#03142d 0 13px,#114a85 13px 14px)!important;border:1px solid #1c86c2!important;overflow:hidden!important;box-shadow:inset 0 0 8px #010716!important}
+#cockpitPanel .ck-progress>i{display:block!important;height:100%;background:repeating-linear-gradient(90deg,#2ce9ff 0 15px,#062e66 15px 18px)!important;box-shadow:0 0 18px #0dd6ffcc!important}
+#cockpitPanel #cockpitPrimary{color:#fbc279!important;text-shadow:0 0 12px #ff9430!important}
+#cockpitPanel .ck-weapon{display:flex!important;align-items:center!important;justify-content:space-between!important;padding:6px 0!important;margin:4px 0 0!important;gap:8px!important;border-top:1px solid #185488a4!important}
+#cockpitPanel .ck-weapon span{font-size:clamp(9px,.72vw,12px)!important;color:#85c9f4!important;letter-spacing:.01em!important}
+#cockpitPanel #cockpitSecondaryIcon{width:clamp(31px,2.3vw,42px)!important;height:clamp(31px,2.3vw,42px)!important}
+#cockpitPanel .gg-weapon-flex{min-height:33px!important;gap:5px!important;margin:3px 0!important}
+#cockpitPanel .ck-wave{margin-top:auto!important;min-height:68px!important;border-color:#1c80bf!important}
+#cockpitPanel .ck-wave strong{font-size:clamp(17px,1.44vw,23px)!important}
+#cockpitPanel .ck-foot{display:none!important}
+#cockpitPanel .gg-stat-label img{width:23px!important;height:23px!important}
+#gameHud .hudControls{bottom:14px!important}
+#gameHud .hudControls button{box-shadow:0 0 16px #189dff66!important}
+@media(max-width:1000px){#playLayer{--gg-sidebar:235px!important}#playLayer #cockpitPanel{padding:10px!important;gap:5px!important}#cockpitPanel .ck-block,#cockpitPanel .ck-stat{padding:7px!important}}
+@media(max-width:600px){#playLayer{--gg-sidebar:0px!important}#playLayer #cockpitPanel{display:none!important}#gameHud .hudBar>div:nth-child(2){max-width:75%!important;min-width:0!important}}
+/* Make all seven telemetry groups occupy the full panel, like the approved image. */
+#playLayer #cockpitPanel{justify-content:space-between!important}
+#cockpitPanel .ck-block{flex:1 0 auto!important;display:flex!important;flex-direction:column!important;justify-content:center!important}
+#cockpitPanel .ck-stat{flex:0 1 73px!important}
+#cockpitPanel .ck-wave{margin-top:0!important;flex:1 0 68px!important}
+#cockpitPanel .ck-block:nth-child(2)::after{content:''!important;display:block!important;width:80%!important;height:3px!important;margin:9px 0 0!important;background:linear-gradient(90deg,#ffb14e 35%,#174979 35%)!important;box-shadow:0 0 8px #ff9e56!important}
+#playLayer #announce{left:50%!important;top:13%!important;transform:translateX(-50%)!important;max-width:86%!important;width:max-content!important;box-sizing:border-box!important;padding:10px 21px!important;border:1px solid #2a9ec899!important;border-radius:7px!important;background:#020f29d9!important;box-shadow:0 0 22px #0c83ce44!important;font-size:clamp(12px,1.25vw,19px)!important;line-height:1.2!important;white-space:normal!important}

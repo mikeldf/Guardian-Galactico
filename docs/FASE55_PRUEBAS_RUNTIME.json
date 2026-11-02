@@ -1,0 +1,501 @@
+{
+  "timestamp": "2026-10-31T21:07:17.545457",
+  "tests": [
+    {
+      "test": "index.html boot home",
+      "passed": true,
+      "observed": "home"
+    },
+    {
+      "test": "index.html campaign all 200",
+      "passed": true,
+      "observed": {
+        "total": 200,
+        "worlds": [
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20
+        ],
+        "bosses": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110,
+          120,
+          130,
+          140,
+          150,
+          160,
+          170,
+          180,
+          190,
+          200
+        ],
+        "lastUnlocked": 1
+      }
+    },
+    {
+      "test": "index.html ship count",
+      "passed": true,
+      "observed": 60
+    },
+    {
+      "test": "index.html 9 mission types",
+      "passed": true,
+      "observed": [
+        {
+          "name": "PATRULLA TÁCTICA",
+          "count": 1
+        },
+        {
+          "name": "ASALTO DE FLANCOS",
+          "count": 27
+        },
+        {
+          "name": "INTERCEPCIÓN",
+          "count": 23
+        },
+        {
+          "name": "CAZA DEL COMANDANTE",
+          "count": 27
+        },
+        {
+          "name": "EMBOSCADA ESCALONADA",
+          "count": 25
+        },
+        {
+          "name": "CORREDOR DE SUMINISTROS",
+          "count": 26
+        },
+        {
+          "name": "FORMACIÓN CAMBIANTE",
+          "count": 26
+        },
+        {
+          "name": "CAZA DE INCURSORES",
+          "count": 25
+        },
+        {
+          "name": "ENCUENTRO DE JEFE",
+          "count": 20
+        }
+      ]
+    },
+    {
+      "test": "index.html hangar navigation",
+      "passed": true,
+      "observed": "hangar"
+    },
+    {
+      "test": "index.html 60 hangar cards",
+      "passed": true,
+      "observed": 60
+    },
+    {
+      "test": "index.html visible only hangar",
+      "passed": true,
+      "observed": {
+        "active": [
+          "hangar"
+        ],
+        "classic": false
+      }
+    },
+    {
+      "test": "index.html change hangar selection",
+      "passed": true,
+      "observed": "Rayo V"
+    },
+    {
+      "test": "index.html hangar back",
+      "passed": true,
+      "observed": "home"
+    },
+    {
+      "test": "index.html settings open",
+      "passed": true,
+      "observed": "settings"
+    },
+    {
+      "test": "index.html save backup roundtrip",
+      "passed": true,
+      "observed": {
+        "campaignSchema": 200,
+        "worldWeaponLevels": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "lastUnlocked": 1,
+        "lastPlayed": 1,
+        "coins": 250,
+        "selected": 0,
+        "ships": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "upgrades": {},
+        "wins": 0,
+        "bossWins": 0,
+        "highestScore": 0,
+        "perfect": 0,
+        "difficulty": "normal"
+      }
+    },
+    {
+      "test": "index.html galaxy nav",
+      "passed": true,
+      "observed": {
+        "screen": "galaxy",
+        "overlay": "galaxy"
+      }
+    },
+    {
+      "test": "index.html galaxy pins clickable",
+      "passed": true,
+      "observed": 10
+    },
+    {
+      "test": "index.html click first planet",
+      "passed": true,
+      "observed": {
+        "screen": "levels",
+        "overlay": "levels"
+      }
+    },
+    {
+      "test": "index.html 20 selector cards",
+      "passed": true,
+      "observed": 20
+    },
+    {
+      "test": "index.html start level 1 from UI",
+      "passed": true,
+      "observed": "play"
+    },
+    {
+      "test": "index.html pause Escape",
+      "passed": true,
+      "observed": {
+        "paused": true,
+        "playing": true,
+        "overlay": true
+      }
+    },
+    {
+      "test": "index.html 50 weapon evolutions",
+      "passed": true,
+      "observed": {
+        "families": [
+          "CAÑÓN FOTÓNICO",
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "length": 10
+      }
+    },
+    {
+      "test": "index.html all 200 mission starts",
+      "passed": true,
+      "observed": {
+        "count": 200,
+        "failures": [],
+        "failedTotal": 0,
+        "final": 20
+      }
+    },
+    {
+      "test": "index.html spawn 20 bosses",
+      "passed": true,
+      "observed": {
+        "n": 20,
+        "faults": []
+      }
+    },
+    {
+      "test": "index.html js runtime errors",
+      "passed": true,
+      "observed": []
+    },
+    {
+      "test": "index_modular.html boot home",
+      "passed": true,
+      "observed": "home"
+    },
+    {
+      "test": "index_modular.html campaign all 200",
+      "passed": true,
+      "observed": {
+        "total": 200,
+        "worlds": [
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20
+        ],
+        "bosses": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110,
+          120,
+          130,
+          140,
+          150,
+          160,
+          170,
+          180,
+          190,
+          200
+        ],
+        "lastUnlocked": 1
+      }
+    },
+    {
+      "test": "index_modular.html ship count",
+      "passed": true,
+      "observed": 60
+    },
+    {
+      "test": "index_modular.html 9 mission types",
+      "passed": true,
+      "observed": [
+        {
+          "name": "PATRULLA TÁCTICA",
+          "count": 1
+        },
+        {
+          "name": "ASALTO DE FLANCOS",
+          "count": 27
+        },
+        {
+          "name": "INTERCEPCIÓN",
+          "count": 23
+        },
+        {
+          "name": "CAZA DEL COMANDANTE",
+          "count": 27
+        },
+        {
+          "name": "EMBOSCADA ESCALONADA",
+          "count": 25
+        },
+        {
+          "name": "CORREDOR DE SUMINISTROS",
+          "count": 26
+        },
+        {
+          "name": "FORMACIÓN CAMBIANTE",
+          "count": 26
+        },
+        {
+          "name": "CAZA DE INCURSORES",
+          "count": 25
+        },
+        {
+          "name": "ENCUENTRO DE JEFE",
+          "count": 20
+        }
+      ]
+    },
+    {
+      "test": "index_modular.html hangar navigation",
+      "passed": true,
+      "observed": "hangar"
+    },
+    {
+      "test": "index_modular.html 60 hangar cards",
+      "passed": true,
+      "observed": 60
+    },
+    {
+      "test": "index_modular.html visible only hangar",
+      "passed": true,
+      "observed": {
+        "active": [
+          "hangar"
+        ],
+        "classic": false
+      }
+    },
+    {
+      "test": "index_modular.html change hangar selection",
+      "passed": true,
+      "observed": "Rayo V"
+    },
+    {
+      "test": "index_modular.html hangar back",
+      "passed": true,
+      "observed": "home"
+    },
+    {
+      "test": "index_modular.html settings open",
+      "passed": true,
+      "observed": "settings"
+    },
+    {
+      "test": "index_modular.html save backup roundtrip",
+      "passed": true,
+      "observed": {
+        "campaignSchema": 200,
+        "worldWeaponLevels": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "lastUnlocked": 1,
+        "lastPlayed": 1,
+        "coins": 250,
+        "selected": 0,
+        "ships": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "upgrades": {},
+        "wins": 0,
+        "bossWins": 0,
+        "highestScore": 0,
+        "perfect": 0,
+        "difficulty": "normal"
+      }
+    },
+    {
+      "test": "index_modular.html galaxy nav",
+      "passed": true,
+      "observed": {
+        "screen": "galaxy",
+        "overlay": "galaxy"
+      }
+    },
+    {
+      "test": "index_modular.html galaxy pins clickable",
+      "passed": true,
+      "observed": 10
+    },
+    {
+      "test": "index_modular.html click first planet",
+      "passed": true,
+      "observed": {
+        "screen": "levels",
+        "overlay": "levels"
+      }
+    },
+    {
+      "test": "index_modular.html 20 selector cards",
+      "passed": true,
+      "observed": 20
+    },
+    {
+      "test": "index_modular.html start level 1 from UI",
+      "passed": true,
+      "observed": "play"
+    },
+    {
+      "test": "index_modular.html pause Escape",
+      "passed": true,
+      "observed": {
+        "paused": true,
+        "playing": true,
+        "overlay": true
+      }
+    },
+    {
+      "test": "index_modular.html 50 weapon evolutions",
+      "passed": true,
+      "observed": {
+        "families": [
+          "CAÑÓN FOTÓNICO",
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "length": 10
+      }
+    },
+    {
+      "test": "index_modular.html all 200 mission starts",
+      "passed": true,
+      "observed": {
+        "count": 200,
+        "failures": [],
+        "failedTotal": 0,
+        "final": 20
+      }
+    },
+    {
+      "test": "index_modular.html spawn 20 bosses",
+      "passed": true,
+      "observed": {
+        "n": 20,
+        "faults": []
+      }
+    },
+    {
+      "test": "index_modular.html js runtime errors",
+      "passed": true,
+      "observed": []
+    }
+  ],
+  "total": 42,
+  "passed": 42
+}

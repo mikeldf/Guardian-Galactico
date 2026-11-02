@@ -1,0 +1,70 @@
+{
+  "resources_total": 1852,
+  "image_count": 1797,
+  "image_failures": [],
+  "image_zero_dimensions": [],
+  "image_formats": {
+    "PNG": 338,
+    "WEBP": 1445,
+    "JPEG": 14
+  },
+  "largest_images": [
+    [
+      3357859,
+      "assets/gg41_approved/HOJA_ORIGINAL_USUARIO.png"
+    ],
+    [
+      2504487,
+      "assets/ui/classic_restored/niveles_original.png"
+    ],
+    [
+      605224,
+      "assets/ui/refs/mapa.optim.webp"
+    ],
+    [
+      582812,
+      "assets/planetas/mundo_08_oscuro.optim.webp"
+    ],
+    [
+      579598,
+      "assets/planetas/mundo_09_cuantico.optim.webp"
+    ],
+    [
+      569924,
+      "assets/planetas/mundo_10_omega.optim.webp"
+    ],
+    [
+      558990,
+      "assets/planetas/mundo_03_magma.optim.webp"
+    ],
+    [
+      537640,
+      "assets/ui/refs/mapa_sin_etiquetas.webp"
+    ],
+    [
+      537640,
+      "assets/ui/classic_restored/mapa_original_sin_textos.webp"
+    ],
+    [
+      536194,
+      "assets/planetas/mundo_08_oscuro.webp"
+    ],
+    [
+      533082,
+      "assets/planetas/mundo_02_esmeralda.optim.webp"
+    ],
+    [
+      530928,
+      "assets/planetas/mundo_09_cuantico.webp"
+    ]
+  ],
+  "mp3_count": 26,
+  "mp3_invalid": [],
+  "mp3_duration_range": [
+    23.0,
+    42.3
+  ],
+  "ship_new_sources_missing": [],
+  "missing_css_urls": [],
+  "missing_css_url_count": 0
+}

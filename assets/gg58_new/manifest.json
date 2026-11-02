@@ -1,0 +1,502 @@
+[
+  {
+    "id": 0,
+    "world": 1,
+    "slot": 0,
+    "category": "Débil",
+    "enemy": "Centella Marina",
+    "weapon": "Pulso cian",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_01/01.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_01/01.png"
+  },
+  {
+    "id": 1,
+    "world": 1,
+    "slot": 1,
+    "category": "Débil",
+    "enemy": "Aguja del Arrecife",
+    "weapon": "Aguja celeste",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_01/02.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_01/02.png"
+  },
+  {
+    "id": 2,
+    "world": 1,
+    "slot": 2,
+    "category": "Medio",
+    "enemy": "Cazador Fotónico",
+    "weapon": "Doble fotón",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_01/03.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_01/03.png"
+  },
+  {
+    "id": 3,
+    "world": 1,
+    "slot": 3,
+    "category": "Élite",
+    "enemy": "Guardián Celeste",
+    "weapon": "Arco iónico",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_01/04.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_01/04.png"
+  },
+  {
+    "id": 4,
+    "world": 1,
+    "slot": 4,
+    "category": "Élite",
+    "enemy": "Arconte Azul",
+    "weapon": "Orbe magnético",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_01/05.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_01/05.png"
+  },
+  {
+    "id": 5,
+    "world": 2,
+    "slot": 0,
+    "category": "Débil",
+    "enemy": "Explorador de Lianas",
+    "weapon": "Espora verde",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_02/01.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_02/01.png"
+  },
+  {
+    "id": 6,
+    "world": 2,
+    "slot": 1,
+    "category": "Débil",
+    "enemy": "Ala Verde",
+    "weapon": "Dardo biológico",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_02/02.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_02/02.png"
+  },
+  {
+    "id": 7,
+    "world": 2,
+    "slot": 2,
+    "category": "Medio",
+    "enemy": "Centinela Esmeralda",
+    "weapon": "Ráfaga de clorofila",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_02/03.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_02/03.png"
+  },
+  {
+    "id": 8,
+    "world": 2,
+    "slot": 3,
+    "category": "Élite",
+    "enemy": "Colmillo Floral",
+    "weapon": "Nube biótica",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_02/04.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_02/04.png"
+  },
+  {
+    "id": 9,
+    "world": 2,
+    "slot": 4,
+    "category": "Élite",
+    "enemy": "Soberano de la Selva",
+    "weapon": "Vórtice biótico",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_02/05.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_02/05.png"
+  },
+  {
+    "id": 10,
+    "world": 3,
+    "slot": 0,
+    "category": "Débil",
+    "enemy": "Chispa Infernal",
+    "weapon": "Chispa ígnea",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_03/01.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_03/01.png"
+  },
+  {
+    "id": 11,
+    "world": 3,
+    "slot": 1,
+    "category": "Débil",
+    "enemy": "Ascua Afilada",
+    "weapon": "Ascua roja",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_03/02.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_03/02.png"
+  },
+  {
+    "id": 12,
+    "world": 3,
+    "slot": 2,
+    "category": "Medio",
+    "enemy": "Corsario Volcánico",
+    "weapon": "Lengua de fuego",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_03/03.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_03/03.png"
+  },
+  {
+    "id": 13,
+    "world": 3,
+    "slot": 3,
+    "category": "Élite",
+    "enemy": "Corazón de Magma",
+    "weapon": "Corona térmica",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_03/04.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_03/04.png"
+  },
+  {
+    "id": 14,
+    "world": 3,
+    "slot": 4,
+    "category": "Élite",
+    "enemy": "Emperador Carmesí",
+    "weapon": "Cometa solar",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_03/05.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_03/05.png"
+  },
+  {
+    "id": 15,
+    "world": 4,
+    "slot": 0,
+    "category": "Débil",
+    "enemy": "Esquirla Polar",
+    "weapon": "Esquirla polar",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_04/01.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_04/01.png"
+  },
+  {
+    "id": 16,
+    "world": 4,
+    "slot": 1,
+    "category": "Débil",
+    "enemy": "Víbora Helada",
+    "weapon": "Gota helada",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_04/02.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_04/02.png"
+  },
+  {
+    "id": 17,
+    "world": 4,
+    "slot": 2,
+    "category": "Medio",
+    "enemy": "Custodio de Cristal",
+    "weapon": "Lanza cristalina",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_04/03.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_04/03.png"
+  },
+  {
+    "id": 18,
+    "world": 4,
+    "slot": 3,
+    "category": "Élite",
+    "enemy": "Tormenta Boreal",
+    "weapon": "Ventisca",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_04/04.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_04/04.png"
+  },
+  {
+    "id": 19,
+    "world": 4,
+    "slot": 4,
+    "category": "Élite",
+    "enemy": "Reina de Escarcha",
+    "weapon": "Anillo de escarcha",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_04/05.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_04/05.png"
+  },
+  {
+    "id": 20,
+    "world": 5,
+    "slot": 0,
+    "category": "Débil",
+    "enemy": "Guijarro Orbital",
+    "weapon": "Fragmento mineral",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_05/01.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_05/01.png"
+  },
+  {
+    "id": 21,
+    "world": 5,
+    "slot": 1,
+    "category": "Débil",
+    "enemy": "Fragmento Errante",
+    "weapon": "Grava espacial",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_05/02.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_05/02.png"
+  },
+  {
+    "id": 22,
+    "world": 5,
+    "slot": 2,
+    "category": "Medio",
+    "enemy": "Taladro Meteórico",
+    "weapon": "Taladro orbital",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_05/03.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_05/03.png"
+  },
+  {
+    "id": 23,
+    "world": 5,
+    "slot": 3,
+    "category": "Élite",
+    "enemy": "Titán Rocoso",
+    "weapon": "Onda sísmica",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_05/04.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_05/04.png"
+  },
+  {
+    "id": 24,
+    "world": 5,
+    "slot": 4,
+    "category": "Élite",
+    "enemy": "Destructor Sísmico",
+    "weapon": "Meteorito pesado",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_05/05.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_05/05.png"
+  },
+  {
+    "id": 25,
+    "world": 6,
+    "slot": 0,
+    "category": "Débil",
+    "enemy": "Espora Fugitiva",
+    "weapon": "Espora corrosiva",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_06/01.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_06/01.png"
+  },
+  {
+    "id": 26,
+    "world": 6,
+    "slot": 1,
+    "category": "Débil",
+    "enemy": "Aguijón Ácido",
+    "weapon": "Gota ácida",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_06/02.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_06/02.png"
+  },
+  {
+    "id": 27,
+    "world": 6,
+    "slot": 2,
+    "category": "Medio",
+    "enemy": "Mantis Biológica",
+    "weapon": "Aguijón tóxico",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_06/03.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_06/03.png"
+  },
+  {
+    "id": 28,
+    "world": 6,
+    "slot": 3,
+    "category": "Élite",
+    "enemy": "Serpiente Tóxica",
+    "weapon": "Nube corrosiva",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_06/04.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_06/04.png"
+  },
+  {
+    "id": 29,
+    "world": 6,
+    "slot": 4,
+    "category": "Élite",
+    "enemy": "Coloso Corrosivo",
+    "weapon": "Serpiente bioeléctrica",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_06/05.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_06/05.png"
+  },
+  {
+    "id": 30,
+    "world": 7,
+    "slot": 0,
+    "category": "Débil",
+    "enemy": "Bit de Choque",
+    "weapon": "Microbalín",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_07/01.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_07/01.png"
+  },
+  {
+    "id": 31,
+    "world": 7,
+    "slot": 1,
+    "category": "Débil",
+    "enemy": "Dardo Digital",
+    "weapon": "Dardo digital",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_07/02.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_07/02.png"
+  },
+  {
+    "id": 32,
+    "world": 7,
+    "slot": 2,
+    "category": "Medio",
+    "enemy": "Interceptor Neón",
+    "weapon": "Ráfaga mecánica",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_07/03.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_07/03.png"
+  },
+  {
+    "id": 33,
+    "world": 7,
+    "slot": 3,
+    "category": "Élite",
+    "enemy": "Anillo Mecánico",
+    "weapon": "Láser industrial",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_07/04.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_07/04.png"
+  },
+  {
+    "id": 34,
+    "world": 7,
+    "slot": 4,
+    "category": "Élite",
+    "enemy": "Señor del Circuito",
+    "weapon": "Disco electromagnético",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_07/05.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_07/05.png"
+  },
+  {
+    "id": 35,
+    "world": 8,
+    "slot": 0,
+    "category": "Débil",
+    "enemy": "Sombra Menor",
+    "weapon": "Chispa oscura",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_08/01.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_08/01.png"
+  },
+  {
+    "id": 36,
+    "world": 8,
+    "slot": 1,
+    "category": "Débil",
+    "enemy": "Aguja del Vacío",
+    "weapon": "Aguja umbría",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_08/02.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_08/02.png"
+  },
+  {
+    "id": 37,
+    "world": 8,
+    "slot": 2,
+    "category": "Medio",
+    "enemy": "Espectro Umbrío",
+    "weapon": "Eco del vacío",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_08/03.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_08/03.png"
+  },
+  {
+    "id": 38,
+    "world": 8,
+    "slot": 3,
+    "category": "Élite",
+    "enemy": "Guadaña Dimensional",
+    "weapon": "Media luna espectral",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_08/04.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_08/04.png"
+  },
+  {
+    "id": 39,
+    "world": 8,
+    "slot": 4,
+    "category": "Élite",
+    "enemy": "Oráculo Abisal",
+    "weapon": "Singularidad",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_08/05.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_08/05.png"
+  },
+  {
+    "id": 40,
+    "world": 9,
+    "slot": 0,
+    "category": "Débil",
+    "enemy": "Fotón Errante",
+    "weapon": "Fotón cuántico",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_09/01.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_09/01.png"
+  },
+  {
+    "id": 41,
+    "world": 9,
+    "slot": 1,
+    "category": "Débil",
+    "enemy": "Partícula de Fase",
+    "weapon": "Partícula de fase",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_09/02.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_09/02.png"
+  },
+  {
+    "id": 42,
+    "world": 9,
+    "slot": 2,
+    "category": "Medio",
+    "enemy": "Cazador Prisma",
+    "weapon": "Prisma fractal",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_09/03.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_09/03.png"
+  },
+  {
+    "id": 43,
+    "world": 9,
+    "slot": 3,
+    "category": "Élite",
+    "enemy": "Centinela Temporal",
+    "weapon": "Anillo temporal",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_09/04.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_09/04.png"
+  },
+  {
+    "id": 44,
+    "world": 9,
+    "slot": 4,
+    "category": "Élite",
+    "enemy": "Entidad Cuántica",
+    "weapon": "Rayo de fase",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_09/05.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_09/05.png"
+  },
+  {
+    "id": 45,
+    "world": 10,
+    "slot": 0,
+    "category": "Débil",
+    "enemy": "Destello Omega",
+    "weapon": "Destello omega",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_10/01.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_10/01.png"
+  },
+  {
+    "id": 46,
+    "world": 10,
+    "slot": 1,
+    "category": "Débil",
+    "enemy": "Fragmento Escarlata",
+    "weapon": "Fragmento escarlata",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_10/02.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_10/02.png"
+  },
+  {
+    "id": 47,
+    "world": 10,
+    "slot": 2,
+    "category": "Medio",
+    "enemy": "Guardián de Núcleo",
+    "weapon": "Lanza de núcleo",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_10/03.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_10/03.png"
+  },
+  {
+    "id": 48,
+    "world": 10,
+    "slot": 3,
+    "category": "Élite",
+    "enemy": "Coloso Omega",
+    "weapon": "Tormenta omega",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_10/04.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_10/04.png"
+  },
+  {
+    "id": 49,
+    "world": 10,
+    "slot": 4,
+    "category": "Élite",
+    "enemy": "Nexo Absoluto",
+    "weapon": "Rayo de aniquilación",
+    "enemyAsset": "assets/gg58_new/enemies/mundo_10/05.png",
+    "weaponAsset": "assets/gg58_new/weapons/mundo_10/05.png"
+  }
+]

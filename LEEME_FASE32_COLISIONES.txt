@@ -1,0 +1,12 @@
+GUARDIÁN GALÁCTICO — FASE 32: COLISIONES Y EFECTOS DE IMPACTO
+
+- Corregida la hitbox de la nave: el casco y las dos alas son detectables.
+- Las balas se comprueban con una colisión barrida que incluye el movimiento del jugador entre fotogramas.
+- Al recibir daño solo desaparece la bala que impactó; las demás siguen su recorrido.
+- La nave no se oculta al recibir un golpe: permanece visible con transparencia suave y escudo breve.
+- Se conserva la protección temporal de 1,8 segundos para evitar daño encadenado.
+- Se conservan los 60 modelos, diez mundos, los 500 niveles y las armas de la Fase 31.
+
+PRUEBAS: script de diagnóstico GG_HITBOX_AUDIT, prueba de choque en alas y centro, bala esquivada, y prueba de múltiples balas restantes.
+
+Extraer el ZIP completo y abrir index.html. No mezclar carpetas con instalaciones antiguas.

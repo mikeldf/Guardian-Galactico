@@ -1,0 +1,14 @@
+/* Fallback hangar panel — real vertical list, no horizontal paging. */
+#hangar .hangarGrid{position:absolute!important;top:67%!important;bottom:2%!important;left:25%!important;width:72%!important;height:30%!important;max-height:none!important;display:flex!important;flex-direction:column!important;flex-wrap:nowrap!important;gap:5px!important;overflow-y:auto!important;overflow-x:hidden!important;scrollbar-width:auto!important;scrollbar-color:#4da9e8 #071c30!important;scroll-snap-type:none!important;padding:8px!important;align-items:stretch!important}
+#hangar .gg-ship-strip-label{left:25%!important;top:63%!important;width:72%!important;letter-spacing:.045em!important}
+#hangar .shipCard{position:relative!important;flex:0 0 70px!important;min-height:70px!important;height:70px!important;width:100%!important;display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-start!important;gap:16px!important;padding:4px 12px!important;box-sizing:border-box!important;text-align:left!important;scroll-snap-align:none!important}
+#hangar .gg-native-thumb{flex:0 0 84px;position:relative;height:59px;display:flex;justify-content:center;align-items:center}
+#hangar .gg-native-thumb img{width:84px!important;height:59px!important;object-fit:contain!important}
+#hangar .shipCard.lock .gg-native-thumb img{filter:grayscale(.8) brightness(.45)!important}
+#hangar .gg-native-lock{position:absolute!important;top:11px;left:24px;font-size:34px;line-height:38px;filter:drop-shadow(0 2px 7px #000);pointer-events:none}
+#hangar .gg-native-text{display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:center!important;gap:5px!important;min-width:0;flex:1}
+#hangar .shipCard strong{font-size:clamp(14px,1.2vw,19px)!important;line-height:20px!important;text-align:left!important;max-width:100%;white-space:nowrap!important}
+#hangar .shipCard small{font-size:clamp(11px,.9vw,14px)!important;line-height:16px!important;text-align:left!important;white-space:normal!important;color:#f9d59c!important}
+#hangar .shipCard:not(.lock) small{color:#9affd5!important}
+#hangar .shipCard.lock{opacity:1!important;filter:none!important}
+@media(max-width:700px){#hangar .gg-ship-strip-label{left:3%!important;width:94%!important;top:63%!important}#hangar .hangarGrid{left:3%!important;width:94%!important;top:67%!important}#hangar .shipCard{gap:7px!important}#hangar .gg-native-thumb{flex-basis:62px}#hangar .gg-native-thumb img{width:62px!important}#hangar .gg-native-lock{left:12px!important}#hangar .shipCard small{font-size:10px!important}}

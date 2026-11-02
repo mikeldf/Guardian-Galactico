@@ -1,0 +1,19 @@
+{
+  "release": "0.55.0",
+  "phase": 55,
+  "runtime_tests": {"passed": 42, "total": 42},
+  "regression_tests": {"passed": 26, "total": 26},
+  "mission_startup_tests": {"levels_checked": 200, "game_entries": 2},
+  "boss_generation_tests": {"positions_checked": 20, "game_entries": 2},
+  "visual_resources": {"assets_total": 1852, "images_valid": 1797, "corrupted_images": 0},
+  "music": {"mp3_valid": 26, "mp3_invalid": 0},
+  "css_missing_urls": 0,
+  "hangar_optimization": "select one ship without re-creating 60 thumbnails; offscreen thumbnails are lazy-loaded",
+  "saved_game_schema_changed": false,
+  "approved_art_replaced": false,
+  "icon_integrated": false,
+  "exe_built": false,
+  "windows_user_validation": false,
+  "all_200_missions_played_to_completion": false,
+  "real_windows_fps_measured": false
+}

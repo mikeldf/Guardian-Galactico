@@ -1,0 +1,21 @@
+GUARDIÁN GALÁCTICO — FASE 43.1 — HANGAR CORREGIDO
+
+Corrección del hangar sobre la Fase 42/43:
+- Nave seleccionada grande a la izquierda, sin deformación.
+- Cuadrícula con las 60 naves a la derecha en PC.
+- Botón VOLVER siempre arriba.
+- Compatibilidad de diseño para pantallas estrechas: vista grande arriba y lista debajo.
+- Corregido conflicto con la hoja de estilos antigua que colocaba la lista fuera del panel.
+- Corregido desplazamiento automático que ocultaba la parte superior en teléfono.
+- Aviso de recursos gráficos si faltan imágenes tras extraer el archivo.
+- Preservados campaña de 200 niveles, 60 naves, 50 mejoras, música y resto de mecánicas.
+- El icono del ejecutable aún no está integrado, por petición del usuario.
+
+CÓMO ABRIRLO:
+1) Descomprime el ZIP COMPLETO en una carpeta.
+2) No separes el archivo index.html de la carpeta assets.
+3) Para jugar, abre index.html desde Chrome o Edge en un PC con Windows.
+4) El móvil puede mostrar el menú de prueba, pero los controles de combate siguen diseñados para PC.
+5) Abrir el HTML dentro de una vista previa del ZIP del móvil puede impedir cargar imágenes y sonidos.
+
+Pruebas realizadas: sintaxis JS y navegación de hangar en navegador de pruebas (1440x900 y 412x915), 60 tarjetas, selección y botón Volver. Se validó la presencia de los archivos gráficos. No se ha realizado una partida completa en Windows real.

@@ -1,0 +1,10 @@
+GUARDIÁN GALÁCTICO — MUNDO 10: NEXO OMEGA
+
+7 enemigos + 4 subjefes + 1 jefe final: Soberano Omega.
+12 sprites PNG RGBA, extraídos de la hoja de diseño aprobada.
+
+Niveles globales 451–500. Subjefes 460, 470, 480, 490; jefe final 500.
+Resoluciones: enemigos 512x512, subjefes 768x768, jefe final 1024x768.
+Sprites estáticos: las animaciones y los disparos se controlan con el código del juego.
+
+Abre VISOR_MUNDO_10.html para inspeccionar los sprites.

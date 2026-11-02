@@ -1,0 +1,44 @@
+/* Extensión funcional sobre el menú original 55.8: no sustituye su diseño. */
+#settings .gg-display-card .gg-display-control{
+ display:flex;align-items:center;justify-content:space-between;gap:12px;
+ padding:10px 0;border-bottom:1px solid #34566c55;
+ color:#cce6f1;font-size:12px;flex-wrap:wrap;
+}
+#settings .gg-display-card .gg-display-control>span{font-weight:700}
+#settings .gg-display-card select{
+ min-width:min(220px,100%);max-width:100%;padding:8px 10px;
+ color:#edfaff;background:#0c293d;border:1px solid #5b9eb2;border-radius:5px;font:inherit;
+}
+#settings .gg-display-card input[type=range]{min-width:135px;max-width:100%;width:210px;accent-color:#6aebf0;}
+#settings .gg-display-card .gg-display-slider{display:flex;gap:9px;align-items:center}
+#settings .gg-display-card output{font-weight:900;color:#83ecf7;min-width:43px;text-align:right}
+#settings .gg-display-card .gg-display-status{font-size:11px;line-height:1.5;color:#96cad8;min-height:28px;margin:12px 0 0}
+#settings .gg-display-card .gg-display-foot{font-size:10px;line-height:1.5;color:#91aec2;margin:8px 0 0}
+#settings .gg-display-card .gg-display-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+#settings .gg-display-card .gg-display-actions .btn{font-size:11px;padding:9px 11px;min-height:36px}
+/* Mantener el panel de opciones dentro del área visible, permitiendo desplazarse sin recortes. */
+#settings .gg39-settings-scroll{min-height:0;max-height:none!important;flex:1 1 auto;overflow-x:hidden;overflow-y:auto;}
+#settings .gg39-settings-column{min-width:0}
+@media (max-width:700px),(max-height:530px){
+ #settings .gg39-settings-scroll{padding:10px 12px 22px}
+ #settings .gg-display-card .gg-display-control{align-items:flex-start;flex-direction:column}
+ #settings .gg-display-card select{width:100%}
+ #settings .gg-display-card .gg-display-slider{width:100%;justify-content:space-between}
+}
+/* Evitar que en ventanas estrechas desaparezca la información del HUD a la derecha. */
+@media (max-width:760px){
+ #playLayer{--gg-sidebar:0px!important}
+ #playLayer #cockpitPanel{display:none!important}
+ #playLayer #pickupHud{display:flex!important}
+ #gameHud .hudBar{padding:6px 8px!important}
+}
+/* Los elementos gráficos de las pantallas clásicas siguen usando el ajuste proporcional original. */
+
+/* Escalado de controles sin recortar ni estirar el escenario fijo 55.8. */
+:root{--gg-menu-scale:1}
+#settings .gg-display-card .gg-display-control{font-size:calc(12px * var(--gg-menu-scale))}
+#settings .gg-display-card select{font-size:calc(12px * var(--gg-menu-scale))}
+#settings .gg-display-card .gg-display-actions .btn{font-size:calc(11px * var(--gg-menu-scale))}
+#settings .gg39-card-title h3{font-size:calc(15px * var(--gg-menu-scale))}
+#settings .gg39-note,#settings #ggqSettings label{font-size:calc(12px * var(--gg-menu-scale))}
+#home .btn,#galaxy .btn,#levels .btn,#hangar .btn{font-size:calc(13px * var(--gg-menu-scale))}

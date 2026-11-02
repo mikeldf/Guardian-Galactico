@@ -1,0 +1,7 @@
+
+.gg-weapon-flex{display:flex;align-items:center;gap:7px;min-height:46px;margin:5px 0}
+.gg-weapon-flex strong{flex:1;min-width:0;font-size:clamp(10px,1.1vw,14px);overflow-wrap:anywhere}
+#cockpitSecondaryIcon{width:46px;height:46px;flex:none;object-fit:contain;filter:drop-shadow(0 0 7px #63bbff85)}
+#cockpitSecondaryIcon.gg-no-weapon{opacity:.22;filter:grayscale(1)}
+.gg-stat-label{display:flex;align-items:center;gap:5px}
+.gg-stat-label img{width:24px;height:24px;object-fit:contain;vertical-align:middle;flex:none}

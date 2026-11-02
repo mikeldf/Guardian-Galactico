@@ -1,0 +1,41 @@
+GUARDIÁN GALÁCTICO — FASE 42 · MISIONES DINÁMICAS Y VARIEDAD
+=================================================================
+BASE: Fase 41.2 · Equilibrio de combate, con todas las armas y sus sprites.
+
+MODALIDADES JUGABLES
+- Patrulla inicial: aprendizaje en el nivel 1.
+- Ataque de flancos: grupos entrando a ambos lados.
+- Intercepción: dos naves marcadas por oleada que se lanzan en picado;
+  abatirlas da bonificación, pero escapar no bloquea el progreso.
+- Caza del comandante: un líder reforzado, señalado en amarillo;
+  destruirlo desorganiza al grupo y otorga monedas adicionales.
+- Emboscadas: la última parte del grupo llega unos 5 segundos después.
+- Corredor de suministros: un enemigo señalado en verde deja una mejora
+  de arma o escudo además de una bonificación al ser eliminado.
+- Formación cambiante: los cazas reorganizan su patrón en pleno combate.
+- Caza de incursores: más oportunidades de picado de cazas ligeros,
+  sin romper el límite de proyectiles enemigos.
+- Enfrentamientos de jefe: nivel 10 y nivel 20 de cada mundo (conservados).
+
+También se ha añadido:
+- Objetivo de misión y consejo táctico en la selección de niveles y HUD.
+- Indicadores circulares de color para enemigos especiales.
+- Combos de eliminaciones: bonificación moderada de puntos y monedas.
+- Bonificaciones y resultado de intercepción en el resumen de victoria.
+- Director determinista de misiones: las fases conservan objetivos al rejugarlas.
+
+SE CONSERVA
+- 10 mundos de 20 niveles = 200 niveles.
+- 60 naves, 10 familias de armas y 50 evoluciones, sprites del PNG del usuario.
+- Equilibrio de resistencia de la Fase 41.2, HUD, pausa, música y guardado.
+- Tamaño pequeño de enemigos, oleadas numerosas.
+- Sin integración del icono (reservado para el ejecutable final).
+
+PRUEBAS
+- Sintaxis JS de todos los scripts: correcta.
+- Simulación automatizada de 200 inicios de oleada y pruebas de nueve tipos.
+- Cambio de formación en tiempo de ejecución, líderes y suministros: verificados.
+- Se requiere prueba de partida completa con gráficos y audio en Windows.
+
+INSTRUCCIONES
+Extrae el ZIP completo, conserva la carpeta assets y abre index.html.

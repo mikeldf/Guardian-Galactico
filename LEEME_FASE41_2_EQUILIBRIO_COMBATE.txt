@@ -1,0 +1,16 @@
+GUARDIÁN GALÁCTICO — FASE 41.2 · COMBATE MÁS EQUILIBRADO
+
+Corrección a partir del juego completo de la Fase 41.1.
+
+* Enemigos básicos y normales más resistentes. En la nave inicial, la primera misión requiere aproximadamente 5 impactos para un enemigo básico (antes ~3) y 7 para un enemigo tipo 2 (antes ~4).
+* Los enemigos resistentes/élite conservan una distinción clara de salud.
+* La salud aumenta progresivamente dentro de cada mundo de 20 niveles, sin variar en función del nivel de arma que tenga el jugador. Así las mejoras siempre son una ventaja.
+* El daño base de la nave pasa de 11 a 9. El crecimiento de daño de las diez familias se ha suavizado; permanecen todos los tipos de disparo y las 50 evoluciones.
+* Subjefes y jefes finales más resistentes, sin cambiar sus ataques ni sus movimientos.
+* Las escoltas invocadas por un jefe dejan de tener 2 o 3 puntos de vida.
+* La velocidad de los enemigos, tamaño, formaciones, música, HUD, progresión guardada, menú de pausa y pantalla de carga no se modifican.
+* Los sprites de las armas siguen siendo los mismos PNG originales aprobados por el usuario y corregidos en la Fase 41.1.
+* El icono de Windows NO ha sido integrado.
+
+Prueba de uso: extraer el ZIP y abrir index.html.
+Validaciones automáticas no sustituyen una prueba completa en Windows.

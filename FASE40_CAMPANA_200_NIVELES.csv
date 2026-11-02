@@ -1,0 +1,201 @@
+﻿mundo,nivel_global,nivel_local,jefe,oleadas,enemigos,nombre
+1,1,1,no,3,60,Arrecife · Persecución 01
+1,2,2,no,3,60,Arrecife · Protección De Ruta 02
+1,3,3,no,3,60,Arrecife · Intercepción 03
+1,4,4,no,3,66,Arrecife · Combate De Élite 04
+1,5,5,no,3,66,Arrecife · Ataque Coordinado 05
+1,6,6,no,3,66,Sonda abisal · Persecución 06
+1,7,7,no,4,88,Sonda abisal · Protección De Ruta 07
+1,8,8,no,4,88,Sonda abisal · Intercepción 08
+1,9,9,no,4,88,Sonda abisal · Combate De Élite 09
+1,10,10,subjefe,4,88,Sonda abisal · Reconocimiento 10
+1,11,11,no,4,88,Fosa luminosa · Emboscada 11
+1,12,12,no,4,88,Fosa luminosa · Intercepción 12
+1,13,13,no,4,88,Fosa luminosa · Invasión 13
+1,14,14,no,5,110,Templo sumergido · Persecución 14
+1,15,15,no,5,110,Templo sumergido · Intercepción 15
+1,16,16,no,5,110,Templo sumergido · Invasión 16
+1,17,17,no,5,110,Trono azul · Persecución 17
+1,18,18,no,5,110,Trono azul · Asalto 18
+1,19,19,no,5,110,Trono azul · Combate De Élite 19
+1,20,20,final,5,110,Trono azul · Reconocimiento 20
+2,21,1,no,3,60,Ceniza · Asalto 01
+2,22,2,no,3,60,Ceniza · Escape Táctico 02
+2,23,3,no,3,60,Ceniza · Invasión 03
+2,24,4,no,3,66,Ceniza · Reconocimiento 04
+2,25,5,no,3,66,Ceniza · Emboscada 05
+2,26,6,no,3,66,Río de magma · Asalto 06
+2,27,7,no,4,88,Río de magma · Escape Táctico 07
+2,28,8,no,4,88,Río de magma · Invasión 08
+2,29,9,no,4,88,Río de magma · Reconocimiento 09
+2,30,10,subjefe,4,88,Río de magma · Protección De Ruta 10
+2,31,11,no,4,88,Respiradero · Intercepción 11
+2,32,12,no,4,88,Respiradero · Invasión 12
+2,33,13,no,4,88,Respiradero · Persecución 13
+2,34,14,no,5,110,Horno solar · Asalto 14
+2,35,15,no,5,110,Horno solar · Invasión 15
+2,36,16,no,5,110,Horno solar · Persecución 16
+2,37,17,no,5,110,Núcleo ígneo · Asalto 17
+2,38,18,no,5,110,Núcleo ígneo · Combate De Élite 18
+2,39,19,no,5,110,Núcleo ígneo · Reconocimiento 19
+2,40,20,final,5,110,Núcleo ígneo · Protección De Ruta 20
+3,41,1,no,3,60,Escarcha · Combate De Élite 01
+3,42,2,no,3,60,Escarcha · Ataque Coordinado 02
+3,43,3,no,3,60,Escarcha · Persecución 03
+3,44,4,no,3,66,Escarcha · Protección De Ruta 04
+3,45,5,no,3,66,Escarcha · Intercepción 05
+3,46,6,no,3,66,Filo glacial · Combate De Élite 06
+3,47,7,no,4,88,Filo glacial · Ataque Coordinado 07
+3,48,8,no,4,88,Filo glacial · Persecución 08
+3,49,9,no,4,88,Filo glacial · Protección De Ruta 09
+3,50,10,subjefe,4,88,Filo glacial · Escape Táctico 10
+3,51,11,no,4,88,Tormenta polar · Invasión 11
+3,52,12,no,4,88,Tormenta polar · Persecución 12
+3,53,13,no,4,88,Tormenta polar · Asalto 13
+3,54,14,no,5,110,Torre de hielo · Combate De Élite 14
+3,55,15,no,5,110,Torre de hielo · Persecución 15
+3,56,16,no,5,110,Torre de hielo · Asalto 16
+3,57,17,no,5,110,Santuario boreal · Combate De Élite 17
+3,58,18,no,5,110,Santuario boreal · Reconocimiento 18
+3,59,19,no,5,110,Santuario boreal · Protección De Ruta 19
+3,60,20,final,5,110,Santuario boreal · Escape Táctico 20
+4,61,1,no,3,60,Cráter · Reconocimiento 01
+4,62,2,no,3,60,Cráter · Emboscada 02
+4,63,3,no,3,60,Cráter · Asalto 03
+4,64,4,no,3,66,Cráter · Escape Táctico 04
+4,65,5,no,3,66,Cráter · Invasión 05
+4,66,6,no,3,66,Anillos pétreos · Reconocimiento 06
+4,67,7,no,4,88,Anillos pétreos · Emboscada 07
+4,68,8,no,4,88,Anillos pétreos · Asalto 08
+4,69,9,no,4,88,Anillos pétreos · Escape Táctico 09
+4,70,10,subjefe,4,88,Anillos pétreos · Ataque Coordinado 10
+4,71,11,no,4,88,Cavidad mineral · Persecución 11
+4,72,12,no,4,88,Cavidad mineral · Asalto 12
+4,73,13,no,4,88,Cavidad mineral · Combate De Élite 13
+4,74,14,no,5,110,Cinturón rocoso · Reconocimiento 14
+4,75,15,no,5,110,Cinturón rocoso · Asalto 15
+4,76,16,no,5,110,Cinturón rocoso · Combate De Élite 16
+4,77,17,no,5,110,Matriz geológica · Reconocimiento 17
+4,78,18,no,5,110,Matriz geológica · Protección De Ruta 18
+4,79,19,no,5,110,Matriz geológica · Escape Táctico 19
+4,80,20,final,5,110,Matriz geológica · Ataque Coordinado 20
+5,81,1,no,3,60,Nebulosa · Protección De Ruta 01
+5,82,2,no,3,60,Nebulosa · Intercepción 02
+5,83,3,no,3,60,Nebulosa · Combate De Élite 03
+5,84,4,no,3,66,Nebulosa · Ataque Coordinado 04
+5,85,5,no,3,66,Nebulosa · Persecución 05
+5,86,6,no,3,66,Nube de iones · Protección De Ruta 06
+5,87,7,no,4,88,Nube de iones · Intercepción 07
+5,88,8,no,4,88,Nube de iones · Combate De Élite 08
+5,89,9,no,4,88,Nube de iones · Ataque Coordinado 09
+5,90,10,subjefe,5,110,Nube de iones · Emboscada 10
+5,91,11,no,4,88,Espejismo · Asalto 11
+5,92,12,no,4,88,Espejismo · Combate De Élite 12
+5,93,13,no,4,88,Espejismo · Reconocimiento 13
+5,94,14,no,5,110,Enlace astral · Protección De Ruta 14
+5,95,15,no,5,110,Enlace astral · Combate De Élite 15
+5,96,16,no,5,110,Enlace astral · Reconocimiento 16
+5,97,17,no,5,110,Corazón violeta · Protección De Ruta 17
+5,98,18,no,5,110,Corazón violeta · Escape Táctico 18
+5,99,19,no,5,110,Corazón violeta · Ataque Coordinado 19
+5,100,20,final,6,132,Corazón violeta · Emboscada 20
+6,101,1,no,4,80,Esporas · Escape Táctico 01
+6,102,2,no,4,80,Esporas · Invasión 02
+6,103,3,no,4,80,Esporas · Reconocimiento 03
+6,104,4,no,4,88,Esporas · Emboscada 04
+6,105,5,no,4,88,Esporas · Asalto 05
+6,106,6,no,4,88,Raíces tóxicas · Escape Táctico 06
+6,107,7,no,4,88,Raíces tóxicas · Invasión 07
+6,108,8,no,5,110,Raíces tóxicas · Reconocimiento 08
+6,109,9,no,4,88,Raíces tóxicas · Emboscada 09
+6,110,10,subjefe,5,110,Raíces tóxicas · Intercepción 10
+6,111,11,no,5,110,Hidra verde · Combate De Élite 11
+6,112,12,no,5,110,Hidra verde · Reconocimiento 12
+6,113,13,no,5,110,Hidra verde · Protección De Ruta 13
+6,114,14,no,5,110,Bosque corrosivo · Escape Táctico 14
+6,115,15,no,6,132,Bosque corrosivo · Reconocimiento 15
+6,116,16,no,5,110,Bosque corrosivo · Protección De Ruta 16
+6,117,17,no,6,132,Colmena · Escape Táctico 17
+6,118,18,no,6,132,Colmena · Ataque Coordinado 18
+6,119,19,no,6,132,Colmena · Emboscada 19
+6,120,20,final,6,132,Colmena · Intercepción 20
+7,121,1,no,4,80,Drones · Ataque Coordinado 01
+7,122,2,no,4,80,Drones · Persecución 02
+7,123,3,no,4,80,Drones · Protección De Ruta 03
+7,124,4,no,4,88,Drones · Intercepción 04
+7,125,5,no,4,88,Drones · Combate De Élite 05
+7,126,6,no,4,88,Fábrica central · Ataque Coordinado 06
+7,127,7,no,4,88,Fábrica central · Persecución 07
+7,128,8,no,5,110,Fábrica central · Protección De Ruta 08
+7,129,9,no,4,88,Fábrica central · Intercepción 09
+7,130,10,subjefe,5,110,Fábrica central · Invasión 10
+7,131,11,no,5,110,Nodos ópticos · Reconocimiento 11
+7,132,12,no,5,110,Nodos ópticos · Protección De Ruta 12
+7,133,13,no,5,110,Nodos ópticos · Escape Táctico 13
+7,134,14,no,5,110,Corredor cuántico · Ataque Coordinado 14
+7,135,15,no,6,132,Corredor cuántico · Protección De Ruta 15
+7,136,16,no,5,110,Corredor cuántico · Escape Táctico 16
+7,137,17,no,6,132,Mente mecánica · Ataque Coordinado 17
+7,138,18,no,6,132,Mente mecánica · Emboscada 18
+7,139,19,no,6,132,Mente mecánica · Intercepción 19
+7,140,20,final,6,132,Mente mecánica · Invasión 20
+8,141,1,no,4,80,Eclipse · Emboscada 01
+8,142,2,no,4,80,Eclipse · Asalto 02
+8,143,3,no,4,80,Eclipse · Escape Táctico 03
+8,144,4,no,4,88,Eclipse · Invasión 04
+8,145,5,no,4,88,Eclipse · Reconocimiento 05
+8,146,6,no,4,88,Sombras · Emboscada 06
+8,147,7,no,4,88,Sombras · Asalto 07
+8,148,8,no,5,110,Sombras · Escape Táctico 08
+8,149,9,no,4,88,Sombras · Invasión 09
+8,150,10,subjefe,5,110,Sombras · Persecución 10
+8,151,11,no,5,110,Umbral · Protección De Ruta 11
+8,152,12,no,5,110,Umbral · Escape Táctico 12
+8,153,13,no,5,110,Umbral · Ataque Coordinado 13
+8,154,14,no,5,110,Abismo orbital · Emboscada 14
+8,155,15,no,6,132,Abismo orbital · Escape Táctico 15
+8,156,16,no,5,110,Abismo orbital · Ataque Coordinado 16
+8,157,17,no,6,132,Altar nocturno · Emboscada 17
+8,158,18,no,6,132,Altar nocturno · Intercepción 18
+8,159,19,no,6,132,Altar nocturno · Invasión 19
+8,160,20,final,6,132,Altar nocturno · Persecución 20
+9,161,1,no,4,80,Armadura · Intercepción 01
+9,162,2,no,4,80,Armadura · Combate De Élite 02
+9,163,3,no,4,80,Armadura · Ataque Coordinado 03
+9,164,4,no,4,88,Armadura · Persecución 04
+9,165,5,no,4,88,Armadura · Protección De Ruta 05
+9,166,6,no,4,88,Murallas · Intercepción 06
+9,167,7,no,4,88,Murallas · Combate De Élite 07
+9,168,8,no,5,110,Murallas · Ataque Coordinado 08
+9,169,9,no,4,88,Murallas · Persecución 09
+9,170,10,subjefe,5,110,Murallas · Asalto 10
+9,171,11,no,5,110,Defensas orbitales · Escape Táctico 11
+9,172,12,no,5,110,Defensas orbitales · Ataque Coordinado 12
+9,173,13,no,5,110,Defensas orbitales · Emboscada 13
+9,174,14,no,5,110,Crucero gigante · Intercepción 14
+9,175,15,no,6,132,Crucero gigante · Ataque Coordinado 15
+9,176,16,no,5,110,Crucero gigante · Emboscada 16
+9,177,17,no,6,132,Bastión imperial · Intercepción 17
+9,178,18,no,6,132,Bastión imperial · Invasión 18
+9,179,19,no,6,132,Bastión imperial · Persecución 19
+9,180,20,final,6,132,Bastión imperial · Asalto 20
+10,181,1,no,4,80,Nexo · Invasión 01
+10,182,2,no,4,80,Nexo · Reconocimiento 02
+10,183,3,no,4,80,Nexo · Emboscada 03
+10,184,4,no,4,88,Nexo · Asalto 04
+10,185,5,no,4,88,Nexo · Escape Táctico 05
+10,186,6,no,4,88,Distorsión · Invasión 06
+10,187,7,no,4,88,Distorsión · Reconocimiento 07
+10,188,8,no,5,110,Distorsión · Emboscada 08
+10,189,9,no,4,88,Distorsión · Asalto 09
+10,190,10,subjefe,5,110,Distorsión · Combate De Élite 10
+10,191,11,no,5,110,El vacío · Ataque Coordinado 11
+10,192,12,no,5,110,El vacío · Emboscada 12
+10,193,13,no,5,110,El vacío · Intercepción 13
+10,194,14,no,5,110,Corona astral · Invasión 14
+10,195,15,no,6,132,Corona astral · Emboscada 15
+10,196,16,no,5,110,Corona astral · Intercepción 16
+10,197,17,no,6,132,Trono final · Invasión 17
+10,198,18,no,6,132,Trono final · Persecución 18
+10,199,19,no,6,132,Trono final · Asalto 19
+10,200,20,final,6,132,Trono final · Combate De Élite 20

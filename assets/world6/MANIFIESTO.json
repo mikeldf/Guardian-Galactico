@@ -1,0 +1,333 @@
+{
+  "world": 6,
+  "planet": "Planeta Tóxico",
+  "enemies": 7,
+  "subbosses": 4,
+  "finalBosses": 1,
+  "entries": [
+    {
+      "world": 6,
+      "category": "enemy",
+      "name": "Espora",
+      "file": "01_Enemigos/01_Espora.optim.webp",
+      "canvas": [
+        512,
+        512
+      ],
+      "sourceRegion": [
+        0,
+        0,
+        365,
+        367
+      ],
+      "solidPixelCount": 105682,
+      "marginPx": [
+        38,
+        34,
+        28,
+        23
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "world": 6,
+      "category": "enemy",
+      "name": "Liana",
+      "file": "01_Enemigos/02_Liana.optim.webp",
+      "canvas": [
+        512,
+        512
+      ],
+      "sourceRegion": [
+        365,
+        0,
+        691,
+        367
+      ],
+      "solidPixelCount": 87068,
+      "marginPx": [
+        67,
+        37,
+        54,
+        32
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "world": 6,
+      "category": "enemy",
+      "name": "Aguijón",
+      "file": "01_Enemigos/03_Aguijon.optim.webp",
+      "canvas": [
+        512,
+        512
+      ],
+      "sourceRegion": [
+        691,
+        0,
+        1079,
+        367
+      ],
+      "solidPixelCount": 111090,
+      "marginPx": [
+        40,
+        37,
+        41,
+        23
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "world": 6,
+      "category": "enemy",
+      "name": "Garrapata Mecánica",
+      "file": "01_Enemigos/04_Garrapata_Mecanica.optim.webp",
+      "canvas": [
+        512,
+        512
+      ],
+      "sourceRegion": [
+        1079,
+        0,
+        1448,
+        367
+      ],
+      "solidPixelCount": 106777,
+      "marginPx": [
+        60,
+        35,
+        59,
+        29
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "world": 6,
+      "category": "enemy",
+      "name": "Capullo",
+      "file": "01_Enemigos/05_Capullo.optim.webp",
+      "canvas": [
+        512,
+        512
+      ],
+      "sourceRegion": [
+        0,
+        367,
+        354,
+        700
+      ],
+      "solidPixelCount": 106289,
+      "marginPx": [
+        71,
+        36,
+        70,
+        23
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "world": 6,
+      "category": "enemy",
+      "name": "Manta Ácida",
+      "file": "01_Enemigos/06_Manta_Acida.optim.webp",
+      "canvas": [
+        512,
+        512
+      ],
+      "sourceRegion": [
+        354,
+        367,
+        669,
+        700
+      ],
+      "solidPixelCount": 98712,
+      "marginPx": [
+        57,
+        36,
+        44,
+        23
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "world": 6,
+      "category": "enemy",
+      "name": "Hidra Biomecánica",
+      "file": "01_Enemigos/07_Hidra_Biomecanica.optim.webp",
+      "canvas": [
+        512,
+        512
+      ],
+      "sourceRegion": [
+        669,
+        367,
+        1088,
+        699
+      ],
+      "solidPixelCount": 71629,
+      "marginPx": [
+        33,
+        94,
+        23,
+        86
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "world": 6,
+      "category": "subboss",
+      "name": "Raptor Ácido",
+      "file": "02_Subjefes/01_Raptor_Acido.optim.webp",
+      "canvas": [
+        768,
+        768
+      ],
+      "sourceRegion": [
+        1088,
+        367,
+        1448,
+        699
+      ],
+      "solidPixelCount": 264262,
+      "marginPx": [
+        53,
+        54,
+        52,
+        47
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "world": 6,
+      "category": "subboss",
+      "name": "Ciempiés Mutante",
+      "file": "02_Subjefes/02_Ciempies_Mutante.optim.webp",
+      "canvas": [
+        768,
+        768
+      ],
+      "sourceRegion": [
+        0,
+        700,
+        347,
+        1086
+      ],
+      "solidPixelCount": 268362,
+      "marginPx": [
+        80,
+        45,
+        65,
+        51
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "world": 6,
+      "category": "subboss",
+      "name": "Coloso Corrosivo",
+      "file": "02_Subjefes/03_Coloso_Corrosivo.optim.webp",
+      "canvas": [
+        768,
+        768
+      ],
+      "sourceRegion": [
+        340,
+        700,
+        713,
+        1086
+      ],
+      "solidPixelCount": 306514,
+      "marginPx": [
+        76,
+        36,
+        63,
+        51
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "world": 6,
+      "category": "subboss",
+      "name": "Madre Parasitaria",
+      "file": "02_Subjefes/04_Madre_Parasitaria.optim.webp",
+      "canvas": [
+        768,
+        768
+      ],
+      "sourceRegion": [
+        675,
+        699,
+        1000,
+        1086
+      ],
+      "solidPixelCount": 235394,
+      "marginPx": [
+        115,
+        36,
+        99,
+        50
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "world": 6,
+      "category": "boss",
+      "name": "Leviatán Tóxico",
+      "file": "03_Jefe_final/05_Leviatan_Toxico.optim.webp",
+      "canvas": [
+        1024,
+        768
+      ],
+      "sourceRegion": [
+        973,
+        699,
+        1448,
+        1086
+      ],
+      "solidPixelCount": 343994,
+      "marginPx": [
+        112,
+        49,
+        111,
+        52
+      ],
+      "alphaRange": [
+        0,
+        255
+      ]
+    }
+  ]
+}

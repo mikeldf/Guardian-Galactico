@@ -1,0 +1,6 @@
+FASE 41 — ARMAS DEL JUGADOR
+Se ha utilizado exactamente la imagen PNG enviada por el usuario: Hoja de armas espaciales neon(2).png. Se conserva en assets/gg41_approved/HOJA_ORIGINAL_USUARIO.png.
+
+50 evoluciones y 10 familias visuales y mecánicas de disparo. Los gráficos de cada familia (shots, impacts y family_icons) son recortes procesados del archivo original, sin imágenes generadas.
+La lámina original tiene cuatro filas de evolución visibles (1,2,3,5). La evolución 4 usa una transformación de tamaño de la fila 5, preservando el dibujo original.
+Se conserva el juego completo: 200 niveles, 60 naves, música, HUD, pantalla de carga y pausa. No se ha instalado icono .ico.

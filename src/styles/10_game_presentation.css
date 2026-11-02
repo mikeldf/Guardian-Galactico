@@ -1,0 +1,12 @@
+
+/* IMPORTANT: never use complete old-menu screenshots as scenery. */
+#hangar{background:#05121f!important;background-image:radial-gradient(ellipse at 53% 6%,#23648745,transparent 58%),linear-gradient(165deg,#05101d 5%,#081c2e 52%,#050c18 100%)!important}
+#hangar::before{background:linear-gradient(180deg,#03111b2b,#04142533 50%,#020b13ce),url('../../assets/embedded/4d50e99b147320.jpg') center center / cover no-repeat!important;filter:none!important;opacity:.82!important;inset:0!important}
+#hangar::after{background:linear-gradient(90deg,#020c1a77,transparent 45%,#03102266),repeating-linear-gradient(90deg,#69baff09 0 2px,transparent 2px 80px)!important;opacity:1}
+#hangar .gg44-display{background:linear-gradient(150deg,#03111a77,#07274233),radial-gradient(ellipse at center,#1abaff37 0%,transparent 67%)!important;backdrop-filter:blur(2px)}
+#hangar .gg44-deck{background:radial-gradient(ellipse at center,#0f537e 0%,#02213a 43%,#1d89c7 48%,#092d44 51%,#e4a53b 55%,#195c89 58%,transparent 65%)!important}
+#hangar .gg44-right{background:linear-gradient(120deg,#0b2c48f8,#06172af4)!important}
+#hangar .gg44-head{background:linear-gradient(90deg,#04121ffb,#10314cf7,#04121ffb)!important}
+#hangar .gg44-info{background:linear-gradient(130deg,#092f48f5,#051526f7)!important}
+#hangar .gg45-version{font-size:10px;font-weight:700;letter-spacing:.1em;color:#75c9e5}
+#levels .journey-controls span{min-width:85px;text-align:center}

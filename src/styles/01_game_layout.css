@@ -1,0 +1,73 @@
+
+/* FASE 16 — DIRECCIÓN DE ARTE PC PREMIUM / coherencia visual inspirada en maqueta aprobada */
+:root{--cyan:#41e9f5;--steel:#86aeca;--gold:#e8c37a;--ch:#04101d}
+body,#app{font-family:Bahnschrift,'Arial Narrow','Trebuchet MS',system-ui,sans-serif}
+#app{background:radial-gradient(ellipse at 50% 50%,#102e4c 0%,#05111e 62%,#01050c 100%)}
+.screen-desktop{border:5px ridge #1a3c4b;box-shadow:inset 0 0 0 2px #60dcf444,inset 0 0 80px #001018;}
+#home::after,#galaxy::after,#levels::after{content:'';position:absolute;inset:9px;pointer-events:none;border:1px solid #64b6c738;clip-path:polygon(0 0,97% 0,100% 6%,100% 100%,3% 100%,0 94%)}
+.screen h1,.screen h2,.header-title h2{font-family:Bahnschrift,'Arial Black',Impact,sans-serif;font-weight:950;letter-spacing:.095em;text-transform:uppercase;filter:drop-shadow(0 6px 10px #001b2a)}
+#home h1{font-size:clamp(48px,6.7vw,105px);line-height:.96;letter-spacing:.065em;background:linear-gradient(#fcffff 0%,#bcf5ff 30%,#466d93 55%,#e9ffff 78%,#6db9e6 100%);color:transparent;background-clip:text;-webkit-background-clip:text;text-shadow:none;-webkit-text-stroke:1px #c8e5fd44;filter:drop-shadow(0 5px 9px #0b5170);margin:28px 0 14px}
+#home h1 span{background:linear-gradient(#f8ffff,#72d6fc 35%,#21618b 65%,#d4faff);color:transparent;background-clip:text;-webkit-background-clip:text}
+#home{background:radial-gradient(ellipse at 77% 44%,#225d8865,transparent 52%),linear-gradient(115deg,#020912ea,#041328d5 55%,#02101ce8)!important}
+.menu-head,.interface-header{border-bottom:1px solid #5fc9e869;background:linear-gradient(90deg,#061524ea,#0d2b3ae5,#03101fdb)!important;box-shadow:0 10px 28px #0109167a,inset 0 -1px #9af0f42a}
+.microbrand,.pretitle,.eyebrow{color:#83edfa!important;font-weight:900!important;letter-spacing:.20em}
+.brandmark{color:#eac482;filter:drop-shadow(0 0 9px #e1ae55)}
+.tagline{color:#c0e0eb!important;font-size:clamp(15px,1.4vw,20px)!important;letter-spacing:.024em}
+.homeActions .btn,.btn.primary,.btn.launch{border-radius:4px;clip-path:polygon(0 19%,7% 0,94% 0,100% 21%,100% 80%,94% 100%,7% 100%,0 80%);background:linear-gradient(180deg,#15394f,#08283b 46%,#061320);border:2px solid #66bed0;box-shadow:0 0 0 2px #0d2937,0 4px 24px #00a6e51c,inset 0 0 20px #62aee11c;letter-spacing:.055em;text-transform:uppercase;font-weight:900;transition:filter .17s,transform .17s,box-shadow .17s}
+.homeActions .btn:hover,.btn:hover:not(:disabled){filter:brightness(1.2);transform:translateY(-1px);box-shadow:0 0 18px #32f8db55,inset 0 0 24px #55ffbb27}
+.btn.primary{border-color:#52e0ca;background:linear-gradient(180deg,#0b7d70,#094a4c 52%,#0b273c);color:#efffff}
+.btn.soft,.btn.outline{border-color:#648fad;background:linear-gradient(135deg,#1a3449,#081829 70%)}
+.landing-visual{border:1px solid #66c6dc59;border-radius:12px;background:radial-gradient(ellipse at 49% 68%,#22557d85,transparent 56%),repeating-radial-gradient(circle at center,#e8ffff08 0 1px,transparent 1px 57px);box-shadow:inset 0 0 80px #011018,0 0 40px #010f16;overflow:hidden}
+.landing-visual:before{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(110deg,transparent 0%,#52ceff10 50%,transparent 100%);animation:scanGlow 8s ease-in-out infinite alternate}
+@keyframes scanGlow{from{transform:translateX(-20%)}to{transform:translateX(30%)}}
+.hero-ship{filter:drop-shadow(0 12px 24px #010818) drop-shadow(0 0 28px #3dcdfa66);animation:shipHover 4s ease-in-out infinite}
+@keyframes shipHover{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-12px) scale(1.02)}}
+.scene-rings{border-color:#69ebfb65;box-shadow:0 0 70px #28b4fc32}
+.hero-hud{background:#051828db;border:1px solid #4bd0e75c;color:#b6f4ff;letter-spacing:.11em;font-weight:800}
+.phase-edition{position:absolute;bottom:3px;left:0;width:100%;z-index:6;text-align:center;color:#5aa5b8;font-size:10px;letter-spacing:.21em;pointer-events:none}
+#galaxy{background:radial-gradient(ellipse at 48% 56%,#11437b50,transparent 59%),linear-gradient(#040d21,#020714)!important}
+.galaxy-board{border:2px solid #285b79;border-radius:3px;box-shadow:inset 0 0 70px #000b,0 3px 28px #0009;background:radial-gradient(ellipse at 50% 50%,#3f8dbd2a,transparent 48%),radial-gradient(circle at center,#0e2746,#020817 83%)}
+.galaxy-core .core-disc{filter:drop-shadow(0 0 20px #db99ff)}
+.world-pin img{filter:drop-shadow(0 0 14px var(--pc)) drop-shadow(0 6px 10px #0009)}
+.world-pin.active img{filter:drop-shadow(0 0 32px var(--pc));transform:scale(1.22)}
+.world-pin strong{font-weight:950;letter-spacing:.06em;text-shadow:0 2px 5px #001}
+.planet-info.panel,.mission-info.panel{background:linear-gradient(145deg,#102d42f4,#071525ed)!important;border:2px solid #437f92!important;border-radius:5px;box-shadow:inset 0 0 35px #1ca5ae0b,0 8px 35px #0008}
+#levels{background-size:cover;background-position:center;isolation:isolate}
+#levels::before{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(0deg,#02050edb,#010b16a1 55%,#02071093);z-index:0}
+#levels>*{position:relative;z-index:1}
+.journey-main{border:2px solid #3a7895;box-shadow:inset 0 0 40px #010b19,0 0 21px #00171b;background:#071b31bd}
+.zone{background:radial-gradient(ellipse at 48% 50%,var(--zone-glow),transparent 65%),linear-gradient(155deg,#04101f70,#030b1888)}
+.level-node{box-shadow:0 0 15px #031d30e8,0 0 14px var(--zone-accent)}
+#hangar{background:radial-gradient(ellipse at center,#18506a66,transparent 58%),linear-gradient(120deg,#020d1b,#0d2530,#030a16);align-items:center}
+#hangar .topline{border-bottom:2px solid #5ca5bb75;background:#041626d9;padding:13px 23px;width:100%}
+#hangar h2{letter-spacing:.13em;color:#d9faff}
+.hangarDetail{width:min(1300px,96%);background:radial-gradient(ellipse at 25% 50%,#127b9d26,transparent 55%),linear-gradient(120deg,#102b3df0,#06121feb);border:2px solid #4a8397;border-radius:8px;box-shadow:inset 0 0 50px #001018,0 10px 30px #0009;min-height:365px!important;flex-shrink:0!important;padding:27px!important;margin-bottom:18px!important}
+.hangarDetail img{width:clamp(230px,28vw,420px);height:clamp(220px,29vh,370px);object-fit:contain;filter:drop-shadow(0 14px 19px #000) drop-shadow(0 0 30px #35acdd6b);animation:shipHover 4s ease-in-out infinite}
+.hangarInfo{flex:1;min-width:300px;padding:10px 8px;align-self:center}.hangarInfo .row{margin-top:18px;position:relative;z-index:1}
+.hangarInfo h3{font-size:clamp(25px,3vw,45px);font-weight:950;letter-spacing:.13em;color:#e6f9ff}
+.hangarGrid{width:min(1450px,98%);background:#030e1ba1;border-top:1px solid #64adbd59;padding:10px}
+.shipCard{background:linear-gradient(#102b3c,#061621)!important;border-color:#3b7b8f!important;box-shadow:inset 0 0 15px #1cd8dd0c}
+.shipCard.selected{border-color:#60ffec!important;box-shadow:0 0 20px #43f7dc55,inset 0 0 15px #3aedc72e}
+#planetZoom{background:radial-gradient(circle,#e0f3ff23 0%,#041020e7 55%,#010510f6 90%)}
+#playLayer{background:radial-gradient(ellipse at 50% 40%,#13294a,#020612 82%)}
+#game{box-shadow:0 0 0 3px #1c6a88,0 0 0 6px #091927,0 0 55px #16bed52a;image-rendering:auto}
+.arsenal-panel{display:none!important}
+#gameHud{pointer-events:none}
+.cockpit-panel{position:absolute;z-index:41;right:11px;top:50%;transform:translateY(-50%);width:clamp(180px,17.5vw,284px);max-height:95vh;overflow:hidden;pointer-events:none;color:#ddf8fa;background:linear-gradient(155deg,#112d33f9,#07171ffa 55%,#081923f7);border:3px ridge #5b9397;border-radius:8px;padding:11px;box-shadow:0 0 0 2px #0c2430,0 0 40px #010c17,inset 0 0 24px #3f869920;font-size:clamp(10px,.86vw,14px)}
+.cockpit-mark{font-weight:950;font-size:clamp(20px,2.6vw,32px);color:#86eff3;text-shadow:0 0 12px #39fdd55a;letter-spacing:.13em;border-bottom:2px solid #8ca6a8;padding-bottom:6px}
+.cockpit-mark span{font-size:9px;display:block;letter-spacing:.16em;color:#9eaeb6}
+.ck-block{padding:9px 4px;border-bottom:1px solid #41819269}
+.ck-block small{display:block;color:#a7d7dd;letter-spacing:.11em;font-size:10px;font-weight:900;margin-bottom:5px}
+.ck-block strong{color:#f2ffff;text-shadow:0 0 7px #0ef9d44a;font-size:clamp(12px,1vw,17px)}
+.ck-block:first-of-type strong{font-size:clamp(20px,2.1vw,30px);color:#baf87b}
+.ck-stat,.ck-weapon{display:flex;justify-content:space-between;gap:7px;padding:8px 4px;color:#9fcbd2;font-weight:900;border-bottom:1px solid #4181924c}
+.ck-stat b,.ck-weapon b{color:#b9f29b;font-size:18px}
+.ck-progress{height:18px;background:#061221;border:2px ridge #497f80;border-radius:2px;padding:2px;box-shadow:inset 0 0 8px #020910}
+.ck-progress>i{display:block;background:repeating-linear-gradient(90deg,#7ef4b0 0 13px,#1b735d 13px 16px);height:100%;box-shadow:0 0 10px #85f5a85c}
+.ck-wave{background:linear-gradient(90deg,#17425166,transparent)}
+.ck-foot{color:#78a6ad;font-size:10px;line-height:1.65;padding:9px 2px}
+.hudBar{padding:7px 15px}
+@media (max-width:1100px){.cockpit-panel{width:190px;right:4px;padding:6px}.ck-foot{display:none}}
+@media(max-width:900px){.cockpit-panel{display:none}#home h1{font-size:clamp(37px,8vw,68px)}.landing-visual{display:none}.hangarDetail img{width:175px;height:170px}}
+@media(max-height:650px){.ck-block{padding:4px 2px}.cockpit-panel{font-size:11px}.ck-foot{display:none}}
+@media(prefers-reduced-motion:reduce){.hero-ship,.landing-visual:before,.hangarDetail img{animation:none}}

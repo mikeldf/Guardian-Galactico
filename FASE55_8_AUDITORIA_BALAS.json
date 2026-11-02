@@ -1,0 +1,714 @@
+{
+  "phase": "55.8",
+  "bulletVisualSizes": [
+    42,
+    45,
+    49,
+    54,
+    58
+  ],
+  "filesRetouched": 50,
+  "unchangedHitboxAndDamage": true,
+  "files": [
+    {
+      "file": "assets/gg58_new/weapons/mundo_01/01.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        56,
+        23
+      ],
+      "originalMaxCoverage": 0.35,
+      "componentCount": 4,
+      "remainingAlphaPixels": 612
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_01/02.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        56,
+        21
+      ],
+      "originalMaxCoverage": 0.35,
+      "componentCount": 4,
+      "remainingAlphaPixels": 567
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_01/03.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        53,
+        23
+      ],
+      "originalMaxCoverage": 0.331,
+      "componentCount": 6,
+      "remainingAlphaPixels": 675
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_01/04.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        55,
+        23
+      ],
+      "originalMaxCoverage": 0.344,
+      "componentCount": 4,
+      "remainingAlphaPixels": 599
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_01/05.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        39,
+        31
+      ],
+      "originalMaxCoverage": 0.244,
+      "componentCount": 4,
+      "remainingAlphaPixels": 711
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_02/01.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        38,
+        23
+      ],
+      "originalMaxCoverage": 0.237,
+      "componentCount": 3,
+      "remainingAlphaPixels": 400
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_02/02.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        55,
+        19
+      ],
+      "originalMaxCoverage": 0.344,
+      "componentCount": 5,
+      "remainingAlphaPixels": 455
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_02/03.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        49,
+        27
+      ],
+      "originalMaxCoverage": 0.306,
+      "componentCount": 5,
+      "remainingAlphaPixels": 691
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_02/04.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        48,
+        29
+      ],
+      "originalMaxCoverage": 0.3,
+      "componentCount": 7,
+      "remainingAlphaPixels": 803
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_02/05.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        40,
+        32
+      ],
+      "originalMaxCoverage": 0.25,
+      "componentCount": 7,
+      "remainingAlphaPixels": 729
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_03/01.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        43,
+        26
+      ],
+      "originalMaxCoverage": 0.269,
+      "componentCount": 4,
+      "remainingAlphaPixels": 544
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_03/02.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        46,
+        26
+      ],
+      "originalMaxCoverage": 0.287,
+      "componentCount": 3,
+      "remainingAlphaPixels": 622
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_03/03.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        46,
+        29
+      ],
+      "originalMaxCoverage": 0.287,
+      "componentCount": 3,
+      "remainingAlphaPixels": 681
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_03/04.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        44,
+        26
+      ],
+      "originalMaxCoverage": 0.275,
+      "componentCount": 4,
+      "remainingAlphaPixels": 565
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_03/05.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        34,
+        29
+      ],
+      "originalMaxCoverage": 0.212,
+      "componentCount": 4,
+      "remainingAlphaPixels": 602
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_04/01.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        36,
+        32
+      ],
+      "originalMaxCoverage": 0.225,
+      "componentCount": 5,
+      "remainingAlphaPixels": 531
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_04/02.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        49,
+        28
+      ],
+      "originalMaxCoverage": 0.306,
+      "componentCount": 5,
+      "remainingAlphaPixels": 756
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_04/03.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        51,
+        29
+      ],
+      "originalMaxCoverage": 0.319,
+      "componentCount": 3,
+      "remainingAlphaPixels": 888
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_04/04.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        39,
+        32
+      ],
+      "originalMaxCoverage": 0.244,
+      "componentCount": 6,
+      "remainingAlphaPixels": 749
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_04/05.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        42,
+        35
+      ],
+      "originalMaxCoverage": 0.263,
+      "componentCount": 4,
+      "remainingAlphaPixels": 727
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_05/01.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        37,
+        27
+      ],
+      "originalMaxCoverage": 0.231,
+      "componentCount": 2,
+      "remainingAlphaPixels": 550
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_05/02.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        24,
+        21
+      ],
+      "originalMaxCoverage": 0.15,
+      "componentCount": 5,
+      "remainingAlphaPixels": 206
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_05/03.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        57,
+        30
+      ],
+      "originalMaxCoverage": 0.356,
+      "componentCount": 3,
+      "remainingAlphaPixels": 863
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_05/04.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        43,
+        32
+      ],
+      "originalMaxCoverage": 0.269,
+      "componentCount": 2,
+      "remainingAlphaPixels": 797
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_05/05.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        34,
+        34
+      ],
+      "originalMaxCoverage": 0.212,
+      "componentCount": 4,
+      "remainingAlphaPixels": 691
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_06/01.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        43,
+        29
+      ],
+      "originalMaxCoverage": 0.269,
+      "componentCount": 1,
+      "remainingAlphaPixels": 682
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_06/02.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        47,
+        32
+      ],
+      "originalMaxCoverage": 0.294,
+      "componentCount": 1,
+      "remainingAlphaPixels": 778
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_06/03.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        45,
+        34
+      ],
+      "originalMaxCoverage": 0.281,
+      "componentCount": 1,
+      "remainingAlphaPixels": 654
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_06/04.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        48,
+        33
+      ],
+      "originalMaxCoverage": 0.3,
+      "componentCount": 1,
+      "remainingAlphaPixels": 983
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_06/05.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        44,
+        26
+      ],
+      "originalMaxCoverage": 0.275,
+      "componentCount": 2,
+      "remainingAlphaPixels": 518
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_07/01.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        39,
+        28
+      ],
+      "originalMaxCoverage": 0.244,
+      "componentCount": 1,
+      "remainingAlphaPixels": 675
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_07/02.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        56,
+        22
+      ],
+      "originalMaxCoverage": 0.35,
+      "componentCount": 1,
+      "remainingAlphaPixels": 696
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_07/03.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        46,
+        30
+      ],
+      "originalMaxCoverage": 0.287,
+      "componentCount": 2,
+      "remainingAlphaPixels": 724
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_07/04.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        27,
+        37
+      ],
+      "originalMaxCoverage": 0.231,
+      "componentCount": 1,
+      "remainingAlphaPixels": 573
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_07/05.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        38,
+        30
+      ],
+      "originalMaxCoverage": 0.237,
+      "componentCount": 1,
+      "remainingAlphaPixels": 625
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_08/01.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        42,
+        31
+      ],
+      "originalMaxCoverage": 0.263,
+      "componentCount": 1,
+      "remainingAlphaPixels": 665
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_08/02.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        45,
+        28
+      ],
+      "originalMaxCoverage": 0.281,
+      "componentCount": 1,
+      "remainingAlphaPixels": 501
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_08/03.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        51,
+        26
+      ],
+      "originalMaxCoverage": 0.319,
+      "componentCount": 1,
+      "remainingAlphaPixels": 780
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_08/04.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        38,
+        33
+      ],
+      "originalMaxCoverage": 0.237,
+      "componentCount": 1,
+      "remainingAlphaPixels": 535
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_08/05.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        33,
+        37
+      ],
+      "originalMaxCoverage": 0.231,
+      "componentCount": 1,
+      "remainingAlphaPixels": 570
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_09/01.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        50,
+        35
+      ],
+      "originalMaxCoverage": 0.312,
+      "componentCount": 1,
+      "remainingAlphaPixels": 986
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_09/02.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        48,
+        33
+      ],
+      "originalMaxCoverage": 0.3,
+      "componentCount": 2,
+      "remainingAlphaPixels": 867
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_09/03.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        49,
+        36
+      ],
+      "originalMaxCoverage": 0.306,
+      "componentCount": 1,
+      "remainingAlphaPixels": 1039
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_09/04.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        48,
+        35
+      ],
+      "originalMaxCoverage": 0.3,
+      "componentCount": 1,
+      "remainingAlphaPixels": 922
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_09/05.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        46,
+        28
+      ],
+      "originalMaxCoverage": 0.287,
+      "componentCount": 1,
+      "remainingAlphaPixels": 626
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_10/01.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        49,
+        35
+      ],
+      "originalMaxCoverage": 0.306,
+      "componentCount": 1,
+      "remainingAlphaPixels": 997
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_10/02.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        46,
+        32
+      ],
+      "originalMaxCoverage": 0.287,
+      "componentCount": 2,
+      "remainingAlphaPixels": 758
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_10/03.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        50,
+        36
+      ],
+      "originalMaxCoverage": 0.312,
+      "componentCount": 1,
+      "remainingAlphaPixels": 896
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_10/04.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        50,
+        35
+      ],
+      "originalMaxCoverage": 0.312,
+      "componentCount": 1,
+      "remainingAlphaPixels": 1064
+    },
+    {
+      "file": "assets/gg58_new/weapons/mundo_10/05.png",
+      "before": [
+        160,
+        160
+      ],
+      "after": [
+        46,
+        34
+      ],
+      "originalMaxCoverage": 0.287,
+      "componentCount": 2,
+      "remainingAlphaPixels": 899
+    }
+  ]
+}

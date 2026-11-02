@@ -1,0 +1,14 @@
+GUARDIÁN GALÁCTICO — FASE 36
+
+Comparación con Star Defender 4: su progreso está documentado, pero no se han podido verificar los recuentos de enemigos de cada una de sus 120 pantallas. Este proyecto NO reproduce cantidades ni gráficos originales de Star Defender 4.
+
+CAMBIOS REALES:
+- 70 familias de sprites exclusivos (una para cada perfil de enemigo) y 50 variantes exclusivas de jefes.
+- Las 120 hojas animadas usan 8 fotogramas de los diseños propios aprobados y mantienen transparencia.
+- Siete patrones de ataque diferenciados ya desde el primer planeta, con progresión suave.
+- Cantidad y mezcla de enemigos por nivel ajustadas sin saturar la pantalla.
+- Se conservan las colisiones, 60 naves, HUD y guardado de la fase 35.
+- index.html en raíz, carpeta assets adjunta.
+- Los archivos CSV enumeran los perfiles y las 500 misiones.
+
+NO se han copiado sprites ni código del juego comercial.

@@ -1,0 +1,34 @@
+GUARDIÁN GALÁCTICO — FASE 55 · PRUEBAS Y OPTIMIZACIÓN
+
+PARA JUGAR EN WINDOWS SIN INSTALAR PROGRAMAS:
+1) Extrae TODO el ZIP en una carpeta nueva (no abras el ZIP directamente).
+2) Haz doble clic en INICIAR_GUARDIAN_GALACTICO.cmd para abrir la ventana de juego con Microsoft Edge.
+   Alternativa: abre index.html en Chrome o Edge.
+3) Si faltan naves: abre COMPROBAR_NAVES.html y comprueba el número cargado.
+
+INCLUYE:
+- Juego completo: index.html y carpeta assets (sin eliminar recursos)
+- 60 naves, campaña de 200 niveles, arsenal de 50 mejoras
+- Diseño de mapa, selector, menú y hangar, con correcciones visuales
+- Código organizado: index_modular.html y src/styles/ / src/scripts/
+- Base de aplicación Windows Electron: app/main.cjs y package.json
+- Informe de verificación en formato JSON
+
+ATENCIÓN:
+El archivo .cmd abre una ventana tipo aplicación usando Edge instalado; NO es un exe independiente.
+El ejecutable portátil definitivo con Electron NO está compilado en esta entrega.
+El icono NO está integrado, como se acordó.
+Las partidas se almacenan en el almacenamiento del navegador utilizado.
+No borres ni muevas la carpeta assets: el juego depende de ella.
+
+
+FASE 55 · NOVEDADES DE CALIDAD
+- Se verificaron en pruebas automatizadas el arranque de las 200 misiones y los 20 encuentros con jefes programados.
+- Se probaron ambas entradas HTML del juego y los controles de navegación principales.
+- Se verificaron 1.797 archivos de imagen y los metadatos de las 26 músicas MP3.
+- El hangar ya no reconstruye sus 60 tarjetas al tocar una miniatura: solo actualiza selección y estadísticas.
+- Las miniaturas del hangar usan carga diferida para reducir carga inicial de imágenes que están fuera de pantalla.
+- Archivo nuevo: COMPROBAR_FASE55.html (diagnóstico opcional de 146 recursos en Windows).
+- Informes detallados en la carpeta docs/FASE55_*.json.
+
+LIMITACIONES: no se han jugado las 200 misiones completas ni probado en el Windows del usuario; faltan pruebas manuales y el empaquetado independiente .exe de Fase 56.

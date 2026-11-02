@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "levelsChecked": 200,
+  "spawnSelectionsChecked": 28800,
+  "modelsAvailable": 50,
+  "uniqueWeaponsAvailable": 50,
+  "bossModelsPreserved": 50,
+  "verifiedNewWeaponBullets": 90,
+  "retiredModelLoadedAtSpawn": 0,
+  "allVariantsAvailableEachWorld": true,
+  "missionProgressionByLevel": {
+    "1-2": 2,
+    "3-5": 3,
+    "6-9": 4,
+    "10-20": 5
+  }
+}

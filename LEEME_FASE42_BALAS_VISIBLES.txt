@@ -1,0 +1,7 @@
+FASE 42 — ARREGLO DE PROYECTILES DEL JUGADOR
+
+Se han corregido los disparos que aparecían diminutos en la Fase 41.
+Causa: las texturas 512×512 contenían muchísima zona transparente y el motor dibujaba todo el cuadrado a 34–46 píxeles.
+Solución: recortes de transparencias de las 50 imágenes derivadas del PNG original aprobado, conservación de la proporción del dibujo, escala 55–76 unidades de juego y radio de impacto proporcionado.
+No se han generado imágenes nuevas ni se han alterado las naves del jugador ni los sprites de los enemigos.
+Se conserva la imagen ORIGINAL del usuario dentro del paquete, y se mantiene fuera el icono del juego.

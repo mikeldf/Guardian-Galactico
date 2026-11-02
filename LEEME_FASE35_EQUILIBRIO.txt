@@ -1,0 +1,10 @@
+GUARDIÁN GALÁCTICO · FASE 35 — EQUILIBRIO INTEGRAL
+
+Incluye 500 niveles, 10 mundos, 50 encuentros con jefes, 70 perfiles enemigos, 60 naves.
+Cambios: tamaño y número de oleadas, mezcla de enemigos débiles y avanzados, HP de 7 clases, resistencia de 50 jefes, potencia de dificultad, intervalos, límites de balas, 2-3 disparos en los diez primeros niveles y mayor variedad posterior.
+Los ataques tienen advertencia y se limitan los proyectiles simultáneos. El daño de bala normal permanece en 1 y los proyectiles pesados mantienen sus diferencias.
+Mantiene los gráficos y las mejoras de disparo por mundo de la fase 34.
+Las cifras son de nuestro propio juego, no una reproducción exacta de Star Defender.
+IMPORTANTE: los valores están programados; falta validar equilibrio subjetivo a lo largo de partidas completas en Windows.
+
+Instrucciones: extrae el ZIP y abre index.html en Chrome/Edge.

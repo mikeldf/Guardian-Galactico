@@ -1,0 +1,51 @@
+﻿ID actual,Mundo,Modelo,Categoría,Arma,Sprite enemigo,Sprite arma
+1,1,Centella Marina,Débil,Pulso cian,assets/gg58_new/enemies/mundo_01/01.png,assets/gg58_new/weapons/mundo_01/01.png
+2,1,Aguja del Arrecife,Débil,Aguja celeste,assets/gg58_new/enemies/mundo_01/02.png,assets/gg58_new/weapons/mundo_01/02.png
+3,1,Cazador Fotónico,Medio,Doble fotón,assets/gg58_new/enemies/mundo_01/03.png,assets/gg58_new/weapons/mundo_01/03.png
+4,1,Guardián Celeste,Élite,Arco iónico,assets/gg58_new/enemies/mundo_01/04.png,assets/gg58_new/weapons/mundo_01/04.png
+5,1,Arconte Azul,Élite,Orbe magnético,assets/gg58_new/enemies/mundo_01/05.png,assets/gg58_new/weapons/mundo_01/05.png
+6,2,Explorador de Lianas,Débil,Espora verde,assets/gg58_new/enemies/mundo_02/01.png,assets/gg58_new/weapons/mundo_02/01.png
+7,2,Ala Verde,Débil,Dardo biológico,assets/gg58_new/enemies/mundo_02/02.png,assets/gg58_new/weapons/mundo_02/02.png
+8,2,Centinela Esmeralda,Medio,Ráfaga de clorofila,assets/gg58_new/enemies/mundo_02/03.png,assets/gg58_new/weapons/mundo_02/03.png
+9,2,Colmillo Floral,Élite,Nube biótica,assets/gg58_new/enemies/mundo_02/04.png,assets/gg58_new/weapons/mundo_02/04.png
+10,2,Soberano de la Selva,Élite,Vórtice biótico,assets/gg58_new/enemies/mundo_02/05.png,assets/gg58_new/weapons/mundo_02/05.png
+11,3,Chispa Infernal,Débil,Chispa ígnea,assets/gg58_new/enemies/mundo_03/01.png,assets/gg58_new/weapons/mundo_03/01.png
+12,3,Ascua Afilada,Débil,Ascua roja,assets/gg58_new/enemies/mundo_03/02.png,assets/gg58_new/weapons/mundo_03/02.png
+13,3,Corsario Volcánico,Medio,Lengua de fuego,assets/gg58_new/enemies/mundo_03/03.png,assets/gg58_new/weapons/mundo_03/03.png
+14,3,Corazón de Magma,Élite,Corona térmica,assets/gg58_new/enemies/mundo_03/04.png,assets/gg58_new/weapons/mundo_03/04.png
+15,3,Emperador Carmesí,Élite,Cometa solar,assets/gg58_new/enemies/mundo_03/05.png,assets/gg58_new/weapons/mundo_03/05.png
+16,4,Esquirla Polar,Débil,Esquirla polar,assets/gg58_new/enemies/mundo_04/01.png,assets/gg58_new/weapons/mundo_04/01.png
+17,4,Víbora Helada,Débil,Gota helada,assets/gg58_new/enemies/mundo_04/02.png,assets/gg58_new/weapons/mundo_04/02.png
+18,4,Custodio de Cristal,Medio,Lanza cristalina,assets/gg58_new/enemies/mundo_04/03.png,assets/gg58_new/weapons/mundo_04/03.png
+19,4,Tormenta Boreal,Élite,Ventisca,assets/gg58_new/enemies/mundo_04/04.png,assets/gg58_new/weapons/mundo_04/04.png
+20,4,Reina de Escarcha,Élite,Anillo de escarcha,assets/gg58_new/enemies/mundo_04/05.png,assets/gg58_new/weapons/mundo_04/05.png
+21,5,Guijarro Orbital,Débil,Fragmento mineral,assets/gg58_new/enemies/mundo_05/01.png,assets/gg58_new/weapons/mundo_05/01.png
+22,5,Fragmento Errante,Débil,Grava espacial,assets/gg58_new/enemies/mundo_05/02.png,assets/gg58_new/weapons/mundo_05/02.png
+23,5,Taladro Meteórico,Medio,Taladro orbital,assets/gg58_new/enemies/mundo_05/03.png,assets/gg58_new/weapons/mundo_05/03.png
+24,5,Titán Rocoso,Élite,Onda sísmica,assets/gg58_new/enemies/mundo_05/04.png,assets/gg58_new/weapons/mundo_05/04.png
+25,5,Destructor Sísmico,Élite,Meteorito pesado,assets/gg58_new/enemies/mundo_05/05.png,assets/gg58_new/weapons/mundo_05/05.png
+26,6,Espora Fugitiva,Débil,Espora corrosiva,assets/gg58_new/enemies/mundo_06/01.png,assets/gg58_new/weapons/mundo_06/01.png
+27,6,Aguijón Ácido,Débil,Gota ácida,assets/gg58_new/enemies/mundo_06/02.png,assets/gg58_new/weapons/mundo_06/02.png
+28,6,Mantis Biológica,Medio,Aguijón tóxico,assets/gg58_new/enemies/mundo_06/03.png,assets/gg58_new/weapons/mundo_06/03.png
+29,6,Serpiente Tóxica,Élite,Nube corrosiva,assets/gg58_new/enemies/mundo_06/04.png,assets/gg58_new/weapons/mundo_06/04.png
+30,6,Coloso Corrosivo,Élite,Serpiente bioeléctrica,assets/gg58_new/enemies/mundo_06/05.png,assets/gg58_new/weapons/mundo_06/05.png
+31,7,Bit de Choque,Débil,Microbalín,assets/gg58_new/enemies/mundo_07/01.png,assets/gg58_new/weapons/mundo_07/01.png
+32,7,Dardo Digital,Débil,Dardo digital,assets/gg58_new/enemies/mundo_07/02.png,assets/gg58_new/weapons/mundo_07/02.png
+33,7,Interceptor Neón,Medio,Ráfaga mecánica,assets/gg58_new/enemies/mundo_07/03.png,assets/gg58_new/weapons/mundo_07/03.png
+34,7,Anillo Mecánico,Élite,Láser industrial,assets/gg58_new/enemies/mundo_07/04.png,assets/gg58_new/weapons/mundo_07/04.png
+35,7,Señor del Circuito,Élite,Disco electromagnético,assets/gg58_new/enemies/mundo_07/05.png,assets/gg58_new/weapons/mundo_07/05.png
+36,8,Sombra Menor,Débil,Chispa oscura,assets/gg58_new/enemies/mundo_08/01.png,assets/gg58_new/weapons/mundo_08/01.png
+37,8,Aguja del Vacío,Débil,Aguja umbría,assets/gg58_new/enemies/mundo_08/02.png,assets/gg58_new/weapons/mundo_08/02.png
+38,8,Espectro Umbrío,Medio,Eco del vacío,assets/gg58_new/enemies/mundo_08/03.png,assets/gg58_new/weapons/mundo_08/03.png
+39,8,Guadaña Dimensional,Élite,Media luna espectral,assets/gg58_new/enemies/mundo_08/04.png,assets/gg58_new/weapons/mundo_08/04.png
+40,8,Oráculo Abisal,Élite,Singularidad,assets/gg58_new/enemies/mundo_08/05.png,assets/gg58_new/weapons/mundo_08/05.png
+41,9,Fotón Errante,Débil,Fotón cuántico,assets/gg58_new/enemies/mundo_09/01.png,assets/gg58_new/weapons/mundo_09/01.png
+42,9,Partícula de Fase,Débil,Partícula de fase,assets/gg58_new/enemies/mundo_09/02.png,assets/gg58_new/weapons/mundo_09/02.png
+43,9,Cazador Prisma,Medio,Prisma fractal,assets/gg58_new/enemies/mundo_09/03.png,assets/gg58_new/weapons/mundo_09/03.png
+44,9,Centinela Temporal,Élite,Anillo temporal,assets/gg58_new/enemies/mundo_09/04.png,assets/gg58_new/weapons/mundo_09/04.png
+45,9,Entidad Cuántica,Élite,Rayo de fase,assets/gg58_new/enemies/mundo_09/05.png,assets/gg58_new/weapons/mundo_09/05.png
+46,10,Destello Omega,Débil,Destello omega,assets/gg58_new/enemies/mundo_10/01.png,assets/gg58_new/weapons/mundo_10/01.png
+47,10,Fragmento Escarlata,Débil,Fragmento escarlata,assets/gg58_new/enemies/mundo_10/02.png,assets/gg58_new/weapons/mundo_10/02.png
+48,10,Guardián de Núcleo,Medio,Lanza de núcleo,assets/gg58_new/enemies/mundo_10/03.png,assets/gg58_new/weapons/mundo_10/03.png
+49,10,Coloso Omega,Élite,Tormenta omega,assets/gg58_new/enemies/mundo_10/04.png,assets/gg58_new/weapons/mundo_10/04.png
+50,10,Nexo Absoluto,Élite,Rayo de aniquilación,assets/gg58_new/enemies/mundo_10/05.png,assets/gg58_new/weapons/mundo_10/05.png

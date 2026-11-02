@@ -1,0 +1,24 @@
+{
+  "source": "Approved 16-row enemy arsenal illustration",
+  "rendering": "8 frame strips per sprite; 16 variants plus 8 impact strips",
+  "physics": "unchanged",
+  "animation_fps": 13,
+  "labels": [
+    "bala_basica",
+    "bala_rapida",
+    "bala_pesada",
+    "disparo_triple",
+    "abanico",
+    "laser_fino",
+    "laser_grueso",
+    "plasma",
+    "misil",
+    "misil_guiado",
+    "bomba",
+    "rayo_electrico",
+    "onda_expansiva",
+    "circular",
+    "meteorito",
+    "megadisparo"
+  ]
+}

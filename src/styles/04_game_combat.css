@@ -1,0 +1,9 @@
+
+.world-pin img{object-fit:contain!important;filter:drop-shadow(0 0 11px var(--pc))!important}
+.world-pin:hover img,.world-pin.active img{filter:drop-shadow(0 0 24px var(--pc))!important}
+.planet-info .info-orb{width:min(200px,65%);height:185px;object-fit:contain;filter:drop-shadow(0 0 18px var(--pc))}
+.gg-intro-planet{width:78px;height:78px;flex:0 0 78px;object-fit:contain;filter:drop-shadow(0 0 15px var(--world-accent,#73e4ff));pointer-events:none}
+#levels .world-intro{gap:18px;min-height:94px}
+#levels #levelWorldDesc{flex:1;line-height:1.45}
+#planetZoom #zoomOrb{border-radius:0!important;background-size:contain!important;box-shadow:none!important;filter:drop-shadow(0 0 75px var(--pc))}
+@media(max-width:830px){.gg-intro-planet{width:52px;height:52px;flex-basis:52px}#levels .world-intro{gap:8px;padding:9px}.planet-info .info-orb{height:130px}}

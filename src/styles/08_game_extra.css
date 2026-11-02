@@ -1,0 +1,33 @@
+
+/* FASE 40 · Pantalla de arranque y pausa; FASE 41 · arsenal de 50 mejoras */
+#gg40Boot{position:fixed;inset:0;z-index:2000;display:grid;place-items:center;overflow:hidden;color:#eaffff;background:radial-gradient(circle at 50% 20%,#143d6c,#030916 78%);font-family:inherit;transition:opacity .65s ease,visibility .65s ease}
+#gg40Boot.done{opacity:0;visibility:hidden;pointer-events:none}
+#gg40Boot .gg40-bg{position:absolute;inset:0;background:linear-gradient(180deg,#020b1e75,#030c21a1 52%,#010711eb),url('../../assets/ui/gg40_loading_bg.webp') center/cover;filter:saturate(1.22)}
+#gg40Boot .gg40-frame{width:min(720px,92vw);position:relative;z-index:1;text-align:center;padding:38px 34px 30px;background:linear-gradient(140deg,#03162adf,#052c4db8);border:1px solid #51caf0bb;border-radius:17px;box-shadow:0 0 95px #0088fe48,inset 0 0 50px #45c1ff10;backdrop-filter:blur(10px)}
+#gg40Boot .gg40-glyph{font-size:58px;color:#60ecff;line-height:1.1;text-shadow:0 0 32px #29abff}
+#gg40Boot h1{margin:8px 0 3px;font-size:clamp(28px,6vw,60px);letter-spacing:.13em;color:#fff;text-shadow:0 0 20px #188ef3}
+#gg40Boot h1 span{display:block;font-size:.66em;color:#4fe4ff;letter-spacing:.26em}
+#gg40Boot .gg40-strap{font-size:12px;color:#9cd6ef;letter-spacing:.3em;margin:23px 0 10px}
+#gg40Boot .gg40-meter{height:19px;border-radius:5px;border:1px solid #40d7fc;background:#091b3a;overflow:hidden;padding:3px;box-shadow:0 0 24px #219ced40}
+#gg40Boot .gg40-meter i{display:block;height:100%;width:0%;border-radius:3px;background:linear-gradient(90deg,#138edb,#60f5ff);transition:width .18s ease;box-shadow:0 0 20px #66eaff}
+#gg40Boot .gg40-progress{display:flex;justify-content:space-between;font-size:12px;color:#cefaff;margin-top:9px;gap:14px}
+#gg40Boot .gg40-status{text-align:left;margin:23px auto 0;max-width:390px;display:grid;gap:7px;color:#a7cfeb;font-size:12px}
+#gg40Boot .gg40-status span:before{content:'◆';color:#44deff;margin-right:13px}
+#gg40Boot .gg40-hint{margin-top:27px;border-top:1px solid #3399b850;padding-top:15px;font-size:12px;color:#b1dcef}
+#pauseModal{z-index:100!important;overflow:auto;overscroll-behavior:contain;background:radial-gradient(circle at 50% 45%,#07274bd9,#01040bed)!important;backdrop-filter:blur(12px)}
+#pauseModal>.panel{max-width:570px!important;width:min(94vw,570px)!important;padding:34px 38px!important;background:linear-gradient(145deg,#081e37f7,#041220fa)!important;border:1px solid #55d6ecb2!important;box-shadow:0 0 65px #1f9eea45,inset 0 0 30px #16c0ee10!important;border-radius:16px!important}
+#pauseModal #modalEyebrow{color:#50dfff!important;letter-spacing:.2em}
+#pauseModal #modalTitle{font-size:30px;color:#ecf9ff;letter-spacing:.08em;text-transform:uppercase}
+#pauseModal #modalButtons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;margin-top:25px}
+#pauseModal #modalButtons>.btn{min-height:48px;padding:11px 9px;font-weight:800;white-space:normal}
+#pauseModal #modalButtons>.btn:last-child{border-color:#be877a;color:#ffe9df}
+.gg40-pause-settings{position:relative;z-index:20;width:min(90vw,480px);padding:19px;margin:16px auto 0;background:#061b2df8;border:1px solid #54cbe5;border-radius:10px;color:#ecfbff;display:grid;gap:12px}
+.gg40-pause-settings[hidden]{display:none}
+.gg40-pause-settings label{display:flex;align-items:center;justify-content:space-between;gap:9px}
+.gg40-pause-settings input{accent-color:#47ddf5;max-width:190px;width:45%}
+.gg40-pause-subhead{color:#59e7fb;font-size:12px;letter-spacing:.19em}
+#gg34WeaponCells .active{background:var(--gg40-weapon,#55e8fc)!important;box-shadow:0 0 8px var(--gg40-weapon,#55e8fc)!important}
+#cockpitPanel .gg37-primary{border-color:var(--gg40-weapon,#55e8fc)!important;box-shadow:inset 0 0 22px #2260a51a}
+.gg40-weapon-label{font-size:10px;font-weight:900;letter-spacing:.07em;color:var(--gg40-weapon,#6ef1ff);margin:6px 0}
+#levels #levelGrid{width:1160px;max-width:none}
+@media(max-width:600px){#pauseModal>.panel{padding:22px 15px!important}#pauseModal #modalButtons{grid-template-columns:1fr}#gg40Boot .gg40-frame{padding:28px 16px}}

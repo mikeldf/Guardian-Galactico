@@ -1,0 +1,188 @@
+{
+  "count": 26,
+  "passed": 26,
+  "tests": [
+    {
+      "entry": "index.html",
+      "test": "hangar DOM stable",
+      "pass": true,
+      "result": true,
+      "expected": true
+    },
+    {
+      "entry": "index.html",
+      "test": "hangar 60 lazy cards",
+      "pass": true,
+      "result": 60,
+      "expected": 60
+    },
+    {
+      "entry": "index.html",
+      "test": "hangar 60 preserved",
+      "pass": true,
+      "result": 60,
+      "expected": 60
+    },
+    {
+      "entry": "index.html",
+      "test": "hangar new selection",
+      "pass": true,
+      "result": "Rayo V",
+      "expected": "Rayo V"
+    },
+    {
+      "entry": "index.html",
+      "test": "hangar sorting remains functional",
+      "pass": true,
+      "result": 60,
+      "expected": 60
+    },
+    {
+      "entry": "index.html",
+      "test": "locked ship cannot equip",
+      "pass": true,
+      "result": true,
+      "expected": true
+    },
+    {
+      "entry": "index.html",
+      "test": "weapon 50 retained in world ten",
+      "pass": true,
+      "result": 50,
+      "expected": 50
+    },
+    {
+      "entry": "index.html",
+      "test": "weapon resets when switching worlds",
+      "pass": true,
+      "result": 1,
+      "expected": 1
+    },
+    {
+      "entry": "index.html",
+      "test": "max weapon exported in backup",
+      "pass": true,
+      "result": 50,
+      "expected": 50
+    },
+    {
+      "entry": "index.html",
+      "test": "escape opens pause",
+      "pass": true,
+      "result": true,
+      "expected": true
+    },
+    {
+      "entry": "index.html",
+      "test": "pause menu with options",
+      "pass": true,
+      "result": true,
+      "expected": true
+    },
+    {
+      "entry": "index.html",
+      "test": "resume button returns to gameplay",
+      "pass": true,
+      "result": false,
+      "expected": false
+    },
+    {
+      "entry": "index.html",
+      "test": "no Javascript exceptions",
+      "pass": true,
+      "result": [],
+      "expected": []
+    },
+    {
+      "entry": "index_modular.html",
+      "test": "hangar DOM stable",
+      "pass": true,
+      "result": true,
+      "expected": true
+    },
+    {
+      "entry": "index_modular.html",
+      "test": "hangar 60 lazy cards",
+      "pass": true,
+      "result": 60,
+      "expected": 60
+    },
+    {
+      "entry": "index_modular.html",
+      "test": "hangar 60 preserved",
+      "pass": true,
+      "result": 60,
+      "expected": 60
+    },
+    {
+      "entry": "index_modular.html",
+      "test": "hangar new selection",
+      "pass": true,
+      "result": "Rayo V",
+      "expected": "Rayo V"
+    },
+    {
+      "entry": "index_modular.html",
+      "test": "hangar sorting remains functional",
+      "pass": true,
+      "result": 60,
+      "expected": 60
+    },
+    {
+      "entry": "index_modular.html",
+      "test": "locked ship cannot equip",
+      "pass": true,
+      "result": true,
+      "expected": true
+    },
+    {
+      "entry": "index_modular.html",
+      "test": "weapon 50 retained in world ten",
+      "pass": true,
+      "result": 50,
+      "expected": 50
+    },
+    {
+      "entry": "index_modular.html",
+      "test": "weapon resets when switching worlds",
+      "pass": true,
+      "result": 1,
+      "expected": 1
+    },
+    {
+      "entry": "index_modular.html",
+      "test": "max weapon exported in backup",
+      "pass": true,
+      "result": 50,
+      "expected": 50
+    },
+    {
+      "entry": "index_modular.html",
+      "test": "escape opens pause",
+      "pass": true,
+      "result": true,
+      "expected": true
+    },
+    {
+      "entry": "index_modular.html",
+      "test": "pause menu with options",
+      "pass": true,
+      "result": true,
+      "expected": true
+    },
+    {
+      "entry": "index_modular.html",
+      "test": "resume button returns to gameplay",
+      "pass": true,
+      "result": false,
+      "expected": false
+    },
+    {
+      "entry": "index_modular.html",
+      "test": "no Javascript exceptions",
+      "pass": true,
+      "result": [],
+      "expected": []
+    }
+  ]
+}

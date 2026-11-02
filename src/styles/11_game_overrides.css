@@ -1,0 +1,5 @@
+
+/* FASE 46: el hangar no puede permanecer encima de las otras pantallas.
+   La regla legacy #hangar{display:flex!important} ganaba sobre .hidden. */
+#hangar.hidden{display:none!important;visibility:hidden!important;pointer-events:none!important}
+#hangar:not(.hidden){display:flex!important;visibility:visible!important;pointer-events:auto!important}

@@ -1,0 +1,46 @@
+GUARDIÁN GALÁCTICO — FASE 37
+HUD FUTURISTA DE COMBATE (REFERENCIA DE DISEÑO: STAR DEFENDER 4)
+
+Se parte del juego COMPLETO de Fase 36.
+
+CAMBIOS INTEGRADOS
+- Cockpit derecho rediseñado: panel oscuro 2.5D con neón cian, detalles metálicos,
+  radar animado y lectura de datos reales del combate.
+- Sector, planeta, misión local y puntuación actualizados en directo.
+- Miniatura de la nave realmente equipada y vidas restantes visibles.
+- Escudo y energía especial con barras segmentadas y estado de habilidad.
+- Disparo principal: 7 segmentos reales y estado de potencia.
+- Arma secundaria: icono, nombre, munición y disponibilidad según power-ups.
+- Radar y progreso de oleadas; al aparecer el jefe, medidor adicional
+  de salud real y nombre del jefe.
+- HUD de combate fuera del área del juego en PC, sin bloquear el espacio de combate.
+- Estilo adaptable: la versión de ventana estrecha conserva el HUD compacto
+  y las etiquetas de power-ups del juego original.
+- Animaciones reducidas automáticamente si Windows/navegador solicitan
+  reducción de movimiento.
+
+CONSERVADO (SIN MODIFICACIÓN DE LAS REGLAS)
+- 60 naves y sus imágenes, desbloqueos y estadísticas existentes.
+- 10 mundos y las 500 misiones de esta versión del juego (la posible
+  reestructuración a 200 niveles todavía NO se ha aplicado).
+- 70 enemigos, 50 jefes, sus armas y sus sprites/hojas de animación.
+- Potencia del arma principal persistente dentro del mundo, que vuelve a
+  su valor propio al iniciar un mundo distinto, según la Fase 34.
+- Controles del juego, guardado de progreso y power-ups recogibles.
+
+INSTALACIÓN
+Extrae TODO el ZIP en una carpeta propia y abre index.html con Chrome o Edge
+para PC/Windows. No extraigas solamente index.html: necesita la carpeta assets.
+
+ARCHIVOS MODIFICADOS O NUEVOS
+- index.html (estructura del cockpit + enlace con updateHud existente)
+- assets/ui/gg_f37_cockpit_neon.css (apariencia y adaptabilidad)
+- este LEEME.
+
+COMPROBACIÓN
+- Comprobación estática de los scripts JavaScript.
+- Ejecución de nivel 1 con el motor y estado real del juego en navegador de pruebas.
+- Vista preliminar de disposición a 1600×900 y 1280×720.
+
+NOTA: las pruebas realizadas aquí son de navegador automatizado.
+No sustituyen una partida de prueba completa con el equipo Windows del usuario.
