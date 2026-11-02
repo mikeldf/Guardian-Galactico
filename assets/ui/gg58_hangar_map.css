@@ -9,7 +9,7 @@
   top:3.4%!important;right:8.9%!important;width:9.4%!important;height:7%!important;
   display:flex!important;align-items:center!important;justify-content:center!important;
   box-sizing:border-box!important;padding:0 4px!important;border:0!important;border-radius:4px!important;
-  background:rgba(2,22,51,.96)!important;color:#fff!important;
+  background:transparent!important;color:#fff!important;
   font:900 clamp(18px,2vw,31px)/1 system-ui!important;text-shadow:0 0 8px #008cff!important;
 }
 
